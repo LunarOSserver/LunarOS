@@ -2,9 +2,9 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
     'use strict';
-    domeApp.controller('ProjectCollectionManageCtr', ['$scope','$domeUser', '$domeProjectCollection','$state', 'dialog', function ($scope,$domeUser, $domeProjectCollection, $state, dialog) {
+    LunarApp.controller('ProjectCollectionManageCtr', ['$scope','$LunarUser', '$LunarProjectCollection','$state', 'dialog', function ($scope,$LunarUser, $LunarProjectCollection, $state, dialog) {
         $scope.$emit('pageTitle', {
             title: '项目管理',
             descrition: '项目管理。',
@@ -13,8 +13,8 @@
         $scope.projectCollectionList = [];
         $scope.resourceType = 'PROJECT_COLLECTION';
         $scope.isLoading = true;
-        var projectCollectionService = $domeProjectCollection.projectCollectionService;
-        var userService = $domeUser.userService;
+        var projectCollectionService = $LunarProjectCollection.projectCollectionService;
+        var userService = $LunarUser.userService;
         function init() {
             projectCollectionService.getProjectCollection().then(function (res) {
                 $scope.projectCollectionList = res.data.result || [];
@@ -40,7 +40,7 @@
             });
         };
         $scope.deleteProjectCollection = function (projectCollectionId) {
-            $domeProjectCollection.deleteProjectCollection(projectCollectionId).then(function() {
+            $LunarProjectCollection.deleteProjectCollection(projectCollectionId).then(function() {
                 for (var i = 0; i < $scope.projectCollectionList.length; i++) {
                     if ($scope.projectCollectionList[i].id === projectCollectionId) {
                         $scope.projectCollectionList.splice(i, 1);
@@ -57,4 +57,4 @@
 
         
     }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

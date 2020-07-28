@@ -24,9 +24,9 @@
 		margin-right: $page-padding;
 	}
 	.project-options{
-		// background-color: dome-color(background,primary);
+		// background-color: Lunar-color(background,primary);
 		padding: 20px;
-		border-bottom: 20px solid dome-color(background, light);
+		border-bottom: 20px solid Lunar-color(background, light);
 		.ui-btn-delete{
 			display: inline-block;
 			width: 34px;
@@ -60,7 +60,7 @@
 		padding: 20px 0 ;
 		font-size: 16px;
 		a{
-			color:dome-color(dome,primary);
+			color:Lunar-color(Lunar,primary);
 		}
 	}
 	.project-creator{
@@ -84,13 +84,13 @@
 	// 	}
 	// 	.s3{
 	// 		margin-left: 12px;
-	// 		color:dome-color(dome,primary);
+	// 		color:Lunar-color(Lunar,primary);
 	// 	}
 	// }
 	.dockerfile-options{
 		padding: 20px 0;
 		.ui-btn-dockerfile{
-			color: dome-color(dome,bright);
+			color: Lunar-color(Lunar,bright);
 		}
 	}
 	.btn-options{
@@ -136,19 +136,19 @@
 		.txt-chose{
 			margin-left: 18px;
 			&.active{
-				color: dome-color(dome,bright);
+				color: Lunar-color(Lunar,bright);
 			}
 		}
 		.sep{
 			margin-left: 45px;
 			margin-right: 45px;
-			color: dome-color(border,deep);
+			color: Lunar-color(border,deep);
 			font-style: normal;
 		}
 	}
 	.build-log{
 		border-top: $deep-border;
-		.ui-table-dome{
+		.ui-table-Lunar{
 			//td{
 			//	padding-top: 15px;
 			//	padding-bottom: 15px;
@@ -162,10 +162,10 @@
 		}
 	}
 	.log-detail{
-		background-color: dome-color(background,light);
+		background-color: Lunar-color(background,light);
 		padding:8px;
 		&:hover{
-			background-color: dome-color(background,light);
+			background-color: Lunar-color(background,light);
 		}
 		.detail-list{
 			position: relative;

@@ -39,10 +39,10 @@
 				height: 85px;
 				padding: 10px;
 				border-bottom: $deep-border;
-				background-color: dome-color(background,light);
+				background-color: Lunar-color(background,light);
 				.hostgroup-name{
 					margin-bottom: 4px;
-					color: dome-color(font,embed);
+					color: Lunar-color(font,embed);
 					font-size: 22px;
 				}
 				.hostgroup-detail{
@@ -72,7 +72,7 @@
 								border-bottom: none;
 							}
 							a:hover{
-								color: dome-color(dome,primary);
+								color: Lunar-color(Lunar,primary);
 							}
 						}
 					}
@@ -105,7 +105,7 @@
 						display: block;
 						margin:8px 18px 0 0;
 						padding: 6px 10px 6px 10px;
-						border:1px solid dome-color(dome,primary);
+						border:1px solid Lunar-color(Lunar,primary);
 						border-radius: 22px;
 					}
 				}

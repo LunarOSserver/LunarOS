@@ -20,8 +20,8 @@ table.table-info.projectinfo(ng-form role="form" name="proInfoForm")
 			td 编译镜像
 			td
 				p.txt-prompt 编译镜像用于代码编译并打包，请在编译镜像内配置好编译环境。
-				dome-radio(d-id="compilePublic" d-name="compileCustom" d-model="project.projectImagesIns.imageInfo.compileIsPublic" d-value="1" d-label="DomeOS官方镜像库" d-change="project.projectImagesIns.toggleIsPublicImage('compile',model)")
-				dome-radio.private-img(d-id="compilePrivate" d-name="compileCustom" d-model="project.projectImagesIns.imageInfo.compileIsPublic" d-value="0" d-label="DomeOS私有镜像库" d-change="project.projectImagesIns.toggleIsPublicImage('compile',model)")
+				Lunar-radio(d-id="compilePublic" d-name="compileCustom" d-model="project.projectImagesIns.imageInfo.compileIsPublic" d-value="1" d-label="LunarOS官方镜像库" d-change="project.projectImagesIns.toggleIsPublicImage('compile',model)")
+				Lunar-radio.private-img(d-id="compilePrivate" d-name="compileCustom" d-model="project.projectImagesIns.imageInfo.compileIsPublic" d-value="0" d-label="LunarOS私有镜像库" d-change="project.projectImagesIns.toggleIsPublicImage('compile',model)")
 				a.icon-help(tooltip="从私有镜像库中选取包含代码编译环境的镜像（如maven，jdk镜像）对代码进行编译打包，推荐基于官方仓库镜像进行编译镜像的制作。")
 				p.setting-title(ng-cloak) 镜像仓库地址：{{project.projectImagesIns.selectedCompileImage.registryUrl||'无'}}
 				.com-select-con.image-select-con(select-con event-type="focus")
@@ -79,8 +79,8 @@ table.table-info.projectinfo(ng-form role="form" name="proInfoForm")
 			td 运行镜像
 			td
 				p.txt-prompt 运行镜像用于运行编译结果，请在运行镜像内配置好运行环境。
-				dome-radio(d-id="runPublic" d-name="runCustom" d-model="project.projectImagesIns.imageInfo.runIsPublic" d-value="1" d-label="DomeOS官方镜像库" d-change="project.projectImagesIns.toggleIsPublicImage('run',model)")
-				dome-radio.private-img(d-id="runPrivate" d-name="runCustom" d-model="project.projectImagesIns.imageInfo.runIsPublic" d-value="0" d-label="DomeOS私有镜像库" d-change="project.projectImagesIns.toggleIsPublicImage('run',model)")
+				Lunar-radio(d-id="runPublic" d-name="runCustom" d-model="project.projectImagesIns.imageInfo.runIsPublic" d-value="1" d-label="LunarOS官方镜像库" d-change="project.projectImagesIns.toggleIsPublicImage('run',model)")
+				Lunar-radio.private-img(d-id="runPrivate" d-name="runCustom" d-model="project.projectImagesIns.imageInfo.runIsPublic" d-value="0" d-label="LunarOS私有镜像库" d-change="project.projectImagesIns.toggleIsPublicImage('run',model)")
 				a.icon-help(tooltip="从私有镜像库中选取包含运行编译结果环境的镜像（如jdk，tomcat镜像）作为运行镜像，推荐基于官方仓库镜像进行运行镜像的制作。")
 				p.setting-title(ng-cloak) 镜像仓库地址：{{project.projectImagesIns.selectedRunImage.registryUrl||'无'}}
 				.com-select-con.image-select-con(select-con)
@@ -285,8 +285,8 @@ table.table-info.projectinfo(ng-form role="form" name="proInfoForm")
 										p.con-num(ng-bind="$index+1")
 									td
 										div.uploadfile-filename-container
-											input.ui-input-white.ui-input-fill.dome-input-lg.uploadfile-filename(placeholder="镜像内存放路径，包含文件名" ng-model="uploadFileInfo.filename" is-required param1="{{uploadFileInfo.content}}")
-										textarea.ui-input-fill.dome-input-lg.list-input.uploadfile-content(ng-model="uploadFileInfo.content")
+											input.ui-input-white.ui-input-fill.Lunar-input-lg.uploadfile-filename(placeholder="镜像内存放路径，包含文件名" ng-model="uploadFileInfo.filename" is-required param1="{{uploadFileInfo.content}}")
+										textarea.ui-input-fill.Lunar-input-lg.list-input.uploadfile-content(ng-model="uploadFileInfo.content")
 									td.td-small
 										a.icon-cancel(ng-click="project.delUploadFileInfo($index)")
 				button.ui-btn.ui-btn-bright.ui-btn-sm(ng-click="project.addUploadFileInfo()") 添加

@@ -5,7 +5,7 @@ if [ -z "$MYSQL_PORT" ]; then
 fi
 
 echo "
-create database if not exists `domeos`;
+create database if not exists `Lunaros`;
 create database if not exists `graph`;
 create database if not exists `portal`;
 " > ./create.sql;

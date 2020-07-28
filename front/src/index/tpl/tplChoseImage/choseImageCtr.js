@@ -2,16 +2,16 @@
  * @author tiansheng
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
   'use strict';
-  if (typeof domeApp === 'undefined') return;
-  domeApp.controller('choseImageCtr', ['$scope', '$modalInstance', '$modal', '$domeProject', '$domeImage', '$domeData', 'dialog', '$state', function ($scope, $modalInstance, $modal, $domeProject, $domeImage, $domeData, dialog, $state) {
+  if (typeof LunarApp === 'undefined') return;
+  LunarApp.controller('choseImageCtr', ['$scope', '$modalInstance', '$modal', '$LunarProject', '$LunarImage', '$LunarData', 'dialog', '$state', function ($scope, $modalInstance, $modal, $LunarProject, $LunarImage, $LunarData, dialog, $state) {
     $scope.loading = true;
     $scope.key = {
       searchKey: ''
     };
     $scope.imageList = [];
-    $domeImage.imageService.getBaseImages().then(function (res) {
+    $LunarImage.imageService.getBaseImages().then(function (res) {
       $scope.imageList = res.data.result;
     }).finally(function () {
       $scope.loading = false;
@@ -23,4 +23,4 @@
       $modalInstance.close(img);
     };
   }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

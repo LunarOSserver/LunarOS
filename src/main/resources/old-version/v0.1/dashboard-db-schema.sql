@@ -20,7 +20,7 @@
 --
 
 -- CREATE database IF NOT EXISTS `dashboard`;
--- grant all privileges on dashboard.* to 'domeos'@'%' with grant option;
+-- grant all privileges on dashboard.* to 'Lunaros'@'%' with grant option;
 use dashboard;
 
 DROP TABLE IF EXISTS `dashboard_graph`;
@@ -86,8 +86,8 @@ CREATE TABLE `tmp_graph` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
-DROP TABLE IF EXISTS `domeos_graph`;
-CREATE TABLE `domeos_graph` (
+DROP TABLE IF EXISTS `Lunaros_graph`;
+CREATE TABLE `Lunaros_graph` (
   `id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `tmp_id` INT(11) UNSIGNED NOT NULL DEFAULT '0',
   `type` VARCHAR(32) NOT NULL DEFAULT '',

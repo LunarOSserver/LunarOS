@@ -50,7 +50,7 @@
 				em(ng-class="{'active':selectOption.status.UPDATE_ABORTED}" ng-click="toggleSelect('status','UPDATE_ABORTED')") 升级已中断
 	.mod-list
 		loading(ng-if="isLoading")
-		table.ui-table-dome(style="word-break:break-all;")
+		table.ui-table-Lunar(style="word-break:break-all;")
 			thead
 				tr
 					th
@@ -110,7 +110,7 @@
 					td
 						div(style="display: flex;" ng-repeat="dns in deploy.dnsName track by $index")
 							div.long-text-wrap(style="max-width: 90%" ng-bind="dns" title="{{ dns }}")
-							button.dome-btn-none(ng-if="dns !== '无'" type="button" ngclipboard data-clipboard-text="{{ dns }}" tooltip="复制" ngclipboard-success="onSuccess(e, dns)" ngclipboard-error="onError(e)")
+							button.Lunar-btn-none(ng-if="dns !== '无'" type="button" ngclipboard data-clipboard-text="{{ dns }}" tooltip="复制" ngclipboard-success="onSuccess(e, dns)" ngclipboard-error="onError(e)")
 								i.fa.fa-clipboard
 
 script(type="text/ng-template" id="migrateDeployModal.html")

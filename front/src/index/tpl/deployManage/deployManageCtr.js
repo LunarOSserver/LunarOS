@@ -2,11 +2,11 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
 	'use strict';
-	if (typeof domeApp === 'undefined') return;
+	if (typeof LunarApp === 'undefined') return;
 
-	domeApp.controller('DeployManageCtr', ['$scope', '$domeDeploy', '$domeCluster', '$timeout', '$state', '$modal', '$util', 'dialog', function ($scope, $domeDeploy, $domeCluster, $timeout, $state, $modal, $util, dialog) {
+	LunarApp.controller('DeployManageCtr', ['$scope', '$LunarDeploy', '$LunarCluster', '$timeout', '$state', '$modal', '$util', 'dialog', function ($scope, $LunarDeploy, $LunarCluster, $timeout, $state, $modal, $util, dialog) {
 		$scope.$emit('pageTitle', {
 			title: '部署',
 			descrition: '在这里您可以把项目镜像部署到运行环境中。此外，您还可以对现有部署进行监控和管理。',
@@ -39,7 +39,7 @@
 
 		var cluserList = [],
 			timeout;
-		var clusterService = $domeCluster.getInstance('ClusterService');
+		var clusterService = $LunarCluster.getInstance('ClusterService');
 		$scope.selectOption = {};
 		$scope.selectOption.status = {
 			ALL: true,
@@ -126,7 +126,7 @@
 		var init = function () {
 			var collectionId = $state.params.id;
 			if ($state.current.name.indexOf('deployManage') !== -1) {
-				$domeDeploy.deployService.getListByCollectionId(collectionId).then(function (res) {
+				$LunarDeploy.deployService.getListByCollectionId(collectionId).then(function (res) {
             formatDeployData(res.data.result || []);
 				}).finally(function () {
 					$scope.isLoading = false;
@@ -136,7 +136,7 @@
 					timeout = $timeout(init, 4000);
 				});
 			}else if ($state.current.name === 'deployAllManage') {
-				$domeDeploy.deployService.getList().then(function (res) {
+				$LunarDeploy.deployService.getList().then(function (res) {
           formatDeployData(res.data.result || []);
 				}).finally(function () {
 					$scope.isLoading = false;
@@ -250,13 +250,13 @@
     $scope.onError = function(e) {
       dialog.alert('复制失败','');
     }
-	}]).controller('migrateDeployModalCtr', ['$scope', '$state','dialog', '$domeDeployCollection', 'deployId', 'deployName','collectionName', '$modalInstance', '$util', function ($scope, $state, dialog, $domeDeployCollection, deployId, deployName, collectionName, $modalInstance, $util) {
+	}]).controller('migrateDeployModalCtr', ['$scope', '$state','dialog', '$LunarDeployCollection', 'deployId', 'deployName','collectionName', '$modalInstance', '$util', function ($scope, $state, dialog, $LunarDeployCollection, deployId, deployName, collectionName, $modalInstance, $util) {
 		$scope.migrateDeployName = deployName;
 		$scope.migrateCollectionName = collectionName;
 		$scope.migrateCollectionId = '';
 		$scope.deployCollectionList = [];
 		$scope.isLoading = true;
-		$domeDeployCollection.deployCollectionService.getDeployCollection().then(function (res) {
+		$LunarDeployCollection.deployCollectionService.getDeployCollection().then(function (res) {
 			var collectionList = res.data.result || [];
 			for (var i=0; i < collectionList.length; i++) {
 				if (collectionList[i].role === "MASTER") {
@@ -272,7 +272,7 @@
 			$scope.migrateCollectionId = id;
 		};
 		$scope.save = function() {
-			$domeDeployCollection.deployCollectionService.migrateDeploy(deployId,$scope.migrateCollectionId).then(function(){
+			$LunarDeployCollection.deployCollectionService.migrateDeploy(deployId,$scope.migrateCollectionId).then(function(){
 				$state.go('deployManage',{
 					id: $scope.migrateCollectionId,
 					name: $scope.migrateCollectionName
@@ -288,4 +288,4 @@
 			$modalInstance.dismiss('cancel');
 		};
 	}]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

@@ -2,17 +2,17 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
 	'use strict';
-	if (typeof domeApp === 'undefined') return;
-	domeApp.controller('CreateProjectCtr2', ['$scope', '$modal', '$domeProject', '$domeImage', '$domeData', 'dialog', '$state', '$q','$util', function ($scope, $modal, $domeProject, $domeImage, $domeData, dialog, $state, $q, $util) {
+	if (typeof LunarApp === 'undefined') return;
+	LunarApp.controller('CreateProjectCtr2', ['$scope', '$modal', '$LunarProject', '$LunarImage', '$LunarData', 'dialog', '$state', '$q','$util', function ($scope, $modal, $LunarProject, $LunarImage, $LunarData, dialog, $state, $q, $util) {
 			$scope.$emit('pageTitle', {
 				title: '新建工程',
-				descrition: '在这里把您的代码仓库和DomeOS对接即可创建新项目。此外，您还可以对现有项目进行查询和管理。',
+				descrition: '在这里把您的代码仓库和LunarOS对接即可创建新项目。此外，您还可以对现有项目进行查询和管理。',
 				mod: 'projectManage'
 			});
-			var lastPageInfo = angular.copy($domeData.getData('projectInfo'));
-			$domeData.delData('projectInfo');
+			var lastPageInfo = angular.copy($LunarData.getData('projectInfo'));
+			$LunarData.delData('projectInfo');
 			$scope.projectCollectionId = $state.params.projectCollectionId;
 			if(!$scope.projectCollectionId) {
 				$state.go('projectCollectionManage');
@@ -32,12 +32,12 @@
 				$scope.project.customConfig.dockerfilePath = '/Dockerfile';
 				$scope.config.authority = 0;
 				$scope.projectCollectionId = $state.params.projectCollectionId;
-				$domeProject.projectService.getProjectCollectionNameById($scope.projectCollectionId).then(function (res) {
+				$LunarProject.projectService.getProjectCollectionNameById($scope.projectCollectionId).then(function (res) {
 					$scope.projectCollectionName = res.data.result || '';
 				});
 			};
 			$scope.projectTypeLanguage = ['java'];
-			$scope.project = $domeProject.getInstance('Project', {
+			$scope.project = $LunarProject.getInstance('Project', {
 				userDefineDockerfile: lastPageInfo.projectType === 'dockerfileincode',
 				exclusiveBuild: $scope.projectTypeLanguage.indexOf(lastPageInfo.projectType) !== -1 ? {
 					customType: lastPageInfo.projectType
@@ -60,8 +60,8 @@
 			if (!$scope.config.userDefineDockerfile) {
 				$scope.isLoading = true;
 				$q.all([
-					$domeImage.imageService.getForBuildImages(),
-					$domeImage.imageService.getExclusiveImages('java'),
+					$LunarImage.imageService.getForBuildImages(),
+					$LunarImage.imageService.getExclusiveImages('java'),
 				]).then(([res1, res2]) => {
 					let imageList = res1.data.result || [];
 					let newImageList = [];
@@ -83,7 +83,7 @@
 					$scope.project.projectImagesIns.init(exclusiveImage);
 				},()=>{}).finally(()=>{ $scope.isLoading = false; });
 				
-				$domeImage.imageService.getBaseImages().then(function (res) {
+				$LunarImage.imageService.getBaseImages().then(function (res) {
 					$scope.imageList = res.data.result;
 				});
 			}
@@ -156,7 +156,7 @@
 					}
 				});
 				modalInstance.result.then(function (projectId) {
-					$domeProject.projectService.getData(projectId).then(function (res) {
+					$LunarProject.projectService.getData(projectId).then(function (res) {
 						var pro = res.data.result,
 							customConfig = $scope.project.customConfig;
 						$scope.project.init(pro.project);
@@ -174,7 +174,7 @@
 				});
 			};
 			$scope.toLastPage = function () {
-				$domeData.setData('createProjectInfo1', lastPageInfo);
+				$LunarData.setData('createProjectInfo1', lastPageInfo);
 				$state.go('createProject1', {projectCollectionId: lastPageInfo.info.projectCollectionId, projectCollectionName: lastPageInfo.info.projectCollectionName});
 			};
 			$scope.createProject = function () {
@@ -198,13 +198,13 @@
 				});
 			};
 		}])
-    .controller('ProjectListModalCtr', ['$scope', '$filter', '$modalInstance', '$domeProject', '$domeProjectCollection', 'projectInfo', function ($scope, $filter, $modalInstance, $domeProject, $domeProjectCollection, projectInfo) {
+    .controller('ProjectListModalCtr', ['$scope', '$filter', '$modalInstance', '$LunarProject', '$LunarProjectCollection', 'projectInfo', function ($scope, $filter, $modalInstance, $LunarProject, $LunarProjectCollection, projectInfo) {
 			$scope.key = {
 				searchKey: ''
 			};
       $scope.selectedCollection = { id: projectInfo.projectCollectionId };
       $scope.collectionList = [$scope.selectedCollection];
-      $domeProjectCollection.projectCollectionService.getProjectCollection().then(function (resp) {
+      $LunarProjectCollection.projectCollectionService.getProjectCollection().then(function (resp) {
         $scope.collectionList = resp.data.result;
         if ($scope.selectedCollection) {
           $scope.selectedCollection = $scope.collectionList.filter(function (x) { return x.id ==/* i'm not sure how type converted, but this work, do not add another equal mark */ $scope.selectedCollection.id; })[0];
@@ -212,7 +212,7 @@
       });
       var loadProjectList = function (collectionId) {
         $scope.loading = true;
-        $domeProject.projectService.getProject(collectionId).then(function (res) {
+        $LunarProject.projectService.getProject(collectionId).then(function (res) {
           var grouped = res.data.result || [], projects = [];
           Object.keys(grouped).forEach(function (groupName) { projects = projects.concat(grouped[groupName]); });
           $scope.projectList = projects.filter(function (project) {
@@ -240,4 +240,4 @@
 				$modalInstance.close(projectId);
 			};
 		}]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

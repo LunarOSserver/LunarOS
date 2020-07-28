@@ -21,7 +21,7 @@
                 background-color: #fff;
             }
             tbody {
-                // background-color: dome-color(background,light);
+                // background-color: Lunar-color(background,light);
             }
             // th,td{
             // 	&:first-child{
@@ -66,7 +66,7 @@
                         left: 7px;
                         height: 78px;
                         width: 1px;
-                        background-color: dome-color(border, light);
+                        background-color: Lunar-color(border, light);
                     }
                 }
                 .event-name,
@@ -113,16 +113,16 @@
                         width: 6px;
                         height: 6px;
                         margin-right: 2px;
-                        background-color: dome-color(border, deep);
+                        background-color: Lunar-color(border, deep);
                         border-radius: 50%;
                         &.start {
-                            background-color: dome-color(dome, primary);
+                            background-color: Lunar-color(Lunar, primary);
                         }
                         &.origin {
-                            background-color: dome-color(dome, warning);
+                            background-color: Lunar-color(Lunar, warning);
                         }
                         &.current {
-                            background-color: dome-color(dome, active);
+                            background-color: Lunar-color(Lunar, active);
                         }
                     }
                     .event-process-detail {
@@ -135,7 +135,7 @@
                     }
                 }
                 .event-result {
-                    color: dome-color(font, default);
+                    color: Lunar-color(font, default);
                     width: 3%;
                 }
                 .event-info {
@@ -208,7 +208,7 @@
                     }
                 }
                 // &:nth-child(2n+1){
-                // 	background-color: dome-color(background,light);
+                // 	background-color: Lunar-color(background,light);
                 // }
                 &:last-child {
                     .dot-line {
@@ -280,7 +280,7 @@
             }
         }
         .all-update {
-            color: dome-color(dome, bright);
+            color: Lunar-color(Lunar, bright);
         }
         .image-tag {
             float: right;

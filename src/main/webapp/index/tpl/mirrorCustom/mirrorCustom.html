@@ -15,9 +15,9 @@
           <div class="info-content">
             <div class="line-short"><span class="child-name">选择镜像仓库</span>
               <div class="line-element com-select-con" select-con="select-con">
-                <button class="ui-btn ui-btn-white ui-btn-select"><i class="icon-down"></i>{{config.sourceImage.thirdParty===0?'DomeOS私有镜像仓库':'第三方镜像仓库'}}</button>
+                <button class="ui-btn ui-btn-white ui-btn-select"><i class="icon-down"></i>{{config.sourceImage.thirdParty===0?'LunarOS私有镜像仓库':'第三方镜像仓库'}}</button>
                 <ul class="select-list">
-                  <li class="select-item"><a ng-click="toggleMirrorHub(0)">DomeOS私有镜像仓库</a></li>
+                  <li class="select-item"><a ng-click="toggleMirrorHub(0)">LunarOS私有镜像仓库</a></li>
                   <li class="select-item"><a ng-click="toggleMirrorHub(1)">第三方镜像仓库</a></li>
                 </ul>
               </div>
@@ -186,7 +186,7 @@
       </div>
       <div class="mod-list">
         <customlist>
-          <table class="ui-table-dome">
+          <table class="ui-table-Lunar">
             <tbody>
               <tr ng-if="buildListFilter&amp;&amp;buildListFilter.length===0">
                 <td colspan="9">无相关信息</td>

@@ -21,14 +21,14 @@ page-container
     page-summary-content(ng-if="hasUpdatePermission")
       span(ng-if="loadBalanceDraft.state === 'STOP'")
         button(type="button" ng-disabled="isWaitingStart" ng-click="start()") 启动
-        button.dome-tool-align(type="button" ng-if="hasDeletePermission" ng-click="delete()") 删除
+        button.Lunar-tool-align(type="button" ng-if="hasDeletePermission" ng-click="delete()") 删除
       span(ng-if="loadBalanceDraft.state === 'RUNNING'")
         button(type="button" ng-disabled="isWaitingUpVersion" ng-click="updateVersion()") 升级/回滚
-        button.dome-tool-align(type="button" ng-disabled="isWaitingScale" ng-click="scaleVersion()") 扩容/缩容
-        button.dome-tool-align(type="button" ng-disabled="isWaitingStop" ng-click="stopVersion()") 停止
+        button.Lunar-tool-align(type="button" ng-disabled="isWaitingScale" ng-click="scaleVersion()") 扩容/缩容
+        button.Lunar-tool-align(type="button" ng-disabled="isWaitingStop" ng-click="stopVersion()") 停止
       span(ng-if="loadBalanceDraft.state === 'ERROR' || loadBalanceDraft.state === 'BACKROLL_ABORTED' || loadBalanceDraft.state === 'UPDATE_ABORTED'")
         button(type="button" ng-disabled="isWaitingRecover" ng-click="recover()") 恢复
-        button.dome-tool-align(type="button" ng-disabled="isWaitingStop" ng-click="stopVersion()") 停止
+        button.Lunar-tool-align(type="button" ng-disabled="isWaitingStop" ng-click="stopVersion()") 停止
       span(ng-if="loadBalanceDraft.state === 'DEPLOYING' || loadBalanceDraft.state === 'UPDATING' || loadBalanceDraft.state === 'BACKROLLING' || loadBalanceDraft.state === 'UPSCALING' || loadBalanceDraft.state === 'DOWNSCALING'")
         button(type="button" ng-disabled="isWaitingStop" ng-click="stopVersion()") 停止
   page-content-box(tabs=
@@ -48,7 +48,7 @@ script(type="text/ng-template" id="nginxRule.html")
         button(type="button" ng-if="!isEditingRule" ng-click="toggleEdit('edit')") 编辑
       .txt-prompt(style="margin-top:20px;line-height: 1.42857143; color: #aaa;")
         i.fa.fa-info-circle &nbsp;
-        span DomeOS提供的默认nginx镜像使用max_fails和fail_timeout实现健康检查，默认值为max_fails=1，fail_timeout=10s。以下情况健康检查失败：连接实例错误或超时，实例无响应，实例返回的HTTP状态码为500、502、503或504。
+        span LunarOS提供的默认nginx镜像使用max_fails和fail_timeout实现健康检查，默认值为max_fails=1，fail_timeout=10s。以下情况健康检查失败：连接实例错误或超时，实例无响应，实例返回的HTTP状态码为500、502、503或504。
       form-config-group
         form-config-item(config-title="转发规则")
           form-input-container
@@ -75,10 +75,10 @@ script(type="text/ng-template" id="nginxRule.html")
         button(type="button" ng-click="toggleEdit('cancel')") 取消
       .txt-prompt(style="margin-top:20px; line-height: 1.42857143; color: #aaa;")
         i.fa.fa-info-circle &nbsp;
-        span DomeOS提供的默认nginx镜像使用max_fails和fail_timeout实现健康检查，默认值为max_fails=1，fail_timeout=10s。以下情况健康检查失败：连接实例错误或超时，实例无响应，实例返回的HTTP状态码为500、502、503或504。
+        span LunarOS提供的默认nginx镜像使用max_fails和fail_timeout实现健康检查，默认值为max_fails=1，fail_timeout=10s。以下情况健康检查失败：连接实例错误或超时，实例无响应，实例返回的HTTP状态码为500、502、503或504。
       form-config-group
         form-config-item(config-title="转发规则")
-          form-input-container(ng-if="isEditingRule" help-text="根据服务域名将请求转发到不同的部署实例。只能关联相同集群、相同namespace且运行中的创建了对内服务的部署(用户在老版本的DomeOS中创建的对外服务类型的部署，也可以在此进行关联)。")
+          form-input-container(ng-if="isEditingRule" help-text="根据服务域名将请求转发到不同的部署实例。只能关联相同集群、相同namespace且运行中的创建了对内服务的部署(用户在老版本的LunarOS中创建的对外服务类型的部署，也可以在此进行关联)。")
             lb-nginx-rule(ng-model="loadBalanceForRule.nginxDraft.rules"  form-name="nginxRule" parameters="{clusterId:loadBalanceForRule.clusterId,namespace:loadBalanceForRule.namespace,loadBalanceType:loadBalanceForRule.type}")
           form-input-container(ng-if="isEditingRule")
             form-submit-button(form="nginxRule" on-submit="updateLoadBalanceRule()" is-waiting="isUpdating") 保存
@@ -171,7 +171,7 @@ script(type="text/ng-template" id="update.html")
             form-submit-button(form="updateNginxLBVersion" on-submit="createVersion()") 保存升级设置
 script(type="text/ng-template" id="instance.html")
   div(ng-controller="NginxInstanceCtr" style="margin: 20px;")
-    table.ui-table-dome
+    table.ui-table-Lunar
       thead
         tr
           th 实例名称

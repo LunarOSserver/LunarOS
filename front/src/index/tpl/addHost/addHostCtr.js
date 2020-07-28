@@ -2,14 +2,14 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
 	'use strict';
-	if (typeof domeApp === 'undefined') return;
+	if (typeof LunarApp === 'undefined') return;
 
-	domeApp.controller('AddHostCtr', ['$scope', '$state', '$stateParams', '$domeCluster', '$domeMonitor', '$domeGlobal', 'dialog', function ($scope, $state, $stateParams, $domeCluster, $domeMonitor, $domeGlobal, dialog) {
+	LunarApp.controller('AddHostCtr', ['$scope', '$state', '$stateParams', '$LunarCluster', '$LunarMonitor', '$LunarGlobal', 'dialog', function ($scope, $state, $stateParams, $LunarCluster, $LunarMonitor, $LunarGlobal, dialog) {
 		$scope.$emit('pageTitle', {
 			title: '添加主机',
-			descrition: '请按照步骤操作，将您的主机添加到DomeOS上。',
+			descrition: '请按照步骤操作，将您的主机添加到LunarOS上。',
 			mod: 'cluster'
 		});
 		if ($stateParams.id === void 0 || $stateParams.id === '') {
@@ -27,9 +27,9 @@
 		$scope.selectedOS = 'centos';
 		$scope.hostname = '';
 		var cmdInfo = {},
-			registryOptions = $domeGlobal.getGloabalInstance('registry'),
-			serverOptions = $domeGlobal.getGloabalInstance('server'),
-			clusterService = $domeCluster.getInstance('ClusterService');
+			registryOptions = $LunarGlobal.getGloabalInstance('registry'),
+			serverOptions = $LunarGlobal.getGloabalInstance('server'),
+			clusterService = $LunarCluster.getInstance('ClusterService');
 
 		$scope.getCmdLabels = function () {
 			var labels = $scope.hostInfo.labels.split(' '),
@@ -62,9 +62,9 @@
 		function genarateCmd() {
 			var cmdArr = ['curl -o '];
 			if ($scope.selectedOS == 'centos') {
-				cmdArr.push('start_node_centos.sh http://domeos-script.bjctc.scs.sohucs.com/start_node_centos.sh && sudo sh start_node_centos.sh');
+				cmdArr.push('start_node_centos.sh http://Lunaros-script.bjctc.scs.sohucs.com/start_node_centos.sh && sudo sh start_node_centos.sh');
 			} else {
-				cmdArr.push('start_node_ubuntu.sh http://domeos-script.bjctc.scs.sohucs.com/start_node_ubuntu.sh && sudo bash start_node_ubuntu.sh');
+				cmdArr.push('start_node_ubuntu.sh http://Lunaros-script.bjctc.scs.sohucs.com/start_node_ubuntu.sh && sudo bash start_node_ubuntu.sh');
 			}
 			if (cmdInfo.api_servers) {
 				cmdArr.push(' --api-server ' + cmdInfo.api_servers);
@@ -90,8 +90,8 @@
 			if (cmdInfo.insecure_registry_crt) {
 				cmdArr.push(' --insecure-registry-crt ' + cmdInfo.insecure_registry_crt);
 			}
-			if (cmdInfo.domeos_server && cmdInfo.insecure_registry_crt) {
-				cmdArr.push(' --domeos-server ' + cmdInfo.domeos_server);
+			if (cmdInfo.Lunaros_server && cmdInfo.insecure_registry_crt) {
+				cmdArr.push(' --Lunaros-server ' + cmdInfo.Lunaros_server);
 			}
 			if (cmdInfo.etcd_server) {
 				cmdArr.push(' --etcd-server ' + cmdInfo.etcd_server);
@@ -115,7 +115,7 @@
 				cmdInfo.etcd_server = cmdInfo.etcd_server.slice(0, -1);
 			}
 			$scope.getCmdLabels();
-			$domeMonitor.getMonitorInfo().then(function (res) {
+			$LunarMonitor.getMonitorInfo().then(function (res) {
 				var resData = res.data.result;
 				if (resData) {
 					cmdInfo.monitor_transfer = resData.transfer;
@@ -140,7 +140,7 @@
 				genarateCmd();
 			});
 			serverOptions.getData().then(function (resData) {
-				cmdInfo.domeos_server = resData.url;
+				cmdInfo.Lunaros_server = resData.url;
 				genarateCmd();
 			});
 		}, function () {
@@ -150,4 +150,4 @@
 			$scope.isLoading = false;
 		});
 	}]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

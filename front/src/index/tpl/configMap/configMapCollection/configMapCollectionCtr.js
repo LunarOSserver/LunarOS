@@ -1,9 +1,9 @@
 /**
  * Created by haozhou on 2017/2/9.
  */
-;(function (domeApp) {
+;(function (LunarApp) {
     'use strict';
-    domeApp.controller('ConfigMapCollectionCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
+    LunarApp.controller('ConfigMapCollectionCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
         function init() {
             $scope.isLoading = true;
             api.configMap.listConfigMapCollection().then(function (res) {
@@ -35,4 +35,4 @@
             init();
         };
     }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

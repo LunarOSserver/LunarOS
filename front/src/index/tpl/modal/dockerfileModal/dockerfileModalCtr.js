@@ -2,12 +2,12 @@
  * @author ChandraLee
  */
 
-((domeApp, undefined) => {
-	domeApp.controller('DockerfileModalCtr', DockerfileModalCtr);
+((LunarApp, undefined) => {
+	LunarApp.controller('DockerfileModalCtr', DockerfileModalCtr);
 
-	function DockerfileModalCtr($modalInstance, project, $domeProject, $sce) {
+	function DockerfileModalCtr($modalInstance, project, $LunarProject, $sce) {
 		let vm = this;
-		$domeProject.projectService.previewDockerfile(project._formartProject()).then(function (res) {
+		$LunarProject.projectService.previewDockerfile(project._formartProject()).then(function (res) {
 			if (res.data.resultCode == 200) {
 				vm.dockerfileTxt = res.data.result ? $sce.trustAsHtml(res.data.result.replace(/[\n\r]/g, '<br/>')) : $sce.trustAsHtml('无数据！');
 			} else {
@@ -20,5 +20,5 @@
 			$modalInstance.dismiss('cancel');
 		};
 	}
-	DockerfileModalCtr.$inject = ['$modalInstance', 'project', '$domeProject', '$sce'];
-})(angular.module('domeApp'));
+	DockerfileModalCtr.$inject = ['$modalInstance', 'project', '$LunarProject', '$sce'];
+})(angular.module('LunarApp'));

@@ -2,10 +2,10 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
 	'use strict';
-	if (typeof domeApp === 'undefined') return;
-	domeApp.controller('ImageCollectionManageCtr', ['$scope', '$state', '$domeImage', 'dialog','$domeUser', '$modal', '$cookieStore','api', function ($scope, $state, $domeImage, dialog, $domeUser, $modal, $cookieStore, api) {
+	if (typeof LunarApp === 'undefined') return;
+	LunarApp.controller('ImageCollectionManageCtr', ['$scope', '$state', '$LunarImage', 'dialog','$LunarUser', '$modal', '$cookieStore','api', function ($scope, $state, $LunarImage, dialog, $LunarUser, $modal, $cookieStore, api) {
 		$scope.$emit('pageTitle', {
 			title: '镜像管理',
 			descrition: '在这里您可以查看并管理您的镜像仓库。',
@@ -38,7 +38,7 @@
 		});
 		
 		var stateInfo = $state.$current.name,
-			imageService = $domeImage.imageService;
+			imageService = $LunarImage.imageService;
 		if (stateInfo.indexOf('proimages') !== -1) {
 			$scope.tabActive[2].active = true;
 		} else if (stateInfo.indexOf('publicimages') !== -1) {
@@ -130,7 +130,7 @@
 			});
 		};
 		$scope.deleteBaseImage = function (id) {
-			$domeImage.deleteBaseImage(id).then(function () {
+			$LunarImage.deleteBaseImage(id).then(function () {
 				for (var i = 0; i < $scope.baseImages.length; i++) {
 					if ($scope.baseImages[i].id === id) {
 						$scope.baseImages.splice(i, 1);
@@ -162,17 +162,17 @@
 				$scope.isShowImageDetail = index;
 			}
 		};
-	}]).controller('ImageTagModalCtr', ['$scope', 'imageName', '$modalInstance', '$domeImage', '$util', function ($scope, imageName, $modalInstance, $domeImage, $util) {
+	}]).controller('ImageTagModalCtr', ['$scope', 'imageName', '$modalInstance', '$LunarImage', '$util', function ($scope, imageName, $modalInstance, $LunarImage, $util) {
 		$scope.imageName = imageName;
 		$scope.tagInfo = [];
 		$scope.isLoading = true;
-		$domeImage.imageService.getImageInfo(imageName).then(function (res) {
+		$LunarImage.imageService.getImageInfo(imageName).then(function (res) {
 			$scope.tagInfo = res.data.result || [];
 		}).finally(function () {
 			$scope.isLoading = false;
 		});
 	}]);
-	domeApp.controller('ImageCollectionMangePublicImages', ['$scope', 'api', 'dialog', function ($scope, api, dialog) {
+	LunarApp.controller('ImageCollectionMangePublicImages', ['$scope', 'api', 'dialog', function ($scope, api, dialog) {
 	  $scope.loading = true;
 	  $scope.imageInfo = {
       imageList: [],
@@ -196,7 +196,7 @@
         $scope.loading = false;
       });
 	}]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));
 
 ; (function (formInputs) {
   formInputs.component('imageList', {

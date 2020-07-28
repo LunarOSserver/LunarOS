@@ -2,10 +2,10 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
 	'use strict';
-	if (typeof domeApp === 'undefined') return;
-	domeApp.controller('CreateDeployCollectionCtr', ['$scope', '$domeUser', '$domeDeployCollection', 'dialog', '$state', function ($scope, $domeUser, $domeDeployCollection, dialog, $state) {
+	if (typeof LunarApp === 'undefined') return;
+	LunarApp.controller('CreateDeployCollectionCtr', ['$scope', '$LunarUser', '$LunarDeployCollection', 'dialog', '$state', function ($scope, $LunarUser, $LunarDeployCollection, dialog, $state) {
 		'use strict';
 		$scope.$emit('pageTitle', {
 			title: '新建服务',
@@ -23,8 +23,8 @@
 			key: ''
 		};
 		$scope.isWaitingCreate = false;
-		var userService = $domeUser.userService;
-		var deployCollectionService = $domeDeployCollection.deployCollectionService;
+		var userService = $LunarUser.userService;
+		var deployCollectionService = $LunarDeployCollection.deployCollectionService;
 		userService.getCurrentUser().then(function (res) {
 			var loginUser = res.data.result;
 			$scope.myself = {
@@ -128,4 +128,4 @@
 			});
 		};
 	}]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

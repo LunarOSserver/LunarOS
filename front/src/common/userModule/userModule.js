@@ -6,7 +6,7 @@
 ((window, undefined) => {
     'use strict';
     let userModule = angular.module('userModule', []);
-    userModule.controller('ModifyPwModalCtr', ['$scope', 'loginUser', '$modalInstance', 'dialog', '$domeUser', function ($scope, loginUser, $modalInstance, dialog, $domeUser) {
+    userModule.controller('ModifyPwModalCtr', ['$scope', 'loginUser', '$modalInstance', 'dialog', '$LunarUser', function ($scope, loginUser, $modalInstance, dialog, $LunarUser) {
         $scope.pwObj = {
             username: loginUser.username,
             oldpassword: '',
@@ -14,7 +14,7 @@
         };
         $scope.newPwAgain = '';
         $scope.modiftPw = () => {
-            $domeUser.userService.userModifyPw($scope.pwObj).then(() => {
+            $LunarUser.userService.userModifyPw($scope.pwObj).then(() => {
                 dialog.alert('提示', '修改成功，请重新登录！').then(() => {
                     location.href = '/login/login.html?redirect=' + encodeURIComponent(location.href);
                 });
@@ -49,11 +49,11 @@
         };
     }]);
     // 用户管理service
-    userModule.factory('$domeUser', ['$http', '$q', 'dialog', '$domeGlobal', '$domeModel', function ($http, $q, dialog, $domeGlobal, $domeModel) {
+    userModule.factory('$LunarUser', ['$http', '$q', 'dialog', '$LunarGlobal', '$LunarModel', function ($http, $q, dialog, $LunarGlobal, $LunarModel) {
         let loginUser = {};
         const relatedGitLab = (loginData) => {
             let deferred = $q.defer();
-            let gitOptions = $domeGlobal.getGloabalInstance('git');
+            let gitOptions = $LunarGlobal.getGloabalInstance('git');
             gitOptions.getData().then((info) => {
                 info = info.filter(x => x.id === loginData.gitlabId);
                 if (!info[0] || !info[0].url) {

@@ -1,25 +1,25 @@
 /*
  * @author ChandraLee
  */
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
     'use strict';
-    if (typeof domeApp === 'undefined') return;
-    domeApp.controller('ClusterDetailCtr', [
+    if (typeof LunarApp === 'undefined') return;
+    LunarApp.controller('ClusterDetailCtr', [
       '$scope',
-      '$domeCluster',
+      '$LunarCluster',
       '$stateParams',
       '$state',
       'dialog',
-      '$domeModel',
+      '$LunarModel',
       '$modal',
       'api',
       function (
         $scope,
-        $domeCluster,
+        $LunarCluster,
         $stateParams,
         $state,
         dialog,
-        $domeModel,
+        $LunarModel,
         $modal,
         api
       ) {
@@ -27,12 +27,12 @@
             $state.go('clusterManage');
         }
         const clusterId = $scope.clusterId = $stateParams.id,
-            nodeService = $domeCluster.getInstance('NodeService'),
-            clusterService = $domeCluster.getInstance('ClusterService');
+            nodeService = $LunarCluster.getInstance('NodeService'),
+            clusterService = $LunarCluster.getInstance('ClusterService');
         let clusterConfig;
         $scope.labels = { selectedNodeLabelList :[], selectedLabelForInstance: [] };
         $scope.nodeLabelSelectorList = [];
-        $scope.nodeListIns = new $domeModel.SelectListModel('nodeList');
+        $scope.nodeListIns = new $LunarModel.SelectListModel('nodeList');
         $scope.resourceType = 'CLUSTER';
         $scope.resourceId = clusterId;
         $scope.isWaitingHost = true;
@@ -363,7 +363,7 @@
 
         var init = () => {
             nodeService.getData(clusterId).then((res) => {
-                $scope.clusterIns = $domeCluster.getInstance('Cluster', res.data.result);
+                $scope.clusterIns = $LunarCluster.getInstance('Cluster', res.data.result);
                 clusterConfig = angular.copy($scope.clusterIns.config);
                 $scope.config = $scope.clusterIns.config;
                 if (clusterConfig.buildConfig === 1) {
@@ -413,9 +413,9 @@
                 .then(() => {
                     nodeService.getNodeList($scope.clusterId).then((res) => {
                         var nodeData = res.data.result || [];
-                        $scope.nodeListIns2 = $domeCluster.getInstance('NodeList', nodeData);
+                        $scope.nodeListIns2 = $LunarCluster.getInstance('NodeList', nodeData);
                     }, () => {
-                        $scope.nodeListIns2 = $domeCluster.getInstance('NodeList');
+                        $scope.nodeListIns2 = $LunarCluster.getInstance('NodeList');
                     })
                 })
         };
@@ -744,7 +744,7 @@
             }
         }
     });
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));
 
 ;(function (formInputs) {
   formInputs.component('customTableColumn', {

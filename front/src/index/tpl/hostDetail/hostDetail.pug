@@ -44,17 +44,17 @@
 			tab(heading="实例列表" active="tabActive[0].active" ui-sref="hostDetail.instancelist")
 				loading(ng-if="isWaitingHost")
 				.info-options.mod-option(style="line-height: 34px;")
-					span.dome-dot.dome-dot-success
-					span.dome-dot-next(ng-cloak) Running {{(instanceListFiltered|filter:{'status':'Running'}).length}}个
-					span.dome-dot.dome-dot-error
-					span.dome-dot-next(ng-cloak) Error {{(instanceListFiltered|filter:{'status':'Error'}).length}}个
-					span.dome-dot.dome-dot-default
-					span.dome-dot-next(ng-cloak) Other {{instanceListFiltered.length - (instanceListFiltered|filter:{'status':'Running'}).length - (instanceListFiltered|filter:{'status':'Error'}).length}}个
+					span.Lunar-dot.Lunar-dot-success
+					span.Lunar-dot-next(ng-cloak) Running {{(instanceListFiltered|filter:{'status':'Running'}).length}}个
+					span.Lunar-dot.Lunar-dot-error
+					span.Lunar-dot-next(ng-cloak) Error {{(instanceListFiltered|filter:{'status':'Error'}).length}}个
+					span.Lunar-dot.Lunar-dot-default
+					span.Lunar-dot-next(ng-cloak) Other {{instanceListFiltered.length - (instanceListFiltered|filter:{'status':'Running'}).length - (instanceListFiltered|filter:{'status':'Error'}).length}}个
 					.info-right.right-option.pull-right
 						span.info-count(ng-cloak) 共{{instanceListFiltered.length}}个实例
 						input.ui-input-fill.ui-input-white.ui-input-search.pull-right(placeholder="输入实例名称查找" ng-model="insKey")
 				.table-wrap
-					table.ui-table-dome.full
+					table.ui-table-Lunar.full
 						thead
 							tr
 								th
@@ -139,7 +139,7 @@
 											form-input-checkbox(ng-model="hostSetting.isUsedToBuild" on-change="toggleBuildEnv()" value="true" value-false="false" appearance="switch")
 										form-multiple-inline-item
 											span.form-help-text 由于构建时可能会从第三方镜像库下载基础镜像，请开启时尽量保证主机有外网权限
-									//dome-toggle(ng-class="{'on':hostSetting.isUsedToBuild}" ng-click="toggleBuildEnv()")
+									//Lunar-toggle(ng-class="{'on':hostSetting.isUsedToBuild}" ng-click="toggleBuildEnv()")
 									//	| 由于构建时可能会从第三方镜像库下载基础镜像，请开启时尽量保证主机有外网权限
 
 			//tab(heading="主机设置" active="tabActive[2].active" ui-sref="hostDetail.info")
@@ -171,7 +171,7 @@
 			//		li(ng-if="clusterConfig.buildConfig===1")
 			//			span.info-name 是否用于构建
 			//			.info-content.txt-prompt
-			//				dome-toggle(ng-class="{'on':hostSetting.isUsedToBuild}" ng-click="toggleBuildEnv()")
+			//				Lunar-toggle(ng-class="{'on':hostSetting.isUsedToBuild}" ng-click="toggleBuildEnv()")
 			//				| 由于构建时可能会从第三方镜像库下载基础镜像，请开启时尽量保证主机有外网权限
 					//- li
 						span.info-name 磁盘挂载点

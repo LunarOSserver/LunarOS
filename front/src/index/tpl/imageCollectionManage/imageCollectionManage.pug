@@ -14,7 +14,7 @@
             ul.add-image(ng-form ng-class="{'need-valid':needValid.value}" name="imageForm" ng-show="isShowAdd")
                 p.txt-prompt
                     i.fa.fa-info-circle.icon-algin-right
-                    | DomeOS会验证镜像的存在性，请通过浏览器访问“镜像仓库/v2/镜像名称/tags/list”确认存在该镜像版本。可以通过浏览器访问“镜像仓库/v2/_catalog”查看该仓库中存在的镜像。
+                    | LunarOS会验证镜像的存在性，请通过浏览器访问“镜像仓库/v2/镜像名称/tags/list”确认存在该镜像版本。可以通过浏览器访问“镜像仓库/v2/_catalog”查看该仓库中存在的镜像。
                 li
                     span.info-name 镜像所在仓库
                     input.ui-input-info.ui-input-white(ng-model="newImageInfo.registry" ng-pattern="/^[^\\s]*$/" name="registry" required)
@@ -29,7 +29,7 @@
                     span.info-name 镜像描述
                     input.ui-input-info.ui-input-white(ng-model="newImageInfo.description" name="description")
                     button.ui-btn.ui-btn-bright.ui-btn-lg(ng-disabled="isLoading" ng-click="needValid.value=true;imageForm.$valid&&createImage(imageForm);") 添加镜像
-            table.ui-table-dome
+            table.ui-table-Lunar
                 thead
                     tr
                         th 镜像名称
@@ -65,7 +65,7 @@
             .mod-tips-info-image
                 p.txt-prompt
                     i.fa.fa-info-circle.icon-algin-right
-                    | 私有镜像仓库中存在的镜像如下，DomeOS按照项目名对镜像进行了分类，方便查看。
+                    | 私有镜像仓库中存在的镜像如下，LunarOS按照项目名对镜像进行了分类，方便查看。
             .image-project-collection
                 ul.image-project-collection-list
                     li.no-image-project-collection(ng-if="!isLoading&&(!imageProjectCollections||projectImagesFiltered.length===0)")
@@ -91,7 +91,7 @@
                                 a.not-project-image-name.image-project-collection-name(ng-click="gotoNotProjectImageDetail(otherImages)") 其他镜像
                             .image-project-collection-content
                                 .image-project-collection-info-description
-                                    | DomeOS在私有镜像仓库中读取到的，无法分类的镜像信息
+                                    | LunarOS在私有镜像仓库中读取到的，无法分类的镜像信息
                             .image-project-collection-content.not-project-image-bottom
                                 span.image-project-collection-info.embed 镜像数：
                                     span.txt-bright(ng-cloak) {{otherImages.length}}
@@ -100,7 +100,7 @@ script(type="text/ng-template" id="imageTagModal.html")
     .d-modal-header(ng-bind="imageName")
     .d-modal-full
         loading(ng-if="isLoading")
-        table.ui-table-dome.modal-full-table
+        table.ui-table-Lunar.modal-full-table
             thead
                 tr
                     th 版本名

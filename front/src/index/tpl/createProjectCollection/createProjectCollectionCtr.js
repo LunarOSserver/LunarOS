@@ -2,10 +2,10 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
 	'use strict';
-	if (typeof domeApp === 'undefined') return;
-	domeApp.controller('CreateProjectCollectionCtr', ['$scope', '$domeUser', '$domeProjectCollection', 'dialog', '$state', function ($scope, $domeUser, $domeProjectCollection, dialog, $state) {
+	if (typeof LunarApp === 'undefined') return;
+	LunarApp.controller('CreateProjectCollectionCtr', ['$scope', '$LunarUser', '$LunarProjectCollection', 'dialog', '$state', function ($scope, $LunarUser, $LunarProjectCollection, dialog, $state) {
 		'use strict';
 		$scope.$emit('pageTitle', {
 			title: '新建项目',
@@ -24,8 +24,8 @@
 			key: ''
 		};
 		$scope.isWaitingCreate = false;
-		var userService = $domeUser.userService;
-		var projectCollectionService = $domeProjectCollection.projectCollectionService;
+		var userService = $LunarUser.userService;
+		var projectCollectionService = $LunarProjectCollection.projectCollectionService;
 		userService.getCurrentUser().then(function (res) {
 			var loginUser = res.data.result;
 			$scope.myself = {
@@ -140,4 +140,4 @@
 			});
 		};
 	}]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

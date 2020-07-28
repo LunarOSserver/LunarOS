@@ -7,7 +7,7 @@
     'use strict';
     let imageModule = angular.module('imageModule', []);
 
-    function domeImage($http, $q, dialog) {
+    function LunarImage($http, $q, dialog) {
 
         function ImageService() {
             this._url = '/api/image';
@@ -129,7 +129,7 @@
             deletePrivateImage: deletePrivateImage
         };
     }
-    domeImage.$inject = ['$http', '$q', 'dialog'];
-    imageModule.factory('$domeImage', domeImage);
+    LunarImage.$inject = ['$http', '$q', 'dialog'];
+    imageModule.factory('$LunarImage', LunarImage);
     window.imageModule = imageModule;
 })(window);

@@ -272,12 +272,12 @@ ZeroClipboard.Client.prototype = {
     glue: function (elem, appendElem, stylesToAdd) {
         // glue to DOM element
         // elem can be ID or actual DOM element object
-        this.domElement = ZeroClipboard.jQuery(elem);
+        this.Lunarlement = ZeroClipboard.jQuery(elem);
 
         // float just above object, or zIndex 99 if dom element isn't set
         var zIndex = 99;
-        if (this.domElement.style.zIndex) {
-            zIndex = parseInt(this.domElement.style.zIndex, 10) + 1;
+        if (this.Lunarlement.style.zIndex) {
+            zIndex = parseInt(this.Lunarlement.style.zIndex, 10) + 1;
         }
 
         if (typeof(appendElem) == 'string') {
@@ -286,14 +286,14 @@ ZeroClipboard.Client.prototype = {
             appendElem = document.getElementsByTagName('body')[0];
         }
 
-        // find X/Y position of domElement
-        var box = ZeroClipboard.getDOMObjectPosition(this.domElement, appendElem);
+        // find X/Y position of Lunarlement
+        var box = ZeroClipboard.getDOMObjectPosition(this.Lunarlement, appendElem);
 
         // create floating DIV above element
         this.div = document.createElement('div');
         this.div.className = "zclip";
         this.div.id = "zclip-" + this.movieId;
-        jQuery(this.domElement).data('zclipId', 'zclip-' + this.movieId);
+        jQuery(this.Lunarlement).data('zclipId', 'zclip-' + this.movieId);
         var style = this.div.style;
         style.position = 'absolute';
         style.left = '' + box.left + 'px';
@@ -344,7 +344,7 @@ ZeroClipboard.Client.prototype = {
 
     destroy: function () {
         // destroy control and floater
-        if (this.domElement && this.div) {
+        if (this.Lunarlement && this.div) {
             this.hide();
             this.div.innerHTML = '';
 
@@ -355,7 +355,7 @@ ZeroClipboard.Client.prototype = {
                 //do nothing
             }
 
-            this.domElement = null;
+            this.Lunarlement = null;
             this.div = null;
         }
     },
@@ -364,12 +364,12 @@ ZeroClipboard.Client.prototype = {
         // reposition our floating div, optionally to new container
         // warning: container CANNOT change size, only position
         if (elem) {
-            this.domElement = ZeroClipboard.jQuery(elem);
-            if (!this.domElement) this.hide();
+            this.Lunarlement = ZeroClipboard.jQuery(elem);
+            if (!this.Lunarlement) this.hide();
         }
 
-        if (this.domElement && this.div) {
-            var box = ZeroClipboard.getDOMObjectPosition(this.domElement);
+        if (this.Lunarlement && this.div) {
+            var box = ZeroClipboard.getDOMObjectPosition(this.Lunarlement);
             var style = this.div.style;
             style.left = '' + box.left + 'px';
             style.top = '' + box.top + 'px';
@@ -445,36 +445,36 @@ ZeroClipboard.Client.prototype = {
             break;
 
         case 'mouseover':
-            if (this.domElement && this.cssEffects) {
-                this.domElement.addClass('hover');
+            if (this.Lunarlement && this.cssEffects) {
+                this.Lunarlement.addClass('hover');
                 if (this.recoverActive) {
-                    this.domElement.addClass('active');
+                    this.Lunarlement.addClass('active');
                 }
 
             }
             break;
 
         case 'mouseout':
-            if (this.domElement && this.cssEffects) {
+            if (this.Lunarlement && this.cssEffects) {
                 this.recoverActive = false;
-                if (this.domElement.hasClass('active')) {
-                    this.domElement.removeClass('active');
+                if (this.Lunarlement.hasClass('active')) {
+                    this.Lunarlement.removeClass('active');
                     this.recoverActive = true;
                 }
-                this.domElement.removeClass('hover');
+                this.Lunarlement.removeClass('hover');
 
             }
             break;
 
         case 'mousedown':
-            if (this.domElement && this.cssEffects) {
-                this.domElement.addClass('active');
+            if (this.Lunarlement && this.cssEffects) {
+                this.Lunarlement.addClass('active');
             }
             break;
 
         case 'mouseup':
-            if (this.domElement && this.cssEffects) {
-                this.domElement.removeClass('active');
+            if (this.Lunarlement && this.cssEffects) {
+                this.Lunarlement.removeClass('active');
                 this.recoverActive = false;
             }
             break;

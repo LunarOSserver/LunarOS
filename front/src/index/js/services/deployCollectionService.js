@@ -4,9 +4,9 @@
  * @description 服务组模块 service
  */
 
-(function (domeApp, undefined) {
-    if (typeof domeApp === 'undefined') return;
-    domeApp.factory('$domeDeployCollection', ['$http', '$q', 'dialog', '$domeGlobal', '$domeModel', function ($http, $q, dialog, $domeGlobal, $domeModel) {
+(function (LunarApp, undefined) {
+    if (typeof LunarApp === 'undefined') return;
+    LunarApp.factory('$LunarDeployCollection', ['$http', '$q', 'dialog', '$LunarGlobal', '$LunarModel', function ($http, $q, dialog, $LunarGlobal, $LunarModel) {
         var _url = '/api/deploycollection'
         var deployCollectionService = {
            
@@ -45,4 +45,4 @@
             deleteDeployCollection: deleteDeployCollection
         };
     }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

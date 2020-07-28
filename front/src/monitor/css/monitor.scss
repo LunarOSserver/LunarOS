@@ -6,7 +6,7 @@
 	padding-top: 20px;
 	font-size: 16px;
 	color: #888;
-	background-color: dome-color(background,light);
+	background-color: Lunar-color(background,light);
 }
 .monitor-container{
 	background-color: #fff;
@@ -86,7 +86,7 @@
 				height: 38px;
 			}
 			tr:nth-child(2n){
-				background-color: dome-color(background,light);
+				background-color: Lunar-color(background,light);
 			}
 			td,th{
 				&:first-child{

@@ -1,7 +1,7 @@
--- CREATE DATABASE IF NOT EXISTS `domeos`;
--- grant all privileges on domeos.* to 'domeos'@'%' with grant option;
+-- CREATE DATABASE IF NOT EXISTS `Lunaros`;
+-- grant all privileges on Lunaros.* to 'Lunaros'@'%' with grant option;
 
--- use domeos;
+-- use Lunaros;
 
 CREATE TABLE IF NOT EXISTS `auto_build` (
   `id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,

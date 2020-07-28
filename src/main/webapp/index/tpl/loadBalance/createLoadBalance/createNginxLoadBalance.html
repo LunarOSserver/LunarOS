@@ -93,7 +93,7 @@
     </form-config-group>
     <form-config-group>
       <form-config-item config-title="转发规则">
-        <form-input-container help-text="根据服务域名将请求转发到不同的部署实例。只能关联相同集群、相同namespace且运行中的创建了对内服务的部署(用户在老版本的DomeOS中创建的对外服务类型的部署，也可以在此进行关联)。">
+        <form-input-container help-text="根据服务域名将请求转发到不同的部署实例。只能关联相同集群、相同namespace且运行中的创建了对内服务的部署(用户在老版本的LunarOS中创建的对外服务类型的部署，也可以在此进行关联)。">
           <lb-nginx-rule ng-model="loadBalanceDraft.nginxDraft.rules" form-name="createNginxLB" parameters="{clusterId:loadBalanceDraft.cluster.id,namespace:loadBalanceDraft.namespace.namespace,loadBalanceType:loadBalanceDraft.type}"></lb-nginx-rule>
         </form-input-container>
       </form-config-item>

@@ -332,7 +332,7 @@ div.mod-deploy.deploy-detail
                                     .popover-content(ng-bind="event.message")
         tab(heading="实例" active="tabActive[3].active" ui-sref="deployDetail.instance")
             .instance-con
-                table.ui-table-dome.instance-list
+                table.ui-table-Lunar.instance-list
                     thead
                         tr
                             th 实例名称
@@ -386,7 +386,7 @@ div.mod-deploy.deploy-detail
             .health-con.deploy-info
                 .txt-prompt(style="padding-top: 20px;")
                     i.fa.fa-info-circle &nbsp;
-                    span 创建部署时DomeOS会根据用户提供的程序访问端口创建一个对内服务，如果用户想对外暴露服务，可以到
+                    span 创建部署时LunarOS会根据用户提供的程序访问端口创建一个对内服务，如果用户想对外暴露服务，可以到
                     a.txt-bright(ui-sref="loadBalanceCollection") 负载均衡
                     span 模块创建kube_proxy类型的对外服务(支持四层TCP/UDP)或者nginx类型的对外服务（支持七层HTTP）
                 form-container

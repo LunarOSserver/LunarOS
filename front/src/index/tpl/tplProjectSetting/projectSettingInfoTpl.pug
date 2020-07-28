@@ -17,7 +17,7 @@ table.table-info.projectinfo.showinfo
         tr(ng-if="project.isUseCustom&&project.customConfig.customType=='java'")
             td 编译镜像
             td
-                p.txt-prompt {{project.customConfig.compileImage&&project.customConfig.compileImage.registryType===0?'DomeOS私有镜像库':'DomeOS官方镜像库'}}
+                p.txt-prompt {{project.customConfig.compileImage&&project.customConfig.compileImage.registryType===0?'LunarOS私有镜像库':'LunarOS官方镜像库'}}
                 span(ng-cloak) {{project.customConfig.compileImage&&project.customConfig.compileImage.imageName+':'+project.customConfig.compileImage.imageTag||'未设置'}}
                 p.txt-prompt.setting-title 编译镜像内代码存放路径。请确认该路径下可以执行编译命令。
                 span(ng-cloak) {{project.customConfig.codeStoragePath||'未设置'}}
@@ -39,7 +39,7 @@ table.table-info.projectinfo.showinfo
         tr(ng-if="project.isUseCustom&&project.customConfig.customType=='java'")
             td 运行镜像
             td
-                p.txt-prompt {{project.customConfig.runImage&&project.customConfig.runImage.registryType===0?'DomeOS私有镜像库':'DomeOS官方镜像库'}}
+                p.txt-prompt {{project.customConfig.runImage&&project.customConfig.runImage.registryType===0?'LunarOS私有镜像库':'LunarOS官方镜像库'}}
                 span(ng-cloak) {{project.customConfig.runImage&&project.customConfig.runImage.imageName+':'+project.customConfig.runImage.imageTag||'未设置'}}
                 p.setting-title 编译结果在运行镜像中的存放路径
                 span(ng-cloak) {{project.customConfig.runFileStoragePath||'未设置'}}
@@ -165,4 +165,4 @@ table.table-info.projectinfo.showinfo
                             tr
                                 td
                                 td.td-edit
-                                    textarea.line-long.dome-input-lg.ui-input-fill.uploadfile-content(ng-model="uploadFileInfo.content" readonly)
+                                    textarea.line-long.Lunar-input-lg.ui-input-fill.uploadfile-content(ng-model="uploadFileInfo.content" readonly)

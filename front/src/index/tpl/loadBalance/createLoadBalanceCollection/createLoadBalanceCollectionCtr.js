@@ -1,9 +1,9 @@
 /**
  * Created by haozhou on 2017/3/14.
  */
-;(function (domeApp) {
+;(function (LunarApp) {
     'use strict';
-    domeApp.controller('CreateLoadBalanceCollectionCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
+    LunarApp.controller('CreateLoadBalanceCollectionCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
         let collection = {
             type: "LOADBALANCER_COLLECTION",
             id: null,
@@ -28,4 +28,4 @@
             });
         };
     }]);
-}(angular.module('domeApp')));
+}(angular.module('LunarApp')));

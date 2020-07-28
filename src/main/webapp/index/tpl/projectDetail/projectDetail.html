@@ -72,7 +72,7 @@
     <tab heading="构建记录" ng-click="getBuildList()" active="tabActive[3].active" ui-sref="projectDetail.buildlog">
       <div class="chose-log"><span class="chose-title">按状态筛选</span><a class="txt-chose" ng-class="{'active':statusKey==''}" ng-click="toggleStatus('')">全部</a><a class="txt-chose" ng-class="{'active':statusKey=='Success'}" ng-click="toggleStatus('Success')">成功</a><a class="txt-chose" ng-class="{'active':statusKey=='Fail'}" ng-click="toggleStatus('Fail')">失败</a><a class="txt-chose" ng-class="{'active':statusKey=='Building'}" ng-click="toggleStatus('Building')">构建中</a><a class="txt-chose" ng-class="{'active':statusKey=='Preparing'}" ng-click="toggleStatus('Preparing')">准备中</a><i class="sep">|</i><span class="chose-title">按构建模式筛选</span><a class="txt-chose" ng-class="{'active':autoBuildKey===''}" ng-click="toggleAutoBuild('')">全部</a><a class="txt-chose" ng-class="{'active':autoBuildKey===0}" ng-click="toggleAutoBuild(0)">手动构建</a><a class="txt-chose" ng-class="{'active':autoBuildKey===1}" ng-click="toggleAutoBuild(1)">自动构建</a></div>
       <div class="build-log">
-        <div class="ui-table-dome">
+        <div class="ui-table-Lunar">
           <div class="tb-tr-group" ng-if="!isLoadingBuildInfo&amp;&amp;(!buildList||logFilterList.length===0)">
             <div class="tb-tr">无相关信息</div>
           </div>

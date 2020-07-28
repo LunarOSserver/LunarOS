@@ -2,13 +2,13 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
     'use strict';
-    if (typeof domeApp === 'undefined') return;
-    domeApp.controller('CreateProjectCtr1', ['$scope', '$state', '$domeData', '$modal', '$domeProject', 'dialog', '$sce', '$domeGlobal', function ($scope, $state, $domeData, $modal, $domeProject, dialog, $sce, $domeGlobal) {
+    if (typeof LunarApp === 'undefined') return;
+    LunarApp.controller('CreateProjectCtr1', ['$scope', '$state', '$LunarData', '$modal', '$LunarProject', 'dialog', '$sce', '$LunarGlobal', function ($scope, $state, $LunarData, $modal, $LunarProject, dialog, $sce, $LunarGlobal) {
         $scope.$emit('pageTitle', {
             title: '新建工程',
-            descrition: '在这里把您的代码仓库和DomeOS对接即可创建新项目。此外，您还可以对现有项目进行查询和管理。',
+            descrition: '在这里把您的代码仓库和LunarOS对接即可创建新项目。此外，您还可以对现有项目进行查询和管理。',
             mod: 'projectManage'
         });
         $scope.pageNo = 1;
@@ -20,7 +20,7 @@
         if (!$scope.projectCollectionId) {
             $state.go('projectCollectionManage');
         }
-        $domeProject.projectService.getProjectCollectionNameById($scope.projectCollectionId).then(function (res) {
+        $LunarProject.projectService.getProjectCollectionNameById($scope.projectCollectionId).then(function (res) {
             $scope.projectCollectionName = res.data.result || '';
         });
         $scope.autoBuildInfo = {
@@ -38,9 +38,9 @@
         $scope.currentProject = {};
         $scope.isFromLastStep = false;
         //  如果是“上一步”进入本页面
-        var createProjectInfo1 = angular.copy($domeData.getData('createProjectInfo1'));
+        var createProjectInfo1 = angular.copy($LunarData.getData('createProjectInfo1'));
         if (createProjectInfo1) {
-            $domeData.delData('createProjectInfo1');
+            $LunarData.delData('createProjectInfo1');
             if (createProjectInfo1.info.codeInfo) {
                 $scope.currentProject = (function () {
                     var codeInfo = createProjectInfo1.info.codeInfo;
@@ -86,7 +86,7 @@
         };
         var getGitLabList = function () {
             if (!$scope.isFromLastStep) {
-                $domeGlobal.getGloabalInstance('gitUser').getData().then(function (res) {
+                $LunarGlobal.getGloabalInstance('gitUser').getData().then(function (res) {
                     var gitLabList = res || {};  //the res is object{"gitConfigList": List<GitConfig>, 'defaultGitlab': int}
                     $scope.gitLabList = gitLabList.gitConfigList;
                     var firstGitLab = null;
@@ -127,7 +127,7 @@
         getGitLabList();
         $scope.getGitLabInfo = function (gitLabId) {
             $scope.isGitLabInfoLoading = true;
-            $domeProject.projectService.getGitLabInfo(gitLabId).then(function (res) {
+            $LunarProject.projectService.getGitLabInfo(gitLabId).then(function (res) {
                 $scope.gitLabInfo = res.data.result || [];
                 if ($scope.gitLabInfo.length > 0) {
                     $scope.setProjectList($scope.gitLabInfo[0]);
@@ -209,7 +209,7 @@
                 };
             }
 
-            $domeData.setData('projectInfo', {
+            $LunarData.setData('projectInfo', {
                 // creatorDraft: creatorInfo,
                 codeManager: $scope.codeManager,
                 info: proInfo,
@@ -219,7 +219,7 @@
                 gitLabList: $scope.gitLabList,
                 currentGitLab: $scope.currentGitLab,
             });
-            // console.log($domeData.getData('projectInfo'));
+            // console.log($LunarData.getData('projectInfo'));
             $state.go('createProject2', {
                 projectCollectionId: $scope.projectCollectionId
             });
@@ -273,7 +273,7 @@
             });
         };
     }])
-        .controller('LoginModalCtr', ['$scope', '$http', '$modalInstance', '$domeUser', 'gitLab', function ($scope, $http, $modalInstance, $domeUser, gitLab) {
+        .controller('LoginModalCtr', ['$scope', '$http', '$modalInstance', '$LunarUser', 'gitLab', function ($scope, $http, $modalInstance, $LunarUser, gitLab) {
             $scope.gitLab = gitLab;
             $scope.toLogin = function () {
                 $scope.errorTxt = '';
@@ -288,7 +288,7 @@
                     login: username,
                     password: $scope.password
                 };
-                $domeUser.relatedGitLab(data).then(function () {
+                $LunarUser.relatedGitLab(data).then(function () {
                     $modalInstance.close();
                 }, function () {
                     $scope.errorTxt = '关联失败，请重试！';
@@ -299,4 +299,4 @@
                 $modalInstance.dismiss('cancel');
             };
         }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

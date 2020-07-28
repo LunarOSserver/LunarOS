@@ -24,9 +24,9 @@ CREATE TABLE IF NOT EXISTS `deploymentExtra` (
   `content` TEXT NOT NULL
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-ALTER TABLE domeos.env_conf ADD type VARCHAR(255) DEFAULT 'PROJECT' NOT NULL;
+ALTER TABLE Lunaros.env_conf ADD type VARCHAR(255) DEFAULT 'PROJECT' NOT NULL;
 
-ALTER TABLE domeos.kube_build ADD jobType VARCHAR(255) DEFAULT 'PROJECT' NOT NULL;
+ALTER TABLE Lunaros.kube_build ADD jobType VARCHAR(255) DEFAULT 'PROJECT' NOT NULL;
 
 CREATE TABLE IF NOT EXISTS `monitor_targets` (
   `id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `monitor_targets` (
   `createTime` DATETIME NULL DEFAULT NULL
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-ALTER TABLE domeos.deployment ADD networkMode VARCHAR(255) DEFAULT 'DEFAULT' NOT NULL;
+ALTER TABLE Lunaros.deployment ADD networkMode VARCHAR(255) DEFAULT 'DEFAULT' NOT NULL;
 
 CREATE TABLE IF NOT EXISTS `inner_service` (
   `id` INT(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -45,8 +45,8 @@ CREATE TABLE IF NOT EXISTS `inner_service` (
   `targetPort` INT(11) NULL DEFAULT NULL
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-ALTER TABLE domeos.rsa_keypair ADD UNIQUE KEY(`projectId`);
+ALTER TABLE Lunaros.rsa_keypair ADD UNIQUE KEY(`projectId`);
 
-ALTER TABLE domeos.kube_build DROP INDEX `buildId`, ADD UNIQUE INDEX (`buildId`, `jobType`);
+ALTER TABLE Lunaros.kube_build DROP INDEX `buildId`, ADD UNIQUE INDEX (`buildId`, `jobType`);
 
-UPDATE domeos.global SET `value`=`pub.domeos.org/domeos/build:0.1.2` WHERE `type`=`BUILD_IMAGE`;
+UPDATE Lunaros.global SET `value`=`pub.Lunaros.org/Lunaros/build:0.1.2` WHERE `type`=`BUILD_IMAGE`;

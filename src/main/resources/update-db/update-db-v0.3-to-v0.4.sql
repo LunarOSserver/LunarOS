@@ -79,7 +79,7 @@ DELIMITER //
 DROP PROCEDURE IF EXISTS update_project_user//
 
 CREATE PROCEDURE update_project_user()
-domeos:BEGIN
+Lunaros:BEGIN
   DECLARE done BOOLEAN DEFAULT FALSE;
   DECLARE resource_id INT;
   DECLARE creator_name VARCHAR(255);
@@ -116,7 +116,7 @@ domeos:BEGIN
   SELECT COUNT(*) INTO x FROM project_collection WHERE name=collection_name AND project_collection.removed=0;
   IF x=0 THEN
     INSERT IGNORE INTO project_collection (name, description, state, createTime, removeTime, removed, data, projectCollectionState)
-      VALUES (collection_name, "system update created", "ACTIVE", cur_time, 0, 0, CONCAT("{\"ver\":1,\"fqcn\":\"org.domeos.framework.api.model.project.ProjectCollection\", \"creatorId\":", creator_id, ",\"projectCollectionState\":\"PRIVATE\"}"), "PRIVATE");
+      VALUES (collection_name, "system update created", "ACTIVE", cur_time, 0, 0, CONCAT("{\"ver\":1,\"fqcn\":\"org.Lunaros.framework.api.model.project.ProjectCollection\", \"creatorId\":", creator_id, ",\"projectCollectionState\":\"PRIVATE\"}"), "PRIVATE");
     SELECT id INTO collection_id FROM project_collection WHERE name = collection_name;
     INSERT IGNORE INTO collection_authority_map (collectionId, resourceType, userId, role, updateTime) VALUES (collection_id, "PROJECT_COLLECTION", creator_id, "MASTER", cur_time);
     INSERT IGNORE INTO operation_history (resourceId, resourceType, operation, userId, userName, status, message, operateTime)
@@ -136,7 +136,7 @@ END;
 DROP PROCEDURE IF EXISTS update_project_group;
 
 CREATE PROCEDURE update_project_group()
-domeos:BEGIN
+Lunaros:BEGIN
   DECLARE done BOOLEAN DEFAULT FALSE;
   DECLARE resource_id INT;
   DECLARE group_id INT;
@@ -170,7 +170,7 @@ domeos:BEGIN
   SELECT COUNT(*) INTO x FROM project_collection WHERE name=collection_name AND project_collection.removed=0;
   IF x=0 THEN
     INSERT IGNORE INTO project_collection (name, description, state, createTime, removeTime, removed, data, projectCollectionState)
-       VALUES (collection_name, "system update created", "ACTIVE", cur_time, 0, 0, CONCAT("{\"ver\":1,\"fqcn\":\"org.domeos.framework.api.model.project.ProjectCollection\", \"creatorId\":", creator_id, ",\"projectCollectionState\":\"PRIVATE\"}"), "PRIVATE");
+       VALUES (collection_name, "system update created", "ACTIVE", cur_time, 0, 0, CONCAT("{\"ver\":1,\"fqcn\":\"org.Lunaros.framework.api.model.project.ProjectCollection\", \"creatorId\":", creator_id, ",\"projectCollectionState\":\"PRIVATE\"}"), "PRIVATE");
     SELECT id INTO collection_id FROM project_collection WHERE name = collection_name;
     SELECT null INTO group_id;
     SELECT id INTO group_id FROM groups WHERE groups.name=collection_name AND state=1;
@@ -215,7 +215,7 @@ CREATE PROCEDURE debug_msg(enabled BOOLEAN, msg VARCHAR(255))
 
 
 CREATE PROCEDURE update_deploy_user()
-    domeos:BEGIN
+    Lunaros:BEGIN
     DECLARE done BOOLEAN DEFAULT FALSE;
     DECLARE resource_id INT;
     DECLARE creator_id INT;
@@ -248,7 +248,7 @@ CREATE PROCEDURE update_deploy_user()
       SELECT UNIX_TIMESTAMP(current_timestamp)*1000 INTO cur_time;
       SELECT CONCAT("DEPLOYCOLLECTION-", user_name, "-", resource_id) INTO collection_name;
       INSERT IGNORE INTO deploy_collection (name, description, state, createTime, removeTime, removed, data)
-      VALUES (collection_name, "system update created", "ACTIVE", cur_time, 0, 0, CONCAT("{\"ver\":1,\"fqcn\":\"org.domeos.framework.api.model.deployment.DeployCollection\", \"creatorId\":", creator_id, " }\""));
+      VALUES (collection_name, "system update created", "ACTIVE", cur_time, 0, 0, CONCAT("{\"ver\":1,\"fqcn\":\"org.Lunaros.framework.api.model.deployment.DeployCollection\", \"creatorId\":", creator_id, " }\""));
       SELECT id INTO collection_id FROM deploy_collection WHERE name = collection_name;
       INSERT IGNORE INTO collection_resource_map (resourceId, creatorId, resourceType, collectionId, updateTime)
       VALUES (resource_id, creator_id, "DEPLOY", collection_id, cur_time);
@@ -268,7 +268,7 @@ CREATE PROCEDURE update_deploy_user()
 DROP PROCEDURE IF EXISTS update_deploy_group;
 
 CREATE PROCEDURE update_deploy_group()
-    domeos:BEGIN
+    Lunaros:BEGIN
     DECLARE done BOOLEAN DEFAULT FALSE;
     DECLARE resource_id INT;
     DECLARE group_id INT;
@@ -291,7 +291,7 @@ CREATE PROCEDURE update_deploy_group()
       SELECT name INTO collection_name FROM groups WHERE id = group_id;
       SELECT UNIX_TIMESTAMP(current_timestamp)*1000 INTO cur_time;
       INSERT IGNORE INTO deploy_collection (name, description, state, createTime, removeTime, removed, data)
-      VALUES (collection_name, "system update with group migrate", "ACTIVE", cur_time, 0, 0, CONCAT("{\"ver\":1,\"fqcn\":\"org.domeos.framework.api.model.deployment.DeployCollection\", \"creatorId\":1 }\""));
+      VALUES (collection_name, "system update with group migrate", "ACTIVE", cur_time, 0, 0, CONCAT("{\"ver\":1,\"fqcn\":\"org.Lunaros.framework.api.model.deployment.DeployCollection\", \"creatorId\":1 }\""));
       SELECT id INTO collection_id FROM deploy_collection WHERE name = collection_name;
       INSERT IGNORE INTO collection_resource_map (resourceId, creatorId, resourceType, collectionId, updateTime) SELECT resources.resourceId, operation_history.userId, "DEPLOY", collection_id, cur_time
                                                                                                           FROM resources, operation_history WHERE resources.ownerId = group_id AND resources.ownerType = "GROUP" AND resources.resourceType = "DEPLOY"
@@ -309,7 +309,7 @@ CREATE PROCEDURE update_deploy_group()
 DROP PROCEDURE IF EXISTS update_deploy_group_with_user;
 
 CREATE PROCEDURE update_deploy_group_with_user()
-    domeos:BEGIN
+    Lunaros:BEGIN
     DECLARE done BOOLEAN DEFAULT FALSE;
     DECLARE resource_id INT;
     DECLARE group_id INT;
@@ -346,7 +346,7 @@ CREATE PROCEDURE update_deploy_group_with_user()
       SELECT UNIX_TIMESTAMP(current_timestamp) * 10000 INTO cur_time;
       SELECT CONCAT(group_name, "-", resource_id) INTO collection_name;
       INSERT IGNORE INTO deploy_collection (name, description, state, createTime, removeTime, removed, data)
-      VALUES (collection_name, "system update with group with other user migrate", "ACTIVE", cur_time, 0, 0, CONCAT("{\"ver\":1,\"fqcn\":\"org.domeos.framework.api.model.deployment.DeployCollection\", \"creatorId\":", creator_id, " }\""));
+      VALUES (collection_name, "system update with group with other user migrate", "ACTIVE", cur_time, 0, 0, CONCAT("{\"ver\":1,\"fqcn\":\"org.Lunaros.framework.api.model.deployment.DeployCollection\", \"creatorId\":", creator_id, " }\""));
       SELECT id INTO collection_id FROM deploy_collection WHERE name = collection_name;
       SELECT collectionId INTO old_collection_id FROM collection_resource_map WHERE resourceId = resource_id AND resourceType = "DEPLOY";
       UPDATE collection_resource_map SET  collectionId = collection_id WHERE resourceId = resource_id AND resourceType = "DEPLOY";

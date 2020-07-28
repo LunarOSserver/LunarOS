@@ -4,9 +4,9 @@
  * @description 项目组模块
  */
 
-(function (domeApp, undefined) {
-    if (typeof domeApp === 'undefined') return;
-    domeApp.factory('$domeProjectCollection', ['$http', '$q', 'dialog', '$domeGlobal', '$domeModel', function ($http, $q, dialog, $domeGlobal, $domeModel) {
+(function (LunarApp, undefined) {
+    if (typeof LunarApp === 'undefined') return;
+    LunarApp.factory('$LunarProjectCollection', ['$http', '$q', 'dialog', '$LunarGlobal', '$LunarModel', function ($http, $q, dialog, $LunarGlobal, $LunarModel) {
         var projectCollectionService = {
             createProjectCollection: function createProjectCollection(projectCollectionData) {
                 return $http.post('/api/projectcollection', angular.toJson(projectCollectionData));
@@ -44,4 +44,4 @@
             deleteProjectCollection: deleteProjectCollection
         };
     }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

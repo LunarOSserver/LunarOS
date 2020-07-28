@@ -2,12 +2,12 @@
  * @author ChandraLee
  */
 
-((domeApp, undefined) => {
-	function BuildModalCtr(projectInfo, $domeProject, $domePublic, dialog, $modalInstance) {
+((LunarApp, undefined) => {
+	function BuildModalCtr(projectInfo, $LunarProject, $LunarPublic, dialog, $modalInstance) {
 		'use strict';
 		let vm = this;
 		vm.projectInfo = projectInfo;
-		vm.loadingIns = $domePublic.getLoadingInstance();
+		vm.loadingIns = $LunarPublic.getLoadingInstance();
 		vm.buildWay = 'Branch';
 		vm.searchKey = '';
 		vm.imageTag = '';
@@ -15,13 +15,13 @@
 
 		if (vm.projectInfo.hasCodeInfo) {
 			vm.loadingIns.startLoading('branch');
-			$domeProject.projectService.getBranches(vm.projectInfo.projectId).then((res) => {
+			$LunarProject.projectService.getBranches(vm.projectInfo.projectId).then((res) => {
 				vm.branches = res.data.result || [];
 			}).finally(() => {
 				vm.loadingIns.finishLoading('branch');
 			});
 			vm.loadingIns.startLoading('tag');
-			$domeProject.projectService.getTags(vm.projectInfo.projectId).then((res) => {
+			$LunarProject.projectService.getTags(vm.projectInfo.projectId).then((res) => {
 				vm.tags = res.data.result || [];
 			}).finally(() => {
 				vm.loadingIns.finishLoading('tag');
@@ -55,7 +55,7 @@
 				buildInfo.imageInfo.imageTag = vm.imageTag;
 			}
 			vm.loadingIns.startLoading('submit');
-			$domeProject.projectService.build(buildInfo).then((res) => {
+			$LunarProject.projectService.build(buildInfo).then((res) => {
 				if (res.data.resultCode == 200) {
 					$modalInstance.close();
 					dialog.alert('提示', '成功，正在构建！');
@@ -71,7 +71,7 @@
 		};
 	}
 
-	BuildModalCtr.$inject = ['projectInfo', '$domeProject', '$domePublic', 'dialog', '$modalInstance'];
-	domeApp.controller('BuildModalCtr', BuildModalCtr);
+	BuildModalCtr.$inject = ['projectInfo', '$LunarProject', '$LunarPublic', 'dialog', '$modalInstance'];
+	LunarApp.controller('BuildModalCtr', BuildModalCtr);
 
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

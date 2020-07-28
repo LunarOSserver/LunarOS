@@ -8,10 +8,10 @@
     'use strict';
     let projectModule = angular.module('projectModule', []);
 
-    function DomeProject($http, $util, $state, dialog, $domeModel, $q, $modal, $domeImage) {
+    function LunarProject($http, $util, $state, dialog, $LunarModel, $q, $modal, $LunarImage) {
         const ProjectService = function () {
             this.url = 'api/project';
-            $domeModel.ServiceModel.call(this, this.url);
+            $LunarModel.ServiceModel.call(this, this.url);
             this.getProjectCollectionNameById = (projectCollectionId) => $http.get(`/api/projectcollection/${projectCollectionId}/name`);
             this.getProject = (projectCollectionId) => $http.get(`/api/projectcollection/${projectCollectionId}/project`);
             this.getReadMe = (proId, branch) => $http.get(`${this.url}/readme/${proId}/${branch}`);
@@ -116,7 +116,7 @@
             }
             // 获取私有镜像的工程镜像，并转换成compilePrivateImageList格式
             getForBuildImageAsPrivateImageList(imageType){
-                $domeImage.imageService.getForBuildImages().then((res) => {
+                $LunarImage.imageService.getForBuildImages().then((res) => {
                     let imageList = res.data.result || [];
                     let newImageList = [];
                     for (let i=0; i < imageList.length; i++) {
@@ -143,7 +143,7 @@
                 });
             }
             getPrivateImageTag(imageType,image) {
-                $domeImage.imageService.getImageTags(image.imageName, image.registryUrl).then((res) => {
+                $LunarImage.imageService.getImageTags(image.imageName, image.registryUrl).then((res) => {
                     let tags = res.data.result;
                     if(imageType === 'compile') {
                         this.currentCompilePrivateImageTagList = tags;                      
@@ -703,7 +703,7 @@
             }
         }
 
-        const getInstance = $domeModel.instancesCreator({
+        const getInstance = $LunarModel.instancesCreator({
             Project: Project,
             ProjectImages: ProjectImages
         });
@@ -715,7 +715,7 @@
         };
 
     }
-    DomeProject.$inject = ['$http', '$util', '$state', 'dialog', '$domeModel', '$q', '$modal', '$domeImage'];
-    projectModule.factory('$domeProject', DomeProject);
+    LunarProject.$inject = ['$http', '$util', '$state', 'dialog', '$LunarModel', '$q', '$modal', '$LunarImage'];
+    projectModule.factory('$LunarProject', LunarProject);
     window.projectModule = projectModule;
 })(window);

@@ -1,9 +1,9 @@
 /**
  * Created by haozhou on 2017/3/14.
  */
-;(function (domeApp) {
+;(function (LunarApp) {
   'use strict';
-  domeApp.controller('LoadBalanceCollectionCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
+  LunarApp.controller('LoadBalanceCollectionCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
     function init() {
       $scope.isLoading = true;
       api.loadBalance.collection.list().then((response) => {
@@ -35,4 +35,4 @@
       init();
     };
   }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

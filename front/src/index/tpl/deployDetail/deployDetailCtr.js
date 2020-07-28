@@ -2,30 +2,30 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
     'use strict';
-    if (typeof domeApp === 'undefined') return;
-    domeApp.controller('DeployDetailCtr',[
+    if (typeof LunarApp === 'undefined') return;
+    LunarApp.controller('DeployDetailCtr',[
         '$scope',
-        '$domeDeploy',
-        '$domeCluster',
+        '$LunarDeploy',
+        '$LunarCluster',
         '$state',
         '$modal',
         '$timeout',
         '$util',
-        '$domeData',
+        '$LunarData',
         'dialog',
         '$window',
         'api',
         function (
             $scope,
-            $domeDeploy,
-            $domeCluster,
+            $LunarDeploy,
+            $LunarCluster,
             $state,
             $modal,
             $timeout,
             $util,
-            $domeData,
+            $LunarData,
             dialog,
             $window,
             api
@@ -694,7 +694,7 @@
 
                 // $scope.toUpdate = function() {
                 //     if ($scope.editConfig.versionType === 'CUSTOM' && $scope.editConfig.containerDrafts.length === 0) {
-                //         $domePublic.openWarning('请至少选择一个镜像！');
+                //         $LunarPublic.openWarning('请至少选择一个镜像！');
                 //     } else {
                 //         $scope.isWaitingUpdate = true;
                 //         $scope.valid.needValid = false;
@@ -783,7 +783,7 @@
                     }
                 });
             }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));
 
 ; (function (formInputs) {
     /**
@@ -1338,8 +1338,8 @@
             $ctrl.podStrUndoText = null;
             // podSpecStr 文件内容
             const defaultVersionString = {
-                'YAML': 'containers:\n- image: \"pub.domeos.org/registry:2.3\"\n  name: \"test-container\"\n  volumeMounts:\n  - mountPath: \"/test-hostpath\"\n    name: \"test-volume\"\nvolumes:\n- hostPath:\n    path: \"/opt/scs\"\n  name: \"test-volume\"\n',
-                'JSON': '{\n  \"containers\": [{\n    \"image\": \"pub.domeos.org/registry:2.3\",\n    \"name\": \"test-container\",\n    \"volumeMounts\": [{\n      \"mountPath\": \"/test-hostpath\",\n      \"name\": \"test-volume\"\n    }]\n  }],\n  \"volumes\": [{\n    \"hostPath\": {\n      \"path\": \"/opt/scs\"\n    },\n    \"name\": \"test-volume\"\n  }]\n}\n',
+                'YAML': 'containers:\n- image: \"pub.Lunaros.org/registry:2.3\"\n  name: \"test-container\"\n  volumeMounts:\n  - mountPath: \"/test-hostpath\"\n    name: \"test-volume\"\nvolumes:\n- hostPath:\n    path: \"/opt/scs\"\n  name: \"test-volume\"\n',
+                'JSON': '{\n  \"containers\": [{\n    \"image\": \"pub.Lunaros.org/registry:2.3\",\n    \"name\": \"test-container\",\n    \"volumeMounts\": [{\n      \"mountPath\": \"/test-hostpath\",\n      \"name\": \"test-volume\"\n    }]\n  }],\n  \"volumes\": [{\n    \"hostPath\": {\n      \"path\": \"/opt/scs\"\n    },\n    \"name\": \"test-volume\"\n  }]\n}\n',
             };
             $ctrl.setPodStrToDefault = function () {
                 $ctrl.podStrUndoText = $ctrl.deploymentVersionDraft.versionString.podSpecStr || '';

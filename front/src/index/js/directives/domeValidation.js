@@ -3,12 +3,12 @@
  * @description 控制台验证指令：用户验证表单
  */
 
-(function(domeApp, undefined) {
+(function(LunarApp, undefined) {
     'use strict';
-    if (typeof domeApp === 'undefined') return;
+    if (typeof LunarApp === 'undefined') return;
     // 验证数字是否超过大小
     // <input ng-model="modelNumber" is-over max="10" min="1">
-    domeApp.directive('isOver', function() {
+    LunarApp.directive('isOver', function() {
             return {
                 restrict: 'A',
                 require: 'ngModel',
@@ -40,7 +40,7 @@
             };
         })
         // 验证项目是否存在
-        .directive('isProjectExist', ['$domeProject', function($domeProject) {
+        .directive('isProjectExist', ['$LunarProject', function($LunarProject) {
             return {
                 require: 'ngModel',
                 scope: {
@@ -48,7 +48,7 @@
                 },
                 link: function(scope, iElm, iAttrs, controller) {
                     var projects = {};
-                    $domeProject.projectService.getProject(scope.collection).then(function(res) {
+                    $LunarProject.projectService.getProject(scope.collection).then(function(res) {
                         var data = res.data.result || [],
                             groupName = iAttrs.groupName;
                         for (var i = 0, l = data.length; i < l; i++) {
@@ -148,7 +148,7 @@
             };
         })
         // 验证部署（DeployName）是否存在
-        .directive('isDeployExist', ['$domeDeploy', function($domeDeploy) {
+        .directive('isDeployExist', ['$LunarDeploy', function($LunarDeploy) {
             return {
                 require: 'ngModel',
                 scope: {
@@ -158,7 +158,7 @@
                     var deployList = [],
                         namespace = iAttrs.namespace,
                         clustername = iAttrs.clustername;
-                    $domeDeploy.deployService.getListByCollectionId(scope.collection).then(function(res) {
+                    $LunarDeploy.deployService.getListByCollectionId(scope.collection).then(function(res) {
                         deployList = res.data.result || [];
                     });
                     scope.$watch(function() {
@@ -186,12 +186,12 @@
                 }
             };
         }])
-        .directive('isDeployNameExist', ['$domeCluster', function($domeCluster) {
+        .directive('isDeployNameExist', ['$LunarCluster', function($LunarCluster) {
             return {
                 require: 'ngModel',
                 link: function(scope, iElm, iAttrs, controller) {
                     var deployList = [];
-                    $domeCluster.getInstance('ClusterService').getDeployList().then((res) => {
+                    $LunarCluster.getInstance('ClusterService').getDeployList().then((res) => {
                         deployList = res.data.result || [];
                     })
                     controller.$parsers.unshift(function(viewValue) {
@@ -209,12 +209,12 @@
         }])
         // 验证集群下的namespace是否存在
         // <input ng-model="modelNumber" is-namespace-exist clusterid="12">
-        .directive('isNamespaceExist', ['$domeCluster', function($domeCluster) {
+        .directive('isNamespaceExist', ['$LunarCluster', function($LunarCluster) {
             return {
                 require: 'ngModel',
                 link: function(scope, iElm, iAttrs, controller) {
                     var namespaceList = [];
-                    var getNamespace = $domeCluster.getInstance('ClusterService').getNamespace;
+                    var getNamespace = $LunarCluster.getInstance('ClusterService').getNamespace;
                     scope.$watch(function() {
                         return iAttrs.clusterid;
                     }, function(newValue) {
@@ -236,12 +236,12 @@
             };
         }])
         // 验证组（group）是否存在
-        .directive('isGroupExist', ['$domeUser', function($domeUser) {
+        .directive('isGroupExist', ['$LunarUser', function($LunarUser) {
             return {
                 require: 'ngModel',
                 link: function(scope, iElm, iAttrs, controller) {
                     var groupMap = {};
-                    $domeUser.userService.getGroup().then(function(res) {
+                    $LunarUser.userService.getGroup().then(function(res) {
                         var groupList = res.data.result || [];
                         for (var i = 0, l = groupList.length; i < l; i++) {
                             groupMap[groupList[i].name] = 1;
@@ -259,7 +259,7 @@
             };
         }])
         // 验证报警模板是否存在
-        .directive('isAlarmTemplateExist', ['$domeAlarm', function($domeAlarm) {
+        .directive('isAlarmTemplateExist', ['$LunarAlarm', function($LunarAlarm) {
             return {
                 require: 'ngModel',
                 scope: {
@@ -267,7 +267,7 @@
                 },
                 link: function(scope, iElm, iAttrs, controller) {
                     var alarmMap = {};
-                    var alarmService = $domeAlarm.getInstance('AlarmService');
+                    var alarmService = $LunarAlarm.getInstance('AlarmService');
                     alarmService.getData().then(function(res) {
                         var alarmList = res.data.result || [];
                         for (var i = 0, l = alarmList.length; i < l; i++) {
@@ -411,12 +411,12 @@
                 }
             };
         }])
-        .directive('isProjectCollectionExist', ['$domeProjectCollection', function($domeProjectCollection) {
+        .directive('isProjectCollectionExist', ['$LunarProjectCollection', function($LunarProjectCollection) {
             return {
                 require: 'ngModel',
                 link: function(scope, iElm, iAttrs, controller) {
                     var collectionMap = {};
-                    $domeProjectCollection.projectCollectionService.getProjectCollection().then(function(res) {
+                    $LunarProjectCollection.projectCollectionService.getProjectCollection().then(function(res) {
                         var collectionList = res.data.result || [];
                         for (var i = 0, l = collectionList.length; i < l; i++) {
                             collectionMap[collectionList[i].name] = 1;
@@ -433,12 +433,12 @@
                 }
             };
         }])
-        .directive('isDeployCollectionExist', ['$domeDeployCollection', function($domeDeployCollection) {
+        .directive('isDeployCollectionExist', ['$LunarDeployCollection', function($LunarDeployCollection) {
             return {
                 require: 'ngModel',
                 link: function(scope, iElm, iAttrs, controller) {
                     var collectionMap = {};
-                    $domeDeployCollection.deployCollectionService.getDeployCollection().then(function(res) {
+                    $LunarDeployCollection.deployCollectionService.getDeployCollection().then(function(res) {
                         var collectionList = res.data.result || [];
                         for (var i = 0, l = collectionList.length; i < l; i++) {
                             collectionMap[collectionList[i].name] = 1;
@@ -455,4 +455,4 @@
                 }
             };
         }])
-})(window.domeApp);
+})(window.LunarApp);

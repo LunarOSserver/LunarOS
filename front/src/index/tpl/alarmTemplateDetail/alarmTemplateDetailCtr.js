@@ -2,11 +2,11 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
 	'use strict';
-	if (typeof domeApp === 'undefined') return;
+	if (typeof LunarApp === 'undefined') return;
 
-	domeApp.controller('AlarmTemplateDetailCtr', ['$scope', '$http', '$domeAlarm', '$state', 'dialog', '$domeUser', function ($scope, $http, $domeAlarm, $state, dialog, $domeUser) {
+	LunarApp.controller('AlarmTemplateDetailCtr', ['$scope', '$http', '$LunarAlarm', '$state', 'dialog', '$LunarUser', function ($scope, $http, $LunarAlarm, $state, dialog, $LunarUser) {
 		$scope.isEdit = false;
 		$scope.needValid = {
 			valid: false
@@ -19,7 +19,7 @@
 		if (!tplId) {
 			$state.go('alarm.template');
 		}
-		var alarmService = $domeAlarm.getInstance('AlarmService');
+		var alarmService = $LunarAlarm.getInstance('AlarmService');
 		$scope.permission = {};
 		var initConfig = function () {
 			$scope.alarmTemplateIns.initHostGroupList();
@@ -30,7 +30,7 @@
 			config = angular.copy($scope.config);
 		};
 		alarmService.getData(tplId).then(function (res) {
-			$scope.alarmTemplateIns = $domeAlarm.getInstance('AlarmTemplate', res.data.result);
+			$scope.alarmTemplateIns = $LunarAlarm.getInstance('AlarmTemplate', res.data.result);
 			initConfig();
 			$scope.$emit('pageTitle', {
 				title: config.templateName,
@@ -43,7 +43,7 @@
 			$scope.varibles.isLoading = false;
 		});
 		// 获取当前用户的报警权限
-		$domeUser.getLoginUser().then(function (user) {
+		$LunarUser.getLoginUser().then(function (user) {
 		  $http.get('/api/user/resource/ALARM/1000').then(function (res) {
 			    var role = res.data.result;
 			    $scope.permission.id = user.id;
@@ -75,4 +75,4 @@
 			}
 		};
 	}]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

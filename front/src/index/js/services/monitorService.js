@@ -3,10 +3,10 @@
  * @description 监控模块服务
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
     'use strict';
-    if (typeof domeApp === 'undefined') return;
-    domeApp.factory('$domeMonitor', ['$http', '$q', '$util', 'dialog', function ($http, $q, $util, dialog) {
+    if (typeof LunarApp === 'undefined') return;
+    LunarApp.factory('$LunarMonitor', ['$http', '$q', '$util', 'dialog', function ($http, $q, $util, dialog) {
         var getMonitorInfo = function () {
             return $http.get('/api/global/monitor/info');
         };
@@ -199,4 +199,4 @@
             toMonitorPage: toMonitorPage
         };
     }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

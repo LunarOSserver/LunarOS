@@ -1,8 +1,8 @@
-USE domeos;
+USE Lunaros;
 
-UPDATE global SET value="pub.domeos.org/domeos/build:0.3" WHERE type="BUILD_IMAGE";
+UPDATE global SET value="pub.Lunaros.org/Lunaros/build:0.3" WHERE type="BUILD_IMAGE";
 
-INSERT INTO global(type, value) VALUES ('PUBLIC_REGISTRY_URL', 'http://pub.domeos.org');
+INSERT INTO global(type, value) VALUES ('PUBLIC_REGISTRY_URL', 'http://pub.Lunaros.org');
 DROP TABLE k8s_events;
 CREATE TABLE IF NOT EXISTS `k8s_events` (
   `id` INT(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -305,7 +305,7 @@ DELIMITER //
 DROP PROCEDURE IF EXISTS update_lb_namespace;
 
 CREATE PROCEDURE update_lb_namespace()
-domeos:BEGIN
+Lunaros:BEGIN
   DECLARE done BOOLEAN DEFAULT FALSE;
   DECLARE lb_id INT;
   DECLARE deploy_id INT;
@@ -348,7 +348,7 @@ END;
 DROP PROCEDURE IF EXISTS update_lb_name;
 
 CREATE PROCEDURE update_lb_name()
-domeos:BEGIN
+Lunaros:BEGIN
   DECLARE done BOOLEAN DEFAULT FALSE;
   DECLARE lb_id INT;
   DECLARE deploy_id INT;

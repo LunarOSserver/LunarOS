@@ -2,18 +2,18 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
     'use strict';
-    if (typeof domeApp === 'undefined') return;
-    domeApp.controller('ClusterManageCtr', ['$scope', '$domeCluster', function ($scope, $domeCluster) {
+    if (typeof LunarApp === 'undefined') return;
+    LunarApp.controller('ClusterManageCtr', ['$scope', '$LunarCluster', function ($scope, $LunarCluster) {
         $scope.$emit('pageTitle', {
             title: '集群管理',
             descrition: '在这里您可以查看和管理自己的物理集群，并随时添加主机到集群中。',
             mod: 'cluster'
         });
         $scope.isLoading = true;
-        var clusterService = $domeCluster.getInstance('ClusterService');
-        var nodeService = $domeCluster.getInstance('NodeService');
+        var clusterService = $LunarCluster.getInstance('ClusterService');
+        var nodeService = $LunarCluster.getInstance('NodeService');
         clusterService.getData().then(function (res) {
             $scope.clusterList = res.data.result || [];
         }).finally(function () {
@@ -30,4 +30,4 @@
             });
         };
     }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

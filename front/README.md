@@ -1,4 +1,4 @@
-前端目录  `DomeOS/front` &nbsp;&nbsp; &nbsp;&nbsp; *（所有前端相关命令行在该目录下执行）*
+前端目录  `LunarOS/front` &nbsp;&nbsp; &nbsp;&nbsp; *（所有前端相关命令行在该目录下执行）*
 
 ## 搭建环境
 
@@ -16,7 +16,7 @@
 	3. 安装compass：`gem install compass`
 
 *****
-## 开发  (目录DomeOS/front/app)
+## 开发  (目录LunarOS/front/app)
 
 执行`gulp watch` 
 
@@ -26,15 +26,15 @@
 
  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 请勿修改.html、.css文件，因为修改了一样会在编译时被覆盖；
 
- &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 不要随意更改domeApp.js里module的注入顺序。
+ &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 不要随意更改LunarApp.js里module的注入顺序。
 
 
 * 运行`gulp watch` :监听文件修改，并编译scss、jade文件。
 
-（ `DomeOS/front/app/index.html`为`DomeOS/front/app/index/_index.jade`编译的后的结果 ）
+（ `LunarOS/front/app/index.html`为`LunarOS/front/app/index/_index.jade`编译的后的结果 ）
 
 
-## 上线  (目录：DomeOS/front/dist)
+## 上线  (目录：LunarOS/front/dist)
 
 执行`gulp package` 
 会将代码压缩合并，并加上MD5字符串 

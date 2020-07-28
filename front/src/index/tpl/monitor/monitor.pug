@@ -111,7 +111,7 @@
 			span(ng-cloak) 共{{deployListIns.deployInstanceListIns.instanceList.length||0}}个实例
 			input.ui-input-fill.ui-input-search(placeholder="输入实例名称查询" ng-model="keywords.instance" ng-change="deployListIns.deployInstanceListIns.filterWithKey(keywords.instance)")
 	.mod-list
-		table.ui-table-dome(ng-if="monitorType=='主机'")
+		table.ui-table-Lunar(ng-if="monitorType=='主机'")
 			thead(ondragstart="return false" onselectstart="return false" onselect="document.selection.empty()" oncopy="document.selection.empty()" onbeforecopy="return false")
 				tr
 					th
@@ -164,7 +164,7 @@
 						a(ng-bind="node.netInCount" ng-mouseenter="modifyTooltip('netIn',node.netInData)" tooltip-template="'detailTooltip.html'" tooltip-placement="left")
 					td
 						a(ng-bind="node.netOutCount" ng-mouseenter="modifyTooltip('netOut',node.netOutData)" tooltip-template="'detailTooltip.html'" tooltip-placement="left")
-		table.ui-table-dome(ng-if="monitorType=='部署实例' || monitorType=='负载均衡'")
+		table.ui-table-Lunar(ng-if="monitorType=='部署实例' || monitorType=='负载均衡'")
 			thead(ondragstart="return false" onselectstart="return false" onselect="document.selection.empty()" oncopy="document.selection.empty()" onbeforecopy="return false")
 				tr
 					th
@@ -206,7 +206,7 @@ script(type="text/ng-template" id="containersModal.html")
 	.d-modal-header
 		| 查看容器
 	.d-modal-full.mod-monitor
-		table.ui-table-dome
+		table.ui-table-Lunar
 			thead(ondragstart="return false" onselectstart="return false" onselect="document.selection.empty()" oncopy="document.selection.empty()" onbeforecopy="return false")
 				tr
 					th 容器ID

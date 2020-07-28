@@ -14,9 +14,9 @@
             <div style="display: inline-block;">
               <form-select ng-model="nodeSearch.displaySearchType" on-change="changeSearchType()" options="[{text: '搜索主机名称', value: 'name'}, {text: '搜索主机标签', value: 'label'}]" show-search-input="never"></form-select>
             </div><span ng-show="nodeSearch.displaySearchType === 'name'">
-              <!--button.dome-btn-none(style="color: #4bd396;" type="button" ng-click="hostKey='';getNodeLabel();displayCondition = false") 搜索主机标签-->
+              <!--button.Lunar-btn-none(style="color: #4bd396;" type="button" ng-click="hostKey='';getNodeLabel();displayCondition = false") 搜索主机标签-->
               <input class="ui-input-fill ui-input-white ui-input-search" style="width: calc(100% - 215px);" placeholder="输入主机名查找" ng-model="nodeSearch.searchKey"/></span><span ng-show="nodeSearch.displaySearchType === 'label'">
-              <!--button.dome-btn-none(style="color: #4bd396;" type="button" ng-click="labels.selectedNodeLabelList='';getNodeListByLabel();displayCondition = true") 搜索主机名称-->
+              <!--button.Lunar-btn-none(style="color: #4bd396;" type="button" ng-click="labels.selectedNodeLabelList='';getNodeListByLabel();displayCondition = true") 搜索主机名称-->
               <div style="display: inline-block; width: calc(100% - 215px);">
                 <form-multiple-select style="display: inline;" ng-model="labels.selectedNodeLabelList" on-change="getNodeListByLabel()" options="nodeLabelSelectorList" is-loading="isLoadingNodeLabel" placeholder="选择主机标签" empty-text="无相关标签信息"></form-multiple-select>
               </div></span>
@@ -26,11 +26,11 @@
           </div>
         </div>
         <div class="table-wrap">
-          <table class="ui-table-dome full">
+          <table class="ui-table-Lunar full">
             <thead>
               <tr>
                 <th>
-                  <dome-check d-id="allNode" ng-model="nodeListIns.isCheckAll" d-change="nodeListIns.checkAllItem(model)"></dome-check><span class="tool-enable-click" ng-click="toggleHostOrderBy('name')" ng-class="{'active': hostOrderBy.item==='name'}">主机名称<i class="icon-order" ng-show="hostOrderBy.item!='name'"></i><i class="icon-down" ng-show="hostOrderBy.item=='name'" ng-class="{'up':!hostOrderBy.isReverse}"></i></span>
+                  <Lunar-check d-id="allNode" ng-model="nodeListIns.isCheckAll" d-change="nodeListIns.checkAllItem(model)"></Lunar-check><span class="tool-enable-click" ng-click="toggleHostOrderBy('name')" ng-class="{'active': hostOrderBy.item==='name'}">主机名称<i class="icon-order" ng-show="hostOrderBy.item!='name'"></i><i class="icon-down" ng-show="hostOrderBy.item=='name'" ng-class="{'up':!hostOrderBy.isReverse}"></i></span>
                 </th>
                 <th><span class="tool-enable-click" ng-click="toggleHostOrderBy('ipNumber')" ng-class="{'active': hostOrderBy.item==='ipNumber'}">主机IP<i class="icon-order" ng-show="hostOrderBy.item!='ipNumber'"></i><i class="icon-down" ng-show="hostOrderBy.item=='ipNumber'" ng-class="{'up':!hostOrderBy.isReverse}"></i></span></th>
                 <th ng-show="hideHostColumn.cpu.isShow"><span class="tool-enable-click" ng-click="toggleHostOrderBy('cpuNumber')" ng-class="{'active': hostOrderBy.item==='cpuNumber'}">CPU总量（个）<i class="icon-order" ng-show="hostOrderBy.item!='cpuNumber'"></i><i class="icon-down" ng-show="hostOrderBy.item=='cpuNumber'" ng-class="{'up':!hostOrderBy.isReverse}"></i></span></th>
@@ -49,7 +49,7 @@
               </tr>
               <tr ng-repeat="node in nodelistFiltered=(nodeListIns.nodeList|checkboxListFilter:'name': nodeSearch.searchKey | orderBy: (hostOrderBy.isReverse ? '-' + hostOrderBy.item : hostOrderBy.item))">
                 <td>
-                  <dome-check d-id="node{{$index}}" ng-model="node.isSelected" d-change="nodeListIns.toggleCheck(node,model)"></dome-check><a class="ui-table-link" ng-bind="node.name" ui-sref="hostDetail({name:node.name,clusterId:clusterId})"></a>
+                  <Lunar-check d-id="node{{$index}}" ng-model="node.isSelected" d-change="nodeListIns.toggleCheck(node,model)"></Lunar-check><a class="ui-table-link" ng-bind="node.name" ui-sref="hostDetail({name:node.name,clusterId:clusterId})"></a>
                 </td>
                 <td ng-bind="node.ip"></td>
                 <td ng-show="hideHostColumn.cpu.isShow" ng-bind="node.capacity.cpu"></td>
@@ -60,7 +60,7 @@
                 <td ng-show="hideHostColumn.k8sVersion.isShow" ng-bind="node.kubeletVersion"></td>
                 <td ng-switch="node.status"><span class="txt-safe" ng-switch-when="Ready">在线</span><span class="txt-prompt" ng-switch-default="ng-switch-default">离线</span></td>
                 <td ng-if="config.buildConfig===1">
-                  <dome-toggle ng-class="{'on':node.isUsedByBuild}" ng-click="toggleNodeLabel(node)" ng-disabled="!mayEditCluster()"></dome-toggle>
+                  <Lunar-toggle ng-class="{'on':node.isUsedByBuild}" ng-click="toggleNodeLabel(node)" ng-disabled="!mayEditCluster()"></Lunar-toggle>
                 </td>
               </tr>
             </tbody>
@@ -169,14 +169,14 @@
       <tab heading="实例列表" active="tabActive[4].active" ui-sref="clusterDetail.instances">
         <loading ng-if="isWaitingInstances"></loading>
         <div class="info-options mod-option" style="display: flex;">
-          <div style="flex: 1; top: 50%; left: 50%; margin: auto;"><span class="tool-next"></span><span class="dome-dot dome-dot-success"></span><span class="dome-dot-next">Running {{(instanceListFiltered|filter:{'status':'Running'}).length}}个</span><span class="dome-dot dome-dot-error"></span><span class="dome-dot-next">Error {{(instanceListFiltered|filter:{'status':'Error'}).length}}个</span><span class="dome-dot dome-dot-default"></span><span class="dome-dot-next">Other {{instanceListFiltered.length - (instanceListFiltered|filter:{'status':'Running'}).length - (instanceListFiltered|filter:{'status':'Error'}).length}}个</span></div>
+          <div style="flex: 1; top: 50%; left: 50%; margin: auto;"><span class="tool-next"></span><span class="Lunar-dot Lunar-dot-success"></span><span class="Lunar-dot-next">Running {{(instanceListFiltered|filter:{'status':'Running'}).length}}个</span><span class="Lunar-dot Lunar-dot-error"></span><span class="Lunar-dot-next">Error {{(instanceListFiltered|filter:{'status':'Error'}).length}}个</span><span class="Lunar-dot Lunar-dot-default"></span><span class="Lunar-dot-next">Other {{instanceListFiltered.length - (instanceListFiltered|filter:{'status':'Running'}).length - (instanceListFiltered|filter:{'status':'Error'}).length}}个</span></div>
           <div style="flex: 1; line-height: 40px;"><span ng-cloak="ng-cloak">共{{instanceListFiltered.length || 0}}个实例</span>
             <div style="display: inline-block;">
               <form-select ng-model="instanceSearch.displaySearchType" on-change="changeInstanceSearchType()" options="[{text: '搜索主机名称', value: 'name'}, {text: '搜索主机标签', value: 'label'}]" show-search-input="never"></form-select>
             </div><span ng-show="instanceSearch.displaySearchType === 'name'">
-              <!--button.dome-btn-none(style="color: #4bd396;" type="button" ng-click="searchHostKey='';getNodeLabel();displayInstanceSearch=true;") 搜索主机标签-->
+              <!--button.Lunar-btn-none(style="color: #4bd396;" type="button" ng-click="searchHostKey='';getNodeLabel();displayInstanceSearch=true;") 搜索主机标签-->
               <input class="ui-input-fill ui-input-white ui-input-search" style="width: calc(100% - 215px);" placeholder="请输入主机名称" ng-model="instanceSearch.searchKey"/></span><span ng-show="instanceSearch.displaySearchType === 'label'">
-              <!--button.dome-btn-none(style="color: #4bd396;" type="button" ng-click="labels.selectedLabelForInstance='';listInstanceByLabel();displayInstanceSearch=false") 搜索主机名称-->
+              <!--button.Lunar-btn-none(style="color: #4bd396;" type="button" ng-click="labels.selectedLabelForInstance='';listInstanceByLabel();displayInstanceSearch=false") 搜索主机名称-->
               <div style="display: inline-block; width: calc(100% - 215px);">
                 <form-multiple-select style="display: inline;" ng-model="labels.selectedLabelForInstance" on-change="listInstanceByLabel()" options="nodeLabelSelectorList" is-loading="isLoadingNodeLabel" placeholder="选择主机标签" empty-text="无相关标签信息"></form-multiple-select>
               </div></span>
@@ -186,7 +186,7 @@
           </div>
         </div>
         <div class="table-wrap instances-table">
-          <table class="ui-table-dome full">
+          <table class="ui-table-Lunar full">
             <thead>
               <tr>
                 <th><span class="tool-enable-click" ng-click="toggleOrderBy('instanceName')" ng-class="{'active':orderBy.item==='instanceName'}"> 实例名称<i class="icon-order" ng-show="orderBy.item!='instanceName'"></i><i class="icon-down" ng-show="orderBy.item=='instanceName'" ng-class="{'up':!orderBy.isReverse}"></i></span></th>

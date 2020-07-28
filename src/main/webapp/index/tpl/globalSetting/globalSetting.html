@@ -68,7 +68,7 @@
         </li>
       </ul>
       <div class="table-container">
-        <table class="ui-table-dome full table-userlist">
+        <table class="ui-table-Lunar full table-userlist">
           <thead>
             <tr>
               <th>用户名</th>
@@ -169,10 +169,10 @@
           </div>
         </div>
         <div class="mod-tips-info">
-          <p class="txt-prompt"><i class="fa fa-info-circle icon-algin-right"></i>DomeOS可以关联gitlab，支持http和https两种，请填写完整的代码仓库地址。</p>
+          <p class="txt-prompt"><i class="fa fa-info-circle icon-algin-right"></i>LunarOS可以关联gitlab，支持http和https两种，请填写完整的代码仓库地址。</p>
         </div>
         <div class="table-container">
-          <table class="ui-table-dome full table-userlist">
+          <table class="ui-table-Lunar full table-userlist">
             <thead>
               <tr>
                 <th>仓库名称</th>
@@ -206,7 +206,7 @@
     <div class="mod-global global-setting">
       <ul class="com-list-info" ng-form="ng-form" name="registryForm" ng-class="{'need-valid':vm.needValidRegistry}">
         <div class="mod-tips-info-global">
-          <p class="txt-prompt"><i class="fa fa-info-circle icon-algin-right"></i>docker私有镜像仓库需要用户自行启动，并配置仓库信息到DomeOS中。如果私有仓库使用了自签名证书，需要将证书信息配置到DomeOS中。</p>
+          <p class="txt-prompt"><i class="fa fa-info-circle icon-algin-right"></i>docker私有镜像仓库需要用户自行启动，并配置仓库信息到LunarOS中。如果私有仓库使用了自签名证书，需要将证书信息配置到LunarOS中。</p>
         </div>
         <li class="has-border"><span class="info-name">私有仓库地址</span>
           <div class="info-content">
@@ -255,7 +255,7 @@
     <div class="mod-global global-setting">
       <ul class="com-list-info" ng-form="ng-form" name="serverForm" ng-class="{'need-valid':vm.needValidServer}">
         <li><span class="info-name">服务器地址</span>
-          <div class="info-content info-content-lg-height"><span class="txt-prompt">DomeOS API服务器访问地址</span>
+          <div class="info-content info-content-lg-height"><span class="txt-prompt">LunarOS API服务器访问地址</span>
             <input class="ui-input-white line-single" placeholder="https协议url请用“https://”开头" ng-model="vm.serverInfo.url" name="serverUrl" required="required" ng-pattern="/^[^\s]*$/"/>
           </div>
         </li>
@@ -271,7 +271,7 @@
     <div class="mod-global global-setting">
       <ul class="com-list-info" ng-form="ng-form" name="monitorForm" ng-class="{'need-valid':vm.needValidMonitor}">
         <div class="mod-tips-info-global">
-          <p class="txt-prompt"><i class="fa fa-info-circle icon-algin-right"></i>DomeOS融合了open-falcon和cadvisor对主机和容器进行监控，详细介绍请参考<a href="http://book.open-falcon.org/zh/index.html" target="_blank">http://book.open-falcon.org/zh/index.html</a></p>
+          <p class="txt-prompt"><i class="fa fa-info-circle icon-algin-right"></i>LunarOS融合了open-falcon和cadvisor对主机和容器进行监控，详细介绍请参考<a href="http://book.open-falcon.org/zh/index.html" target="_blank">http://book.open-falcon.org/zh/index.html</a></p>
         </div>
         <li class="has-border"><span class="info-name">transfer</span>
           <div class="info-content info-content-lg-height"><span class="txt-prompt">监控数据转发组件，rpc端口</span>
@@ -371,7 +371,7 @@
     <div class="mod-global global-setting">
       <ul class="com-list-info" ng-form="ng-form" name="sshForm" ng-class="{'need-valid':vm.needValidSsh}">
         <div class="mod-tips-info-global">
-          <p class="txt-prompt"><i class="fa fa-info-circle icon-algin-right"></i>DomeOS通过shellinabox实现容器的浏览器控制台访问，DomeOS提供了镜像pub.domeos.org/domeos/shellinabox:1.1，请在此配置shellinabox的访问地址。</p>
+          <p class="txt-prompt"><i class="fa fa-info-circle icon-algin-right"></i>LunarOS通过shellinabox实现容器的浏览器控制台访问，LunarOS提供了镜像pub.Lunaros.org/Lunaros/shellinabox:1.1，请在此配置shellinabox的访问地址。</p>
         </div>
         <li><span class="info-name webssh-txt">Web SSH服务地址</span>
           <div class="info-content info-content-lg-height"><span class="txt-prompt">Web SSH登录服务访问地址（对应容器的访问地址）</span>
@@ -391,7 +391,7 @@
       <loading ng-if="vm.clusterLoadingIns.isLoading"></loading>
       <div class="cluster-list-title mod-tips-info-global">
         <div class="cluster-detail">
-          <p class="txt-prompt"> <i class="fa fa-info-circle icon-algin-right"></i>DomeOS的构建任务都在构建集群上运行。</p>
+          <p class="txt-prompt"> <i class="fa fa-info-circle icon-algin-right"></i>LunarOS的构建任务都在构建集群上运行。</p>
         </div>
       </div>
       <ul class="com-list-info" ng-form="ng-form" name="clusterForm" ng-class="{'need-valid':vm.needValidCluster}">
@@ -427,7 +427,7 @@
           <input class="ui-input ui-input-search ui-input-fill input-right" placeholder="输入主机名查询" ng-model="vm.key.nodeKey"/></span><span class="host-detail mod-tips-info-global">
           <p class="txt-prompt"><i class="fa fa-info-circle icon-algin-right"></i>请确保构建集群有至少一台主机可用于构建。</p></span></div>
       <div class="table-container">
-        <table class="ui-table ui-table-dome table-hostlist">
+        <table class="ui-table ui-table-Lunar table-hostlist">
           <thead>
             <tr>
               <th>主机名称</th>
@@ -451,7 +451,7 @@
               <td ng-bind="node.runningPods"></td>
               <td ng-switch="node.status"><span class="txt-safe" ng-switch-when="Ready">在线</span><span class="txt-prompt" ng-switch-default="ng-switch-default">离线</span></td>
               <td>
-                <dome-toggle ng-class="{'on':node.isUsedByBuild}" ng-click="vm.toggleNodeLabel(node)"></dome-toggle>
+                <Lunar-toggle ng-class="{'on':node.isUsedByBuild}" ng-click="vm.toggleNodeLabel(node)"></Lunar-toggle>
               </td>
             </tr>
           </tbody>

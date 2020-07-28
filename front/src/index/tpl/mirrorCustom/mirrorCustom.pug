@@ -23,10 +23,10 @@
 							.line-element.com-select-con(select-con)
 								button.ui-btn.ui-btn-white.ui-btn-select
 									i.icon-down
-									| {{config.sourceImage.thirdParty===0?'DomeOS私有镜像仓库':'第三方镜像仓库'}}
+									| {{config.sourceImage.thirdParty===0?'LunarOS私有镜像仓库':'第三方镜像仓库'}}
 								ul.select-list
 									li.select-item
-										a(ng-click="toggleMirrorHub(0)") DomeOS私有镜像仓库
+										a(ng-click="toggleMirrorHub(0)") LunarOS私有镜像仓库
 									li.select-item
 										a(ng-click="toggleMirrorHub(1)") 第三方镜像仓库
 						.line-long(ng-if="config.sourceImage.thirdParty===0")
@@ -192,7 +192,7 @@
 						input.ui-input-search.ui-input-fill(type="text" placeholder="输入部署名称查询" ng-model="mirKeyword")
 			.mod-list
 				customlist
-					table.ui-table-dome
+					table.ui-table-Lunar
 						tbody
 							tr(ng-if="buildListFilter&&buildListFilter.length===0")
 								td(colspan="9") 无相关信息

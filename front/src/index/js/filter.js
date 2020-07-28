@@ -3,10 +3,10 @@
  * @description 过滤器集合
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
     'use strict';
-    if (typeof domeApp === 'undefined') return;
-    domeApp.filter('listPage', function () { // 分页过滤
+    if (typeof LunarApp === 'undefined') return;
+    LunarApp.filter('listPage', function () { // 分页过滤
         // @param size 每页数据长度
         // @param pageno 当前第几页
         return function (input, size, pageno) {
@@ -220,4 +220,4 @@
             return newArr;
         };
     });
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

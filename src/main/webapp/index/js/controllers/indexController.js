@@ -3,13 +3,13 @@
  * @description 顶级controller
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
     'use strict';
-    if (typeof domeApp === 'undefined') return;
+    if (typeof LunarApp === 'undefined') return;
 
-    domeApp.controller('DomeCtr', DomeCtr);
+    LunarApp.controller('LunarCtr', LunarCtr);
 
-    function DomeCtr($scope, $modal, $util, $domeUser, $publicApi, $q) {
+    function LunarCtr($scope, $modal, $util, $LunarUser, $publicApi, $q) {
         var vm = this;
         vm.currentMod = {
             mod: ''
@@ -29,7 +29,7 @@
             if (vm.loginUser.id) {
                 deferred.resolve(vm.loginUser);
             } else {
-                $domeUser.userService.getCurrentUser().then(function (res) {
+                $LunarUser.userService.getCurrentUser().then(function (res) {
                     vm.loginUser = res.data.result;
                     deferred.resolve(vm.loginUser);
                 });
@@ -62,7 +62,7 @@
             });
         };
         vm.modifySelfInfo = function () {
-            $domeUser.getLoginUser().then(function (loginUser) {
+            $LunarUser.getLoginUser().then(function (loginUser) {
                 var modalInstance = $modal.open({
                     templateUrl: 'modifyUserInfoModal.html',
                     controller: 'ModifyUserInfoCtr',
@@ -94,9 +94,9 @@
           localStorage.setItem('thinLeftNav', String(Number(vm.thinLeftNav)));
         };
     }
-    DomeCtr.$inject = ['$scope', '$modal', '$util', '$domeUser', '$publicApi', '$q'];
+    LunarCtr.$inject = ['$scope', '$modal', '$util', '$LunarUser', '$publicApi', '$q'];
 
-    domeApp.controller('PromptModalCtrl', ['$scope', '$modalInstance', 'promptTxt', '$timeout', function ($scope, $modalInstance, promptTxt, $timeout) {
+    LunarApp.controller('PromptModalCtrl', ['$scope', '$modalInstance', 'promptTxt', '$timeout', function ($scope, $modalInstance, promptTxt, $timeout) {
         $scope.promptTxt = promptTxt;
         $timeout(function () {
             $modalInstance.dismiss('cancel');
@@ -161,4 +161,4 @@
             $modalInstance.dismiss('cancel');
         };
     }]);
-})(window.domeApp);
+})(window.LunarApp);

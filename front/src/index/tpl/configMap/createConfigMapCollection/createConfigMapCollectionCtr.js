@@ -1,9 +1,9 @@
 /**
  * Created by haozhou on 2017/2/10.
  */
-;(function (domeApp) {
+;(function (LunarApp) {
     'use strict';
-    domeApp.controller('CreateConfigMapCollectionCtr', ['$scope', 'api', 'dialog', '$state', function ($scope, api, dialog, $state) {
+    LunarApp.controller('CreateConfigMapCollectionCtr', ['$scope', 'api', 'dialog', '$state', function ($scope, api, dialog, $state) {
         let collection = {
             type: "CONFIGURATION_COLLECTION",
             id: null,
@@ -24,7 +24,7 @@
             });
         }
     }]);
-    domeApp.directive('isConfigCollectionUnique', ['api', function (api) {
+    LunarApp.directive('isConfigCollectionUnique', ['api', function (api) {
         return {
             require: 'ngModel',
             scope: [],
@@ -47,4 +47,4 @@
             }
         }
     }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

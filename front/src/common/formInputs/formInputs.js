@@ -3367,4 +3367,4 @@
   });
 
 
-}(window.formInputs = window.formInputs || angular.module('formInputs', ['backendApi', 'domeModule', 'ngSanitize'])));
+}(window.formInputs = window.formInputs || angular.module('formInputs', ['backendApi', 'LunarModule', 'ngSanitize'])));

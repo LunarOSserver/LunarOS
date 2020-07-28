@@ -3,12 +3,12 @@
  * @description 控制台交互指令
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
     'use strict';
-    if (typeof domeApp === 'undefined') return;
-    domeApp
+    if (typeof LunarApp === 'undefined') return;
+    LunarApp
         /* creator-selection(default-user-id="2" default-user-type="GROUP")*/
-        .directive('creatorSelection', ['$domeUser', function ($domeUser) {
+        .directive('creatorSelection', ['$LunarUser', function ($LunarUser) {
             var tplArr = [];
             tplArr.push('  <div class="com-creator-selection">');
             tplArr.push('       <div select-con="select-con" class="com-select-con role-select">');
@@ -58,7 +58,7 @@
                             });
                         }
                     };
-                    $domeUser.userService.getGroupList().then(function (res) {
+                    $LunarUser.userService.getGroupList().then(function (res) {
                         scope.roleList = res.data.result || [];
                         for (var i = 0; i < scope.roleList.length; i++) {
                             if (scope.defaultUserId && scope.defaultUserType) {
@@ -237,7 +237,7 @@
             };
         })
         // 开关
-        .directive('domeToggle', function () {
+        .directive('LunarToggle', function () {
             return {
                 restrict: 'AE',
                 template: '<button class="ui-toggle old-button"></button>',
@@ -245,7 +245,7 @@
             };
         })
         // 项目构建记录
-        .directive('loglist', ['$util', '$domeProject', '$filter', function ($util, $domeProject, $filter) {
+        .directive('loglist', ['$util', '$LunarProject', '$filter', function ($util, $LunarProject, $filter) {
             return {
                 restrict: 'AE',
                 template: '<div ng-transclude></div>',
@@ -268,7 +268,7 @@
                             tplArr.push('               <span class="detail-content">');
                             // tplArr.push('                    <input class="cmd-txt ui-input-white" disabled="true" value="docker pull {#registry}/{#imageName}:{#imageTag}"/><a class="link-safe link-copy" data-text="docker pull {#registry}/{#imageName}:{#imageTag}">复制</a>');
                             tplArr.push('                   <input id="input'+ index +'" class="cmd-txt ui-input-white" readonly="true" value="docker pull ' + buildInfo.imageInfo.registry + '/' + buildInfo.imageInfo.imageName + ':' + buildInfo.imageInfo.imageTag + '"/><a class="link-safe link-copy" id="btn'+ index +'" data-clipboard-target="#input'+ index +'" data-text="docker pull ' + buildInfo.imageInfo.registry + '/' + buildInfo.imageInfo.imageName + ':' + buildInfo.imageInfo.imageTag + '">复制</a>');
-                            tplArr.push('                   <p class="cmd-prompt"> 拉取镜像前请登录：docker login domeos.io</p>');
+                            tplArr.push('                   <p class="cmd-prompt"> 拉取镜像前请登录：docker login Lunaros.io</p>');
                             tplArr.push('               </span>');
                             tplArr.push('           </li>');
                         }
@@ -327,7 +327,7 @@
                                 console.error('Action:', e.action);
                                 console.error('Trigger:', e.trigger);
                             });
-                            $domeProject.projectService.getBuildDockerfile(scope.buildList[index].projectId, scope.buildList[index].id).then(function (res) {
+                            $LunarProject.projectService.getBuildDockerfile(scope.buildList[index].projectId, scope.buildList[index].id).then(function (res) {
                                 var dockerfile = res.data.result;
                                 if (dockerfile) {
                                     dockerfile = dockerfile.replace(/[\n\r]/g, '<br/>');
@@ -464,7 +464,7 @@
             };
         })
         //镜像构建记录
-        .directive('customlist', ['$util', '$domeProject', '$domeImage', function ($util, $domeProject, $domeImage) {
+        .directive('customlist', ['$util', '$LunarProject', '$LunarImage', function ($util, $LunarProject, $LunarImage) {
             return {
                 restrict: 'AE',
                 template: '<div ng-transclude></div>',
@@ -493,7 +493,7 @@
                             tplArr.push('               <span class="info-name">拉取命令</span>');
                             tplArr.push('               <div class="info-content cmd-wrap">');
                             tplArr.push('                   <input class="ui-input-fill" disabled="true" value="docker pull {#registry}/{#imageName}:{#imageTag}"/><button class="ui-btn ui-btn-sm ui-btn-active link-copy" data-text="docker pull {#registry}/{#imageName}:{#imageTag}">复制</button>');
-                            tplArr.push('                   <p class="txt-prompt"> 拉取镜像前请登录：docker login domeos.io</p>');
+                            tplArr.push('                   <p class="txt-prompt"> 拉取镜像前请登录：docker login Lunaros.io</p>');
                             tplArr.push('               </div>');
                             tplArr.push('           </li>');
                         }
@@ -604,7 +604,7 @@
                     };
                     scope.showDetail = function (index, id) {
                         if (index !== scope.currentIndex) {
-                            $domeImage.imageService.getCustomImageInfo(id).then(function (res) {
+                            $LunarImage.imageService.getCustomImageInfo(id).then(function (res) {
                                 scope.customDetailInfo = res.data.result || {};
                                 element.find('.custom-detail').remove();
                                 element.find('tr:eq(' + index + ')').after(getLogDetailTpl());
@@ -672,4 +672,4 @@
             }
         }
     }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

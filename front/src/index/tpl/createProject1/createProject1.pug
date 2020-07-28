@@ -3,7 +3,7 @@
     .pro-item.com-chose-repository.project-info
         span.opt-title 选择代码仓库
         .opt-content
-            p.txt-prompt.opt-descrip(style="margin-bottom:0") DomeOS可以直接从gitlab上下载代码并执行编译命令，关联gitlab项目后不可修改。
+            p.txt-prompt.opt-descrip(style="margin-bottom:0") LunarOS可以直接从gitlab上下载代码并执行编译命令，关联gitlab项目后不可修改。
             span.repository(ng-repeat="gitLab in gitLabList" ng-click="!isGitLabInfoLoading&&toggleCodeManager(gitLab,'gitlab')" ng-class="{active:currentGitLab.id===gitLab.id,'cursor-disabled':isGitLabInfoLoading}" tooltip="{{gitLab.url}}")
                 i.icon-gitlab
                 span(ng-bind="gitLab.description")

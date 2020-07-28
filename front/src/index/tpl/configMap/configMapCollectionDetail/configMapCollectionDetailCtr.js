@@ -1,9 +1,9 @@
 /**
  * Created by haozhou on 2017/2/9.
  */
-;(function (domeApp) {
+;(function (LunarApp) {
     'use strict';
-    domeApp.controller('ConfigMapCollectionDetailCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
+    LunarApp.controller('ConfigMapCollectionDetailCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
         $scope.configMapCollectionId = $state.params.id;
         if (!$scope.configMapCollectionId) {
             $state.go('configMapCollection');
@@ -42,7 +42,7 @@
             });
         };
     }]);
-    domeApp.controller('ConfigMapListCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
+    LunarApp.controller('ConfigMapListCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
         $scope.configMapCollectionId = $state.params.id;
         if (!$scope.configMapCollectionId) {
             $state.go('configMapCollection');
@@ -127,7 +127,7 @@
         };
 
     }]);
-    domeApp.controller('ListRelatedDeployCtr', ['$scope', 'api', '$state', '$window', function ($scope, api, $state, $window) {
+    LunarApp.controller('ListRelatedDeployCtr', ['$scope', 'api', '$state', '$window', function ($scope, api, $state, $window) {
         api.configMap.listRelatedDeploy($scope.value.configMapId).then(response => {
             $scope.configMapRelatedDeployList = response || [];
         });
@@ -142,4 +142,4 @@
             $window.refreshMenu = Date.now().toString() + Math.random();
         };
     }])
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

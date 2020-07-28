@@ -3,7 +3,7 @@ div(ng-form name="clusterForm" role="form" ng-class="{'need-valid':valid.needVal
 		.mod-tips-info
 			p.txt-prompt
 				i.fa.fa-info-circle.icon-algin-right
-				| DomeOS支持通过flume镜像进行日志收集。
+				| LunarOS支持通过flume镜像进行日志收集。
 		li.has-border
 			span.info-name 集群名称
 			.info-content
@@ -19,7 +19,7 @@ div(ng-form name="clusterForm" role="form" ng-class="{'need-valid':valid.needVal
 		li.has-border
 			span.info-name 集群https访问
 			.info-content
-				dome-toggle(ng-class="{true:'on'}[config.isHttps]" ng-click="config.isHttps=!config.isHttps")
+				Lunar-toggle(ng-class="{true:'on'}[config.isHttps]" ng-click="config.isHttps=!config.isHttps")
 				span.txt-prompt 启用https后需要输入用户名密码
 		li(ng-if="config.isHttps")
 			span.info-name 用户名
@@ -54,8 +54,8 @@ div(ng-form name="clusterForm" role="form" ng-class="{'need-valid':valid.needVal
 		li
 			span.info-name 日志自动收集
 			.info-content.info-content-lg-height
-				p.txt-prompt 请在启用前确认您的集群配置了kafka。zookeeper和kafka需要在集群外自行搭建。DomeOS提供了flume镜像，pub.domeos.org/domeos-flume:1.1，您也可以根据需要自己制作flume镜像。
-				dome-toggle(ng-class="{1:'on'}[config.logConfig]" ng-click="clusterIns.toggleLogConfig()")
+				p.txt-prompt 请在启用前确认您的集群配置了kafka。zookeeper和kafka需要在集群外自行搭建。LunarOS提供了flume镜像，pub.Lunaros.org/Lunaros-flume:1.1，您也可以根据需要自己制作flume镜像。
+				Lunar-toggle(ng-class="{1:'on'}[config.logConfig]" ng-click="clusterIns.toggleLogConfig()")
 				span.txt-prompt 
 		li(ng-if="config.logConfig===1")
 			span.info-name kafka

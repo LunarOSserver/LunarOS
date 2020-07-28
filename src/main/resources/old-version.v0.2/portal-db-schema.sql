@@ -1,7 +1,7 @@
 -- CREATE DATABASE IF NOT EXISTS portal;
 -- USE portal;
 -- SET NAMES 'utf8';
--- grant all privileges on portal.* to 'domeos'@'%' with grant option;
+-- grant all privileges on portal.* to 'Lunaros'@'%' with grant option;
 
 use portal;
 

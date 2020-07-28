@@ -2,19 +2,19 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
     'use strict';
-    if (typeof domeApp === 'undefined') return;
-    domeApp.controller('MonitorCtr', [
+    if (typeof LunarApp === 'undefined') return;
+    LunarApp.controller('MonitorCtr', [
       '$scope',
       '$http',
-      '$domeCluster',
-      '$domeDeploy',
-      '$domeMonitor',
-      '$domePublic',
+      '$LunarCluster',
+      '$LunarDeploy',
+      '$LunarMonitor',
+      '$LunarPublic',
       'dialog',
       '$modal',
-      '$domeUser',
+      '$LunarUser',
       '$q',
       '$sce',
       '$filter',
@@ -22,13 +22,13 @@
       function (
         $scope,
         $http,
-        $domeCluster,
-        $domeDeploy,
-        $domeMonitor,
-        $domePublic,
+        $LunarCluster,
+        $LunarDeploy,
+        $LunarMonitor,
+        $LunarPublic,
         dialog,
         $modal,
-        $domeUser,
+        $LunarUser,
         $q,
         $sce,
         $filter,
@@ -41,8 +41,8 @@
             mod: 'monitor'
         });
 
-        $scope.loadingsIns = $domePublic.getLoadingInstance();
-        var nodeService = $domeCluster.getInstance('NodeService');
+        $scope.loadingsIns = $LunarPublic.getLoadingInstance();
+        var nodeService = $LunarCluster.getInstance('NodeService');
         $scope.monitorType = '主机';
         $scope.currentEnv = {
             text: '生产',
@@ -66,7 +66,7 @@
         $scope.loadingsIns.startLoading('loadingCluster');
         // 获取集群列表
         nodeService.getData().then(function (res) {
-            $scope.clusterListIns = $domeCluster.getInstance('ClusterList', res.data.result);
+            $scope.clusterListIns = $LunarCluster.getInstance('ClusterList', res.data.result);
             if ($scope.clusterListIns.clusterList[0]) {
                 $scope.toggleCluster(0);
             }
@@ -74,7 +74,7 @@
             $scope.loadingsIns.finishLoading('loadingCluster');
         });
         // 获取当前用户的报警权限
-        $domeUser.getLoginUser().then(function (user) {
+        $LunarUser.getLoginUser().then(function (user) {
           $http.get('/api/user/resource/ALARM/1000').then(function (res) {
             var role = res.data.result;
             vm.permission.id = user.id;
@@ -85,7 +85,7 @@
             $scope.loadingsIns.startLoading('loadingNode');
             nodeService.getNodeListWoPods($scope.clusterListIns.cluster.id).then(function (res) {
                 var nodeData = res.data.result || [];
-                $scope.nodeListIns = $domeCluster.getInstance('NodeList', nodeData);
+                $scope.nodeListIns = $LunarCluster.getInstance('NodeList', nodeData);
 
                 $scope.toggleEnv('生产');
 
@@ -101,14 +101,14 @@
                     };
                     monitorItems.push(nodeData[i].name);
                 }
-                $domeMonitor.getMonitorStatistical('node', $scope.clusterListIns.cluster.id, monitorInfo, monitorItems).then(function (monitorResult) {
+                $LunarMonitor.getMonitorStatistical('node', $scope.clusterListIns.cluster.id, monitorInfo, monitorItems).then(function (monitorResult) {
                     var nodeList = $scope.nodeListIns.nodeList;
                     for (i = 0, l = nodeList.length; i < l; i++) {
                         angular.extend(nodeList[i], monitorResult[nodeList[i].name]);
                     }
                 });
             }, function () {
-                $scope.nodeListIns = $domeCluster.getInstance('NodeList');
+                $scope.nodeListIns = $LunarCluster.getInstance('NodeList');
             }).finally(function () {
                 $scope.loadingsIns.finishLoading('loadingNode');
             });
@@ -140,7 +140,7 @@
                 });
                 monitorItems.push(insList[i].instanceName);
             }
-            $domeMonitor.getMonitorStatistical('pod', $scope.clusterListIns.cluster.id, monitorInfo, monitorItems).then(function (monitorResult) {
+            $LunarMonitor.getMonitorStatistical('pod', $scope.clusterListIns.cluster.id, monitorInfo, monitorItems).then(function (monitorResult) {
                 for (i = 0, l1 = insList.length; i < l1; i++) {
                     angular.extend(insList[i], monitorResult[insList[i].instanceName]);
                 }
@@ -240,8 +240,8 @@
                     freshNodeMonitor();
                 } else if (type == '部署实例'){
                     $scope.loadingsIns.startLoading('deploy');
-                    $domeDeploy.deployService.getList().then(function (res) {
-                      $scope.deployListIns = $domeDeploy.getInstance('DeployList', res.data.result);
+                    $LunarDeploy.deployService.getList().then(function (res) {
+                      $scope.deployListIns = $LunarDeploy.getInstance('DeployList', res.data.result);
                       initDeploy();
                     }, function (res) {
                       dialog.error('请求失败', res.data.resultMsg);
@@ -251,7 +251,7 @@
                 }else if (type == '负载均衡'){
                     $scope.instanceType = 'loadBalance';
                     api.loadBalance.loadBalance.listAll().then(response => {
-                      $scope.deployListIns = $domeDeploy.getInstance('DeployList',response);
+                      $scope.deployListIns = $LunarDeploy.getInstance('DeployList',response);
                       initDeploy();
                     }).catch(error => { dialog.error('请求失败', error.message); })
                 }
@@ -283,7 +283,7 @@
                 monitorItems.push(containerList[i].containerId);
             }
 
-            $domeMonitor.getMonitorStatistical('container', $scope.clusterListIns.cluster.id, monitorInfo, monitorItems).then(function (monitorResult) {
+            $LunarMonitor.getMonitorStatistical('container', $scope.clusterListIns.cluster.id, monitorInfo, monitorItems).then(function (monitorResult) {
                 for (i = 0, l = containerList.length; i < l; i++) {
                     angular.extend(containerList[i], monitorResult[containerList[i].containerId]);
                 }
@@ -364,7 +364,7 @@
             if (monitorTargetInfo.targetInfos.length === 0) {
                 dialog.error('警告', '请至少选择一项监控');
             } else {
-                $domeMonitor.toMonitorPage($scope.clusterListIns.cluster.id, $scope.clusterListIns.cluster.name, monitorTargetInfo);
+                $LunarMonitor.toMonitorPage($scope.clusterListIns.cluster.id, $scope.clusterListIns.cluster.name, monitorTargetInfo);
             }
         };
         $scope.labelKeyDown = function (event, str, labelsInfoFiltered) {
@@ -389,7 +389,7 @@
                 }
             }
         };
-    }]).controller('ContainersModalCtr', ['$scope', 'instanceIns', 'monitorParams', '$domeMonitor', 'dialog', function ($scope, instanceIns, monitorParams, $domeMonitor, dialog) {
+    }]).controller('ContainersModalCtr', ['$scope', 'instanceIns', 'monitorParams', '$LunarMonitor', 'dialog', function ($scope, instanceIns, monitorParams, $LunarMonitor, dialog) {
         instanceIns.checkAllContainer(true);
         $scope.instanceIns = instanceIns;
         var i, l;
@@ -442,9 +442,9 @@
             if (monitorTargetInfo.targetInfos.length === 0) {
                 dialog.error('警告', '请至少选择一项监控');
             } else {
-                $domeMonitor.toMonitorPage(monitorParams.clusterId, monitorParams.clusterName, monitorTargetInfo);
+                $LunarMonitor.toMonitorPage(monitorParams.clusterId, monitorParams.clusterName, monitorTargetInfo);
             }
 
         };
     }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

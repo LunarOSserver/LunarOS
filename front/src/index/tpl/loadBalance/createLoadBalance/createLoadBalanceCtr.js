@@ -1,10 +1,10 @@
 /**
  * Created by haozhou on 2017/3/15.
  */
-;(function (domeApp) {
+;(function (LunarApp) {
   'use strict';
   // 创建kube proxy类型 负载均衡
-  domeApp.controller('CreateKubeLoadBalanceCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
+  LunarApp.controller('CreateKubeLoadBalanceCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
     let loadBalanceCollectionId = $state.params.id;
     let loadBalanceCollectionType = 'KUBE_PROXY';
     $scope.collectionId = loadBalanceCollectionId;
@@ -50,7 +50,7 @@
     };
   }]);
   // 创建nginx类型负载均衡
-  domeApp.controller('CreateNginxLoadBalanceCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
+  LunarApp.controller('CreateNginxLoadBalanceCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
     let loadBalanceCollectionId = $state.params.id;
     let loadBalanceCollectionType = 'NGINX';
     $scope.collectionId = loadBalanceCollectionId;
@@ -63,8 +63,8 @@
       collectionId: loadBalanceCollectionId,
       type: loadBalanceType,
       nginxDraft: {
-        registry: 'https://pub.domeos.org',
-        image: 'domeos/nginx-controller',
+        registry: 'https://pub.Lunaros.org',
+        image: 'Lunaros/nginx-controller',
         tag: '1.0',
         cpu: 0.5,
         mem: 1024,
@@ -88,7 +88,7 @@
           <form-container left-column-width="60px">
             <form-config-group>
               <form-help-line>
-                <icon-info></icon-info><span>DomeOS提供了默认镜像，如果有特殊需求，可以根据文档说明，定制自己的nginx镜像。</span>
+                <icon-info></icon-info><span>LunarOS提供了默认镜像，如果有特殊需求，可以根据文档说明，定制自己的nginx镜像。</span>
               </form-help-line>
               <form-config-item config-title="仓库地址" required="true">
                 <form-input-container>
@@ -138,4 +138,4 @@
     }
   }]);
 
-}(angular.module('domeApp')));
+}(angular.module('LunarApp')));

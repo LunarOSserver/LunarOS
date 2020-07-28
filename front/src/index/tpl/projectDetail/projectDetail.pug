@@ -88,7 +88,7 @@
 				a.txt-chose(ng-class="{'active':autoBuildKey===0}" ng-click="toggleAutoBuild(0)") 手动构建
 				a.txt-chose(ng-class="{'active':autoBuildKey===1}" ng-click="toggleAutoBuild(1)") 自动构建
 			.build-log
-					div.ui-table-dome
+					div.ui-table-Lunar
 						.tb-tr-group(ng-if="!isLoadingBuildInfo&&(!buildList||logFilterList.length===0)")
 							.tb-tr 无相关信息
 						.tb-tr-group(ng-repeat="log in logFilterList = (buildList|filter:{'autoBuild':autoBuildKey,'state':statusKey})")

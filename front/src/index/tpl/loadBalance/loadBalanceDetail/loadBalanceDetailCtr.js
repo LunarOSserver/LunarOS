@@ -1,10 +1,10 @@
 /**
  * Created by haozhou on 2017/3/30.
  */
-;(function (domeApp) {
+;(function (LunarApp) {
   'use strict';
   /*************************** KUBE-PROXY *******************************/
-  domeApp.controller('KubeLoadBalanceDetailCtr', [
+  LunarApp.controller('KubeLoadBalanceDetailCtr', [
     '$scope',
     '$state',
     'dialog',
@@ -86,7 +86,7 @@
   }]);
 
   /*********************************** nginx detail **************************************/
-  domeApp.controller('NginxLoadBalanceDetailCtr', [
+  LunarApp.controller('NginxLoadBalanceDetailCtr', [
     '$scope',
     '$state',
     'dialog',
@@ -554,7 +554,7 @@
             <form-container left-column-width="60px">
               <form-config-group>
                 <form-help-line>
-                  <icon-info></icon-info><span>DomeOS提供了默认镜像，如果有特殊需求，可以根据文档说明，定制自己的nginx镜像。</span>
+                  <icon-info></icon-info><span>LunarOS提供了默认镜像，如果有特殊需求，可以根据文档说明，定制自己的nginx镜像。</span>
                 </form-help-line>
                 <form-config-item config-title="仓库地址" required="true">
                   <form-input-container>
@@ -591,7 +591,7 @@
 
   }]);
 
-  domeApp.controller('NginxInstanceCtr', [
+  LunarApp.controller('NginxInstanceCtr', [
     '$scope',
     '$state',
     'api',
@@ -699,7 +699,7 @@
     $scope.showMonitor = function(instanceDraft) {
       let newWindow = $window.open('', '_blank');
       api.loadBalance.version.getVersionById(loadBalanceId, instanceDraft.versionId).then(response => {
-        let path = "http://" + instanceDraft.hostIp + ":" + response.listenPort + "/domeos_nginx_status";
+        let path = "http://" + instanceDraft.hostIp + ":" + response.listenPort + "/Lunaros_nginx_status";
         newWindow.location.href = path;
       }).catch(error => {
         dialog.error('获取失败', error.message);
@@ -707,7 +707,7 @@
     };
 
   }]);
-  domeApp.controller('NginxEventCtr', ['$scope', '$state', 'api', '$timeout', function ($scope, $state, api, $timeout) {
+  LunarApp.controller('NginxEventCtr', ['$scope', '$state', 'api', '$timeout', function ($scope, $state, api, $timeout) {
     let loadBalanceId = $state.params.loadBalanceId;
     let timeout = null;
     function listEvent() {
@@ -741,4 +741,4 @@
     });
   }]);
 
-}(angular.module('domeApp')));
+}(angular.module('LunarApp')));

@@ -2,11 +2,11 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
     'use strict';
-    if (typeof domeApp === 'undefined') return;
+    if (typeof LunarApp === 'undefined') return;
 
-    domeApp.controller('AlarmCtr', AlarmCtr)
+    LunarApp.controller('AlarmCtr', AlarmCtr)
         .controller('TabAlarmTemplatesCtr', TabAlarmTemplatesCtr)
         .controller('TabAlarmCurrentAlarmsCtr', TabAlarmCurrentAlarmsCtr)
         .controller('TabHostGroupsCtr', TabHostGroupsCtr)
@@ -14,7 +14,7 @@
         .controller('TabGroupCtr', TabGroupCtr)
         .controller('RenameHostGroupModalCtr', RenameHostGroupModalCtr);
 
-    function AlarmCtr($scope, $http, $domeAlarm, $domeUser, $state, dialog) {
+    function AlarmCtr($scope, $http, $LunarAlarm, $LunarUser, $state, dialog) {
         $scope.$emit('pageTitle', {
             title: '报警',
             descrition: '在这里您可以管理主机组和监控模板，并查看未恢复报警',
@@ -32,7 +32,7 @@
         };
         // 获取当前用户的报警权限
         function getPermission() {
-            $domeUser.getLoginUser().then(function (user) {
+            $LunarUser.getLoginUser().then(function (user) {
             $http.get('/api/user/resource/ALARM/1000').then(function (res) {
               var role = res.data.result;
               vm.permission.id = user.id;
@@ -49,9 +49,9 @@
         if ($state.current.name === 'alarm') $state.go('alarm.templates');
     }
 
-    function TabAlarmTemplatesCtr($scope, $domeAlarm, dialog) {
+    function TabAlarmTemplatesCtr($scope, $LunarAlarm, dialog) {
         $scope.$emit('tabName', 'templates');
-        var alarmService = $domeAlarm.getInstance('AlarmService'),
+        var alarmService = $LunarAlarm.getInstance('AlarmService'),
             vmTemplate = this;
         vmTemplate.keywords = '';
         alarmService.getData().then(function (res) {
@@ -84,14 +84,14 @@
         };
     }
 
-    function TabAlarmCurrentAlarmsCtr($scope, $domeAlarm, dialog, $util, $sce) {
+    function TabAlarmCurrentAlarmsCtr($scope, $LunarAlarm, dialog, $util, $sce) {
         $scope.$emit('tabName', 'currentAlarms');
         var vmAlarm = this;
         vmAlarm.keywords = '';
         vmAlarm.loading = true;
-        $domeAlarm.alarmEventService.getData().then(function (res) {
+        $LunarAlarm.alarmEventService.getData().then(function (res) {
             var alarmsList = res.data.result || [];
-            var metricKeyMaps = $domeAlarm.keyMaps.metric;
+            var metricKeyMaps = $LunarAlarm.keyMaps.metric;
             var getAlarmCounterInfo = function (metric, tag) {
                 var mapInfo = metricKeyMaps[metric];
                 var metricName = mapInfo.text;
@@ -144,7 +144,7 @@
         });
         vmAlarm.ignoreAlarm = function (id) {
             dialog.danger('确认删除', '确认要删除吗？').then(button => { if (button !== dialog.button.BUTTON_OK) throw '' }).then(function () {
-                $domeAlarm.alarmEventService.ignore(id + '').then(function () {
+                $LunarAlarm.alarmEventService.ignore(id + '').then(function () {
                     for (var i = 0; i < vmAlarm.alarmsList.length; i++) {
                         if (vmAlarm.alarmsList[i].id === id) {
                             vmAlarm.alarmsList.splice(i, 1);
@@ -184,9 +184,9 @@
         };
     }
 
-    function TabHostGroupsCtr($scope, $domeAlarm, dialog, $modal) {
+    function TabHostGroupsCtr($scope, $LunarAlarm, dialog, $modal) {
         $scope.$emit('tabName', 'hostgroups');
-        var hostGroupService = $domeAlarm.getInstance('HostGroupService'),
+        var hostGroupService = $LunarAlarm.getInstance('HostGroupService'),
             vmHostGroup = this;
         vmHostGroup.newHostGroup = '';
         vmHostGroup.hostGroupPopover = {
@@ -280,9 +280,9 @@
     }
 
 //用户组
-    function TabUserGroupCtr($scope, $state, $domeUser, $domeAlarm, dialog) {
+    function TabUserGroupCtr($scope, $state, $LunarUser, $LunarAlarm, dialog) {
         $scope.$emit('tabName', 'usergroup');
-        var userGroupService = $domeAlarm.getInstance('UserGroupService');
+        var userGroupService = $LunarAlarm.getInstance('UserGroupService');
         $scope.resourceType = 'ALARM';
         function init() {
             userGroupService.getData().then(function (res) {
@@ -342,11 +342,11 @@
             });
         };
     }
-    AlarmCtr.$inject = ['$scope', '$http', '$domeAlarm', '$domeUser', '$state', 'dialog'];
-    TabAlarmTemplatesCtr.$inject = ['$scope', '$domeAlarm', 'dialog'];
-    TabAlarmCurrentAlarmsCtr.$inject = ['$scope', '$domeAlarm', 'dialog', '$util', '$sce'];
-    TabHostGroupsCtr.$inject = ['$scope', '$domeAlarm', 'dialog', '$modal'];
+    AlarmCtr.$inject = ['$scope', '$http', '$LunarAlarm', '$LunarUser', '$state', 'dialog'];
+    TabAlarmTemplatesCtr.$inject = ['$scope', '$LunarAlarm', 'dialog'];
+    TabAlarmCurrentAlarmsCtr.$inject = ['$scope', '$LunarAlarm', 'dialog', '$util', '$sce'];
+    TabHostGroupsCtr.$inject = ['$scope', '$LunarAlarm', 'dialog', '$modal'];
     TabGroupCtr.$inject = ['$scope', '$state'];
-    TabUserGroupCtr.$inject = ['$scope', '$state', '$domeUser', '$domeAlarm', 'dialog'];
+    TabUserGroupCtr.$inject = ['$scope', '$state', '$LunarUser', '$LunarAlarm', 'dialog'];
     RenameHostGroupModalCtr.$inject = ['hostGroupList', 'hostGroup', 'renameFuc', 'dialog', '$modalInstance'];
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

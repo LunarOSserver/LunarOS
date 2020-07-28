@@ -2,10 +2,10 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
 	'use strict';
-	if (typeof domeApp === 'undefined') return;
-	domeApp.controller('TplAlarmUserGroupDetailCtr', ['$scope', '$http', '$domeUser', '$domeAlarm', 'dialog', '$state','$stateParams', function ($scope, $http, $domeUser, $domeAlarm, dialog, $state, $stateParams) {
+	if (typeof LunarApp === 'undefined') return;
+	LunarApp.controller('TplAlarmUserGroupDetailCtr', ['$scope', '$http', '$LunarUser', '$LunarAlarm', 'dialog', '$state','$stateParams', function ($scope, $http, $LunarUser, $LunarAlarm, dialog, $state, $stateParams) {
 		'use strict';
 		$scope.$emit('pageTitle', {
 			title: '新建组',
@@ -20,19 +20,19 @@
 			key: ''
 		};
 		$scope.isWaitingCreate = false;
-		var alarmUserGroupService = $domeAlarm.getInstance('UserGroupService');
+		var alarmUserGroupService = $LunarAlarm.getInstance('UserGroupService');
 		$scope.permission = {
             id: null,
             username: null,
             role: null
         };
         //获取所有用户
-        $domeUser.userService.getUserList().then(function (res) {
+        $LunarUser.userService.getUserList().then(function (res) {
 			$scope.userList = res.data.result || [];	
 		});
 		// 获取当前用户的报警权限
         function getPermission() {
-            $domeUser.getLoginUser().then(function (user) {
+            $LunarUser.getLoginUser().then(function (user) {
               $http.get('/api/user/resource/ALARM/1000').then(function (res) {
                     var role = res.data.result;
                     vm.permission.id = user.id;
@@ -109,4 +109,4 @@
 			});
 		};
 	}]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

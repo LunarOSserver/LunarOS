@@ -2,10 +2,10 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
 	'use strict';
-	if (typeof domeApp === 'undefined') return;
-	domeApp.controller('CreateAppDeployCtr', ['$scope', '$domeAppStore', '$domeCluster', '$domeUser', '$state', '$stateParams', 'dialog', function ($scope, $domeAppStore, $domeCluster, $domeUser, $state, $stateParams, dialog) {
+	if (typeof LunarApp === 'undefined') return;
+	LunarApp.controller('CreateAppDeployCtr', ['$scope', '$LunarAppStore', '$LunarCluster', '$LunarUser', '$state', '$stateParams', 'dialog', function ($scope, $LunarAppStore, $LunarCluster, $LunarUser, $state, $stateParams, dialog) {
 		if (!$stateParams.appName) {
 			$state.go('appStore');
 		}
@@ -15,8 +15,8 @@
 			mod: 'appStore'
 		});
 		let appData;
-		const nodeService = $domeCluster.getInstance('NodeService');
-		$domeAppStore.getStoreApps().then(function (res) {
+		const nodeService = $LunarCluster.getInstance('NodeService');
+		$LunarAppStore.getStoreApps().then(function (res) {
 			let isExist = false;
 			if (res.data) {
 				for (let i = 0, l = res.data.length; i < l; i++) {
@@ -48,7 +48,7 @@
 					// 转换为部署需要的日志格式
 					appData.deploymentTemplate.logDraft = logDraft;
 					appData.deploymentTemplate.networkMode = 'DEFAULT';
-					$scope.appInfoIns = $domeAppStore.getInstance('AppInfo', appData);
+					$scope.appInfoIns = $LunarAppStore.getInstance('AppInfo', appData);
 					$scope.config = $scope.appInfoIns.config;
 					$scope.deployIns = $scope.appInfoIns.deployIns;
 					$scope.deployConfig = $scope.deployIns.config;
@@ -56,7 +56,7 @@
 						$scope.deployIns.clusterListIns.init(res.data.result);
 						$scope.deployIns.toggleCluster();
 					});
-					// $domeUser.userService.getGroupList().then(function(res) {
+					// $LunarUser.userService.getGroupList().then(function(res) {
 					// 	$scope.deployIns.userGroupListIns.init(res.data.result);
 					// }).finally(function() {});
 				}
@@ -85,4 +85,4 @@
 			});
 		};
 	}]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

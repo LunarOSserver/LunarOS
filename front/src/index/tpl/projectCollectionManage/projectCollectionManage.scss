@@ -12,7 +12,7 @@ $context-info-color:#888;
 			border-top: $deep-border;
 			border-bottom: 1px solid transparent;
 			&:hover{
-				background-color: dome-color(background,table-hover-background);
+				background-color: Lunar-color(background,table-hover-background);
 			}
 			&:last-child{
 				border-bottom: $deep-border;
@@ -28,12 +28,12 @@ $context-info-color:#888;
 					overflow: visible;
 					.project-collection-name {
 						display: inline-block;
-						color: dome-color(dome,bright);
+						color: Lunar-color(Lunar,bright);
 						font-size: 16px;
 						font-weight: bold;
 					}
 					.ui-btn-white{
-						color: dome-color(dome,bright);
+						color: Lunar-color(Lunar,bright);
 					}
 					.dropdown-menu-delete{
 						padding:0;
@@ -43,7 +43,7 @@ $context-info-color:#888;
 					display: inline-block;
 					padding-left: 10px;
 					// padding-right: 40px;
-					// color: dome-color(font,default);
+					// color: Lunar-color(font,default);
 					em{
 						margin-right: 10px;
 						font-size: 14px;
@@ -117,7 +117,7 @@ $context-info-color:#888;
 			&.no-project-collection{
 				height: 208px;
 				text-align: center;
-				border:1px dashed dome-color(border,deep);
+				border:1px dashed Lunar-color(border,deep);
 				border-radius: $default-radius;
 				// margin: 0 10px 0 10px;
 				span{

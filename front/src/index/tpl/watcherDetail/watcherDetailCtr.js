@@ -3,32 +3,32 @@
  * @description 监听器详情
  * Created on 2017/1/22
  */
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
     'use strict';
-    if (typeof domeApp === 'undefined') return;
-    domeApp.controller('WatcherDetailCtr', ['$scope',
-        '$domeDeploy',
-        '$domeCluster',
-        '$domePublic',
+    if (typeof LunarApp === 'undefined') return;
+    LunarApp.controller('WatcherDetailCtr', ['$scope',
+        '$LunarDeploy',
+        '$LunarCluster',
+        '$LunarPublic',
         '$state',
         '$modal',
         '$timeout',
         '$util',
-        '$domeData',
-        '$domeUser',
+        '$LunarData',
+        '$LunarUser',
         '$window',
         'api',
         'dialog',
         function ($scope,
-            $domeDeploy,
-            $domeCluster,
-            $domePublic,
+            $LunarDeploy,
+            $LunarCluster,
+            $LunarPublic,
             $state,
             $modal,
             $timeout,
             $util,
-            $domeData,
-            $domeUser,
+            $LunarData,
+            $LunarUser,
             $window,
             api,
             dialog) {
@@ -57,9 +57,9 @@
                 active: false
             }];
 
-            const loadingsIns = $scope.loadingsIns = $domePublic.getLoadingInstance();
-            const clusterService = $domeCluster.getInstance('ClusterService');
-            const nodeService = $domeCluster.getInstance('NodeService');
+            const loadingsIns = $scope.loadingsIns = $LunarPublic.getLoadingInstance();
+            const clusterService = $LunarCluster.getInstance('ClusterService');
+            const nodeService = $LunarCluster.getInstance('NodeService');
             const WATCHER_REPLICAS = 1;
             var timeout, timeoutEvent, clusterList = [];
 
@@ -81,7 +81,7 @@
             //初始化用户角色
             (function () {
                 loadingsIns.startLoading('userRole');
-                $domeUser.userService.getResourceUserRole($scope.resourceType, $scope.resourceId).then(function (res) {
+                $LunarUser.userService.getResourceUserRole($scope.resourceType, $scope.resourceId).then(function (res) {
                     var userRole = res.data.result;
                     if (userRole === 'MASTER') {
                         $scope.isDelete = true;
@@ -104,7 +104,7 @@
             //获取监听器部署信息
             const getDeploy = function () {
                 loadingsIns.startLoading('getDeploy');
-                $domeDeploy.deployService.getSingle($scope.deployId).then(function (res) {
+                $LunarDeploy.deployService.getSingle($scope.deployId).then(function (res) {
                     var data = res.data.result;
                     $scope.deployName = data.deployName;
                     $scope.$emit('pageTitle', {
@@ -112,7 +112,7 @@
                         descrition: data.serviceDnsName,
                         mod: 'deployManage'
                     });
-                    $scope.deployIns = $domeDeploy.getInstance('Deploy', angular.copy(res.data.result));
+                    $scope.deployIns = $LunarDeploy.getInstance('Deploy', angular.copy(res.data.result));
                     $scope.config = $scope.deployIns.config;
                     // 初始化clusterlist
                     $scope.deployIns.clusterListIns.init(angular.copy(clusterList));
@@ -126,7 +126,7 @@
             //获取监听器的部署实例
             const getDeployInstance = function () {
                 loadingsIns.startLoading('getDeployInstance');
-                $domeDeploy.deployService.getInstances($scope.deployId).then(function (res) {
+                $LunarDeploy.deployService.getInstances($scope.deployId).then(function (res) {
                     $scope.instanceList = res.data.result;
                 }, function (resError) {
                     dialog.error('操作失败！', resError.data.resultMsg);
@@ -137,7 +137,7 @@
 
             //刷新事件
             var freshEvents = function() {
-                return $domeDeploy.deployService.getEvents($scope.deployId).then(function(res) {
+                return $LunarDeploy.deployService.getEvents($scope.deployId).then(function(res) {
                 let eventList = res.data.result || [];
                 if (!$scope.eventList || $scope.eventList.length === 0) {
                     $scope.eventList = eventList;
@@ -372,12 +372,12 @@
                 loadingsIns.startLoading('loadingNode');
                 nodeService.getNodeList($scope.clusterId).then((res) => {
                     var nodeData = res.data.result || [];
-                    $scope.nodeListIns = $domeCluster.getInstance('NodeList', nodeData);
+                    $scope.nodeListIns = $LunarCluster.getInstance('NodeList', nodeData);
                     if ($scope.watcherlabels) {
                         $scope.toggleLabels($scope.watcherlabels);
                     }
                 }, () => {
-                    $scope.nodeListIns = $domeCluster.getInstance('NodeList');
+                    $scope.nodeListIns = $LunarCluster.getInstance('NodeList');
                 }).finally(function () {
                     loadingsIns.finishLoading('loadingNode');
                 });
@@ -475,4 +475,4 @@
                 $modalInstance.dismiss('cancel');
             };
         }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

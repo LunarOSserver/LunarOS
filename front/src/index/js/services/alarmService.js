@@ -3,22 +3,22 @@
  * @description 报警服务
  */
 
-((domeApp, undefined) => {
+((LunarApp, undefined) => {
     'use strict';
-    if (typeof domeApp === 'undefined') return;
+    if (typeof LunarApp === 'undefined') return;
 
-    domeApp.factory('$domeAlarm', ['$domeModel', '$domeUser', '$domeDeploy', '$domeCluster', '$http', '$domePublic', 'dialog', '$q', '$util', function ($domeModel, $domeUser, $domeDeploy, $domeCluster, $http, $domePublic, dialog, $q, $util) {
+    LunarApp.factory('$LunarAlarm', ['$LunarModel', '$LunarUser', '$LunarDeploy', '$LunarCluster', '$http', '$LunarPublic', 'dialog', '$q', '$util', function ($LunarModel, $LunarUser, $LunarDeploy, $LunarCluster, $http, $LunarPublic, dialog, $q, $util) {
         const AlarmService = function () {
-            $domeModel.ServiceModel.call(this, '/api/alarm/template');
+            $LunarModel.ServiceModel.call(this, '/api/alarm/template');
         };
         const HostGroupService = function () {
-            $domeModel.ServiceModel.call(this, '/api/alarm/hostgroup');
+            $LunarModel.ServiceModel.call(this, '/api/alarm/hostgroup');
             this.addHost = (id, hostInfo) => $http.post(`/api/alarm/hostgroup/bind/${id}`, angular.toJson(hostInfo));
             this.deleteHost = (id, nodeId) => $http.delete(`/api/alarm/hostgroup/bind/${id}/${nodeId}`);
         };
         //用户组
         const UserGroupService = function () {
-            $domeModel.ServiceModel.call(this, '/api/alarm/usergroup');
+            $LunarModel.ServiceModel.call(this, '/api/alarm/usergroup');
             this.getUserGroup = () => $http.get('/api/alarm/usergroup');
             this.createUserGroup = (userGroupDraft) => $http.post('/api/alarm/usergroup', angular.toJson(userGroupDraft));
             this.bindUser = (userGroupId, userInfo) => $http.post(`/api/alarm/usergroup/bind/${userGroupId}`, angular.toJson(userInfo));
@@ -26,7 +26,7 @@
             this.updateUserGroup = (userGroupDraft) => $http.put('/api/alarm/usergroup', angular.toJson(userGroupDraft));
             this.deleteSingleUser = (userGroupId, userId) => $http.delete(`/api/alarm/usergroup/bind/${userGroupId}/${userId}`);
         };
-        const clusterService = $domeCluster.getInstance('ClusterService');
+        const clusterService = $LunarCluster.getInstance('ClusterService');
         const _alarmService = new AlarmService();
         const keyMaps = {
             metric: {
@@ -92,8 +92,8 @@
                 this.hostGroupList = [];
                 this.keyMaps = keyMaps;
                 this.groupList = [];
-                this.deployListIns = $domeDeploy.getInstance('DeployList');
-                this.loadingIns = $domePublic.getLoadingInstance();
+                this.deployListIns = $LunarDeploy.getInstance('DeployList');
+                this.loadingIns = $LunarPublic.getLoadingInstance();
                 this.clusterList = [];
                 this.init(alarmInfo);
             }
@@ -198,7 +198,7 @@
                 };
                 if (this.groupList.length === 0) {
                     this.loadingIns.startLoading('groupList');
-                    // $domeUser.userService.getGroup().then((res) => {
+                    // $LunarUser.userService.getGroup().then((res) => {
                     $http.get('/api/alarm/usergroup').then((res) => {
                         this.groupList = res.data.result || [];
                         init();
@@ -215,7 +215,7 @@
                     let deploymentInfo = this.config.deploymentInfo;
                     if (this.deployListIns.deployList.length === 0) {
                         this.loadingIns.startLoading('deploy');
-                        $q.all([$domeDeploy.deployService.getList(), clusterService.getData()])
+                        $q.all([$LunarDeploy.deployService.getList(), clusterService.getData()])
                             .then((res) => {
                                 this.deployListIns.init(res[0].data.result);
                                 this.clusterList = res[1].data.result || [];
@@ -344,7 +344,7 @@
 
         }
         // hostGroup添加主机
-        class NodeList extends $domeModel.SelectListModel {
+        class NodeList extends $LunarModel.SelectListModel {
 
             constructor(nodeList, clusterName) {
                 super('nodeList');
@@ -478,7 +478,7 @@
 
         }
 
-        const getInstance = $domeModel.instancesCreator({
+        const getInstance = $LunarModel.instancesCreator({
             NodeList: NodeList,
             AlarmService: AlarmService,
             HostGroupService: HostGroupService,
@@ -496,4 +496,4 @@
             keyMaps: keyMaps
         };
     }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

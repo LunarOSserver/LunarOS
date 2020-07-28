@@ -24,7 +24,7 @@
   </div>
   <div class="mod-list">
     <loading ng-if="isLoading"></loading>
-    <table class="ui-table-dome" style="word-break:break-all;">
+    <table class="ui-table-Lunar" style="word-break:break-all;">
       <thead>
         <tr>
           <th><span class="tool-enable-click" ng-click="toggleOrderBy('deployName')" ng-class="{'active':orderBy.item=='deployName'}"> 部署名称<i class="icon-order" ng-show="orderBy.item!='deployName'"></i><i class="icon-down" ng-show="orderBy.item=='deployName'" ng-class="{'up':!orderBy.isReverse}"></i></span></th>
@@ -53,7 +53,7 @@
           <td>
             <div style="display: flex;" ng-repeat="dns in deploy.dnsName track by $index">
               <div class="long-text-wrap" style="max-width: 90%;" ng-bind="dns" title="{{ dns }}"></div>
-              <button class="dome-btn-none" ng-if="dns !== '无'" type="button" ngclipboard="ngclipboard" data-clipboard-text="{{ dns }}" tooltip="复制" ngclipboard-success="onSuccess(e, dns)" ngclipboard-error="onError(e)"><i class="fa fa-clipboard"></i></button>
+              <button class="Lunar-btn-none" ng-if="dns !== '无'" type="button" ngclipboard="ngclipboard" data-clipboard-text="{{ dns }}" tooltip="复制" ngclipboard-success="onSuccess(e, dns)" ngclipboard-error="onError(e)"><i class="fa fa-clipboard"></i></button>
             </div>
           </td>
         </tr>

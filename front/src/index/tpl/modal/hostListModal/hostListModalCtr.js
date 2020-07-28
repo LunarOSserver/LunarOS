@@ -2,10 +2,10 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
 	'use strict';
-	if (typeof domeApp === 'undefined') return;
-	domeApp.controller('HostListModalCtr', ['$scope', 'hostList', '$modalInstance', 'filterFilter', function ($scope, hostList, $modalInstance, filterFilter) {
+	if (typeof LunarApp === 'undefined') return;
+	LunarApp.controller('HostListModalCtr', ['$scope', 'hostList', '$modalInstance', 'filterFilter', function ($scope, hostList, $modalInstance, filterFilter) {
 		$scope.hostList = filterFilter(hostList, {
 			'labelFilter': true
 		});
@@ -13,4 +13,4 @@
 			$modalInstance.dismiss('cancel');
 		};
 	}]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

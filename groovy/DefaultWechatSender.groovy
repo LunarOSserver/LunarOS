@@ -1,6 +1,6 @@
 import groovyx.net.http.HTTPBuilder
-import org.domeos.util.CommonUtil
-import org.domeos.util.MD5Util
+import org.Lunaros.util.CommonUtil
+import org.Lunaros.util.MD5Util
 
 class DefaultWechatSender {
     public Object send(String number, String subject, String content) throws Exception {

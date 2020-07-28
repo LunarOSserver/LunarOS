@@ -2,15 +2,15 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
 	'use strict';
-	if (typeof domeApp === 'undefined') return;
-	domeApp.controller('ProjectDetailCtr', [
-		'$scope', '$state', '$stateParams', '$domeProject', 'dialog', '$domeImage', '$timeout', '$location', '$util', '$domeUser', '$modal', '$filter', '$q',
-  function ($scope, $state, $stateParams, $domeProject, dialog, $domeImage, $timeout, $location, $util, $domeUser, $modal, $filter, $q) {
+	if (typeof LunarApp === 'undefined') return;
+	LunarApp.controller('ProjectDetailCtr', [
+		'$scope', '$state', '$stateParams', '$LunarProject', 'dialog', '$LunarImage', '$timeout', '$location', '$util', '$LunarUser', '$modal', '$filter', '$q',
+  function ($scope, $state, $stateParams, $LunarProject, dialog, $LunarImage, $timeout, $location, $util, $LunarUser, $modal, $filter, $q) {
 		$scope.projectId = $state.params.project;
 		$scope.projectCollectionId = $state.params.projectCollectionId;
-		$domeProject.projectService.getProjectCollectionNameById($scope.projectCollectionId).then(function (res) {
+		$LunarProject.projectService.getProjectCollectionNameById($scope.projectCollectionId).then(function (res) {
 			$scope.projectCollectionName = res.data.result || '';
 		});
 		if (!$scope.projectId) {
@@ -57,7 +57,7 @@
 		$scope.dockerfile = '加载中....';
 		let clipboard = null;
 
-		$domeProject.projectService.getReadMe($scope.projectId, $scope.branch).then(function (response) {
+		$LunarProject.projectService.getReadMe($scope.projectId, $scope.branch).then(function (response) {
 		  $scope.markdown = response.data.result;
 		});
 
@@ -78,8 +78,8 @@
 
 		var initProjectImages = function (type) {
 			$q.all([
-			  $domeImage.imageService.getForBuildImages(),
-			  $domeImage.imageService.getExclusiveImages(type),
+			  $LunarImage.imageService.getForBuildImages(),
+			  $LunarImage.imageService.getExclusiveImages(type),
 			]).then(([res1, res2]) => {
 				let imageList = res1.data.result || [];
 				let newImageList = [];
@@ -111,14 +111,14 @@
 			}
 		});
 		var initLoginUser = function () {
-			$domeUser.userService.getCurrentUser().then(function (res) {
+			$LunarUser.userService.getCurrentUser().then(function (res) {
 				$scope.loginUser = res.data.result;
 			});
 		};
 		initLoginUser();
 		//获取用户角色
 		var initUserProjectRole = function () {
-			$domeUser.userService.getResourceUserRole($scope.resourceType, $scope.resourceId).then(function (res) {
+			$LunarUser.userService.getResourceUserRole($scope.resourceType, $scope.resourceId).then(function (res) {
 				var userRole = res.data.result;
 				if(userRole === 'MASTER') {
 					$scope.isDeleteProject = true;
@@ -139,8 +139,8 @@
 		var initProjectInfo = function initProjectInfo() {
 			if (!$scope.loginUser) return setTimeout(initProjectInfo, 10);
 			let deferred = $q.defer();
-			$domeProject.projectService.getData($scope.projectId).then(res => {
-				project = $domeProject.getInstance('Project', res.data.result.project);
+			$LunarProject.projectService.getData($scope.projectId).then(res => {
+				project = $LunarProject.getInstance('Project', res.data.result.project);
 				$scope.creatorInfo = res.data.result.creatorInfo;
 				if ($scope.loginUser.adminPrivilege || $scope.creatorInfo.name === $scope.loginUser.username) {
 					$scope.isCreator = true;
@@ -207,7 +207,7 @@
             freshBuildList();
         };
 		var freshBuildList = function () {
-			return $domeProject.projectService.buildInfoList($scope.projectId, $scope.pagination.currentPage, $scope.itemsPerPage).then(function(res) {
+			return $LunarProject.projectService.buildInfoList($scope.projectId, $scope.pagination.currentPage, $scope.itemsPerPage).then(function(res) {
                 $scope.totalItems = res.data.result.total;
 				var buildList = res.data.result.buildHistories || [],
 					requestUrl = $location.host();
@@ -246,7 +246,7 @@
 				$scope.isWaitingForModify = false;
 			});
 		};
-		$domeImage.imageService.getBaseImages().then(function (res) {
+		$LunarImage.imageService.getBaseImages().then(function (res) {
 			$scope.imageList = res.data.result;
 		});
 		var initProjectCollectionUser = function () {
@@ -254,7 +254,7 @@
 				username: $scope.creatorInfo.name,
 				id: $scope.creatorInfo.creatorId
 			};
-			$domeUser.userService.getUserList().then(function(res) {
+			$LunarUser.userService.getUserList().then(function(res) {
 				$scope.creatorUserList = res.data.result || [];
 			});
 		};
@@ -263,7 +263,7 @@
 					creatorId: $scope.selectedCreator.id,
 					name: $scope.selectedCreator.username,
 				};
-				$domeProject.projectService.modifyCreator($scope.projectId, newCrreator).then(function (res) {
+				$LunarProject.projectService.modifyCreator($scope.projectId, newCrreator).then(function (res) {
 					$scope.isEditCreator = false;
 					initProjectInfo();
 				},function (res) {
@@ -305,7 +305,7 @@
 			});
 			modifyProjectModalIns.result.then(function(result) {
 				// 'result' is code info
-				$domeProject.projectService.modifyCodeInfo($scope.projectId, result).then(function(res) {
+				$LunarProject.projectService.modifyCodeInfo($scope.projectId, result).then(function(res) {
 					initProjectInfo();
 				},function(resError) {
 					dialog.error('修改失败', resError.data.resultMsg);
@@ -407,7 +407,7 @@
 				console.error('Trigger:', e.trigger);
 			});
 			$scope.dockerfile = '加载中....';
-			$domeProject.projectService.getBuildDockerfile($scope.buildList[index].projectId, $scope.buildList[index].id).then(function (res) {
+			$LunarProject.projectService.getBuildDockerfile($scope.buildList[index].projectId, $scope.buildList[index].id).then(function (res) {
 				var dockerfile = res.data.result;
 				if (dockerfile) {
 					$scope.dockerfile = dockerfile.replace(/[\n\r]/g, '<br/>');
@@ -438,7 +438,7 @@
 		$scope.stopBuild = function (log) {
 			// console.log(log);
 			dialog.continue('提示', '确定要停止构建吗？').then(button => { if (button !== dialog.button.BUTTON_OK) throw '' }).then(function() {
-				$domeProject.projectService.stopBulid(log.id).then(function(res) {
+				$LunarProject.projectService.stopBulid(log.id).then(function(res) {
 					freshBuildList();
 				},function(resError) {
 					dialog.error('操作失败', resError.data.resultMsg);
@@ -510,7 +510,7 @@
 			modify();
 		};
 		$scope.openBuild = function () {
-			$domeProject.buildProject($scope.config.id, !!$scope.config.codeInfo).then(function () {
+			$LunarProject.buildProject($scope.config.id, !!$scope.config.codeInfo).then(function () {
 				freshBuildList();
 			});
 		};
@@ -572,4 +572,4 @@
 			}
         };
     });
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

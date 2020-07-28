@@ -1,20 +1,20 @@
 /**
  * Created on 2016/12/22.
  */
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
   'use strict';
-  if (domeApp === 'undefined')
+  if (LunarApp === 'undefined')
     return;
-  domeApp.controller("StorageDetailCtr", [
+  LunarApp.controller("StorageDetailCtr", [
     '$scope',
     '$state',
-    '$domeStorage',
+    '$LunarStorage',
     '$modal',
     'dialog',
     function (
       $scope,
       $state,
-      $domeStorage,
+      $LunarStorage,
       $modal,
       dialog
     ) {
@@ -42,7 +42,7 @@
       $scope.exitToList = () => {
         $state.go('storageManage');
       };
-      const storageBackend = $domeStorage.storageBackend;
+      const storageBackend = $LunarStorage.storageBackend;
 
       function initStorageIns() {
         storageBackend.getStorage(storageId).then(function (res) {
@@ -81,7 +81,7 @@
       initVolumeIns();
       $scope.deleteVolume = function (volume) {
         debugger
-        $domeStorage.storageBackend.listRelatedDeployInfo(volume.storageVolumeDraft.id).then(function (res) {
+        $LunarStorage.storageBackend.listRelatedDeployInfo(volume.storageVolumeDraft.id).then(function (res) {
           $scope.relatedList = res.data.result || [];
           $scope.relatedDeployList = $scope.relatedList.filter(ov => ov.loadBalancer === false);
           $scope.relatedLoadBalancerList = $scope.relatedList.filter(ov => ov.loadBalancer === true);
@@ -157,4 +157,4 @@
       };
     }]);
 
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

@@ -2,18 +2,18 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
 	'use strict';
-	if (typeof domeApp === 'undefined') return;
-	domeApp.controller('AppStoreCtr', ['$scope', '$domeAppStore', function ($scope, $domeAppStore) {
+	if (typeof LunarApp === 'undefined') return;
+	LunarApp.controller('AppStoreCtr', ['$scope', '$LunarAppStore', function ($scope, $LunarAppStore) {
 		'use strict';
 		$scope.$emit('pageTitle', {
 			title: '欢迎来到应用商店！',
 			descrition: '在这里您可以选择需要的应用并快速部署。部署后请到部署模块查询您的应用。',
 			mod: 'appStore'
 		});
-		$domeAppStore.getStoreApps().then(function (res) {
+		$LunarAppStore.getStoreApps().then(function (res) {
 			$scope.appList = res.data || [];
 		});
 	}]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

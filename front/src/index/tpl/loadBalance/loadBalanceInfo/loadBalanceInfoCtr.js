@@ -1,9 +1,9 @@
 /**
  * Created by haozhou on 2017/3/14.
  */
-;(function (domeApp) {
+;(function (LunarApp) {
   'use strict';
-  domeApp.controller('LoadBalanceInfoCtr', ['$scope', '$state', 'api', 'dialog', '$timeout', function ($scope, $state, api, dialog, $timeout) {
+  LunarApp.controller('LoadBalanceInfoCtr', ['$scope', '$state', 'api', 'dialog', '$timeout', function ($scope, $state, api, dialog, $timeout) {
     $scope.loadBalanceCollectionId = $state.params.id;
     let loadBalanceCollectionType = $state.params.type;
     if (!$scope.loadBalanceCollectionId) {
@@ -34,7 +34,7 @@
       $state.go('loadBalanceCollection');
     };
   }]);
-  domeApp.controller('LoadBalanceListCtr', ['$scope', '$state', 'api', '$domePublic', 'dialog', function ($scope, $state, api, $domePublic, dialog) {
+  LunarApp.controller('LoadBalanceListCtr', ['$scope', '$state', 'api', '$LunarPublic', 'dialog', function ($scope, $state, api, $LunarPublic, dialog) {
     $scope.loadBalanceCollectionId = $state.params.id;
     if (!$scope.loadBalanceCollectionId) {
       $state.go('loadBalanceCollection');
@@ -97,4 +97,4 @@
     };
 
   }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

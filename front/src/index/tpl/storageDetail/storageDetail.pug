@@ -35,7 +35,7 @@ script(type="text/ng-template" id="volumeList.html")
           on-change="filterVolumeList()"
           placeholder="搜索名称"
           )
-      dome-prompt(content="数据卷是在创建在集群上可以被部署实例挂载的存储服务，创建数据卷会在集群内增加一条关联到该存储集群的记录，数据卷可以在部署模块中挂载。")
+      Lunar-prompt(content="数据卷是在创建在集群上可以被部署实例挂载的存储服务，创建数据卷会在集群内增加一条关联到该存储集群的记录，数据卷可以在部署模块中挂载。")
       form-table(
         ng-model="volumeInfo.filteredVolumeList"
         template="storageVolumeTable"
@@ -62,12 +62,12 @@ script(type="text/ng-template" id="volumeList.html")
         div(ng-if="column.key === 'accessMode'" ng-bind="({'READWRITEONCE': '单主机读写', 'READONLYMANY': '多主机只读', 'READWRITEMANY': '多主机读写'}[row.storageVolumeDraft.accessMode])")
         div(ng-if="column.key === 'createTime'" ng-bind="row.storageVolumeDraft.createTime | time")
 script(type="text/ng-template" id="detail.html")
-  .dome-option-container(style="margin-bottom:0;")
+  .Lunar-option-container(style="margin-bottom:0;")
     button.ui-btn.ui-btn-bright.ui-btn-sm(ng-if="!isEditStorage" ng-click="toggleIsEditStorage('edit')" ng-disabled="!mayPost()" ng-class="{'ui-btn-lg-disabled':!mayPost()}") 编辑
     button.ui-btn.ui-btn-bright.ui-btn-sm(ng-if="isEditStorage" ng-click="saveEditStorage()" ng-disabled="isRunning") 保存
     button.ui-btn.ui-btn-bright.ui-btn-sm(ng-if="isEditStorage" ng-click="toggleIsEditStorage()" ng-disabled="isRunning") 取消
-  .dome-prompt-container
-    dome-prompt(content="当该存储集群已存在数据卷时，仅支持修改存储名称和描述信息")
+  .Lunar-prompt-container
+    Lunar-prompt(content="当该存储集群已存在数据卷时，仅支持修改存储名称和描述信息")
   form-container(left-column-width="80px")
     form-config-group(ng-if="!isEditStorage")
       form-config-item(config-title="存储名称")

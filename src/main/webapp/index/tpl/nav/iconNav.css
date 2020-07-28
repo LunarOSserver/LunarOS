@@ -22,7 +22,7 @@
     color: #98a6ad;
     margin-top: 50px;
     /*every icon menu*/ }
-    .icon-bar ul.nav-lists li.dome-logo a {
+    .icon-bar ul.nav-lists li.Lunar-logo a {
       display: block;
       height: 70px;
       padding: 0px 0px 0px 23px; }
@@ -144,17 +144,17 @@
           background-position: 0 -168px; }
         .icon-bar ul.nav-lists ul.icon-menu li.has-sub .nav-mod-app {
           background-position: 0 -24px; }
-      .icon-bar ul.nav-lists ul.icon-menu.dome-logo a {
+      .icon-bar ul.nav-lists ul.icon-menu.Lunar-logo a {
         display: block;
         height: 70px;
         padding: 25px 0 0 15px; }
-      .icon-bar ul.nav-lists ul.icon-menu.dome-logo .txt-logo {
+      .icon-bar ul.nav-lists ul.icon-menu.Lunar-logo .txt-logo {
         font-size: 18px;
         font-weight: bold;
         color: #fff;
         margin-left: 15px;
         letter-spacing: 1px; }
-      .icon-bar ul.nav-lists ul.icon-menu.dome-logo .img-logo {
+      .icon-bar ul.nav-lists ul.icon-menu.Lunar-logo .img-logo {
         margin-top: -10px; }
 
 .nav-sidebar li a {

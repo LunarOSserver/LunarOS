@@ -2,9 +2,9 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {'use strict';
-    if (typeof domeApp === 'undefined') return;
-    domeApp.controller('DeployCollectionManageCtr', ['$scope','$domeUser', '$domeDeployCollection', '$domeDeploy', '$state', 'api', 'dialog', function ($scope,$domeUser, $domeDeployCollection,$domeDeploy, $state, api, dialog) {
+(function (LunarApp, undefined) {'use strict';
+    if (typeof LunarApp === 'undefined') return;
+    LunarApp.controller('DeployCollectionManageCtr', ['$scope','$LunarUser', '$LunarDeployCollection', '$LunarDeploy', '$state', 'api', 'dialog', function ($scope,$LunarUser, $LunarDeployCollection,$LunarDeploy, $state, api, dialog) {
         $scope.$emit('pageTitle', {
             title: '服务管理',
             descrition: '服务管理。',
@@ -29,8 +29,8 @@
 
         $scope.collectionList = [];
         $scope.isLoading = true;
-        var deployCollectionService = $domeDeployCollection.deployCollectionService;
-        var deployService = $domeDeploy.deployService;
+        var deployCollectionService = $LunarDeployCollection.deployCollectionService;
+        var deployService = $LunarDeploy.deployService;
         function init () {
             deployCollectionService.getDeployCollection().then(function (res) {
                 $scope.collectionList = res.data.result || [];
@@ -59,7 +59,7 @@
             });
         };
         $scope.deleteDeployCollection = function (deployCollectionId) {
-            $domeDeployCollection.deleteDeployCollection(deployCollectionId).then(function() {
+            $LunarDeployCollection.deleteDeployCollection(deployCollectionId).then(function() {
                 for (var i = 0; i < $scope.collectionList.length; i++) {
                     if ($scope.collectionList[i].id === deployCollectionId) {
                         $scope.collectionList.splice(i, 1);
@@ -74,4 +74,4 @@
             init();
         };
     }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

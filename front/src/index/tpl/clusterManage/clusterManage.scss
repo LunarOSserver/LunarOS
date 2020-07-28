@@ -13,7 +13,7 @@ $context-info-color:#888;
 			border-top: $deep-border;
 			border-bottom: 1px solid transparent;
 			&:hover{
-				background-color: dome-color(background,table-hover-background);
+				background-color: Lunar-color(background,table-hover-background);
 	        	.ui-li-link{
 	            	color:#ff9800	;
 	        	}
@@ -33,20 +33,20 @@ $context-info-color:#888;
 					.cluster-name {
 						display: inline-block;
 						width: 15%;
-						color: dome-color(dome,bright);
+						color: Lunar-color(Lunar,bright);
 						font-size: 16px;
 						font-weight: bold;
 					}
 					.ui-btn-white{
-						color: dome-color(dome,bright);
+						color: Lunar-color(Lunar,bright);
 					}
 				}
 				.build-cluster-title{
 					display: inline-block;
 					width: 15%;
-					color: dome-color(font,default);
+					color: Lunar-color(font,default);
 					em{
-						color: dome-color(dome,safe);
+						color: Lunar-color(Lunar,safe);
 					}
 				}
 				.content-last{
@@ -88,7 +88,7 @@ $context-info-color:#888;
 			&.no-cluster{
 				height: 208px;
 				text-align: center;
-				border:1px dashed dome-color(border,deep);
+				border:1px dashed Lunar-color(border,deep);
 				border-radius: $default-radius;
 				span{
 					display: inline-block;
@@ -108,7 +108,7 @@ $context-info-color:#888;
 				color: #888;
 			}
 			a:hover{
-				color: dome-color(dome,bright);
+				color: Lunar-color(Lunar,bright);
 			}
 		}
 		.btn-icon{

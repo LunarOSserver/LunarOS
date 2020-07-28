@@ -4828,7 +4828,7 @@ VT100.prototype.doControl = function(ch) {
               if (this.titleString != '') {
                 this.titleString += ' - ';
               }
-              this.titleString += 'DomeOS'
+              this.titleString += 'LunarOS'
             }
             try {
               window.document.title = this.titleString;
@@ -5632,7 +5632,7 @@ ShellInABox.prototype.messageReplay = function(type, data) {
 };
 
 ShellInABox.prototype.about = function() {
-  alert("DomeOS v0.1");
+  alert("LunarOS v0.1");
 };
 
 /* vim: set filetype=javascript : */

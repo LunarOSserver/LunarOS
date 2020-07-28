@@ -2,17 +2,17 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
 	'use strict';
-	if (typeof domeApp === 'undefined') return;
-	domeApp.controller('ImagesManageCtr', ['$scope', '$state', '$stateParams', '$domeImage', 'dialog','$domeUser', '$modal', '$cookieStore', function ($scope, $state,$stateParams, $domeImage, dialog,$domeUser, $modal, $cookieStore) {
+	if (typeof LunarApp === 'undefined') return;
+	LunarApp.controller('ImagesManageCtr', ['$scope', '$state', '$stateParams', '$LunarImage', 'dialog','$LunarUser', '$modal', '$cookieStore', function ($scope, $state,$stateParams, $LunarImage, dialog,$LunarUser, $modal, $cookieStore) {
 		$scope.$emit('pageTitle', {
 			title: '镜像管理',
 			descrition: '在这里您可以查看并管理您的镜像仓库。',
 			mod: 'image'
 		});
 		$scope.imageDeleteAuth = false;
-		var userService = $domeUser.userService;
+		var userService = $LunarUser.userService;
 		userService.getCurrentUser().then(function (res) {
 			var loginUser = res.data.result;
 			if(loginUser.adminPrivilege) {
@@ -30,7 +30,7 @@
 		
 		var projectCollectionId = '';
 		var stateInfo = $state.$current.name,
-		imageService = $domeImage.imageService;
+		imageService = $LunarImage.imageService;
 		var imageNameDetailRequest = {};
 		function init() {
 			if($stateParams.args.projectCollectionId !== undefined) {
@@ -89,7 +89,7 @@
 			});
 		};
 		$scope.deletePrivateImage = function (name,tag,registry) {
-			$domeImage.deletePrivateImage(name,tag,registry).then(function () {
+			$LunarImage.deletePrivateImage(name,tag,registry).then(function () {
 				init();
 				// for (var i = 0; i < $scope.imagesInfo.length; i++) {
 				// 	if ($scope.imagesInfo[i].imageName === name ) {
@@ -125,7 +125,7 @@
 			});
 		};
 		$scope.deleteBaseImage = function (id) {
-			$domeImage.deleteBaseImage(id).then(function () {
+			$LunarImage.deleteBaseImage(id).then(function () {
 				for (var i = 0; i < $scope.baseImages.length; i++) {
 					if ($scope.baseImages[i].id === id) {
 						$scope.baseImages.splice(i, 1);
@@ -158,4 +158,4 @@
 			}
 		};
 	}]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

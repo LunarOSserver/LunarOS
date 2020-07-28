@@ -5,7 +5,7 @@ if [ -z "$MYSQL_PORT" ]; then
 fi
 
 echo "
-create database if not exists domeos;
+create database if not exists Lunaros;
 create database if not exists graph;
 create database if not exists portal;
 " > ./create.sql;
@@ -14,7 +14,7 @@ mysql -h ${MYSQL_HOST} -P ${MYSQL_PORT} -u ${MYSQL_USERNAME} -p${MYSQL_PASSWORD}
 
 sleep 5
 
-echo "use domeos;" > ./init.sql
+echo "use Lunaros;" > ./init.sql
 cat ./create-db.sql >> ./init.sql
 cat ./insert-data.sql >> ./init.sql
 

@@ -7,8 +7,8 @@
     'use strict';
     let deployModule = angular.module('deployModule', []);
 
-    function DeployService($http, $domeCluster, $domeImage, $domePublic, dialog, $domeModel, $modal, $q, $util, $sce, api) {
-        const nodeService = $domeCluster.getInstance('NodeService');
+    function DeployService($http, $LunarCluster, $LunarImage, $LunarPublic, dialog, $LunarModel, $modal, $q, $util, $sce, api) {
+        const nodeService = $LunarCluster.getInstance('NodeService');
         const DeployService = function () {
             const _url = '/api/deploy';
             const _versionUrl = '/api/version';
@@ -70,10 +70,10 @@
                 this.logConfig = null;
                 this.envText = '请选择部署环境';
                 this.versionList = null;
-                this.nodeListIns = $domeCluster.getInstance('NodeList');
+                this.nodeListIns = $LunarCluster.getInstance('NodeList');
                 this.nodeListForIps = [];
-                this.clusterListIns = $domeCluster.getInstance('ClusterList');
-                this.loadingIns = $domePublic.getLoadingInstance();
+                this.clusterListIns = $LunarCluster.getInstance('ClusterList');
+                this.loadingIns = $LunarPublic.getLoadingInstance();
                 this.creator = {
                     id: null,
                     name: null,
@@ -83,8 +83,8 @@
                 this.hostEnv = 'TEST';
                 this.config = {};
                 this.defaultVersionString = {
-                  'YAML': 'containers:\n- image: \"pub.domeos.org/registry:2.3\"\n  name: \"test-container\"\n  volumeMounts:\n  - mountPath: \"/test-hostpath\"\n    name: \"test-volume\"\nvolumes:\n- hostPath:\n    path: \"/opt/scs\"\n  name: \"test-volume\"\n',
-                  'JSON': '{\n  \"containers\": [{\n    \"image\": \"pub.domeos.org/registry:2.3\",\n    \"name\": \"test-container\",\n    \"volumeMounts\": [{\n      \"mountPath\": \"/test-hostpath\",\n      \"name\": \"test-volume\"\n    }]\n  }],\n  \"volumes\": [{\n    \"hostPath\": {\n      \"path\": \"/opt/scs\"\n    },\n    \"name\": \"test-volume\"\n  }]\n}\n',
+                  'YAML': 'containers:\n- image: \"pub.Lunaros.org/registry:2.3\"\n  name: \"test-container\"\n  volumeMounts:\n  - mountPath: \"/test-hostpath\"\n    name: \"test-volume\"\nvolumes:\n- hostPath:\n    path: \"/opt/scs\"\n  name: \"test-volume\"\n',
+                  'JSON': '{\n  \"containers\": [{\n    \"image\": \"pub.Lunaros.org/registry:2.3\",\n    \"name\": \"test-container\",\n    \"volumeMounts\": [{\n      \"mountPath\": \"/test-hostpath\",\n      \"name\": \"test-volume\"\n    }]\n  }],\n  \"volumes\": [{\n    \"hostPath\": {\n      \"path\": \"/opt/scs\"\n    },\n    \"name\": \"test-volume\"\n  }]\n}\n',
                 };
                 this.mountVolumeType = {
                     'HOSTPATH': '主机目录',
@@ -212,7 +212,7 @@
                 if (this.config.stateful !== true) {
                     if (!$util.isArray(this.imageList) && this.config.versionType!=='WATCHER') {
                         this.loadingIns.startLoading('dockerImage');
-                        $domeImage.imageService.getProjectImages().then((res) => {
+                        $LunarImage.imageService.getProjectImages().then((res) => {
                             let imageList = res.data.result || [];
                             // 格式化image的envSettings为containerConsoles格式
                             for (let image of imageList) {
@@ -416,7 +416,7 @@
 
                 const getTag = (containerConsole) => {
                     this.loadingIns.startLoading('tag');
-                    $domeImage.imageService.getImageTags(containerConsole.image, containerConsole.registry).then((res) => {
+                    $LunarImage.imageService.getImageTags(containerConsole.image, containerConsole.registry).then((res) => {
                         containerConsole.tagList = res.data.result || [];
                     }).finally(() => {
                         this.loadingIns.finishLoading('tag');
@@ -516,7 +516,7 @@
                 // 添加containerConsole
             addImage(image) {
                     this.loadingIns.startLoading('addImage');
-                    $domeImage.imageService.getImageTags(image.imageName, image.registry).then((res) => {
+                    $LunarImage.imageService.getImageTags(image.imageName, image.registry).then((res) => {
                         let tags = res.data.result;
                         this.config.containerConsoles.push({
                             image: image.imageName,
@@ -1363,7 +1363,7 @@
         }
 
         // 获得实例
-        const getInstance = $domeModel.instancesCreator({
+        const getInstance = $LunarModel.instancesCreator({
             DeployList: DeployList,
             Deploy: Deploy
         });
@@ -1372,7 +1372,7 @@
             getInstance: getInstance
         };
     }
-    DeployService.$inject = ['$http', '$domeCluster', '$domeImage', '$domePublic', 'dialog', '$domeModel', '$modal', '$q', '$util', '$sce', 'api'];
-    deployModule.factory('$domeDeploy', DeployService);
+    DeployService.$inject = ['$http', '$LunarCluster', '$LunarImage', '$LunarPublic', 'dialog', '$LunarModel', '$modal', '$q', '$util', '$sce', 'api'];
+    deployModule.factory('$LunarDeploy', DeployService);
     window.deployModule = deployModule;
 })(window);

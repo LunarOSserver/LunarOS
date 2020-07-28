@@ -1,9 +1,9 @@
 /**
  * Created by haozhou on 2017/2/13.
  */
-;(function (domeApp) {
+;(function (LunarApp) {
     'use strict';
-    domeApp.controller('CreateConfigMapCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
+    LunarApp.controller('CreateConfigMapCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
         let configMapCollectionId = $state.params.id;
         if (!configMapCollectionId) {
             $state.go('configMapCollection');
@@ -59,7 +59,7 @@
             });
         };
     }]);
-    domeApp.directive('isConfigmapUnique', ['api', function (api) {
+    LunarApp.directive('isConfigmapUnique', ['api', function (api) {
         return {
             require: 'ngModel',
             scope: [],
@@ -83,7 +83,7 @@
 
         };
     }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));
 
 (function (formInputs) {
     formInputs.component('multipleConfigFiles', {

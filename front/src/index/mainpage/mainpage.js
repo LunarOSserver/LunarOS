@@ -1,8 +1,8 @@
 /* jshint esversion: 6 */
-(function (domeApp) {
+(function (LunarApp) {
   'use strict';
 
-  domeApp.controller('MainCtr', ['$scope', '$timeout', function ($scope, $timeout) {
+  LunarApp.controller('MainCtr', ['$scope', '$timeout', function ($scope, $timeout) {
 
     // 管理左侧导航栏的宽度问题
     // 首先是用户配置，并根据用户配置选择默认行为
@@ -22,10 +22,10 @@
 
   }]);
 
-  domeApp.component('memoryDatabaseWarning', {
+  LunarApp.component('memoryDatabaseWarning', {
     template: `
       <div class="page-prompt" ng-if="$ctrl.isInMemoryDatabase && !$ctrl.userHide">
-        <div class="page-prompt-text">为了方便试用DomeOS，目前正在使用内存数据库。数据库数据会在 DomeOS 服务器重启时丢失。您可以配置 MySQL 作为持久化数据库。配置 MySQL 数据库的方法详见<a href="{{ $ctrl.documentUrl }}" target="_blank">使用文档</a>。</div>
+        <div class="page-prompt-text">为了方便试用LunarOS，目前正在使用内存数据库。数据库数据会在 LunarOS 服务器重启时丢失。您可以配置 MySQL 作为持久化数据库。配置 MySQL 数据库的方法详见<a href="{{ $ctrl.documentUrl }}" target="_blank">使用文档</a>。</div>
         <icon-close class="page-prompt-close" ng-click="$ctrl.hideWarning()"></icon-close>
       </div>
     `,
@@ -46,7 +46,7 @@
     }],
   });
 
-  domeApp.component('headerAction', {
+  LunarApp.component('headerAction', {
     template: `
       <ul class="header-action-container" ng-show="$ctrl.user.name">
         <li class="header-action-item header-action-document">
@@ -105,7 +105,7 @@
     }],
   });
 
-  domeApp.component('leftNav', {
+  LunarApp.component('leftNav', {
     template: `
       <div id="left-nav" class="left-nav-container" role="navigation">
         <ul class="left-nav-list">
@@ -153,8 +153,8 @@
       const initMenu = function (isAdmin) {
         $scope.menu = [{
           classname: 'logo-container',
-          icon: 'domeos',
-          text: 'DomeOS',
+          icon: 'Lunaros',
+          text: 'LunarOS',
           page: 'overview',
         }, {
           icon: 'development',
@@ -228,7 +228,7 @@
     }]
   });
 
-  domeApp.component('navIcon', {
+  LunarApp.component('navIcon', {
     template: `
       <i class="icon icon-nav {{ $ctrl.classname() }}"></i>
     `,
@@ -238,7 +238,7 @@
     controller: [function () {
       const $ctrl = this;
       $ctrl.classname = () => ({
-        'domeos': 'domeos-logo',
+        'Lunaros': 'Lunaros-logo',
         'development': 'fa fa-th-large',
         'operation': 'glyphicon glyphicon-stats', // what the f
         'monitor': 'fa fa-bell-o',
@@ -247,4 +247,4 @@
     }],
   });
 
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

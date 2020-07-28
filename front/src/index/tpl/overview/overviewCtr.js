@@ -1,8 +1,8 @@
 /* jshint esversion: 6 */
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
   'use strict';
-  if (typeof domeApp === 'undefined') return;
-  domeApp.controller('OverviewCtr', ['$scope', '$timeout', '$filter', 'api', 'chartHandler', function ($scope, $timeout, $filter, api, chartHandler) {
+  if (typeof LunarApp === 'undefined') return;
+  LunarApp.controller('OverviewCtr', ['$scope', '$timeout', '$filter', 'api', 'chartHandler', function ($scope, $timeout, $filter, api, chartHandler) {
     $scope.data = {};
     let requestByName = {};
     let allRequests = [
@@ -140,4 +140,4 @@
     });
 
   }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

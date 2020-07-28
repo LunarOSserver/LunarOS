@@ -2,7 +2,7 @@ doctype html
 html(ng-app="monitorApp")
   head
     meta(http-equiv="Content-Type",content="text/html; charset=utf-8")
-    title DomeOS-监控
+    title LunarOS-监控
     link(rel="stylesheet" href='../lib/css/bootstrap.css' type="text/css")
     link(rel="stylesheet" href='../common/css/base.css' type="text/css")
     link(rel="stylesheet" href='css/monitor.css')
@@ -10,7 +10,7 @@ html(ng-app="monitorApp")
     link(rel="stylesheet" href='../common/css/ng-cloak.css' type="text/css")
   body(ng-controller="MonitorCtr")
     loading(ng-if="isLoading")
-    div.monitor-header(ng-cloak) DomeOS {{monitorTypeName}}监控
+    div.monitor-header(ng-cloak) LunarOS {{monitorTypeName}}监控
     div.monitor-container
       div.datepicker-component(datepicker-component date-options="[{interval:'1h',text:'实时',isDefault:true},{interval:'24h',text:'1天'}]")
       ul.monitor-options
@@ -197,7 +197,7 @@ html(ng-app="monitorApp")
     script(type="text/javascript" src="../common/angularAmchartsModule/amchartsModule.js")
     script(type="text/javascript" src="../common/publicModule/publicModule.js")
     script(type="text/javascript" src="../common/publicModule/directive/publicDirective.js")
-    script(type="text/javascript" src="../common/domeModule/domeModule.js")
+    script(type="text/javascript" src="../common/LunarModule/LunarModule.js")
     script(type="text/javascript" src="../common/commonFilters/commonFilters.js")
     script(type="text/javascript" src="../common/constant/constant.js")
     script(type="text/javascript" src="../common/backendApi/backendApi.js")

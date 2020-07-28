@@ -2,15 +2,15 @@
  * @author ChandraLee
  */
 
-((domeApp, undefined) => {
+((LunarApp, undefined) => {
     'use strict';
-    if (typeof domeApp === 'undefined') return;
+    if (typeof LunarApp === 'undefined') return;
 
 
-    domeApp// .controller('GlobalSettingCtr', GlobalSettingCtr)
+    LunarApp// .controller('GlobalSettingCtr', GlobalSettingCtr)
         .controller('GitLabInfoModalCtr',GitLabInfoModalCtr);
 
-    domeApp.controller('GlobalSettingCtr', ['api', '$state', function (api, $state) {
+    LunarApp.controller('GlobalSettingCtr', ['api', '$state', function (api, $state) {
       api.user.whoami().then(({ isAdmin }) => {
         if (!isAdmin) {
           $state.go('overview');
@@ -18,11 +18,11 @@
       });
     }]);
 
-    function GitLabInfoModalCtr($scope,$modalInstance,$domeGlobal,gitInfoDraft){
+    function GitLabInfoModalCtr($scope,$modalInstance,$LunarGlobal,gitInfoDraft){
         $scope.needValidGit = false;
         $scope.gitInfo = angular.copy(gitInfoDraft);
         $scope.submit = function() {
-            $domeGlobal.getGloabalInstance('git').modifyData($scope.gitInfo).then(() => {
+            $LunarGlobal.getGloabalInstance('git').modifyData($scope.gitInfo).then(() => {
                 $modalInstance.close('ok');
             }).finally(()=> {
                 $scope.needValidGit = false;
@@ -32,12 +32,12 @@
             $modalInstance.dismiss('cancel');
         };
     }
-    GitLabInfoModalCtr.$inject = ['$scope','$modalInstance','$domeGlobal','gitInfoDraft']
+    GitLabInfoModalCtr.$inject = ['$scope','$modalInstance','$LunarGlobal','gitInfoDraft']
 
 
-    domeApp.controller('GlobalSettingUserCtr', [
-      '$scope', '$domeGlobal', '$state', '$domeUser', '$domeCluster', '$modal', '$q', 'api', 'dialog', 'userDialog',
-    function ($scope, $domeGlobal, $state, $domeUser, $domeCluster, $modal, $q, api, dialog, userDialog) {
+    LunarApp.controller('GlobalSettingUserCtr', [
+      '$scope', '$LunarGlobal', '$state', '$LunarUser', '$LunarCluster', '$modal', '$q', 'api', 'dialog', 'userDialog',
+    function ($scope, $LunarGlobal, $state, $LunarUser, $LunarCluster, $modal, $q, api, dialog, userDialog) {
       let vm = $scope.vm = {};
 
       vm.newUser = {};
@@ -58,7 +58,7 @@
       // ldap用户列表
       vm.ldapUserList = [];
       var getUserList = function () {
-        $domeUser.userService.getUserList().then(function (res) {
+        $LunarUser.userService.getUserList().then(function (res) {
           vm.userList = res.data.result || [];
         });
       };
@@ -89,7 +89,7 @@
       vm.deleteUser = (user) => {
         var id = user.id;
         dialog.danger('删除用户', '确认要删除用户吗？').then(() => {
-          $domeUser.userService.deleteUser(id).catch(e => {
+          $LunarUser.userService.deleteUser(id).catch(e => {
             dialog.error('删除用户', '删除失败！' + e.data.resultMsg);
           }).then(() => {
             getUserList();
@@ -101,7 +101,7 @@
         var newUser = angular.copy(vm.newUser);
         delete newUser.rePassword;
 
-        $domeUser.userService.createUser(newUser).then(function (res) {
+        $LunarUser.userService.createUser(newUser).then(function (res) {
           dialog.alert('创建用户', '创建成功！');
           var user = angular.copy(newUser);
           getUserList();
@@ -112,7 +112,7 @@
 
     }]);
 
-    domeApp.controller('GlobalSettingLoginCtr', [
+    LunarApp.controller('GlobalSettingLoginCtr', [
       '$scope', 'api', 'dialog',
     function ($scope, api, dialog) {
       $scope.isLoading = true;
@@ -131,12 +131,12 @@
       };
     }]);
 
-    domeApp.controller('GlobalSettingCodeSourceCtr', [
-      '$scope', '$domeGlobal', '$state', '$domeUser', '$domeCluster', '$modal', '$q', 'api', 'dialog',
-    function ($scope, $domeGlobal, $state, $domeUser, $domeCluster, $modal, $q, api, dialog) {
+    LunarApp.controller('GlobalSettingCodeSourceCtr', [
+      '$scope', '$LunarGlobal', '$state', '$LunarUser', '$LunarCluster', '$modal', '$q', 'api', 'dialog',
+    function ($scope, $LunarGlobal, $state, $LunarUser, $LunarCluster, $modal, $q, api, dialog) {
       let vm = $scope.vm = {};
 
-      const gitOptions = $domeGlobal.getGloabalInstance('git');
+      const gitOptions = $LunarGlobal.getGloabalInstance('git');
       vm.gitInfo = {};
 
       vm.getGitInfo = () => {
@@ -203,12 +203,12 @@
       vm.getGitInfo();
     }]);
 
-    domeApp.controller('GlobalSettingRegisteryCtr', [
-      '$scope', '$domeGlobal', '$state', '$domeUser', '$domeCluster', '$modal', '$q', 'api', 'dialog',
-    function ($scope, $domeGlobal, $state, $domeUser, $domeCluster, $modal, $q, api, dialog) {
+    LunarApp.controller('GlobalSettingRegisteryCtr', [
+      '$scope', '$LunarGlobal', '$state', '$LunarUser', '$LunarCluster', '$modal', '$q', 'api', 'dialog',
+    function ($scope, $LunarGlobal, $state, $LunarUser, $LunarCluster, $modal, $q, api, dialog) {
       let vm = $scope.vm = {};
 
-      const registryOptions = $domeGlobal.getGloabalInstance('registry');
+      const registryOptions = $LunarGlobal.getGloabalInstance('registry');
       vm.registryInfo = {};
 
 
@@ -238,12 +238,12 @@
 
     }]);
 
-    domeApp.controller('GlobalSettingServerCtr', [
-      '$scope', '$domeGlobal', '$state', '$domeUser', '$domeCluster', '$modal', '$q', 'api', 'dialog',
-    function ($scope, $domeGlobal, $state, $domeUser, $domeCluster, $modal, $q, api, dialog) {
+    LunarApp.controller('GlobalSettingServerCtr', [
+      '$scope', '$LunarGlobal', '$state', '$LunarUser', '$LunarCluster', '$modal', '$q', 'api', 'dialog',
+    function ($scope, $LunarGlobal, $state, $LunarUser, $LunarCluster, $modal, $q, api, dialog) {
       let vm = $scope.vm = {};
 
-      const serverOptions = $domeGlobal.getGloabalInstance('server');
+      const serverOptions = $LunarGlobal.getGloabalInstance('server');
       vm.serverInfo = {};
       vm.getServerInfo = () => {
         if (!vm.serverInfo.id) {
@@ -263,12 +263,12 @@
 
     }]);
 
-    domeApp.controller('GlobalSettingMonitorCtr', [
-      '$scope', '$domeGlobal', '$state', '$domeUser', '$domeCluster', '$modal', '$q', 'api', 'dialog',
-    function ($scope, $domeGlobal, $state, $domeUser, $domeCluster, $modal, $q, api, dialog) {
+    LunarApp.controller('GlobalSettingMonitorCtr', [
+      '$scope', '$LunarGlobal', '$state', '$LunarUser', '$LunarCluster', '$modal', '$q', 'api', 'dialog',
+    function ($scope, $LunarGlobal, $state, $LunarUser, $LunarCluster, $modal, $q, api, dialog) {
       let vm = $scope.vm = {};
 
-      const monitorOptions = $domeGlobal.getGloabalInstance('monitor');
+      const monitorOptions = $LunarGlobal.getGloabalInstance('monitor');
 
       class Monitor {
         init(info) {
@@ -348,12 +348,12 @@
 
     }]);
 
-    domeApp.controller('GlobalSettingWebSSHCtr', [
-      '$scope', '$domeGlobal', '$state', '$domeUser', '$domeCluster', '$modal', '$q', 'api', 'dialog',
-    function ($scope, $domeGlobal, $state, $domeUser, $domeCluster, $modal, $q, api, dialog) {
+    LunarApp.controller('GlobalSettingWebSSHCtr', [
+      '$scope', '$LunarGlobal', '$state', '$LunarUser', '$LunarCluster', '$modal', '$q', 'api', 'dialog',
+    function ($scope, $LunarGlobal, $state, $LunarUser, $LunarCluster, $modal, $q, api, dialog) {
       let vm = $scope.vm = {};
 
-      const sshOptions = $domeGlobal.getGloabalInstance('ssh');
+      const sshOptions = $LunarGlobal.getGloabalInstance('ssh');
       vm.sshInfo = {};
 
       vm.getWebSsh = () => {
@@ -374,20 +374,20 @@
 
     }]);
 
-    domeApp.controller('GlobalSettingBuildCtr', [
-      '$scope', '$domeGlobal', '$state', '$domeUser', '$domeCluster', '$domePublic', '$modal', '$q', 'api', 'dialog',
-    function ($scope, $domeGlobal, $state, $domeUser, $domeCluster, $domePublic, $modal, $q, api, dialog) {
+    LunarApp.controller('GlobalSettingBuildCtr', [
+      '$scope', '$LunarGlobal', '$state', '$LunarUser', '$LunarCluster', '$LunarPublic', '$modal', '$q', 'api', 'dialog',
+    function ($scope, $LunarGlobal, $state, $LunarUser, $LunarCluster, $LunarPublic, $modal, $q, api, dialog) {
       let vm = $scope.vm = {};
 
       vm.key = {
         nodeKey: ''
       };
 
-      const clusterOptions = $domeGlobal.getGloabalInstance('cluster');
-      const nodeService = $domeCluster.getInstance('NodeService');
+      const clusterOptions = $LunarGlobal.getGloabalInstance('cluster');
+      const nodeService = $LunarCluster.getInstance('NodeService');
 
       vm.clusterInfo = {};
-      vm.clusterLoadingIns = $domePublic.getLoadingInstance();
+      vm.clusterLoadingIns = $LunarPublic.getLoadingInstance();
 
       const getClusterList = () => {
         if (vm.clusterList) {
@@ -518,4 +518,4 @@
     }]);
 
 
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

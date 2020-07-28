@@ -1,7 +1,7 @@
 -- CREATE DATABASE IF NOT EXISTS `graph`;
 -- USE GRAPH;
 -- set names utf8;
--- grant all privileges on graph.* to 'domeos'@'%' with grant option;
+-- grant all privileges on graph.* to 'Lunaros'@'%' with grant option;
 use graph
 
 DROP TABLE if exists `graph`.`endpoint`;

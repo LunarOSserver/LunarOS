@@ -18,7 +18,7 @@ $context-info-color:#888;
 				margin-bottom: 20px; 
 			}
 			&:hover{
-				background-color: dome-color(background,table-hover-background);
+				background-color: Lunar-color(background,table-hover-background);
 			}
 			.collection-item{
 				
@@ -30,12 +30,12 @@ $context-info-color:#888;
 					overflow: visible;
 					.collection-name {
 						display: inline-block;
-						color: dome-color(dome,bright);
+						color: Lunar-color(Lunar,bright);
 						font-size: 16px;
 						font-weight: bold;
 					}
 					.ui-btn-white{
-						color: dome-color(dome,bright);
+						color: Lunar-color(Lunar,bright);
 					}
 					.dropdown-menu-delete{
 						padding:0;
@@ -104,7 +104,7 @@ $context-info-color:#888;
 			&.no-collection{
 				height: 208px;
 				text-align: center;
-				border:1px dashed dome-color(border,deep);
+				border:1px dashed Lunar-color(border,deep);
 				border-radius: $default-radius;
 				span{
 					display: inline-block;

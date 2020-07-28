@@ -61,7 +61,7 @@ FROM global
 WHERE type = 'GITLAB';
 
 DELETE FROM global WHERE type = 'GITLAB';
-UPDATE global SET value = 'pub.domeos.org/domeos/build:0.5' WHERE type = 'BUILD_IMAGE';
+UPDATE global SET value = 'pub.Lunaros.org/Lunaros/build:0.5' WHERE type = 'BUILD_IMAGE';
 
 CREATE TABLE `loadbalancer_collection` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -200,12 +200,12 @@ CREATE PROCEDURE update_lb()
             ELSE
               SET done := FALSE;
             END IF;
-            UPDATE loadbalancer lb set lb.data = CONCAT("{\"ver\":1,\"fqcn\":\"org.domeos.framework.api.model.loadBalancer.LoadBalancer\",\"type\":\"EXTERNAL_SERVICE\",\"clusterId\":", cluster_id, ",\"namespace\":", old_namespace, ",\"serviceDraft\":{\"lbPorts\":[{\"port\":", tempPort, ",\"targetPort\":", targetPort, ",\"protocol\":\"", protocol, "\"}],\"sessionAffinity\":false,\"deployId\":", deploy_id, ",\"deployName\":\"", deploy_name, "\",\"deployStatus\":\"", deploy_status, "\"},\"externalIPs\":[\"", externalIP, "\"],\"lastUpdateTime\":", lb_createTime, "}") where lb.id = lb_id AND LOCATE('EXTERNAL_SERVICE', lb.data) != 0;
+            UPDATE loadbalancer lb set lb.data = CONCAT("{\"ver\":1,\"fqcn\":\"org.Lunaros.framework.api.model.loadBalancer.LoadBalancer\",\"type\":\"EXTERNAL_SERVICE\",\"clusterId\":", cluster_id, ",\"namespace\":", old_namespace, ",\"serviceDraft\":{\"lbPorts\":[{\"port\":", tempPort, ",\"targetPort\":", targetPort, ",\"protocol\":\"", protocol, "\"}],\"sessionAffinity\":false,\"deployId\":", deploy_id, ",\"deployName\":\"", deploy_name, "\",\"deployStatus\":\"", deploy_status, "\"},\"externalIPs\":[\"", externalIP, "\"],\"lastUpdateTime\":", lb_createTime, "}") where lb.id = lb_id AND LOCATE('EXTERNAL_SERVICE', lb.data) != 0;
           ELSE
             SET done := FALSE;
           END IF;
 
-          UPDATE loadbalancer lb set lb.data = CONCAT("{\"ver\":1,\"fqcn\":\"org.domeos.framework.api.model.loadBalancer.LoadBalancer\",\"type\":\"INNER_SERVICE\",\"clusterId\":", cluster_id, ",\"namespace\":", old_namespace, ",\"serviceDraft\":{\"lbPorts\":[{\"port\":", tempPort, ",\"targetPort\":", targetPort, ",\"protocol\":\"", protocol, "\"}],\"sessionAffinity\":false,\"deployId\":", deploy_id, ",\"deployName\":\"", deploy_name, "\",\"deployStatus\":\"", deploy_status, "\"},\"lastUpdateTime\":", lb_createTime, "}") where lb.id = lb_id AND LOCATE('EXTERNAL_SERVICE', lb.data) = 0;
+          UPDATE loadbalancer lb set lb.data = CONCAT("{\"ver\":1,\"fqcn\":\"org.Lunaros.framework.api.model.loadBalancer.LoadBalancer\",\"type\":\"INNER_SERVICE\",\"clusterId\":", cluster_id, ",\"namespace\":", old_namespace, ",\"serviceDraft\":{\"lbPorts\":[{\"port\":", tempPort, ",\"targetPort\":", targetPort, ",\"protocol\":\"", protocol, "\"}],\"sessionAffinity\":false,\"deployId\":", deploy_id, ",\"deployName\":\"", deploy_name, "\",\"deployStatus\":\"", deploy_status, "\"},\"lastUpdateTime\":", lb_createTime, "}") where lb.id = lb_id AND LOCATE('EXTERNAL_SERVICE', lb.data) = 0;
         ELSE
           SET done := FALSE;
         END IF;
@@ -239,7 +239,7 @@ CREATE PROCEDURE update_lb()
         UPDATE loadbalancer lb set lb.data = replace(lb.data, '"loadBalancerPorts":',CONCAT("\"clusterId\":", cluster_id, ",\"namespace\":", old_namespace, ",\"lastUpdateTime\":", lb_createTime, ",\"serviceDraft\":{\"lbPorts\":")) where lb.id = lb_id AND LOCATE('EXTERNAL_SERVICE', lb.data) = 0;
         UPDATE loadbalancer lb set lb.data = replace(lb.data, '"dnsName":', CONCAT("\"sessionAffinity\":", sessionAffinity, ",\"deployId\":", deploy_id, ",\"deployName\":\"", deploy_name, "\",\"deployStatus\":\"", deploy_status, "\"},\"dnsName\":")) where lb.id = lb_id AND LOCATE('EXTERNAL_SERVICE', lb.data) = 0;
 
-        UPDATE loadbalancer lb SET lb.data = replace(lb.data, '"ver":2,"fqcn":"org.domeos.framework.api.model.LoadBalancer.LoadBalancer"','"ver":1,"fqcn":"org.domeos.framework.api.model.loadBalancer.LoadBalancer"') WHERE lb.id = lb_id;
+        UPDATE loadbalancer lb SET lb.data = replace(lb.data, '"ver":2,"fqcn":"org.Lunaros.framework.api.model.LoadBalancer.LoadBalancer"','"ver":1,"fqcn":"org.Lunaros.framework.api.model.loadBalancer.LoadBalancer"') WHERE lb.id = lb_id;
         SET done := FALSE;
       END IF;
 
@@ -290,7 +290,7 @@ CREATE PROCEDURE update_lb()
       SELECT id INTO lbc_id FROM loadbalancer_collection WHERE loadbalancer_collection.name = lb_collection_name;
       IF ISNULL(lbc_id) THEN
         INSERT IGNORE INTO loadbalancer_collection (name, description, state, createTime, removeTime, removed, data)
-        VALUES (lb_collection_name, "system update created", "ACTIVE", deploy_collection_time, 0, 0, CONCAT("{\"ver\":1,\"fqcn\":\"org.domeos.framework.api.model.loadBalancer.LoadBalancerCollection\",\"creatorId\":", deploy_collection_creator_id, ",\"type\":", "\"KUBE_PROXY\"}"));
+        VALUES (lb_collection_name, "system update created", "ACTIVE", deploy_collection_time, 0, 0, CONCAT("{\"ver\":1,\"fqcn\":\"org.Lunaros.framework.api.model.loadBalancer.LoadBalancerCollection\",\"creatorId\":", deploy_collection_creator_id, ",\"type\":", "\"KUBE_PROXY\"}"));
         SELECT id INTO lbc_id FROM loadbalancer_collection WHERE loadbalancer_collection.name = lb_collection_name;
         INSERT IGNORE INTO operation_history (resourceId, resourceType, operation, userId, userName, status, message, operateTime)
         VALUES (lbc_id, "LOADBALANCER_COLLECTION", "SET", deploy_collection_creator_id, deploy_collection_user_name, "OK", "", cur_time);

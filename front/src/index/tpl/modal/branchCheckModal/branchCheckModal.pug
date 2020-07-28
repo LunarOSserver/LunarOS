@@ -3,8 +3,8 @@ ul.modal-branchcheck.modal-info(role="form" ng-form)
     li
         span.info-name.tool-not-align-input Branch或Tag
         .info-txt.text-left
-            dome-radio(d-name="branch" d-id="branch" d-label="Branch" d-change="vm.toggle(model)" d-value="'Branch'" d-model="vm.check")
-            dome-radio(d-name="branch" d-id="tag" d-label="Tag" d-change="vm.toggle(model)" d-value="'Tag'" d-model="vm.check")
+            Lunar-radio(d-name="branch" d-id="branch" d-label="Branch" d-change="vm.toggle(model)" d-value="'Branch'" d-model="vm.check")
+            Lunar-radio(d-name="branch" d-id="tag" d-label="Tag" d-change="vm.toggle(model)" d-value="'Tag'" d-model="vm.check")
     li
         span.info-name(ng-cloak) 选择{{vm.check}}
         .info-txt.com-select-con(select-con style="text-align:left;")

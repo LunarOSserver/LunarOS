@@ -2,27 +2,27 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
 	'use strict';
-	if (typeof domeApp === 'undefined') return;
-	domeApp.controller('BranchCheckModalCtr', BranchCheckModalCtr);
+	if (typeof LunarApp === 'undefined') return;
+	LunarApp.controller('BranchCheckModalCtr', BranchCheckModalCtr);
 
-	function BranchCheckModalCtr($modalInstance, $domeProject, codeInfo, projectId) {
+	function BranchCheckModalCtr($modalInstance, $LunarProject, codeInfo, projectId) {
 		var vm = this;
 		vm.check = 'Branch';
 		vm.branchKey = '';
 		if (projectId) {
-			$domeProject.projectService.getBranches(projectId).then(function (res) {
+			$LunarProject.projectService.getBranches(projectId).then(function (res) {
 				vm.branches = res.data.result || [];
 			});
-			$domeProject.projectService.getTags(projectId).then(function (res) {
+			$LunarProject.projectService.getTags(projectId).then(function (res) {
 				vm.tags = res.data.result || [];
 			});
 		} else {
-			$domeProject.projectService.getBranchesWithoutId(codeInfo.codeId, codeInfo.codeManagerUserId, codeInfo.codeManager).then(function (res) {
+			$LunarProject.projectService.getBranchesWithoutId(codeInfo.codeId, codeInfo.codeManagerUserId, codeInfo.codeManager).then(function (res) {
 				vm.branches = res.data.result || [];
 			});
-			$domeProject.projectService.getTagsWithoutId(codeInfo.codeId, codeInfo.codeManagerUserId, codeInfo.codeManager).then(function (res) {
+			$LunarProject.projectService.getTagsWithoutId(codeInfo.codeId, codeInfo.codeManagerUserId, codeInfo.codeManager).then(function (res) {
 				vm.tags = res.data.result || [];
 			});
 		}
@@ -45,5 +45,5 @@
 			vm.selectedBranch = branch;
 		};
 	}
-	BranchCheckModalCtr.$inject = ['$modalInstance', '$domeProject', 'codeInfo', 'projectId'];
-})(angular.module('domeApp'));
+	BranchCheckModalCtr.$inject = ['$modalInstance', '$LunarProject', 'codeInfo', 'projectId'];
+})(angular.module('LunarApp'));

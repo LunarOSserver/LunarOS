@@ -1,8 +1,8 @@
-create database if not exists `domeos`;
+create database if not exists `Lunaros`;
 create database if not exists `graph`;
 create database if not exists `portal`;
 
-use domeos;
+use Lunaros;
 CREATE TABLE IF NOT EXISTS `admin_roles` (
   `userId` INT(11) NOT NULL PRIMARY KEY,
   `role` VARCHAR(255) NOT NULL DEFAULT '0'

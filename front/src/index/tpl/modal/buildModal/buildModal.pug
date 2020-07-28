@@ -4,8 +4,8 @@ ul.modal-body.text-center.modal-buildModal.modal-info(ng-form role="form" name="
   li(ng-show="vm.projectInfo.hasCodeInfo")
     span.info-name 构建方式
     .info-txt.text-left.tool-align-input
-      dome-radio.com-check-con(d-id="checkBranch" d-label="Branch" d-value="'Branch'" d-name="buildWay" d-model="vm.buildWay" d-change="vm.toggleBuildWay(model)")
-      dome-radio.com-check-con(d-id="checkTag" d-label="Tag" d-value="'Tag'" d-name="buildWay" d-model="vm.buildWay" d-change="vm.toggleBuildWay(model)")
+      Lunar-radio.com-check-con(d-id="checkBranch" d-label="Branch" d-value="'Branch'" d-name="buildWay" d-model="vm.buildWay" d-change="vm.toggleBuildWay(model)")
+      Lunar-radio.com-check-con(d-id="checkTag" d-label="Tag" d-value="'Tag'" d-name="buildWay" d-model="vm.buildWay" d-change="vm.toggleBuildWay(model)")
   li(ng-show="vm.projectInfo.hasCodeInfo")
     span.info-name 选择{{vm.buildWay}} *
     .info-txt.com-select-con(select-con)

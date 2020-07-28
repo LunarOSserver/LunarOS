@@ -2,10 +2,10 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
 	'use strict';
-	if (typeof domeApp === 'undefined') return;
-	domeApp.controller('MirrorCustomCtr', ['$scope', '$domeImage', 'dialog', '$modal', '$q', '$location', '$state', '$util', '$timeout', function ($scope, $domeImage, dialog, $modal, $q, $location, $state, $util, $timeout) {
+	if (typeof LunarApp === 'undefined') return;
+	LunarApp.controller('MirrorCustomCtr', ['$scope', '$LunarImage', 'dialog', '$modal', '$q', '$location', '$state', '$util', '$timeout', function ($scope, $LunarImage, dialog, $modal, $q, $location, $state, $util, $timeout) {
 		$scope.$emit('pageTitle', {
 			title: '镜像定制',
 			descrition: '在这里您可以定制满足个性化需求的镜像。',
@@ -18,7 +18,7 @@
 			isSelected: false
 		};
 		$scope.customtype = 'dockerfile';
-		$scope.mirror = $domeImage.getMirrorInstance();
+		$scope.mirror = $LunarImage.getMirrorInstance();
 		$scope.config = $scope.mirror.config;
 		$scope.toggleCustomType = function (type) {
 			$scope.customtype = type;
@@ -50,7 +50,7 @@
 		}, {
 			active: false
 		}];
-		var imageService = $domeImage.imageService;
+		var imageService = $LunarImage.imageService;
 		var startBuildRequest = function (imageId) {
 			imageService.buildCustomImage(imageId).then(function (res) {
 				dialog.alert('提示', '成功，正在构建！');
@@ -375,4 +375,4 @@
 			$scope.tabActive[0].active = true;
 		}
 	}]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

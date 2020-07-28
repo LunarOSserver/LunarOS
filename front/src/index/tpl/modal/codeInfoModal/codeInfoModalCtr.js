@@ -2,10 +2,10 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
 	'use strict';
-	if (typeof domeApp === 'undefined') return;
-	domeApp.controller('CodeInfoModalCtr', CodeInfoModalCtr);
+	if (typeof LunarApp === 'undefined') return;
+	LunarApp.controller('CodeInfoModalCtr', CodeInfoModalCtr);
 
 	function CodeInfoModalCtr($scope, $modalInstance, project, showForm) {
 		var _this = this;
@@ -19,4 +19,4 @@
 		};
 	}
 	CodeInfoModalCtr.$inject = ['$scope', '$modalInstance', 'project', 'showForm'];
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

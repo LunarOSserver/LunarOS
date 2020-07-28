@@ -37,7 +37,7 @@
 						cursor: pointer;
 					}
 					&.active{
-						color: dome-color(dome,active-font);
+						color: Lunar-color(Lunar,active-font);
 					}
 				}
 				padding-bottom: 8px;
@@ -51,7 +51,7 @@
 		width: 200px;
 	}
 	span.active, th.active{
-		color: dome-color(dome,bright);
+		color: Lunar-color(Lunar,bright);
 	}
 	.icon-down{
 		margin-left:4px;
@@ -61,7 +61,7 @@
 	}
 	.selected-count{
 		font-weight: 700;
-		color: dome-color(dome,primary);
+		color: Lunar-color(Lunar,primary);
 	}
 }
 .migrate-operation{

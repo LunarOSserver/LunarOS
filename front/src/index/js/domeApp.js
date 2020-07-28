@@ -6,7 +6,7 @@
 (function (window) {
   'use strict';
 
-  var domeApp = angular.module('domeApp', [
+  var LunarApp = angular.module('LunarApp', [
     'ui.router',
     'ncy-angular-breadcrumb',
     'oc.lazyLoad',
@@ -15,7 +15,7 @@
     'ngLocale',
     'ui.bootstrap',
     'publicModule',
-    'domeModule',
+    'LunarModule',
     'deployModule',
     'imageModule',
     'userModule',
@@ -30,11 +30,11 @@
     'commonFilters',
   ]);
 
-  domeApp.run(['$rootScope', '$document', function ($rootScope, $document) {
+  LunarApp.run(['$rootScope', '$document', function ($rootScope, $document) {
     // 修改页面title，采用ng-bind的方法会使页面闪烁
     $rootScope.$on('pageTitle', function (event, msg) {
       if (msg.title && msg.title !== '') {
-        $('title').html(msg.title + ' - DomeOS');
+        $('title').html(msg.title + ' - LunarOS');
       }
     });
     $rootScope.$on('$stateChangeStart', function () {
@@ -42,7 +42,7 @@
     });
   }]);
 
-  domeApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+  LunarApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 
     // 设置首页
     $urlRouterProvider.when('', '/overview');

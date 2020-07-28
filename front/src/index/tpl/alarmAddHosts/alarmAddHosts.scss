@@ -27,7 +27,7 @@
 			}
 		}
 		.list-header{
-			background-color: dome-color(background,light);
+			background-color: Lunar-color(background,light);
 		}
 	}
 	&.left-wrap{
@@ -35,7 +35,7 @@
 		width: 38%;
 		min-height: 900px;
 		padding: 12px 0 20px $page-padding;
-		border-right: 8px solid dome-color(border,light);
+		border-right: 8px solid Lunar-color(border,light);
 		.ui-input-search-white{
 			width: 168px;
 		}
@@ -51,7 +51,7 @@
 		width: 62%;
 		margin-left: -8px;
 		padding: 20px 12px 20px $page-padding;
-		border-left: 8px solid dome-color(border,light);
+		border-left: 8px solid Lunar-color(border,light);
 		.list-host{
 			min-height: 330px;
 			margin-left: -18px;	

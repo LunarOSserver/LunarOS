@@ -1,15 +1,15 @@
 /*
  * @author ChandraLee
- * @description domeos应用商店服务、全局配置服务
+ * @description Lunaros应用商店服务、全局配置服务
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
     'use strict';
-    if (typeof domeApp === 'undefined') return;
+    if (typeof LunarApp === 'undefined') return;
     // 应用商店service
-    domeApp.factory('$domeAppStore', ['$http', '$domeDeploy', function ($http, $domeDeploy) {
+    LunarApp.factory('$LunarAppStore', ['$http', '$LunarDeploy', function ($http, $LunarDeploy) {
             var getStoreApps = function () {
-                return $http.get('//app-domeos.bjctc.scs.sohucs.com/apps.json', {
+                return $http.get('//app-Lunaros.bjctc.scs.sohucs.com/apps.json', {
                     'notIntercept': true
                 });
             };
@@ -25,7 +25,7 @@
                     var deployObj = {};
                     deployObj = angular.copy(this.config.deploymentTemplate);
                     deployObj.deployName = this.config.appName + parseInt(Math.random() * 10000);
-                    this.deployIns = $domeDeploy.getInstance('Deploy', deployObj);
+                    this.deployIns = $LunarDeploy.getInstance('Deploy', deployObj);
                 }
             };
             var getInstance = function (className, initInfo) {
@@ -50,7 +50,7 @@
             };
         }])
         // 全局配置service
-        .factory('$domeGlobal', ['$http', 'dialog', '$q', function ($http, dialog, $q) {
+        .factory('$LunarGlobal', ['$http', 'dialog', '$q', function ($http, dialog, $q) {
             var GlobalConfig = function (type) {
                 var _url = (function () {
                     var url;
@@ -145,4 +145,4 @@
                 getGloabalInstance: getGloabalInstance
             };
         }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

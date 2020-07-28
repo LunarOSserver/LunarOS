@@ -19,7 +19,7 @@
         padding-right: 8px;
       }
       th.active, span.active{
-        color: dome-color(dome,bright);
+        color: Lunar-color(Lunar,bright);
       }
       .icon-down{
         margin-left:4px;
@@ -197,6 +197,6 @@
     margin-top: 10px;
   }
   .label {
-    color: dome-color(font, default);
+    color: Lunar-color(font, default);
   }
 }

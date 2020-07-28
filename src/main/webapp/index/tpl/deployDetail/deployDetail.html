@@ -289,7 +289,7 @@
     </tab>
     <tab heading="实例" active="tabActive[3].active" ui-sref="deployDetail.instance">
       <div class="instance-con">
-        <table class="ui-table-dome instance-list">
+        <table class="ui-table-Lunar instance-list">
           <thead>
             <tr>
               <th>实例名称</th>
@@ -324,7 +324,7 @@
     </tab>
     <tab heading="网络/访问" active="tabActive[4].active" ui-sref="deployDetail.network">
       <div class="health-con deploy-info">
-        <div class="txt-prompt" style="padding-top: 20px;"><i class="fa fa-info-circle">&nbsp;</i><span>创建部署时DomeOS会根据用户提供的程序访问端口创建一个对内服务，如果用户想对外暴露服务，可以到</span><a class="txt-bright" ui-sref="loadBalanceCollection">负载均衡</a><span>模块创建kube_proxy类型的对外服务(支持四层TCP/UDP)或者nginx类型的对外服务（支持七层HTTP）</span></div>
+        <div class="txt-prompt" style="padding-top: 20px;"><i class="fa fa-info-circle">&nbsp;</i><span>创建部署时LunarOS会根据用户提供的程序访问端口创建一个对内服务，如果用户想对外暴露服务，可以到</span><a class="txt-bright" ui-sref="loadBalanceCollection">负载均衡</a><span>模块创建kube_proxy类型的对外服务(支持四层TCP/UDP)或者nginx类型的对外服务（支持七层HTTP）</span></div>
         <form-container>
           <form name="networkFrom" ng-class="{'need-valid':networkFrom.$submitted}">
             <loading ng-if="isUpdatingLoadBalance || isgetingLoadBalance"></loading>

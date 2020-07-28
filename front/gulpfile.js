@@ -37,7 +37,7 @@ const proxy = require('http-proxy-middleware');
 const notifier = require('node-notifier');
 
 const conf = {
-  backend: 'https://beta.domeos.sohucs.com',
+  backend: 'https://beta.Lunaros.sohucs.com',
   port: 8080
 };
 

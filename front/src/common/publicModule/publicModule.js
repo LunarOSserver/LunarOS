@@ -197,7 +197,7 @@
                 Base64: Base64
             };
         }])
-        .factory('$domeModel', ['$http', function ($http) {
+        .factory('$LunarModel', ['$http', function ($http) {
             'use strict';
             const getWholeUrl = (url, ...params) => {
                 let wholeUrl = url,
@@ -327,7 +327,7 @@
             };
         }])
         // 数据存储service
-        .provider('$domeData', function () {
+        .provider('$LunarData', function () {
             'use strict';
             let data = {};
             const setData = (key, value) => {

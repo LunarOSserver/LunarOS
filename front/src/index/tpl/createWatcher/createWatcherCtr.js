@@ -4,10 +4,10 @@
  * Created on 2017/1/22
  */
 
-(function(domeApp, undefined) {
+(function(LunarApp, undefined) {
     'use strict';
-    if (typeof domeApp === 'undefined') return;
-    domeApp.controller('CreateWatcherCtr', ['$scope', '$state', '$domePublic', '$util', '$domeCluster', '$domeDeploy', '$modal', 'dialog', function($scope, $state, $domePublic, $util, $domeCluster, $domeDeploy, $modal, dialog) {
+    if (typeof LunarApp === 'undefined') return;
+    LunarApp.controller('CreateWatcherCtr', ['$scope', '$state', '$LunarPublic', '$util', '$LunarCluster', '$LunarDeploy', '$modal', 'dialog', function($scope, $state, $LunarPublic, $util, $LunarCluster, $LunarDeploy, $modal, dialog) {
         'use strict';
         $scope.$emit('pageTitle', {
             title: '新建监听器',
@@ -18,15 +18,15 @@
             $state.go('clusterManage');
         }
         const clusterId = $scope.clusterId = $state.params.id,
-            nodeService = $domeCluster.getInstance('NodeService'),
-            clusterService = $domeCluster.getInstance('ClusterService');
-        $scope.loadingsIns = $domePublic.getLoadingInstance();
+            nodeService = $LunarCluster.getInstance('NodeService'),
+            clusterService = $LunarCluster.getInstance('ClusterService');
+        $scope.loadingsIns = $LunarPublic.getLoadingInstance();
         //$scope.parentState = 'clusterDetail({"id":' + clusterId + '})';
         $scope.watcher = {};
         $scope.watcher.clusterId = clusterId;
         $scope.watcher.containerDrafts = [];
         $scope.watcher.containerDrafts[0] = {
-            registry: 'https://pub.domeos.org',
+            registry: 'https://pub.Lunaros.org',
             image: 'kube_event_watcher',
             tag: 'v0.1.0',
             mem: 0,
@@ -38,9 +38,9 @@
             $scope.loadingsIns.startLoading('loadingNode');
             nodeService.getNodeList(clusterId).then((res) => {
                 var nodeData = res.data.result || [];
-                $scope.nodeListIns = $domeCluster.getInstance('NodeList', nodeData);
+                $scope.nodeListIns = $LunarCluster.getInstance('NodeList', nodeData);
             }, () => {
-                $scope.nodeListIns = $domeCluster.getInstance('NodeList');
+                $scope.nodeListIns = $LunarCluster.getInstance('NodeList');
             }).finally(function() {
                 $scope.loadingsIns.finishLoading('loadingNode');
             });
@@ -142,7 +142,7 @@
         };
     }]).controller('ModifyMirrorInfoCtr', ['mirrorInfo', '$scope', '$modalInstance', function(mirrorInfo, $scope, $modalInstance) {
         $scope.containerDrafts = {
-            registry: 'https://pub.domeos.org',
+            registry: 'https://pub.Lunaros.org',
             image: 'kube_event_watcher',
             tag: 'v0.1.0',
             mem: 0,
@@ -156,4 +156,4 @@
             $modalInstance.close($scope.containerDrafts);
         };
     }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

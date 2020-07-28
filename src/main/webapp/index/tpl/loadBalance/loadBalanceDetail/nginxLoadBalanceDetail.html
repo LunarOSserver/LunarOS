@@ -11,12 +11,12 @@
     <page-summary-item text="状态"><span ng-class="({'RUNNING': 'txt-success', 'STOP': 'txt-error', 'DEPLOYING': 'txt-primary', 'ERROR': 'txt-warning', 'STOPPING': 'txt-primary', 'UPDATING': 'txt-primary', 'BACKROLLING': 'txt-primary', 'UPSCALING': 'txt-primary', 'DOWNSCALING': 'txt-primary', 'ABORTING': 'txt-warning', 'BACKROLL_ABORTED': 'txt-warning', 'UPDATE_ABORTED': 'txt-warning'}[loadBalanceDraft.state])" ng-bind="({'RUNNING': '运行中', 'STOP': '停止', 'DEPLOYING': '部署中', 'ERROR': '异常', 'STOPPING': '停止中', 'UPDATING': '升级中', 'BACKROLLING': '回滚中', 'UPSCALING': '扩容中', 'DOWNSCALING': '缩容中', 'ABORTING': '中断中', 'BACKROLL_ABORTED': '回滚已中断', 'UPDATE_ABORTED': '升级已中断'}[loadBalanceDraft.state])"></span></page-summary-item>
     <page-summary-content ng-if="hasUpdatePermission"><span ng-if="loadBalanceDraft.state === 'STOP'">
         <button type="button" ng-disabled="isWaitingStart" ng-click="start()">启动</button>
-        <button class="dome-tool-align" type="button" ng-if="hasDeletePermission" ng-click="delete()">删除</button></span><span ng-if="loadBalanceDraft.state === 'RUNNING'">
+        <button class="Lunar-tool-align" type="button" ng-if="hasDeletePermission" ng-click="delete()">删除</button></span><span ng-if="loadBalanceDraft.state === 'RUNNING'">
         <button type="button" ng-disabled="isWaitingUpVersion" ng-click="updateVersion()">升级/回滚</button>
-        <button class="dome-tool-align" type="button" ng-disabled="isWaitingScale" ng-click="scaleVersion()">扩容/缩容</button>
-        <button class="dome-tool-align" type="button" ng-disabled="isWaitingStop" ng-click="stopVersion()">停止</button></span><span ng-if="loadBalanceDraft.state === 'ERROR' || loadBalanceDraft.state === 'BACKROLL_ABORTED' || loadBalanceDraft.state === 'UPDATE_ABORTED'">
+        <button class="Lunar-tool-align" type="button" ng-disabled="isWaitingScale" ng-click="scaleVersion()">扩容/缩容</button>
+        <button class="Lunar-tool-align" type="button" ng-disabled="isWaitingStop" ng-click="stopVersion()">停止</button></span><span ng-if="loadBalanceDraft.state === 'ERROR' || loadBalanceDraft.state === 'BACKROLL_ABORTED' || loadBalanceDraft.state === 'UPDATE_ABORTED'">
         <button type="button" ng-disabled="isWaitingRecover" ng-click="recover()">恢复</button>
-        <button class="dome-tool-align" type="button" ng-disabled="isWaitingStop" ng-click="stopVersion()">停止</button></span><span ng-if="loadBalanceDraft.state === 'DEPLOYING' || loadBalanceDraft.state === 'UPDATING' || loadBalanceDraft.state === 'BACKROLLING' || loadBalanceDraft.state === 'UPSCALING' || loadBalanceDraft.state === 'DOWNSCALING'">
+        <button class="Lunar-tool-align" type="button" ng-disabled="isWaitingStop" ng-click="stopVersion()">停止</button></span><span ng-if="loadBalanceDraft.state === 'DEPLOYING' || loadBalanceDraft.state === 'UPDATING' || loadBalanceDraft.state === 'BACKROLLING' || loadBalanceDraft.state === 'UPSCALING' || loadBalanceDraft.state === 'DOWNSCALING'">
         <button type="button" ng-disabled="isWaitingStop" ng-click="stopVersion()">停止</button></span></page-summary-content>
   </page-summary-box>
   <page-content-box tabs="[
@@ -34,7 +34,7 @@
       <div ng-if="hasUpdatePermission">
         <button type="button" ng-if="!isEditingRule" ng-click="toggleEdit('edit')">编辑</button>
       </div>
-      <div class="txt-prompt" style="margin-top:20px;line-height: 1.42857143; color: #aaa;"><i class="fa fa-info-circle">&nbsp;</i><span>DomeOS提供的默认nginx镜像使用max_fails和fail_timeout实现健康检查，默认值为max_fails=1，fail_timeout=10s。以下情况健康检查失败：连接实例错误或超时，实例无响应，实例返回的HTTP状态码为500、502、503或504。</span></div>
+      <div class="txt-prompt" style="margin-top:20px;line-height: 1.42857143; color: #aaa;"><i class="fa fa-info-circle">&nbsp;</i><span>LunarOS提供的默认nginx镜像使用max_fails和fail_timeout实现健康检查，默认值为max_fails=1，fail_timeout=10s。以下情况健康检查失败：连接实例错误或超时，实例无响应，实例返回的HTTP状态码为500、502、503或504。</span></div>
       <form-config-group>
         <form-config-item config-title="转发规则">
           <form-input-container><span ng-if="!loadBalanceForRule.nginxDraft.rules || loadBalanceForRule.nginxDraft.rules.length === 0">未设置</span>
@@ -64,10 +64,10 @@
       <div ng-if="hasUpdatePermission">
         <button type="button" ng-click="toggleEdit('cancel')">取消</button>
       </div>
-      <div class="txt-prompt" style="margin-top:20px; line-height: 1.42857143; color: #aaa;"><i class="fa fa-info-circle">&nbsp;</i><span>DomeOS提供的默认nginx镜像使用max_fails和fail_timeout实现健康检查，默认值为max_fails=1，fail_timeout=10s。以下情况健康检查失败：连接实例错误或超时，实例无响应，实例返回的HTTP状态码为500、502、503或504。</span></div>
+      <div class="txt-prompt" style="margin-top:20px; line-height: 1.42857143; color: #aaa;"><i class="fa fa-info-circle">&nbsp;</i><span>LunarOS提供的默认nginx镜像使用max_fails和fail_timeout实现健康检查，默认值为max_fails=1，fail_timeout=10s。以下情况健康检查失败：连接实例错误或超时，实例无响应，实例返回的HTTP状态码为500、502、503或504。</span></div>
       <form-config-group>
         <form-config-item config-title="转发规则">
-          <form-input-container ng-if="isEditingRule" help-text="根据服务域名将请求转发到不同的部署实例。只能关联相同集群、相同namespace且运行中的创建了对内服务的部署(用户在老版本的DomeOS中创建的对外服务类型的部署，也可以在此进行关联)。">
+          <form-input-container ng-if="isEditingRule" help-text="根据服务域名将请求转发到不同的部署实例。只能关联相同集群、相同namespace且运行中的创建了对内服务的部署(用户在老版本的LunarOS中创建的对外服务类型的部署，也可以在此进行关联)。">
             <lb-nginx-rule ng-model="loadBalanceForRule.nginxDraft.rules" form-name="nginxRule" parameters="{clusterId:loadBalanceForRule.clusterId,namespace:loadBalanceForRule.namespace,loadBalanceType:loadBalanceForRule.type}"></lb-nginx-rule>
           </form-input-container>
           <form-input-container ng-if="isEditingRule">
@@ -185,7 +185,7 @@
 </script>
 <script type="text/ng-template" id="instance.html">
   <div ng-controller="NginxInstanceCtr" style="margin: 20px;">
-    <table class="ui-table-dome">
+    <table class="ui-table-Lunar">
       <thead>
         <tr>
           <th>实例名称</th>

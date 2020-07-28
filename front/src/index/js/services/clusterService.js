@@ -3,13 +3,13 @@
  * @description 集群服务
  */
 
-((domeApp, undefined) => {
+((LunarApp, undefined) => {
     'use strict';
-    if (typeof domeApp === 'undefined') return;
-    domeApp.factory('$domeCluster', ['$http', '$q', '$modal', 'dialog', '$domeModel', '$util', function ($http, $q, $modal, dialog, $domeModel, $util) {
+    if (typeof LunarApp === 'undefined') return;
+    LunarApp.factory('$LunarCluster', ['$http', '$q', '$modal', 'dialog', '$LunarModel', '$util', function ($http, $q, $modal, dialog, $LunarModel, $util) {
         const ClusterService = function () {
             this.url = '/api/cluster';
-            $domeModel.ServiceModel.call(this, this.url);
+            $LunarModel.ServiceModel.call(this, this.url);
             const deleteData = this.deleteData;
             this.getNamespace = clusterId => $http.get(`${this.url}/${clusterId}/namespace`);
             this.setNamespace = (clusterId, namespaceList) => $http.post(`${this.url}/${clusterId}/namespace`, angular.toJson(namespaceList));
@@ -493,7 +493,7 @@
             }
         };
         // 获得实例
-        const getInstance = $domeModel.instancesCreator({
+        const getInstance = $LunarModel.instancesCreator({
             ClusterList: ClusterList,
             Cluster: Cluster,
             NodeList: NodeList,
@@ -505,4 +505,4 @@
             getInstance: getInstance
         };
     }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

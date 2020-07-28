@@ -1,9 +1,9 @@
 /**
  * Created by haozhou on 2017/2/13.
  */
-;(function (domeApp) {
+;(function (LunarApp) {
     'use strict';
-    domeApp.controller('ConfigMapDetailCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
+    LunarApp.controller('ConfigMapDetailCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
         const configMapCollectionId = $state.params.id;
         const configMapId = $state.params.configMapId;
         if (!configMapCollectionId) {
@@ -40,7 +40,7 @@
         };
     }]);
 
-    domeApp.controller('ConfigMapDetailInfoCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
+    LunarApp.controller('ConfigMapDetailInfoCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
         $scope.$on('configMapCurrentRole', function (event, response) {
             $scope.currentRole = response.role;
             // console.log("currentRole:", $scope.currentRole);
@@ -92,7 +92,7 @@
             }
         };
     }]);
-}(angular.module('domeApp')));
+}(angular.module('LunarApp')));
 
 
 (function (formInputs) {

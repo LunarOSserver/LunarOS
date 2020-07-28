@@ -68,7 +68,7 @@ script(type="text/ng-template" id="globalSettingUser.html")
           .info-content
             button.old-button.ui-btn.ui-btn-bright.ui-btn-lg(ng-click="vm.needValidUser.valid=true;userForm.$valid&&vm.addUser(userForm);") 确认创建
 
-      //- table.ui-table-dome.full.table-userlist(ng-if="currentUserType.type=='LDAP'")
+      //- table.ui-table-Lunar.full.table-userlist(ng-if="currentUserType.type=='LDAP'")
         thead
           tr
             th 用户名
@@ -78,7 +78,7 @@ script(type="text/ng-template" id="globalSettingUser.html")
           tr(ng-repeat="user in userListFiltered1=(ldapUserList|filter:{'username':userKey.key})")
             td(ng-bind="user.username")
       .table-container
-        table.ui-table-dome.full.table-userlist
+        table.ui-table-Lunar.full.table-userlist
           thead
             tr
               th 用户名
@@ -156,9 +156,9 @@ script(type="text/ng-template" id="globalSettingCodeSource.html")
         .mod-tips-info
           p.txt-prompt
             i.fa.fa-info-circle.icon-algin-right
-            | DomeOS可以关联gitlab，支持http和https两种，请填写完整的代码仓库地址。
+            | LunarOS可以关联gitlab，支持http和https两种，请填写完整的代码仓库地址。
         .table-container
-          table.ui-table-dome.full.table-userlist
+          table.ui-table-Lunar.full.table-userlist
             thead
               tr
                 th 仓库名称
@@ -186,7 +186,7 @@ script(type="text/ng-template" id="globalSettingRegistery.html")
         .mod-tips-info-global
           p.txt-prompt
             i.fa.fa-info-circle.icon-algin-right
-            | docker私有镜像仓库需要用户自行启动，并配置仓库信息到DomeOS中。如果私有仓库使用了自签名证书，需要将证书信息配置到DomeOS中。
+            | docker私有镜像仓库需要用户自行启动，并配置仓库信息到LunarOS中。如果私有仓库使用了自签名证书，需要将证书信息配置到LunarOS中。
         li.has-border
           span.info-name 私有仓库地址
           .info-content
@@ -227,7 +227,7 @@ script(type="text/ng-template" id="globalSettingServer.html")
         li
           span.info-name 服务器地址
           .info-content.info-content-lg-height
-            span.txt-prompt DomeOS API服务器访问地址
+            span.txt-prompt LunarOS API服务器访问地址
             input.ui-input-white.line-single(placeholder="https协议url请用“https://”开头" ng-model="vm.serverInfo.url" name="serverUrl" required ng-pattern="/^[^\\s]*$/")
       .com-bottom-option
         button.old-button.ui-btn.ui-btn-bright.ui-btn-lg(ng-click="vm.needValidServer=true;serverForm.$valid&&vm.saveServer()") 保存配置
@@ -239,7 +239,7 @@ script(type="text/ng-template" id="globalSettingMonitor.html")
         .mod-tips-info-global
           p.txt-prompt
             i.fa.fa-info-circle.icon-algin-right
-            | DomeOS融合了open-falcon和cadvisor对主机和容器进行监控，详细介绍请参考
+            | LunarOS融合了open-falcon和cadvisor对主机和容器进行监控，详细介绍请参考
             a(href='http://book.open-falcon.org/zh/index.html' target='_blank') http://book.open-falcon.org/zh/index.html
         //- li
         //-     span.info-name 监控控制台地址
@@ -327,7 +327,7 @@ script(type="text/ng-template" id="globalSettingWebSSH.html")
         .mod-tips-info-global
           p.txt-prompt
             i.fa.fa-info-circle.icon-algin-right
-            | DomeOS通过shellinabox实现容器的浏览器控制台访问，DomeOS提供了镜像pub.domeos.org/domeos/shellinabox:1.1，请在此配置shellinabox的访问地址。
+            | LunarOS通过shellinabox实现容器的浏览器控制台访问，LunarOS提供了镜像pub.Lunaros.org/Lunaros/shellinabox:1.1，请在此配置shellinabox的访问地址。
         li
           span.info-name.webssh-txt Web SSH服务地址
           .info-content.info-content-lg-height
@@ -344,7 +344,7 @@ script(type="text/ng-template" id="globalSettingBuild.html")
         .cluster-detail
           p.txt-prompt 
             i.fa.fa-info-circle.icon-algin-right
-            | DomeOS的构建任务都在构建集群上运行。
+            | LunarOS的构建任务都在构建集群上运行。
         //- button.old-button.ui-btn.ui-btn-bright.ui-btn-lg.btn-cluster-save(ng-click="vm.needValidCluster=true;clusterForm.$valid&&vm.saveCluster()" ng-disabled="vm.clusterLoadingIns.isLoading") 保存配置
       ul.com-list-info(ng-form name="clusterForm" ng-class="{'need-valid':vm.needValidCluster}")
         li.has-border
@@ -386,7 +386,7 @@ script(type="text/ng-template" id="globalSettingBuild.html")
             i.fa.fa-info-circle.icon-algin-right
             | 请确保构建集群有至少一台主机可用于构建。
       .table-container
-        table.ui-table.ui-table-dome.table-hostlist
+        table.ui-table.ui-table-Lunar.table-hostlist
           thead
             tr
               th 主机名称
@@ -409,7 +409,7 @@ script(type="text/ng-template" id="globalSettingBuild.html")
                 span(ng-switch-when="Ready").txt-safe 在线
                 span(ng-switch-default).txt-prompt 离线
               td
-                dome-toggle(ng-class="{'on':node.isUsedByBuild}" ng-click="vm.toggleNodeLabel(node)")
+                Lunar-toggle(ng-class="{'on':node.isUsedByBuild}" ng-click="vm.toggleNodeLabel(node)")
 
 script(type="text/ng-template" id="newPasswdModal.html")
   .d-modal-header 修改密码

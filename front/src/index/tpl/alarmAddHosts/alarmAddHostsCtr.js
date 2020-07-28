@@ -2,19 +2,19 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
 	'use strict';
-	if (typeof domeApp === 'undefined') return;
+	if (typeof LunarApp === 'undefined') return;
 
-	domeApp.controller('AlarmAddHostsCtr', AlarmAddHostCtr);
+	LunarApp.controller('AlarmAddHostsCtr', AlarmAddHostCtr);
 
-	function AlarmAddHostCtr($scope, $domeCluster, $domeAlarm, $state, dialog) {
+	function AlarmAddHostCtr($scope, $LunarCluster, $LunarAlarm, $state, dialog) {
 		'use strict';
 		let vm = this;
 		const id = +$state.params.id,
 			hostGroupName = $state.params.name,
-			hostGroupService = $domeAlarm.getInstance('HostGroupService'),
-			nodeService = $domeCluster.getInstance('NodeService');
+			hostGroupService = $LunarAlarm.getInstance('HostGroupService'),
+			nodeService = $LunarCluster.getInstance('NodeService');
 		if (!id || !hostGroupName) {
 			$state.go('alarm.hostgroups');
 			return;
@@ -61,11 +61,11 @@
 		};
 		nodeService.getData().then(function (res) {
 			vm.clusterList = res.data.result || [];
-			vm.nodeListIns = $domeAlarm.getInstance('NodeList');
+			vm.nodeListIns = $LunarAlarm.getInstance('NodeList');
 			if (vm.clusterList[0]) {
 				vm.toggleCluster(vm.clusterList[0].id, vm.clusterList[0].name);
 			}
 		});
 	}
-	AlarmAddHostCtr.$inject = ['$scope', '$domeCluster', '$domeAlarm', '$state', 'dialog'];
-})(angular.module('domeApp'));
+	AlarmAddHostCtr.$inject = ['$scope', '$LunarCluster', '$LunarAlarm', '$state', 'dialog'];
+})(angular.module('LunarApp'));

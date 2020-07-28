@@ -3,7 +3,7 @@
  * @description 监控页面
  */
 (function (undefined) {
-	var monitorApp = angular.module('monitorApp', ['ngAnimate', 'ui.bootstrap', 'publicModule', 'amchartsModule', 'domeModule', 'commonFilters', 'pageLayout']);
+	var monitorApp = angular.module('monitorApp', ['ngAnimate', 'ui.bootstrap', 'publicModule', 'amchartsModule', 'LunarModule', 'commonFilters', 'pageLayout']);
 	monitorApp.directive('datepickerComponent', ['$util', function ($util) {
 		var tplArr = [];
 		tplArr.push('      <div class="js-dateoptions btn-group" role="group" aria-label="..." >');

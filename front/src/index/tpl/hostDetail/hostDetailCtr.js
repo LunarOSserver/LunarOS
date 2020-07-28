@@ -2,16 +2,16 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
     'use strict';
-    if (typeof domeApp === 'undefined') return;
-    domeApp.controller('HostDetailCtr', ['$scope', '$stateParams', '$domeCluster', 'dialog', '$modal', '$state', '$q', function ($scope, $stateParams, $domeCluster, dialog, $modal, $state, $q) {
+    if (typeof LunarApp === 'undefined') return;
+    LunarApp.controller('HostDetailCtr', ['$scope', '$stateParams', '$LunarCluster', 'dialog', '$modal', '$state', '$q', function ($scope, $stateParams, $LunarCluster, dialog, $modal, $state, $q) {
         $scope.loading = true;
         var loadingItems = {
                 host: true,
                 instance: true
             },
-            nodeService = $domeCluster.getInstance('NodeService'),
+            nodeService = $LunarCluster.getInstance('NodeService'),
             hostname = $stateParams.name,
             clusterId = $stateParams.clusterId;
         if (!$stateParams.name || !$stateParams.clusterId) {
@@ -307,4 +307,4 @@
             });
         };
     }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

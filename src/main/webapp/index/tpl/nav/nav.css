@@ -80,17 +80,17 @@
             height: 45px;
             width: 4px;
             background-color: #7fc1fc; }
-      .left-nav .nav-lists li.dome-logo a {
+      .left-nav .nav-lists li.Lunar-logo a {
         display: block;
         height: 70px;
         padding: 25px 0 0 15px; }
-      .left-nav .nav-lists li.dome-logo .txt-logo {
+      .left-nav .nav-lists li.Lunar-logo .txt-logo {
         font-size: 18px;
         font-weight: bold;
         color: #fff;
         margin-left: 15px;
         letter-spacing: 1px; }
-      .left-nav .nav-lists li.dome-logo .img-logo {
+      .left-nav .nav-lists li.Lunar-logo .img-logo {
         margin-top: -10px; }
 
 .nav-sidebar li a {
@@ -131,18 +131,18 @@
   padding: 10px 25px 10px 55px;
   line-height: 30px;
   vertical-align: middle; }
-.left-nav .nav-lists li.dome-logo .nav-item {
+.left-nav .nav-lists li.Lunar-logo .nav-item {
   padding: 20px 25px 20px 55px; }
-.left-nav .nav-lists li.dome-logo .img-logo {
+.left-nav .nav-lists li.Lunar-logo .img-logo {
   padding: 4.5px 0; }
-.left-nav .nav-lists li.dome-logo .img-logo,
+.left-nav .nav-lists li.Lunar-logo .img-logo,
 .left-nav .nav-lists li .nav-item .nav-icon {
   width: 30px;
   text-align: center;
   margin: 0 0 0 -30px;
   line-height: 30px;
   float: left; }
-.left-nav .nav-lists li.dome-logo .txt-logo {
+.left-nav .nav-lists li.Lunar-logo .txt-logo {
   margin-left: 0; }
 .left-nav .nav-lists li .nav-detail {
   margin-left: 15px;
@@ -170,14 +170,14 @@
   width: 0;
   height: 65px;
   overflow: hidden; }
-.thin-left-nav .left-nav .nav-lists li.dome-logo {
+.thin-left-nav .left-nav .nav-lists li.Lunar-logo {
   overflow: hidden; }
 .thin-left-nav .left-nav .nav-lists li .arrow-sidebar {
   display: none; }
 .thin-left-nav .left-nav .nav-lists li ul.nav-second-level .nav-item {
   height: 45px;
   padding: 10px 15px; }
-.thin-left-nav .left-nav .nav-lists li.dome-logo .nav-item {
+.thin-left-nav .left-nav .nav-lists li.Lunar-logo .nav-item {
   padding: 20px 20px 20px 50px;
   height: 70px; }
 .thin-left-nav .left-nav .nav-lists li .nav-item .nav-icon {
@@ -192,7 +192,7 @@
 .thin-left-nav .left-nav .nav-lists li:hover {
   width: 225px;
   background-color: #313a46; }
-.thin-left-nav .left-nav .nav-lists li.dome-logo:hover {
+.thin-left-nav .left-nav .nav-lists li.Lunar-logo:hover {
   width: 70px; }
 .thin-left-nav .left-nav .nav-lists li:hover .nav-item {
   width: 225px; }
@@ -209,7 +209,7 @@
 .left-nav .nav-lists li .nav-item {
   transition: padding 0.1s linear, height 0.1s linear; }
 
-.left-nav .nav-lists li.dome-logo .img-logo,
+.left-nav .nav-lists li.Lunar-logo .img-logo,
 .left-nav .nav-lists li .nav-item .nav-icon {
   transition: font-size 0.1s linear; }
 

@@ -2,10 +2,10 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
     'use strict';
-    if (typeof domeApp === 'undefined') return;
-    domeApp.controller('CreateAlarmTemplateCtr', ['$scope', '$domeAlarm', 'dialog', '$state', function ($scope, $domeAlarm, dialog, $state) {
+    if (typeof LunarApp === 'undefined') return;
+    LunarApp.controller('CreateAlarmTemplateCtr', ['$scope', '$LunarAlarm', 'dialog', '$state', function ($scope, $LunarAlarm, dialog, $state) {
         $scope.$emit('pageTitle', {
             title: '新建模板',
             descrition: '在这里您可以新建报警模板。',
@@ -18,7 +18,7 @@
             valid: false
         };
         $scope.isLoading = false;
-        $scope.alarmTemplateIns = $domeAlarm.getInstance('AlarmTemplate');
+        $scope.alarmTemplateIns = $LunarAlarm.getInstance('AlarmTemplate');
         $scope.alarmTemplateIns.initHostGroupList();
         $scope.alarmTemplateIns.initGroupList();
         $scope.alarmTemplateIns.initDeployAndClusterList();
@@ -35,4 +35,4 @@
             });
         };
     }]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

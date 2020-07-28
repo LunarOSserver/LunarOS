@@ -1,9 +1,9 @@
 /**
  * Created by haozhou on 2017/2/17.
  */
-;(function (domeApp) {
+;(function (LunarApp) {
     'use strict';
-    domeApp.controller('CreateDeploymentCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
+    LunarApp.controller('CreateDeploymentCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
         let collectionId = $state.params.collectionId;
         let collectionName = $state.params.collectionName;
         if (!collectionId || !collectionName) {
@@ -39,7 +39,7 @@
         ];
         $scope.deploymentTypeHelpText = type => {
             const deployType = {
-                REPLICATIONCONTROLLER: '以replicas的形式保证pod的实例个数，部署的升级/回滚/扩容/缩容由DomeOS负责维护处理。',
+                REPLICATIONCONTROLLER: '以replicas的形式保证pod的实例个数，部署的升级/回滚/扩容/缩容由LunarOS负责维护处理。',
                 DAEMONSET: 'DaemonSet保证所选的每个节点上且只有一个pod运行，部署的升级/回滚/扩容/缩容由k8s维护处理，这些操作不能中断，只能停止当前部署。',
                 DEPLOYMENT: 'Deployment是升级版的Replication Controller，它以replica set的形式维护pod的个数，部署的升级/回滚/扩容/缩容由k8s负责维护处理。',
             };
@@ -186,7 +186,7 @@
                         hostLabelName = (!$scope.deploymentDraft.labelSelectors || $scope.deploymentDraft.labelSelectors.length === 0) ? '' : angular.copy($scope.deploymentDraft.labelSelectors).map(label => label.name);
                         hasLabelText = (!$scope.deploymentDraft.labelSelectors || $scope.deploymentDraft.labelSelectors.length === 0) ? '' : '所选标签';
                     }
-                    let promptText = `集群<span class="dome-heighten-text">${$scope.deploymentDraft.cluster.name}</span>在<span class="dome-heighten-text">${hostEnvMap[$scope.deploymentDraft.hostEnv]}</span>${hasLabelText}<span class="dome-heighten-text">${hostLabelName}</span>下没有主机，部署将无法正常启动，是否继续创建？`;
+                    let promptText = `集群<span class="Lunar-heighten-text">${$scope.deploymentDraft.cluster.name}</span>在<span class="Lunar-heighten-text">${hostEnvMap[$scope.deploymentDraft.hostEnv]}</span>${hasLabelText}<span class="Lunar-heighten-text">${hostLabelName}</span>下没有主机，部署将无法正常启动，是否继续创建？`;
                     dialog.continue('提示', promptText).then(buttonResponse => {
                         if (buttonResponse === dialog.button.BUTTON_OK) {
                             goCommonNextStep();
@@ -426,8 +426,8 @@
         $scope.podStrUndoText = null;
         // podSpecStr 文件内容
         const defaultVersionString = {
-            'YAML': 'containers:\n- image: \"pub.domeos.org/registry:2.3\"\n  name: \"test-container\"\n  volumeMounts:\n  - mountPath: \"/test-hostpath\"\n    name: \"test-volume\"\nvolumes:\n- hostPath:\n    path: \"/opt/scs\"\n  name: \"test-volume\"\n',
-            'JSON': '{\n  \"containers\": [{\n    \"image\": \"pub.domeos.org/registry:2.3\",\n    \"name\": \"test-container\",\n    \"volumeMounts\": [{\n      \"mountPath\": \"/test-hostpath\",\n      \"name\": \"test-volume\"\n    }]\n  }],\n  \"volumes\": [{\n    \"hostPath\": {\n      \"path\": \"/opt/scs\"\n    },\n    \"name\": \"test-volume\"\n  }]\n}\n',
+            'YAML': 'containers:\n- image: \"pub.Lunaros.org/registry:2.3\"\n  name: \"test-container\"\n  volumeMounts:\n  - mountPath: \"/test-hostpath\"\n    name: \"test-volume\"\nvolumes:\n- hostPath:\n    path: \"/opt/scs\"\n  name: \"test-volume\"\n',
+            'JSON': '{\n  \"containers\": [{\n    \"image\": \"pub.Lunaros.org/registry:2.3\",\n    \"name\": \"test-container\",\n    \"volumeMounts\": [{\n      \"mountPath\": \"/test-hostpath\",\n      \"name\": \"test-volume\"\n    }]\n  }],\n  \"volumes\": [{\n    \"hostPath\": {\n      \"path\": \"/opt/scs\"\n    },\n    \"name\": \"test-volume\"\n  }]\n}\n',
         };
         $scope.setPodStrToDefault = function () {
             $scope.podStrUndoText = $scope.deploymentDraft.versionString.podSpecStr || '';
@@ -460,7 +460,7 @@
 
         };
     }]);
-    domeApp
+    LunarApp
         .directive('isDeploymentUnique', ['api', function (api) {
             // 验证部署（DeploymentName）是否存在
             return {
@@ -520,4 +520,4 @@
 
             };
         }]);
-})(angular.module("domeApp"));
+})(angular.module("LunarApp"));

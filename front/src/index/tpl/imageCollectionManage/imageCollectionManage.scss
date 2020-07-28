@@ -36,7 +36,7 @@
 			}
 		}
 	}
-	.ui-table-dome{
+	.ui-table-Lunar{
 		table-layout: fixed;
 		td,th{
 			&:first-child{
@@ -84,7 +84,7 @@ $context-info-color:#888;
 			// margin-bottom: 20px;
 		}
 		&:hover{
-			background-color: dome-color(background,table-hover-background);
+			background-color: Lunar-color(background,table-hover-background);
 		}
 		.image-project-collection-item{
 
@@ -95,12 +95,12 @@ $context-info-color:#888;
 				.image-project-collection-name {
 					display: inline-block;
 					// margin-top: 7px;
-					color: dome-color(dome,bright);
+					color: Lunar-color(Lunar,bright);
 					font-size: 16px;
 					font-weight: bold;
 				}
 				.ui-btn-white{
-					color: dome-color(dome,bright);
+					color: Lunar-color(Lunar,bright);
 				}
 				.dropdown-menu-delete{
 					padding:0;
@@ -110,7 +110,7 @@ $context-info-color:#888;
 				display: inline-block;
 				padding-left: 10px;
 				padding-right: 50px;
-				// color: dome-color(font,default);
+				// color: Lunar-color(font,default);
 				em{
 					margin-right: 10px;
 					font-size: 14px;
@@ -152,7 +152,7 @@ $context-info-color:#888;
 		&.no-image-project-collection{
 			height: 208px;
 			text-align: center;
-			border:1px dashed dome-color(border,deep);
+			border:1px dashed Lunar-color(border,deep);
 			border-radius: $default-radius;
 			margin-bottom: 20px;
 			span{

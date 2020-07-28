@@ -68,7 +68,7 @@
 }
 .mod-monitor{
 	th.active{
-		background-color: dome-color(background,primary);
+		background-color: Lunar-color(background,primary);
 	}
 	.icon-down{
 		margin-left:4px;
@@ -78,7 +78,7 @@
 	}
 	.selected-count{
 		font-weight: 700;
-		color: dome-color(dome,primary);
+		color: Lunar-color(Lunar,primary);
 	}
 	.container-name{
 		width: 162px;

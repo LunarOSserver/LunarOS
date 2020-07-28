@@ -178,14 +178,14 @@ Merge: 878bd32 f1d27c1
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed May 18 14:02:17 2016 +0800
 
-    Merge branch 'dev_nodelabels' of code.sohuno.com:feiliu206363/DomeOS into dev_nodelabels
+    Merge branch 'dev_nodelabels' of code.sohuno.com:feiliu206363/LunarOS into dev_nodelabels
 
 commit 878bd3208b38a8a84c9f3402b02390b1b2dac563
 Merge: 9a30055 882fe1d
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed May 18 14:01:59 2016 +0800
 
-    Merge branch 'dev_chandra_cluster' of code.sohuno.com:feiliu206363/DomeOS into dev_nodelabels
+    Merge branch 'dev_chandra_cluster' of code.sohuno.com:feiliu206363/LunarOS into dev_nodelabels
 
 commit 882fe1d3e47a79f42ef78a0ff797e0de954e4fba
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -198,7 +198,7 @@ Merge: e11cbea 9a30055
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Wed May 18 13:39:01 2016 +0800
 
-    Merge branch 'dev_nodelabels' of http://code.sohuno.com/feiliu206363/DomeOS into dev_nodelabels
+    Merge branch 'dev_nodelabels' of http://code.sohuno.com/feiliu206363/LunarOS into dev_nodelabels
 
 commit e11cbeaebefd1b96034ccdc97be96fb26afcedce
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -211,7 +211,7 @@ Merge: 94e4bb7 5c4a7d2
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed May 18 13:20:45 2016 +0800
 
-    Merge branch 'dev_chandra_cluster' of code.sohuno.com:feiliu206363/DomeOS into dev_nodelabels
+    Merge branch 'dev_chandra_cluster' of code.sohuno.com:feiliu206363/LunarOS into dev_nodelabels
 
 commit 5c4a7d26a7e46499ccd00cb9b1c4da0c8e95b5e2
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -395,7 +395,7 @@ Merge: 32903c8 524c727
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Mon May 9 11:26:01 2016 +0800
 
-    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/LunarOS into dev_alarm
 
 commit 32903c8114b92e8b722e334713c9df7b289c8b8a
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -426,7 +426,7 @@ Merge: b79b3bc a12fc65
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri May 6 14:52:31 2016 +0800
 
-    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/LunarOS into dev_alarm
 
 commit b79b3bc2f1f3ed8dc6c54808bbab56c225ebd599
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -451,7 +451,7 @@ Merge: 24bb7bf 5f80b5d
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu May 5 23:33:00 2016 +0800
 
-    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/LunarOS into dev_alarm
 
 commit 24bb7bf121bde0c524607cac851bc6874ac46e7f
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -482,7 +482,7 @@ Merge: f0fc054 bbaff65
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Thu May 5 21:47:02 2016 +0800
 
-    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/LunarOS into dev_alarm
 
 commit f0fc054320a4816891672db9c7595bbc71f15a93
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -495,7 +495,7 @@ Merge: 5e45cb1 4dbd1dd
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu May 5 17:35:14 2016 +0800
 
-    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/LunarOS into dev_alarm
 
 commit 5e45cb1cf1dd27a8e740d1cf05a92d2da0888506
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -508,7 +508,7 @@ Merge: 43e8572 de0c96a
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Thu May 5 15:18:26 2016 +0800
 
-    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/LunarOS into dev_alarm
 
 commit 43e857255e476ad269fb49dc308b8e2ed479df48
 Merge: d40e161 180e091
@@ -528,7 +528,7 @@ Merge: 2b6d75d 180e091
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu May 5 11:37:27 2016 +0800
 
-    Merge branch 'release' of code.sohuno.com:feiliu206363/DomeOS into dev_alarm
+    Merge branch 'release' of code.sohuno.com:feiliu206363/LunarOS into dev_alarm
 
 commit 180e091bdded39c00212248b364d1b63be72a0cf
 Merge: 2c5535d a5c8b5a
@@ -554,7 +554,7 @@ Merge: b84da1f d40e161
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu May 5 11:06:04 2016 +0800
 
-    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/LunarOS into dev_alarm
 
 commit b84da1f06c166a40ce2f577031505498cb10d82e
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -591,7 +591,7 @@ Merge: d67c684 014cd04
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue May 3 14:07:36 2016 +0800
 
-    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/LunarOS into dev_alarm
 
 commit d67c6843f13ff62c90441eab87a7cb95c8ef15eb
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -610,7 +610,7 @@ Merge: 2bd6d3d 868ed14
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Tue May 3 11:26:07 2016 +0800
 
-    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/LunarOS into dev_alarm
 
 commit 868ed14e86a48744472661297b13d71dfcb129b1
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -623,7 +623,7 @@ Merge: 59ab05c 8497295
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Tue May 3 10:48:21 2016 +0800
 
-    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/LunarOS into dev_alarm
 
 commit 59ab05c9460a990bd82ec84fbdf69c23859537a4
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -642,7 +642,7 @@ Merge: ef9ef70 c934175
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Apr 29 21:43:57 2016 +0800
 
-    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/LunarOS into dev_alarm
 
 commit ef9ef706960d93cf05b01ff5b15804b9909f6477
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -661,7 +661,7 @@ Merge: 316f273 4f83449
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Apr 28 19:50:10 2016 +0800
 
-    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/LunarOS into dev_alarm
 
 commit 316f273653843c20d675e36bbe6b6f88c12c1274
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -674,7 +674,7 @@ Merge: ec0c813 c98ff4c
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Thu Apr 28 15:12:21 2016 +0800
 
-    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/LunarOS into dev_alarm
 
 commit ec0c81390be09cfe87e25e4cc7fc118479a4f77b
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -718,7 +718,7 @@ Merge: 15e1362 dada158
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Apr 27 18:31:08 2016 +0800
 
-    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/LunarOS into dev_alarm
 
 commit 15e136214a00fa5d6c18e440cddd29f58a045e5a
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -766,7 +766,7 @@ Merge: 613e801 dde29e2
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Apr 26 15:29:09 2016 +0800
 
-    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/LunarOS into dev_alarm
 
 commit 613e801e8f064375b7a0e9cb8dec648bec32ed9e
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -835,7 +835,7 @@ Merge: 53fb444 1d43e1d
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Apr 25 14:53:43 2016 +0800
 
-    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/LunarOS into dev_alarm
 
 commit 53fb444cc64cadafa54c9c422788634821ef1ba9
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -958,7 +958,7 @@ Merge: 6369cba c9338a6
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Thu Apr 21 23:03:37 2016 +0800
 
-    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/LunarOS into dev_alarm
 
 commit 6369cba5320484a4485e0b63e292aebfc1090ec2
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -983,14 +983,14 @@ Merge: e6d7eab be96bb4
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Apr 21 22:23:58 2016 +0800
 
-    Merge branch 'release' of code.sohuno.com:feiliu206363/DomeOS into release-0.2.1-beta
+    Merge branch 'release' of code.sohuno.com:feiliu206363/LunarOS into release-0.2.1-beta
 
 commit c9338a6c871f29a12e88d7ce9649dfce7f2e575c
 Merge: 4480af4 5865501
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Apr 21 22:23:14 2016 +0800
 
-    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/LunarOS into dev_alarm
 
 commit 4480af47872e66f57b8e54bb08e3d7616c5b4dbf
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -1033,7 +1033,7 @@ Merge: b056a79 8638807
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Apr 21 15:19:17 2016 +0800
 
-    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/LunarOS into dev_alarm
 
 commit ae577cbe9bc49589f36fe95e129b80e4a8302329
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -1148,7 +1148,7 @@ Merge: f664736 108f864
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Wed Apr 20 14:41:41 2016 +0800
 
-    Merge branch 'fix_exception' of code.sohuno.com:feiliu206363/DomeOS into fix_exception
+    Merge branch 'fix_exception' of code.sohuno.com:feiliu206363/LunarOS into fix_exception
 
 commit f6647361b9792c6b5933d7bcb59b11df8c52d1f9
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -1161,7 +1161,7 @@ Merge: f286a1e 92befd0
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Wed Apr 20 14:35:40 2016 +0800
 
-    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/LunarOS into dev_alarm
 
 commit f286a1e8a25e41e0141cfd84b08e102b8d79e8aa
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -1180,7 +1180,7 @@ Merge: 7a93596 8958839
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Apr 20 14:30:04 2016 +0800
 
-    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/LunarOS into dev_alarm
 
 commit 7a93596efa4d40ea389ec485ca2b4177ce411162
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -1193,7 +1193,7 @@ Merge: 9d83b6b 25d9550
 Author: baoquanwang <baoquanwang@sohu-inc.com>
 Date:   Wed Apr 20 13:16:49 2016 +0800
 
-    Merge branch 'fix_exception' of code.sohuno.com:feiliu206363/DomeOS into fix_exception
+    Merge branch 'fix_exception' of code.sohuno.com:feiliu206363/LunarOS into fix_exception
 
 commit 9d83b6bc356a91e9b670daeabf211affd1ac57c9
 Author: baoquanwang <baoquanwang@sohu-inc.com>
@@ -1206,7 +1206,7 @@ Merge: 04a573e 620a7b9
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Wed Apr 20 12:08:04 2016 +0800
 
-    Merge branch 'fix_exception' of http://code.sohuno.com/feiliu206363/DomeOS into fix_exception
+    Merge branch 'fix_exception' of http://code.sohuno.com/feiliu206363/LunarOS into fix_exception
 
 commit 04a573ecad1adaafa2005c6b0c20647136458a4c
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -1275,7 +1275,7 @@ Merge: 97b4470 015b50c
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Apr 20 10:29:56 2016 +0800
 
-    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/LunarOS into dev_alarm
 
 commit 97b44702a974244e824c48e4ec0c7cf90d830432
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -1294,7 +1294,7 @@ Merge: eb77067 b5368d3
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Apr 19 21:50:19 2016 +0800
 
-    Merge branch 'release-0.2.1-beta' of code.sohuno.com:feiliu206363/DomeOS into dev_alarm
+    Merge branch 'release-0.2.1-beta' of code.sohuno.com:feiliu206363/LunarOS into dev_alarm
 
 commit b5368d3765b5a5f188d421f5e3318a4b4a36366b
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -1307,7 +1307,7 @@ Merge: 0f14072 7e9d511
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Apr 19 21:41:58 2016 +0800
 
-    Merge branch 'release-0.2.1-beta' of code.sohuno.com:feiliu206363/DomeOS into release-0.2.1-beta
+    Merge branch 'release-0.2.1-beta' of code.sohuno.com:feiliu206363/LunarOS into release-0.2.1-beta
 
 commit 0f1407281095e58a3bf759e052ca9b04ed6c7f89
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -1374,7 +1374,7 @@ Merge: 86b1d00 7323095
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Tue Apr 19 18:45:29 2016 +0800
 
-    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/LunarOS into dev_alarm
 
 commit 86b1d005c9d57b24e3c36e298cbdbe6006f7eb9d
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -1394,7 +1394,7 @@ Merge: 6c7f2a7 954656b
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Apr 19 18:00:59 2016 +0800
 
-    Merge branch 'release-0.2.1-beta' of code.sohuno.com:feiliu206363/DomeOS into release-0.2.1-beta
+    Merge branch 'release-0.2.1-beta' of code.sohuno.com:feiliu206363/LunarOS into release-0.2.1-beta
 
 commit 6c7f2a7bbb2ffe26900f14a28f0b30f61375a642
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -1425,7 +1425,7 @@ Merge: 68f4949 f882671
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Tue Apr 19 17:29:52 2016 +0800
 
-    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/LunarOS into dev_alarm
 
 commit 68f49497b10f61b7f7b157df90fc41e8c33d3ce7
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -1451,7 +1451,7 @@ Merge: 87c4b4c a253d53
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Apr 19 16:53:52 2016 +0800
 
-    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of code.sohuno.com:feiliu206363/LunarOS into dev_alarm
 
 commit 87c4b4ce65f1cbea10bdc37b7f64b6c9d8134ccc
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -1464,7 +1464,7 @@ Merge: 2255bdd e961c89
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Tue Apr 19 15:48:11 2016 +0800
 
-    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/DomeOS into dev_alarm
+    Merge branch 'dev_alarm' of http://code.sohuno.com/feiliu206363/LunarOS into dev_alarm
 
 commit 2255bdd20ed2a02ddd92f790817fb3c2eb37511e
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -1533,7 +1533,7 @@ Merge: 3539fd1 c15593a
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Mon Apr 18 22:41:51 2016 +0800
 
-    Merge branch 'release-0.2.1-beta' of code.sohuno.com:feiliu206363/DomeOS into release-0.2.1-beta
+    Merge branch 'release-0.2.1-beta' of code.sohuno.com:feiliu206363/LunarOS into release-0.2.1-beta
 
 commit 3539fd1eac276b40b373c1aa8cbc690c8eee52d0
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -1596,21 +1596,21 @@ Merge: b7a22fd 68037b0
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Apr 18 12:09:08 2016 +0800
 
-    Merge branch 'dev_chandra_taburl' of code.sohuno.com:feiliu206363/DomeOS into release-0.2.1-beta
+    Merge branch 'dev_chandra_taburl' of code.sohuno.com:feiliu206363/LunarOS into release-0.2.1-beta
 
 commit b7a22fd8402f54e62009b2549b96f268e17bd9de
 Merge: 080394c 58cc80a
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Apr 18 12:08:34 2016 +0800
 
-    Merge branch 'release-0.2.1-beta' of code.sohuno.com:feiliu206363/DomeOS into release-0.2.1-beta
+    Merge branch 'release-0.2.1-beta' of code.sohuno.com:feiliu206363/LunarOS into release-0.2.1-beta
 
 commit e961c8900e19d6a12366faef4bfeaab9f91d15d9
 Merge: b2dd69d 39e56fc
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Apr 18 12:01:36 2016 +0800
 
-    Merge branch 'dev_chandra_alarm' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format_alarm
+    Merge branch 'dev_chandra_alarm' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format_alarm
 
 commit 58cc80aa2f102ee8ca154f6f943a9a211c1e7f9f
 Merge: b69112f cffd886
@@ -1673,7 +1673,7 @@ Merge: c579f2d 97a0f44
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Apr 15 16:02:44 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_chandra_taburl
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_chandra_taburl
 
 commit 97a0f44713d1c74dff9514e63f748e3269d76bb2
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -1716,7 +1716,7 @@ Merge: e48df19 d53c06d
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Apr 13 14:54:24 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit e48df19af01256baf1f32496ba290be22f185517
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -1777,7 +1777,7 @@ Merge: a1039dd 07fdbfb
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Apr 12 19:23:19 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit a1039ddde31e3c8e77ce4a8ac998558ae6c02a59
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -1874,14 +1874,14 @@ Merge: 1a6fae6 476ec7e
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Apr 11 19:57:39 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_chandra_taburl
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_chandra_taburl
 
 commit 476ec7e4ee8b5cb6c5e99ab469fd62460249f05c
 Merge: 38167ab 9e5ff45
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Apr 11 19:44:33 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 1a6fae6363e6c0ae7bc9a21b7f673194ab6a651c
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -1936,7 +1936,7 @@ Merge: 562c46a 76e9639
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Mon Apr 11 16:40:26 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 562c46aab799e21a00e1e5a1fbd30bba015a1c21
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -1967,7 +1967,7 @@ Merge: d4939f0 5cd0946
 Author: sparkchen <sparkchen@sohu-inc.com>
 Date:   Mon Apr 11 16:25:59 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit d4939f0cba8ac31000b7261fc3a1226bbbea1259
 Author: sparkchen <sparkchen@sohu-inc.com>
@@ -1998,7 +1998,7 @@ Merge: 1475848 8ca9956
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Mon Apr 11 15:43:59 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 14758488a50238db0defbca1a28579b16ecf4189
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -2017,7 +2017,7 @@ Merge: 7163410 b00e2bf
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Mon Apr 11 15:12:51 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 71634109b943dd58685d3332129437c511dbdb1e
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -2066,7 +2066,7 @@ Merge: 5a29140 472762f
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Apr 11 14:50:02 2016 +0800
 
-    Merge branch 'dev_chandra_log' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_chandra_log' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 472762fca2992f47c6bca5fbc05910d767ca92fe
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -2115,7 +2115,7 @@ Merge: 09090f6 9a36f6b
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Mon Apr 11 13:20:13 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 09090f690ac186b2d2db75a05521cf37e9b85b0f
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -2134,7 +2134,7 @@ Merge: bcfa085 253f25d
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Mon Apr 11 11:54:02 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit bcfa0851fc1fe4e521ba82cb7ad2a8ee69a6a5c5
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -2147,7 +2147,7 @@ Merge: b80cf81 8262e66
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Apr 11 11:37:05 2016 +0800
 
-    erge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    erge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit b80cf813502963db14ff267ef757818a049b6e54
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -2166,7 +2166,7 @@ Merge: a133218 99d9997
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Mon Apr 11 10:50:51 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit a133218a3bed7cd04e63b653284964b64e410c80
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -2197,7 +2197,7 @@ Merge: a9ea5d6 fb6909a
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Sun Apr 10 21:24:03 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit a9ea5d66b029ae034e4f05e9b70cc3ad99e6aebf
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -2210,7 +2210,7 @@ Merge: 1edf358 dfebcb0
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Sun Apr 10 21:11:19 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 1edf3581a8b52c2cf7406af948c20e80378cabc8
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -2253,7 +2253,7 @@ Merge: 6975543 3a042ef
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Sun Apr 10 18:43:22 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 697554327f87693389308b92a8d513b556fc818c
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -2272,7 +2272,7 @@ Merge: 84a03a4 c9a5f43
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Sun Apr 10 18:13:22 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 84a03a45252e749d8a0971f7d0ad4c914633fb6a
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -2303,7 +2303,7 @@ Merge: d01beea a59b246
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Sun Apr 10 17:47:45 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit d01beea8dcd40d508eaa376da14b5559ff51d984
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -2334,7 +2334,7 @@ Merge: 13bbe4d 81deb73
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Sun Apr 10 16:38:03 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 13bbe4d1de14da2a421ef411d29384064e8ce957
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -2347,7 +2347,7 @@ Merge: 0d515da 55706ee
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Sun Apr 10 16:36:01 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 0d515da4f840e37ea2fe60ace309abf1226538b1
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -2366,7 +2366,7 @@ Merge: 054cdc0 c9cc1be
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Sun Apr 10 15:34:23 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 054cdc0fa8ceb5c12a7655383a7c9e37d806d487
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -2391,7 +2391,7 @@ Merge: e3964d6 0655f81
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Sun Apr 10 12:11:54 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit e3964d6d782fcdc8f714f918ecb14d2f1dd78970
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -2434,7 +2434,7 @@ Merge: f057081 82b9486
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Sun Apr 10 11:01:33 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit f057081c2a00a03b28ab09b65cedf0ad45e8968a
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -2453,7 +2453,7 @@ Merge: fdf6b7e 5049430
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Fri Apr 8 22:23:38 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit fdf6b7e420f6c3f4d5f0befe2f1fa6cdd4c2c2a2
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -2490,7 +2490,7 @@ Merge: b70def7 1a53afe
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Fri Apr 8 20:57:40 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 1a53afe54e69ff0e8245287e66b3d287b7b34871
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -2529,7 +2529,7 @@ Merge: 0304be7 689dbc2
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Fri Apr 8 19:49:17 2016 +0800
 
-    Merge branch 'dev_mingxia_rebuildapi' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_mingxia_rebuildapi' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 0304be75b18e1e6fe68cfe8f6f01ddb2ead4b1c0
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -2566,14 +2566,14 @@ Merge: 89cb62b 84a7ccf
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Apr 8 17:56:36 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 89cb62b695c7e0c9642f3a6228f039e0a4b10648
 Merge: ce12e49 a742ba3
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Apr 8 17:56:17 2016 +0800
 
-    Merge branch 'dev_chandra_fixbug' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_chandra_fixbug' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit a742ba3646c5688385af2756bbc1d4e189a66f3c
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -2592,7 +2592,7 @@ Merge: 5e9c4ec 0c88a1a
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Fri Apr 8 16:19:46 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 5e9c4eca89541c8440467642d87a5176537b6e9d
 Merge: 9c29f8c 80ac7aa
@@ -2612,7 +2612,7 @@ Merge: 52f79ee 8478410
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Fri Apr 8 16:12:04 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 52f79ee11ec72c7f2f03c7cd32137f9aa13f1386
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -2631,7 +2631,7 @@ Merge: a122241 6e45e85
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Apr 8 15:45:09 2016 +0800
 
-    Merge branch 'dev_chandra_fixbug' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_chandra_fixbug' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 6e45e85f8013b0a123233579fbd872e28e6847b8
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -2745,7 +2745,7 @@ Merge: ef0a930 e8cd65d
 Author: mushui <xiaming@sohu-inc.com>
 Date:   Fri Apr 8 02:09:25 2016 +0800
 
-    Merge branch 'dev_mingxia_rebuildapi' of code.sohuno.com:feiliu206363/DomeOS into dev_mingxia_rebuildapi
+    Merge branch 'dev_mingxia_rebuildapi' of code.sohuno.com:feiliu206363/LunarOS into dev_mingxia_rebuildapi
 
 commit ef0a9300e4d4f89058fdeb0512f3cefc373701a2
 Author: mushui <xiaming@sohu-inc.com>
@@ -2792,7 +2792,7 @@ Merge: c51093a 34e42cf
 Author: mushui <xiaming@sohu-inc.com>
 Date:   Fri Apr 8 01:41:27 2016 +0800
 
-    Merge branch 'dev_mingxia_rebuildapi' of code.sohuno.com:feiliu206363/DomeOS into dev_mingxia_rebuildapi
+    Merge branch 'dev_mingxia_rebuildapi' of code.sohuno.com:feiliu206363/LunarOS into dev_mingxia_rebuildapi
 
 commit c51093a6b96d35aaaadc3a165f15a9eb18d5d41d
 Author: mushui <xiaming@sohu-inc.com>
@@ -2818,7 +2818,7 @@ Merge: afaa8c7 7fc76f8
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Fri Apr 8 00:54:19 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit afaa8c77d4ca097847c4d6b3b8de5f65773658c5
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -2864,7 +2864,7 @@ Merge: aac2b69 34e9dd6
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Fri Apr 8 00:37:09 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit aac2b6930d36a6c5b7cd055b7b9ee73b43a62a43
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -2883,7 +2883,7 @@ Merge: 02b93db c622be3
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Fri Apr 8 00:28:41 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 02b93db081fd2e832d80a9e09456b683550ab288
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -2948,7 +2948,7 @@ Merge: 8d02922 138bbcb
 Author: mushui <xiaming@sohu-inc.com>
 Date:   Thu Apr 7 23:56:03 2016 +0800
 
-    Merge branch 'dev_mingxia_rebuildapi' of code.sohuno.com:feiliu206363/DomeOS into dev_mingxia_rebuildapi
+    Merge branch 'dev_mingxia_rebuildapi' of code.sohuno.com:feiliu206363/LunarOS into dev_mingxia_rebuildapi
 
 commit 8d02922c234618596cce661102b5a6b6fdce2244
 Author: mushui <xiaming@sohu-inc.com>
@@ -2961,7 +2961,7 @@ Merge: ed9d8a0 5efd92a
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Apr 7 23:37:21 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit ed9d8a093aefd5472ddffde4f3aa0e05d9e555d3
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -2980,7 +2980,7 @@ Merge: 4a353c4 5c68c28
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Thu Apr 7 23:15:35 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 4a353c4ef0892d1dad7dd7b835ab7ac1ba129dc2
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -2999,7 +2999,7 @@ Merge: dd0eaf5 d925bd5
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Apr 7 22:56:15 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit dd0eaf55e53563fc97142532404870374aca10f4
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -3024,7 +3024,7 @@ Merge: a393b7e 8159b18
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Apr 7 22:28:55 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit a393b7eeec0d7a8cbff91a2f22a45c883f6ee5df
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -3063,7 +3063,7 @@ Merge: d42dc62 6b53437
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Apr 7 22:18:55 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit d42dc624c2718a5c37947e37015055720d59288f
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -3082,7 +3082,7 @@ Merge: 4f587ef 711844d
 Author: mushui <xiaming@sohu-inc.com>
 Date:   Thu Apr 7 22:16:08 2016 +0800
 
-    Merge branch 'dev_mingxia_rebuildapi' of code.sohuno.com:feiliu206363/DomeOS into dev_mingxia_rebuildapi
+    Merge branch 'dev_mingxia_rebuildapi' of code.sohuno.com:feiliu206363/LunarOS into dev_mingxia_rebuildapi
 
 commit 4f587efe388fd8709987bfd6a98291fda5c23bee
 Author: mushui <xiaming@sohu-inc.com>
@@ -3112,7 +3112,7 @@ Date:   Thu Apr 7 21:42:30 2016 +0800
     Merge branch 'dev_0.2.1_new_format' into dev_0.2.1_new_format_other_test
     
     # Conflicts:
-    #	src/main/java/org/domeos/framework/api/service/cluster/impl/ClusterServiceImpl.java
+    #	src/main/java/org/Lunaros/framework/api/service/cluster/impl/ClusterServiceImpl.java
 
 commit 6f8938534a2f5c1383b9c43214dfa1a1423f6f57
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -3125,7 +3125,7 @@ Merge: e9bc20f f82830a
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Thu Apr 7 21:24:57 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit e9bc20f98fa3db84d78a824b1d787191b8119efa
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -3138,7 +3138,7 @@ Merge: 9e463e0 758f5b2
 Author: mushui <xiaming@sohu-inc.com>
 Date:   Thu Apr 7 20:55:14 2016 +0800
 
-    Merge branch 'dev_mingxia_rebuildapi' of code.sohuno.com:feiliu206363/DomeOS into dev_mingxia_rebuildapi
+    Merge branch 'dev_mingxia_rebuildapi' of code.sohuno.com:feiliu206363/LunarOS into dev_mingxia_rebuildapi
 
 commit 9e463e0b15bbef101eac4d9cc526c3ee8a443f9f
 Author: mushui <xiaming@sohu-inc.com>
@@ -3158,7 +3158,7 @@ Merge: f84283a cbd8073
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Thu Apr 7 20:42:15 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit f84283a77c85a711fed7bf6c77ba804daa19c9a6
 Merge: 5634ada 2190c34
@@ -3184,7 +3184,7 @@ Merge: 6099280 76e9614
 Author: mushui <xiaming@sohu-inc.com>
 Date:   Thu Apr 7 20:31:15 2016 +0800
 
-    Merge branch 'dev_mingxia_rebuildapi' of code.sohuno.com:feiliu206363/DomeOS into dev_mingxia_rebuildapi
+    Merge branch 'dev_mingxia_rebuildapi' of code.sohuno.com:feiliu206363/LunarOS into dev_mingxia_rebuildapi
 
 commit 76e96141e99e7bc67a2c45cf26c8faaf05690864
 Merge: 90d7231 5634ada
@@ -3250,7 +3250,7 @@ Merge: fc08ca2 794f080
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Thu Apr 7 20:06:51 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 794f0802d0930933d5aa881fa99b7bd7c3b40870
 Merge: 9b2b968 b100c11
@@ -3283,7 +3283,7 @@ Merge: f170208 ccd35b8
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Thu Apr 7 18:13:03 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit f1702081c8c7a5d6a15f641b55ab3c2fdfd288ca
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -3303,7 +3303,7 @@ Merge: f20312f a194c20
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Apr 7 18:02:56 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit f20312f544bb9a2fc4d2bf38876ac43e3200b667
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -3322,7 +3322,7 @@ Merge: c4f4cf7 65738de
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Thu Apr 7 17:58:32 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit c4f4cf7c926e2759eb42ef1f9e097d1ffe0c3cb3
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -3393,7 +3393,7 @@ Merge: 7de89bc a9ed67b
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Apr 7 16:33:27 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 7de89bce4cb6288de6d4d76f68a85c949ed45b25
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -3413,7 +3413,7 @@ Merge: b15ebda a046d09
 Author: sparkchen <sparkchen@sohu-inc.com>
 Date:   Thu Apr 7 16:30:11 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit b15ebda9c869ff79b1bc8997d9b2073820228f33
 Author: sparkchen <sparkchen@sohu-inc.com>
@@ -3433,7 +3433,7 @@ Merge: d907ddf e98b0af
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Thu Apr 7 16:29:21 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit d907ddfffff6ec1284dbb793a31708bf18f002d5
 Merge: 2bf91ca 0e940fc
@@ -3459,7 +3459,7 @@ Merge: 4569ee3 2bf91ca
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Thu Apr 7 16:08:21 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 4569ee3bea83325896d4a6372e974df4a8581efb
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -3482,7 +3482,7 @@ Date:   Thu Apr 7 15:58:20 2016 +0800
     Merge branch 'dev_0.2.1_new_format_other_test' into dev_0.2.1_new_format
     
     # Conflicts:
-    #	src/main/java/org/domeos/framework/api/biz/event/impl/K8SEventBizImpl.java
+    #	src/main/java/org/Lunaros/framework/api/biz/event/impl/K8SEventBizImpl.java
 
 commit c974d38379113c73b9d99a01d07bfffad0bfce08
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -3528,7 +3528,7 @@ Merge: 2a79fb9 de340ef
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Apr 7 15:14:47 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 2a79fb916ee870b62dc858ea00b425f25363bbb1
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -3541,7 +3541,7 @@ Merge: b4956fb f103b7b
 Author: sparkchen <sparkchen@sohu-inc.com>
 Date:   Thu Apr 7 15:14:14 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit b4956fbe9a3ddcce069543eba46495f30dc2baf1
 Author: sparkchen <sparkchen@sohu-inc.com>
@@ -3554,7 +3554,7 @@ Merge: d06918d f103b7b
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Thu Apr 7 15:04:11 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit d06918df0d42ebde41f03c982c6c57afbdc21537
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -3573,7 +3573,7 @@ Merge: 9eaecc9 24ca50d
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Apr 7 14:50:59 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 9eaecc90f8a5571131aa0aea2a2aa450f0d468d9
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -3586,7 +3586,7 @@ Merge: 95dd1c0 7f80e20
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Apr 7 13:48:30 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 7f80e20e144ab1bed2564fc9227dcf103f88258d
 Merge: da5033c d22a0f8
@@ -3613,7 +3613,7 @@ Merge: 741e949 3d0d65b
 Author: sparkchen <sparkchen@sohu-inc.com>
 Date:   Thu Apr 7 13:40:15 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 741e949f66830faedc6ae9d1dcd4b11cf068ebed
 Author: sparkchen <sparkchen@sohu-inc.com>
@@ -3626,7 +3626,7 @@ Merge: e95060a 68dbf20
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Thu Apr 7 13:28:38 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit e95060a6537cc5ce31c22894fb5dfba780fee1f2
 Merge: e95d685 df160c9
@@ -3646,7 +3646,7 @@ Merge: 8defdc8 e95d685
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Thu Apr 7 13:21:46 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 8defdc88caa05310d903afbf95e563db700f98c0
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -3691,14 +3691,14 @@ Merge: 115cd99 ae2c5c0
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Apr 7 12:12:09 2016 +0800
 
-    Merge branch 'dev_chandra_fixbug' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_chandra_fixbug' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 9a28707d94cece737cdd1176d0fac27e2ba9d9ad
 Merge: 2b4f23e ae2c5c0
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Apr 7 12:10:25 2016 +0800
 
-    Merge branch 'dev_chandra_fixbug' of code.sohuno.com:feiliu206363/DomeOS into dev_chandra_alarm
+    Merge branch 'dev_chandra_fixbug' of code.sohuno.com:feiliu206363/LunarOS into dev_chandra_alarm
 
 commit 2b4f23e0f39023ad2e9eafdaa2389ea8a9e08448
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -3711,7 +3711,7 @@ Merge: fda4fbb a33f2b0
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Apr 7 11:47:32 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit fda4fbb288fbf9c4fd04f1f8e8c76e63fe589fad
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -3750,7 +3750,7 @@ Merge: 4188321 07b721c
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Thu Apr 7 10:20:08 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 418832154475110226597090999cb6f4d33d88b4
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -3796,7 +3796,7 @@ Merge: 7b00394 28049e2
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Thu Apr 7 02:08:08 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 7b0039435eca48e56d1eea1dc79a677711e849da
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -3815,7 +3815,7 @@ Merge: b8734b3 2f4c593
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Apr 7 01:57:39 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 9a2aa9fa277030e5451ad6ee78f986a08fd147f2
 Merge: 4185b23 2f4c593
@@ -3829,7 +3829,7 @@ Merge: bd5f9d3 e410681
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Thu Apr 7 01:47:33 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit bd5f9d31ac2df1ee3268733143d8352b75dbef1d
 Merge: afe9518 4185b23
@@ -3849,14 +3849,14 @@ Merge: 5a9b67c e410681
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Apr 7 01:35:19 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit e41068144b6020967f18c88b7f05ed0aa4bf4e5c
 Merge: 4f13f50 afe9518
 Author: sparkchen <sparkchen@sohu-inc.com>
 Date:   Thu Apr 7 01:35:07 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 4f13f5091ab937566ec7dcabb6d1be5393d1ac62
 Author: sparkchen <sparkchen@sohu-inc.com>
@@ -3895,7 +3895,7 @@ Merge: 07759be 1240f00
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Apr 7 01:24:57 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 1240f00c6fc29e58318791baaa4d08bcfcae6f2c
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -3908,14 +3908,14 @@ Merge: e971635 b22f415
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Apr 7 01:13:18 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit b22f415ec5dd12f95705fa558625e28a7f6e8ce2
 Merge: 243a952 392d815
 Author: sparkchen <sparkchen@sohu-inc.com>
 Date:   Thu Apr 7 01:13:03 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 243a9527eb1a37da8f5320afef135f59cb732b5f
 Author: sparkchen <sparkchen@sohu-inc.com>
@@ -3928,28 +3928,28 @@ Merge: d283632 de359ae
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Thu Apr 7 01:11:47 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit d2836329b6ad44e7b023bfd6a143e907f318bd9d
 Merge: a697045 44b7e3c
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Thu Apr 7 01:08:28 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit e971635fa59241b5fbeb0c94dc4a2e09d3bccdfb
 Merge: 230db18 de359ae
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Apr 7 01:08:20 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit de359aec04b29821a0b57c7998634e40424bd4c2
 Merge: 122bb09 1597e92
 Author: sparkchen <sparkchen@sohu-inc.com>
 Date:   Thu Apr 7 01:07:34 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 122bb09f97fcc537b482f73cd2f44d98c740f15e
 Author: sparkchen <sparkchen@sohu-inc.com>
@@ -3962,7 +3962,7 @@ Merge: c9fdaf6 1597e92
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Apr 7 01:07:03 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit c9fdaf6cbe5088792c32b5c779c6349596b383c9
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -4022,7 +4022,7 @@ Merge: af99d9e 862a260
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Apr 7 00:26:03 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit af99d9e9f86601ea1c51274345f50dfe98c19c5e
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -4113,7 +4113,7 @@ Merge: 4ba6543 bdfdcc5
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Wed Apr 6 23:44:05 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 7ba38d2f923ae4e0c170b109a52f8d1db3bbed69
 Merge: 96806ca bdfdcc5
@@ -4145,7 +4145,7 @@ Merge: 9b724b7 ccedce6
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Wed Apr 6 23:37:40 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 9b724b7f3b92c1174f8eff4f2c161a6ad6d350b9
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -4158,7 +4158,7 @@ Merge: ca75f12 1c51804
 Author: sparkchen <sparkchen@sohu-inc.com>
 Date:   Wed Apr 6 23:36:14 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit ca75f12d9b160dfdf413a10471053cd8f18f0199
 Author: sparkchen <sparkchen@sohu-inc.com>
@@ -4208,7 +4208,7 @@ Date:   Wed Apr 6 22:29:46 2016 +0800
     
     # Conflicts:
     #	src/main/resources/create-db.sql
-    #	src/test/java/org/domeos/api/service/DeploymentServiceTest.java
+    #	src/test/java/org/Lunaros/api/service/DeploymentServiceTest.java
 
 commit b0d07cefb7a4ed97da2b6eb9d4532009a294e452
 Merge: e21a245 6dc4bc5
@@ -4218,13 +4218,13 @@ Date:   Wed Apr 6 22:25:50 2016 +0800
     Merge branch 'dev_0.2.1_new_format' into dev_0.2.1_new_format_other_test
     
     # Conflicts:
-    #	src/main/java/org/domeos/api/AuthUtil.java
-    #	src/main/java/org/domeos/api/service/resource/impl/ResourceServiceImpl.java
-    #	src/main/java/org/domeos/framework/api/biz/resource/ResourceBiz.java
-    #	src/main/java/org/domeos/framework/api/biz/resource/impl/ResourceBizImpl.java
-    #	src/main/java/org/domeos/framework/api/controller/auth/UserController.java
-    #	src/main/java/org/domeos/framework/api/service/auth/impl/GroupServiceImpl.java
-    #	src/main/java/org/domeos/framework/api/service/global/impl/LdapInfoServiceImpl.java
+    #	src/main/java/org/Lunaros/api/AuthUtil.java
+    #	src/main/java/org/Lunaros/api/service/resource/impl/ResourceServiceImpl.java
+    #	src/main/java/org/Lunaros/framework/api/biz/resource/ResourceBiz.java
+    #	src/main/java/org/Lunaros/framework/api/biz/resource/impl/ResourceBizImpl.java
+    #	src/main/java/org/Lunaros/framework/api/controller/auth/UserController.java
+    #	src/main/java/org/Lunaros/framework/api/service/auth/impl/GroupServiceImpl.java
+    #	src/main/java/org/Lunaros/framework/api/service/global/impl/LdapInfoServiceImpl.java
 
 commit 6cb29974d7f52993525b245b24cf19b015e2f703
 Author: xupeng <conanxu@sohu-inc.com>
@@ -4237,7 +4237,7 @@ Merge: 684d18f 96928bc
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Wed Apr 6 21:52:32 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 684d18f4be0b18941f9393225de4e745b723a7ac
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -4266,7 +4266,7 @@ Date:   Wed Apr 6 21:21:14 2016 +0800
     Merge branch 'dev_0.2.1_new_format' into dev_events
     
     Conflicts:
-    	src/main/java/org/domeos/framework/api/service/deployment/impl/DeploymentServiceImpl.java
+    	src/main/java/org/Lunaros/framework/api/service/deployment/impl/DeploymentServiceImpl.java
     	src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml
     	src/test/resources/META-INF/test-config.xml
 
@@ -4281,7 +4281,7 @@ Merge: 05b8ce5 6dc4bc5
 Author: sparkchen <sparkchen@sohu-inc.com>
 Date:   Wed Apr 6 20:52:11 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 05b8ce5a155342b1871449b148ba642c1bc57805
 Author: sparkchen <sparkchen@sohu-inc.com>
@@ -4312,7 +4312,7 @@ Merge: b0cba94 ae977e5
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Wed Apr 6 19:56:24 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit ae977e5f3c316cb05a76c4bbd5e64c29febdc2df
 Author: sparkchen <sparkchen@sohu-inc.com>
@@ -4325,7 +4325,7 @@ Merge: c528969 7b39313
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Wed Apr 6 19:53:07 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 7b3931314e84d41a3565b9a82cd37587cd49b6eb
 Merge: bf2b004 2105278
@@ -4339,7 +4339,7 @@ Merge: 0c53c9f 2105278
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Wed Apr 6 19:44:43 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 0c53c9f048885ca967ea05cbaa4f49961f3c896a
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -4364,7 +4364,7 @@ Merge: 9b92fe8 2105278
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Wed Apr 6 17:30:49 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 9b92fe81563c938adf1e87a758badd1d84b09f81
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -4393,13 +4393,13 @@ Date:   Wed Apr 6 17:26:51 2016 +0800
     Merge branch 'dev_0.2.1_new_format' into dev_0.2.1_new_format_project
     
     # Conflicts:
-    #	src/main/java/org/domeos/api/service/ci/impl/BaseImageCustomServiceImpl.java
-    #	src/main/java/org/domeos/api/service/ci/impl/BuildServiceImpl.java
-    #	src/main/java/org/domeos/api/service/project/impl/ProjectServiceImpl.java
-    #	src/main/java/org/domeos/framework/api/biz/base/BaseBiz.java
-    #	src/main/java/org/domeos/framework/api/biz/base/impl/BaseBizImpl.java
-    #	src/main/java/org/domeos/framework/api/mapper/project/projectMapper.java
-    #	src/main/java/org/domeos/framework/api/service/project/impl/ProjectServiceImpl.java
+    #	src/main/java/org/Lunaros/api/service/ci/impl/BaseImageCustomServiceImpl.java
+    #	src/main/java/org/Lunaros/api/service/ci/impl/BuildServiceImpl.java
+    #	src/main/java/org/Lunaros/api/service/project/impl/ProjectServiceImpl.java
+    #	src/main/java/org/Lunaros/framework/api/biz/base/BaseBiz.java
+    #	src/main/java/org/Lunaros/framework/api/biz/base/impl/BaseBizImpl.java
+    #	src/main/java/org/Lunaros/framework/api/mapper/project/projectMapper.java
+    #	src/main/java/org/Lunaros/framework/api/service/project/impl/ProjectServiceImpl.java
 
 commit 2282283f18bd81e8ab3f8cb83505c0f224d53435
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -4497,7 +4497,7 @@ Merge: 967ec81 a011811
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Wed Apr 6 11:28:34 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 967ec817101d6a0645a4f49f6cd8ddda5245ae4b
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -4523,7 +4523,7 @@ Merge: f47fcd0 9e0d35c
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Wed Apr 6 02:12:41 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit f47fcd05c1de217282415c5ccaff6a35d58a77bc
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -4536,7 +4536,7 @@ Merge: bcb3e8e a6dd798
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Wed Apr 6 00:59:51 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit bcb3e8e7fd8da5ac399af83029532ad43fa03015
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -4568,7 +4568,7 @@ Merge: 574a99e fa8ac83
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Tue Apr 5 23:54:26 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 574a99e2c02c0be735342329ef1fa5a755868c77
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -4613,7 +4613,7 @@ Merge: 98e9cef f3c7382
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Tue Apr 5 23:45:52 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of http://code.sohuno.com/feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 98e9cef1b1de39275ef87adf9ecb78f986d93977
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -4671,7 +4671,7 @@ Merge: 5ca9daf b3a8480
 Author: sparkchen <sparkchen@sohu-inc.com>
 Date:   Tue Apr 5 22:10:26 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 5ca9dafb3e3f4f1f8e8ad3c62f49b3b6c6ca71f8
 Author: sparkchen <sparkchen@sohu-inc.com>
@@ -4696,7 +4696,7 @@ Merge: 4f707cb 4753928
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Tue Apr 5 18:17:00 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_deploy
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_deploy
 
 commit 4f707cb45e2bb9d6cfd3c94875af0df80a25ceec
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -4709,7 +4709,7 @@ Merge: 1ca1573 4753928
 Author: sparkchen <sparkchen@sohu-inc.com>
 Date:   Tue Apr 5 18:12:01 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_new_format
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_new_format
 
 commit 47539285f88b62824ec5488d4af80638a9391125
 Author: liufei <feiliu206363@sohu-inc.com>
@@ -4780,7 +4780,7 @@ Merge: 947d017 d79b856
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Tue Apr 5 16:07:36 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_deploy
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_deploy
 
 commit 947d017089c2990d21efa6f797b593c2d038f82f
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -4799,7 +4799,7 @@ Merge: 215bde3 1f195d2
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Tue Apr 5 14:56:11 2016 +0800
 
-    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/DomeOS into dev_0.2.1_deploy
+    Merge branch 'dev_0.2.1_new_format' of code.sohuno.com:feiliu206363/LunarOS into dev_0.2.1_deploy
 
 commit 215bde3e5beca03346c6ce48aae3dd186f142caf
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -4898,7 +4898,7 @@ commit ee3a0eb45e0ee54cb6b20df35173e738192861e1
 Author: sparkchen <sparkchen@sohu-inc.com>
 Date:   Tue Apr 5 00:23:20 2016 +0800
 
-    modify a lot for a generic JSON serilizer for DomeOS
+    modify a lot for a generic JSON serilizer for LunarOS
 
 commit b1f5bc09b8c4904c2fc8a35ec403c34bfedf3415
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -4929,7 +4929,7 @@ Merge: b69112f ae2c5c0
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Apr 1 16:36:56 2016 +0800
 
-    Merge branch 'dev_chandra_fixbug' of code.sohuno.com:feiliu206363/DomeOS into release-0.2.1-beta
+    Merge branch 'dev_chandra_fixbug' of code.sohuno.com:feiliu206363/LunarOS into release-0.2.1-beta
 
 commit ae2c5c0cf7623b4bf2fbd1f0ec6d01170e42544c
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -5004,7 +5004,7 @@ Merge: e8b92e3 24700a7
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Apr 1 11:33:48 2016 +0800
 
-    Merge branch 'dev_chandra_fixbug' of code.sohuno.com:feiliu206363/DomeOS into release
+    Merge branch 'dev_chandra_fixbug' of code.sohuno.com:feiliu206363/LunarOS into release
 
 commit 24700a7eed9b5783200ab5ceb6d28ea7907170f7
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -5088,7 +5088,7 @@ Merge: 3db3f60 cf46247
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Mar 30 23:34:45 2016 +0800
 
-    Merge branch 'dev_test' of code.sohuno.com:feiliu206363/DomeOS into dev_test
+    Merge branch 'dev_test' of code.sohuno.com:feiliu206363/LunarOS into dev_test
 
 commit 3db3f608358067ca289ea6e65a3de018434fbb8d
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -5252,7 +5252,7 @@ Merge: 8524787 66b8f75
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Mar 30 12:09:31 2016 +0800
 
-    Merge branch 'dev_service_dns' of code.sohuno.com:feiliu206363/DomeOS into dev_service_dns
+    Merge branch 'dev_service_dns' of code.sohuno.com:feiliu206363/LunarOS into dev_service_dns
 
 commit 852478758ed101b2ed902ba4bdd9eb9aa9e3b5bf
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -5287,7 +5287,7 @@ Merge: d63f6d7 f2e7c9a
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Wed Mar 30 11:33:30 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_service_dns
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_service_dns
 
 commit f2e7c9a58ef44a74869fb7aeae3b69a5832c9d2e
 Merge: 4758fd0 af2d40f
@@ -5320,7 +5320,7 @@ Merge: 372d698 21f02f3
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Wed Mar 30 10:25:06 2016 +0800
 
-    Merge branch 'dev_mingxia_health' of code.sohuno.com:feiliu206363/DomeOS into dev_service_dns
+    Merge branch 'dev_mingxia_health' of code.sohuno.com:feiliu206363/LunarOS into dev_service_dns
 
 commit 21f02f30bfddf8068ec239d18871f08de6450d66
 Author: mushui <xiaming@sohu-inc.com>
@@ -5333,7 +5333,7 @@ Merge: 4758fd0 cf55f4a
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Tue Mar 29 21:13:10 2016 +0800
 
-    Merge branch 'dev_image_build1' of code.sohuno.com:feiliu206363/DomeOS into dev_service_dns
+    Merge branch 'dev_image_build1' of code.sohuno.com:feiliu206363/LunarOS into dev_service_dns
 
 commit cf55f4adae1eeda99e8edbc865000db51978a810
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -5346,7 +5346,7 @@ Merge: 288b412 59f3800
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Tue Mar 29 20:22:23 2016 +0800
 
-    Merge branch 'dev_pom' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_pom' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 288b4121ba2f40bb856b1010e022ae6c5c4bb69a
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -5440,14 +5440,14 @@ Merge: f90cc01 0afc73e
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Mon Mar 28 10:12:43 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_service_dns
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_service_dns
 
 commit 0afc73eedb249a707fa8458ce0b259b7abf2fd2f
 Merge: 423b0aa d9a0c41
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Mar 25 21:36:19 2016 +0800
 
-    Merge branch 'dev_chandra_css_monitor' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_chandra_css_monitor' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit d9a0c41ad11cdbe48c3700f5b6ab78489c8bf5e4
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -5466,7 +5466,7 @@ Merge: 706394d 423b0aa
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Fri Mar 25 18:21:53 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_service_dns
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_service_dns
 
 commit 706394da0fd50321a1ae8156c89bb3159c4d3b53
 Author: mushui <xiaming@sohu-inc.com>
@@ -5497,7 +5497,7 @@ Merge: a1a1197 91d313a
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Mar 25 11:32:57 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_chandra_css_monitor
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_chandra_css_monitor
 
 commit b16a2be60e46c0372bef6465a34517a4e82fed76
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -5553,7 +5553,7 @@ Merge: 9b96ea2 1428adc
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Mar 24 19:06:55 2016 +0800
 
-    Merge branch 'dev_service_dns' of code.sohuno.com:feiliu206363/DomeOS into dev_service_dns
+    Merge branch 'dev_service_dns' of code.sohuno.com:feiliu206363/LunarOS into dev_service_dns
 
 commit 1428adc13185e24d00a7a95c7f324e3d0a9e7eac
 Merge: 185b099 91d313a
@@ -5573,7 +5573,7 @@ Merge: 98ce569 711c93b
 Author: kairen <kairen@sohu-inc.com>
 Date:   Thu Mar 24 18:38:31 2016 +0800
 
-    Merge branch 'dev_20160311_mingxia' of http://code.sohuno.com/feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20160311_mingxia' of http://code.sohuno.com/feiliu206363/LunarOS into dev_merge_front
 
 commit 98ce569b383c3a7cf6c897a128bef7b130dcade2
 Author: kairen <kairen@sohu-inc.com>
@@ -5599,7 +5599,7 @@ Merge: 35e2884 663ab42
 Author: kairen <kairen@sohu-inc.com>
 Date:   Thu Mar 24 18:32:49 2016 +0800
 
-    Merge branch 'dev_20160311_mingxia' of http://code.sohuno.com/feiliu206363/DomeOS into dev_kairen_1
+    Merge branch 'dev_20160311_mingxia' of http://code.sohuno.com/feiliu206363/LunarOS into dev_kairen_1
 
 commit 663ab42c0a1e96c2f153698ce480ae8410870903
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -5612,7 +5612,7 @@ Merge: b05f8ad 5999a01
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Mar 24 18:14:22 2016 +0800
 
-    Merge branch 'dev_service_dns' of code.sohuno.com:feiliu206363/DomeOS into dev_service_dns
+    Merge branch 'dev_service_dns' of code.sohuno.com:feiliu206363/LunarOS into dev_service_dns
 
 commit b05f8ad4b0a9519d1b372d28984517e0774f6b37
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -5645,14 +5645,14 @@ Merge: 28229f7 45ab2cb
 Author: mushui <xiaming@sohu-inc.com>
 Date:   Thu Mar 24 16:44:25 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20160311_mingxia
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20160311_mingxia
 
 commit 35e2884ffb6e2abfed88047c77291b3eaabd4496
 Merge: b151794 28229f7
 Author: kairen <kairen@sohu-inc.com>
 Date:   Thu Mar 24 16:34:57 2016 +0800
 
-    Merge branch 'dev_20160311_mingxia' of http://code.sohuno.com/feiliu206363/DomeOS into dev_kairen_1
+    Merge branch 'dev_20160311_mingxia' of http://code.sohuno.com/feiliu206363/LunarOS into dev_kairen_1
 
 commit 28229f7356dcbc8e81ae9f81dd6de82899c68137
 Author: mushui <xiaming@sohu-inc.com>
@@ -5683,7 +5683,7 @@ Merge: a7b24a0 a5c6c20
 Author: kairen <kairen@sohu-inc.com>
 Date:   Thu Mar 24 12:17:58 2016 +0800
 
-    Merge branches 'dev_20160311_mingxia' and 'dev_kairen' of http://code.sohuno.com/feiliu206363/DomeOS into dev_kairen_1
+    Merge branches 'dev_20160311_mingxia' and 'dev_kairen' of http://code.sohuno.com/feiliu206363/LunarOS into dev_kairen_1
 
 commit a5c6c207687f350e644337ccfe0df46427bd5f78
 Merge: 3249bdb befcd23
@@ -5709,7 +5709,7 @@ Merge: ea54367 8279fda
 Author: kairen <kairen@sohu-inc.com>
 Date:   Wed Mar 23 18:44:57 2016 +0800
 
-    Merge branch 'dev_20160311_mingxia' of http://code.sohuno.com/feiliu206363/DomeOS into dev_kairen_1
+    Merge branch 'dev_20160311_mingxia' of http://code.sohuno.com/feiliu206363/LunarOS into dev_kairen_1
 
 commit 8279fda99a8beb85e3e48966ca1b235caa4922f5
 Author: mushui <xiaming@sohu-inc.com>
@@ -5740,7 +5740,7 @@ Merge: 1e3f639 61d57ca
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Mar 23 16:39:00 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 1e3f639f358d4ad86d3ecc0b36c88afc8e976717
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -5760,7 +5760,7 @@ Merge: 130b61a 0a7d39b
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Mar 23 15:22:48 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_chandra_build_history
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_chandra_build_history
 
 commit 130b61a65b929d0a8cfb1556143e266b53f36a05
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -5862,7 +5862,7 @@ Merge: 2e6db86 4c35c68
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Mar 22 11:40:03 2016 +0800
 
-    Merge branch 'dev_chandra_css_monitor' of code.sohuno.com:feiliu206363/DomeOS into dev_chandra_css_monitor
+    Merge branch 'dev_chandra_css_monitor' of code.sohuno.com:feiliu206363/LunarOS into dev_chandra_css_monitor
 
 commit 2e6db86daa800e24c04bf3cc1e449c184b183933
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -5899,7 +5899,7 @@ Merge: 0889299 789c1b6
 Author: kairen <kairen@sohu-inc.com>
 Date:   Mon Mar 21 17:50:05 2016 +0800
 
-    Merge branch 'dev_merge_front' of http://code.sohuno.com/feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of http://code.sohuno.com/feiliu206363/LunarOS into dev_merge_front
 
 commit 088929918511e8f8fab18abdc2734c395308c9b5
 Author: kairen <kairen@sohu-inc.com>
@@ -5925,7 +5925,7 @@ Merge: 8a0a59c e0cf4c4
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Mar 21 15:24:25 2016 +0800
 
-    Merge branch 'dev_service_dns' of code.sohuno.com:feiliu206363/DomeOS into dev_chandra_dnsname
+    Merge branch 'dev_service_dns' of code.sohuno.com:feiliu206363/LunarOS into dev_chandra_dnsname
 
 commit 8a0a59c5a1cc2c306d15659ae0ee3b37511bad0f
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -5938,7 +5938,7 @@ Merge: 1172795 22a606c
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Mon Mar 21 15:16:44 2016 +0800
 
-    Merge branch 'dev_chandra_dnsname' of code.sohuno.com:feiliu206363/DomeOS into dev_service_dns
+    Merge branch 'dev_chandra_dnsname' of code.sohuno.com:feiliu206363/LunarOS into dev_service_dns
 
 commit 22a606cf39c82ec205e6bc9eb54e81cc88964e12
 Merge: adcf815 a59929b
@@ -5958,7 +5958,7 @@ Merge: 21b3e6d a59929b
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Mon Mar 21 14:06:59 2016 +0800
 
-    Merge branch 'develop' of code.sohuno.com:feiliu206363/DomeOS into dev_service_dns
+    Merge branch 'develop' of code.sohuno.com:feiliu206363/LunarOS into dev_service_dns
 
 commit a59929b2c2a552f2463aaa97621938cf94c59425
 Merge: 5b15163 789c1b6
@@ -5972,7 +5972,7 @@ Merge: c9234a8 3f3d6ff
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Mar 18 20:03:26 2016 +0800
 
-    Merge branch 'dev_monitor_show' of code.sohuno.com:feiliu206363/DomeOS into dev_chandra_css_monitor
+    Merge branch 'dev_monitor_show' of code.sohuno.com:feiliu206363/LunarOS into dev_chandra_css_monitor
 
 commit c9234a8b7896a734701ab4fa3045c3dfd1e5b0b2
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -6021,7 +6021,7 @@ commit 42f32559ea5a90a9988a2399559285d6bb9713fb
 Author: xupeng <conanxu@sohu-inc.com>
 Date:   Thu Mar 17 14:49:58 2016 +0800
 
-    modify:domeize report port to dome server
+    modify:Lunarize report port to Lunar server
 
 commit b3514c0f2fb991e5b794bc4a7135225052b85635
 Merge: 9da07a0 26cfdcc
@@ -6226,14 +6226,14 @@ Merge: 622e638 7459a41
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Mar 10 17:04:10 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 622e6381caf050068324219dacfa4e5a916ae0e1
 Merge: 81d3540 5009d5e
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Mar 10 17:02:56 2016 +0800
 
-    Merge branch 'dev_chandra_resolve_bug' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_chandra_resolve_bug' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 5009d5e7b61ac99a093d99f3e5ef692f598865bf
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -6259,7 +6259,7 @@ Merge: ad46d0e 710c449
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Mar 10 16:18:05 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_chandra_resolve_bug
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_chandra_resolve_bug
 
 commit ad46d0e84efa94ab59510d0f27c16c2f616bdc69
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -6574,7 +6574,7 @@ Merge: 99a1f3c 12f9f67
 Author: ChandraLee <chandralee@ChandraLeedeMacBook-Pro.local>
 Date:   Tue Feb 23 19:18:08 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 99a1f3c160e91a5683f584c1f5df1fd1b42ea7f9
 Author: ChandraLee <chandralee@ChandraLeedeMacBook-Pro.local>
@@ -6587,14 +6587,14 @@ Merge: 84dbcf4 93c491e
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Feb 23 19:12:56 2016 +0800
 
-    Merge branch 'dev_chandra_fixbug' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_chandra_fixbug' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 3cd2aeafcbe57660539d68fe0adc4834dd34f99b
 Merge: 123bce0 93c491e
 Author: ChandraLee <chandralee@ChandraLeedeMacBook-Pro.local>
 Date:   Tue Feb 23 19:10:47 2016 +0800
 
-    Merge branch 'dev_chandra_fixbug' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_chandra_fixbug' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 93c491ecbdb8ba0124ebcbd001f544407b04fb3d
 Author: ChandraLee <chandralee@ChandraLeedeMacBook-Pro.local>
@@ -6622,7 +6622,7 @@ Date:   Mon Feb 22 14:18:42 2016 +0800
     Merge branch 'dev_merge_front' into dev_kairen
     
     Conflicts:
-    	src/main/java/org/domeos/api/service/ci/impl/BuildServiceImpl.java
+    	src/main/java/org/Lunaros/api/service/ci/impl/BuildServiceImpl.java
 
 commit 123bce0e464599a799bde99eb6484e927e3291f8
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -6635,7 +6635,7 @@ Merge: c66530d 30713c7
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Tue Feb 16 17:43:38 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit c66530d3fc56a6aef8cf0898f59a127622247c8e
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -6670,7 +6670,7 @@ Date:   Thu Feb 4 16:01:23 2016 +0800
     Merge branch 'dev_review_shiro' into dev_merge_front
     
     Conflicts:
-    	src/main/java/org/domeos/shiro/AuthUtil.java
+    	src/main/java/org/Lunaros/shiro/AuthUtil.java
 
 commit 9665ab2be255608499b7f2555566a5bc95fa164b
 Author: baokangwang <baokangwang@sohu-inc.com>
@@ -6757,7 +6757,7 @@ Merge: 180b0af 90db846
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Feb 3 11:52:44 2016 +0800
 
-    Merge branch 'dev_chandra_review' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_chandra_review' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 90db846b9bbed851c56eda7b5340cecf78bf66c8
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -6770,7 +6770,7 @@ Merge: 050da7c a7c937d
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Wed Feb 3 10:30:03 2016 +0800
 
-    Merge branch 'dev_review_deploy' of code.sohuno.com:feiliu206363/DomeOS into dev_review_deploy
+    Merge branch 'dev_review_deploy' of code.sohuno.com:feiliu206363/LunarOS into dev_review_deploy
 
 commit 050da7c839a365a853cf1a0cefce0e48c5918fae
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -6790,7 +6790,7 @@ Merge: dd707ea ad75dc0
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Feb 2 19:35:50 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit dd707eab9cd609694430803a63960d2f21fcc0a8
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -6870,7 +6870,7 @@ Merge: 56864a1 44076ae
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Mon Feb 1 11:41:37 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 56864a18f6d59fb8b61e43994676838fa82b38af
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -6937,7 +6937,7 @@ commit 8833419f3bf11cc7a24b351e02876251e90cfd19
 Author: kairen <kairen@sohu-inc.com>
 Date:   Mon Jan 25 20:12:36 2016 +0800
 
-    add the feature that when creating new project domes will check and  delete the duplicate  deploy keys and make sure that there is only one deploy key for domeos.
+    add the feature that when creating new project Lunars will check and  delete the duplicate  deploy keys and make sure that there is only one deploy key for Lunaros.
 
 commit e364e85b9452532505989a1acfc6f40a05c2ff43
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -6962,7 +6962,7 @@ Merge: ecfe68b bb4b915
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Jan 22 12:11:06 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit bb4b915d258420395f9ec5f90411ad87bc35e907
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -6975,7 +6975,7 @@ Merge: af2f4c8 02ef2c2
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Jan 22 12:04:05 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 02ef2c2ccf0dda111c97c24c36a4874efb396e6c
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -7001,7 +7001,7 @@ Merge: 90abb43 65795dc
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Jan 22 10:57:38 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 90abb43eb2e98f4177e9d638da8e525d6e8d7ca9
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -7038,7 +7038,7 @@ Merge: 5b39e85 0c09fe1
 Author: anningluo <anningluo@sohu-inc.com>
 Date:   Thu Jan 21 21:54:24 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 0c09fe16f3db319b6a90ba260de5a62cd87c78c2
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -7057,7 +7057,7 @@ Merge: c7eabd5 09dbb8d
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Jan 21 21:38:37 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit c7eabd51d42ab1279fd0d7f5bcf66f73740ecd2c
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -7076,7 +7076,7 @@ Merge: dd05018 259e511
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Jan 21 20:17:45 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 259e5117d426d44e4a3d9fc826e6cce5184403d4
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -7089,7 +7089,7 @@ Merge: c665dd3 b4904ac
 Author: anningluo <anningluo@sohu-inc.com>
 Date:   Thu Jan 21 20:11:54 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit c665dd3caa546f95fce3379a332d3a6ad63a8ee0
 Author: anningluo <anningluo@sohu-inc.com>
@@ -7102,7 +7102,7 @@ Merge: 2d21a0e 218a37f
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Jan 21 19:59:49 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 218a37f750731bb809cce997b5e87715769dd86e
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -7133,7 +7133,7 @@ Merge: 377d959 7cdd69c
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Jan 21 18:20:23 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 377d9596ea0e1e0015cc98bab3405dc88967824a
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -7146,7 +7146,7 @@ Merge: f6fa6da 79074e8
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Jan 21 18:17:40 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit f6fa6da35791fc1f14822e924987efbce065999e
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -7159,7 +7159,7 @@ Merge: 7ab6220 bd8310f
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Thu Jan 21 18:16:09 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 7ab62207be09770dd1377a2addd105b632012612
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -7172,7 +7172,7 @@ Merge: b178436 49a6230
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Jan 21 18:12:07 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit b1784366a2a90b4b7ea9204f9902db2e775db111
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -7203,7 +7203,7 @@ Merge: c5add54 3986583
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Jan 21 18:02:37 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit c5add54bbfb039c7aa858f09563055414d39e3cc
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -7225,9 +7225,9 @@ Date:   Thu Jan 21 17:27:54 2016 +0800
     Merge remote-tracking branch 'remotes/origin/dev_merge_front' into dev_kairen
     
     Solve conflicts:
-    	src/main/java/org/domeos/api/service/ci/impl/BuildServiceImpl.java
-    	src/main/java/org/domeos/api/service/project/impl/ProjectServiceImpl.java
-    	src/main/java/org/domeos/util/code/CodeApiInterface.java
+    	src/main/java/org/Lunaros/api/service/ci/impl/BuildServiceImpl.java
+    	src/main/java/org/Lunaros/api/service/project/impl/ProjectServiceImpl.java
+    	src/main/java/org/Lunaros/util/code/CodeApiInterface.java
     	src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml
     	src/test/resources/META-INF/test-config.xml
 
@@ -7236,7 +7236,7 @@ Merge: 27884ce c8d89c1
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Jan 21 17:10:58 2016 +0800
 
-    Merge branch 'dev_chandra_select' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_chandra_select' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 27884cef02dc62a7c3162e4598022f1a9fc0135b
 Author: xupeng <conanxu@sohu-inc.com>
@@ -7274,7 +7274,7 @@ Merge: 182bd11 36140d6
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Jan 21 16:11:20 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 36140d6d7623940d20fcd0ac98edbbb27290f0cd
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -7287,7 +7287,7 @@ Merge: 2a15bc3 d30c824
 Author: anningluo <anningluo@sohu-inc.com>
 Date:   Thu Jan 21 15:43:42 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 2a15bc3ab2b5bfb369b6859183b58b3c02405e9e
 Author: anningluo <anningluo@sohu-inc.com>
@@ -7319,7 +7319,7 @@ Merge: c58ea81 b1c9bd0
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Jan 21 15:05:04 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit f115bddd9fde77b59b747c7b48d944e1875a3561
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -7338,7 +7338,7 @@ Merge: eb99029 f63ed81
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Jan 21 14:51:11 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit f63ed81b4acc13683e5b1e68f8a1887f087f706f
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -7376,7 +7376,7 @@ Merge: 4bb5991 ad726dc
 Author: anningluo <anningluo@sohu-inc.com>
 Date:   Thu Jan 21 14:36:14 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit c58ea81db11cb18b8e8553ad82781aa0ec6f76e7
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -7408,7 +7408,7 @@ Merge: e1ebc0b 9183578
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Thu Jan 21 02:10:47 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit e1ebc0b306a29a300200d79018b34a58de0710de
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -7421,7 +7421,7 @@ Merge: 3ea5707 d3799b9
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Jan 21 02:03:35 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit d3799b958988b006dea7e7215552d0ef6009ac3b
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -7440,7 +7440,7 @@ Merge: 5539b4f 5889e28
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Thu Jan 21 01:43:01 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 5539b4f5e0c8fb352da37afc5716f9235b0780e0
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -7453,7 +7453,7 @@ Merge: 5ce98f1 3ed30e4
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Jan 21 01:22:30 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 5ce98f11d7293c8d7dfd8020f8409419cf91fbd8
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -7479,7 +7479,7 @@ Merge: 707eb98 2665ec9
 Author: anningluo <anningluo@sohu-inc.com>
 Date:   Thu Jan 21 01:17:49 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 707eb9858fa5ec61192f7e0549f2d5ad9f50044f
 Author: anningluo <anningluo@sohu-inc.com>
@@ -7511,7 +7511,7 @@ Merge: 97c6763 048d86f
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Jan 21 00:56:32 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 048d86f6cfa7e36cecb5b8f521adcadbbbbf26c7
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -7561,14 +7561,14 @@ Merge: 419c095 85ae4b0
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Jan 21 00:22:35 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 419c09572e65d3378ccf50149cd38c9bb5494ca6
 Merge: ebc7fe2 51aafba
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Jan 21 00:22:27 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 85ae4b032d3515c0eb7110e4ee49a01665bc00a7
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -7587,14 +7587,14 @@ Merge: 795e190 96b8717
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Jan 21 00:17:45 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 795e1900b506e589cff0aa707fd38ffb64aab862
 Merge: 0ca17b9 b713ea5
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Jan 21 00:17:38 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit b713ea5ef6f52e5bcf5f83d1eb30ebc663d87153
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -7607,7 +7607,7 @@ Merge: 27dbff5 3c28b39
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Jan 21 00:09:47 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 27dbff58448eeaa60e43a3f2138895ac8b134b16
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -7620,7 +7620,7 @@ Merge: ece48c2 0ca17b9
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Thu Jan 21 00:03:31 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit ece48c27d54f1c6f6cf6b419bcb99e5df6f789e8
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -7633,7 +7633,7 @@ Merge: c9855c2 7472323
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Jan 20 23:21:47 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 74723238388e7c226fb84f36d98e766d6143b375
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -7671,7 +7671,7 @@ Merge: 775222d ec90489
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Jan 20 22:59:00 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit ec90489edf9bd4a00df311eafcc4055c68e6d185
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -7703,7 +7703,7 @@ Merge: 211f10b f617164
 Author: anningluo <anningluo@sohu-inc.com>
 Date:   Wed Jan 20 22:33:36 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 211f10b6eefc496924fc332a94cb4d5359c74c4f
 Author: anningluo <anningluo@sohu-inc.com>
@@ -7742,7 +7742,7 @@ Merge: 7febb1e ac61ed1
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Jan 20 21:02:26 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit ac61ed1690c3f602d236d9c0533e8e182d59ea81
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -7755,7 +7755,7 @@ Merge: 6165b16 0be68ef
 Author: anningluo <anningluo@sohu-inc.com>
 Date:   Wed Jan 20 20:39:48 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 6165b1630965ce48840e9ffaee94a68d724c2688
 Author: anningluo <anningluo@sohu-inc.com>
@@ -7768,7 +7768,7 @@ Merge: 5d81502 a2b6f61
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Jan 20 18:44:31 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit 5d81502bc098d4abbbbd94ec4047cda7576f1c26
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -7787,7 +7787,7 @@ Merge: 3c22a2d fc46acd
 Author: anningluo <anningluo@sohu-inc.com>
 Date:   Wed Jan 20 13:36:50 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 3c22a2d5baa2f8ab5a298e15478d6aa6c39613f2
 Author: anningluo <anningluo@sohu-inc.com>
@@ -7825,7 +7825,7 @@ Merge: 84eb08a 7075094
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Jan 20 00:21:38 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 707509428cf19af17a4b0cdfe5894c10c561d1fc
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -7882,7 +7882,7 @@ Merge: f36a341 a5632ef
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Tue Jan 19 22:43:10 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit f36a341b09b308c4ac33180d6f1ed7b51d10d4db
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -7919,7 +7919,7 @@ Merge: 0d83411 de759ff
 Author: sparkchen <sparkchen@sohu-inc.com>
 Date:   Tue Jan 19 21:50:16 2016 +0800
 
-    Merge branch 'master' of code.sohuno.com:feiliu206363/DomeOS
+    Merge branch 'master' of code.sohuno.com:feiliu206363/LunarOS
 
 commit 0d83411a6bb39b00d381671131213dd9c39b7efc
 Author: sparkchen <sparkchen@sohu-inc.com>
@@ -7945,14 +7945,14 @@ Merge: 00e93a4 799c7ba
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Jan 19 21:46:09 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit de759ff97099feb47dcae95b744d1c8e325fa09f
 Merge: baf9eb1 94d4c27
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Tue Jan 19 21:45:43 2016 +0800
 
-    Merge branch 'master' of code.sohuno.com:feiliu206363/DomeOS
+    Merge branch 'master' of code.sohuno.com:feiliu206363/LunarOS
 
 commit 00e93a42e8531d8e1c1cf4e9e9d7b0b8d4d074d1
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -7989,7 +7989,7 @@ Merge: 5b8cdaf 5b56ec8
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Jan 19 21:19:54 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 5b56ec872c316e390114dcd0c003d712c62c3de1
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8046,7 +8046,7 @@ Merge: 2c52967 f1774b0
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Jan 19 19:54:52 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit f1774b014c5197b9fbcd3b080af7f43c1b9758e1
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8059,7 +8059,7 @@ Merge: 24f7131 febb7ce
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Jan 19 18:54:01 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit febb7cecfc769781ef402f57a87993de65158ea5
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8158,7 +8158,7 @@ Merge: d87d99a c2c1f4a
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Jan 19 14:33:31 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit c2c1f4a888aedc3e24d6313d2e8932aa56cbd4a2
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8171,7 +8171,7 @@ Merge: 8c0daf5 834cb14
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Jan 18 22:14:30 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 834cb14ae1c02a05721f5c04683f5dd3f0130b6b
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8190,7 +8190,7 @@ Merge: ee79059 27b9b23
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Jan 18 18:42:15 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 27b9b237ecf6125857a5f22e884ea3fca10dc3d4
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8215,7 +8215,7 @@ Merge: d9695f4 09652bc
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Jan 18 18:00:54 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 09652bc198bf3f96835e1a6c995e8738a9937b64
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8228,7 +8228,7 @@ Merge: 070a4ea ab9e197
 Author: baokangwang <baokangwang@sohu-inc.com>
 Date:   Mon Jan 18 17:51:01 2016 +0800
 
-    Merge branch 'dev_merge_front' of http://code.sohuno.com/feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of http://code.sohuno.com/feiliu206363/LunarOS into dev_merge_front
 
 commit 363dec564ce82b83d46cf2c3e402ac96b48c35bd
 Merge: dac4e49 23031ac
@@ -8254,7 +8254,7 @@ Merge: ce82ea4 1ef8645
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Mon Jan 18 17:02:44 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit ce82ea43780e7c1094c80d313de25a10f8dc5d5f
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -8267,7 +8267,7 @@ Merge: b82a236 0431c43
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Jan 18 17:01:08 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 0431c43bf8842e09a714a46d61797884fb237188
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8280,7 +8280,7 @@ Merge: ab68684 f41a279
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Mon Jan 18 16:56:08 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit ab68684a616410c62b949a3579647779838c0de6
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -8299,7 +8299,7 @@ Merge: 98afc37 44de635
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Jan 18 15:45:34 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 98afc37e0ed2d8f799b5f982817deb17d030a717
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8344,7 +8344,7 @@ Merge: 7d04331 2de2ec8
 Author: anningluo <anningluo@sohu-inc.com>
 Date:   Sat Jan 16 23:26:31 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 2de2ec896d9a1f7597438ffaa81dd957ce3b060f
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8369,7 +8369,7 @@ Merge: 75325f6 a7c806d
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Sat Jan 16 21:54:18 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit 75325f6d11b46e074897eb37d34e3cd081641f0d
 Merge: 7c29cfb 0cb2aec
@@ -8392,7 +8392,7 @@ Date:   Sat Jan 16 20:27:16 2016 +0800
     Merge remote-tracking branch 'origin/dev_merge_front' into dev_deployment_addstate
     
     Conflicts:
-    	src/main/java/org/domeos/api/service/deployment/impl/DeploymentServiceImpl.java
+    	src/main/java/org/Lunaros/api/service/deployment/impl/DeploymentServiceImpl.java
 
 commit 5b4f03150a97e85b708f7cac298a71f79bfa50a5
 Author: anningluo <anningluo@sohu-inc.com>
@@ -8418,7 +8418,7 @@ Merge: 4854d0f c518a74
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Sat Jan 16 19:44:48 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit c518a74b00ee2730df561dc0589a2b109d4990f0
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8498,7 +8498,7 @@ Merge: 72f8a3f b73bb96
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Jan 15 19:51:45 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit b73bb969f9309a383412e4765643913787317639
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8517,7 +8517,7 @@ Merge: cafc057 c8218aa
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Fri Jan 15 17:46:58 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit cafc05755a0641efe07508e52fbceb0b1741e072
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -8536,14 +8536,14 @@ Merge: dbe50a2 0559a9b
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Jan 15 17:06:02 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit dbe50a273d5546b7acc0eb2c277306de534f1d96
 Merge: d8dbd8f f4cd21c
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Jan 15 17:05:49 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit f4cd21c1e4926a365b24e0345358f97af4d06aec
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8568,7 +8568,7 @@ Merge: efd40eb f1bc780
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Fri Jan 15 16:27:46 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit efd40ebf79e5527123e43555fc7b74f34cff0e98
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -8588,7 +8588,7 @@ Merge: 16d1d00 d8dbd8f
 Author: anningluo <anningluo@sohu-inc.com>
 Date:   Fri Jan 15 15:17:53 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 16d1d00c79cfe1f52982b2d54023ca09dc75fae4
 Author: anningluo <anningluo@sohu-inc.com>
@@ -8607,7 +8607,7 @@ Merge: 5e42cf3 0e37c19
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Jan 15 14:55:32 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 0e37c198e75b2546982f9f294266f3df050a93c1
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8627,7 +8627,7 @@ Merge: adb7264 12bf5b5
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Jan 15 12:21:11 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 12bf5b505b69688bf64f2cb73cc9f7295e64aabe
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8640,7 +8640,7 @@ Merge: 3172ae5 9f3e4da
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Jan 15 12:16:34 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 9f3e4dad0127371306fcaee2395c6c6b06cac697
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8683,7 +8683,7 @@ Merge: e9c6494 e997128
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Jan 13 21:38:40 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit e9971286ace576c8936c43218467919a76c12192
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8703,7 +8703,7 @@ Merge: 73ea1c7 002b153
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Wed Jan 13 19:54:22 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 73ea1c77f60bc76a4edf0b89322fae0403cb56bc
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -8716,7 +8716,7 @@ Merge: de8fd53 a1c6180
 Author: anningluo <anningluo@sohu-inc.com>
 Date:   Wed Jan 13 18:01:41 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit de8fd53e3c0339209a592248500853156dfdbd39
 Author: anningluo <anningluo@sohu-inc.com>
@@ -8729,7 +8729,7 @@ Merge: b063bee 1de7888
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Jan 13 17:51:58 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 1de78880458c2d085f6588e84656df91c247ddc6
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8755,7 +8755,7 @@ Merge: a2fe081 04ab880
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Jan 13 16:36:46 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit a2fe081f82c1cf8965ccc21c4ca0f07b1d1cdeab
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8781,7 +8781,7 @@ Merge: cf3e202 20e60cb
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Jan 13 15:34:56 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 20e60cbeb97df1b3395f5d4c7479f80cc5511570
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8813,7 +8813,7 @@ Merge: 8f1c30a 7a5db39
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Jan 13 10:56:46 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 7a5db3903659dec63ba3879ea1be476d86a7a54b
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8838,7 +8838,7 @@ Merge: 1bb0f49 d6d3d80
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Tue Jan 12 21:54:19 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 1bb0f49d6ef3818b31b3b5c9ec6ce4566d59409b
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -8851,7 +8851,7 @@ Merge: c61b96d 38c270c
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Jan 12 21:43:37 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 38c270ceadfcdf27192331a85b445c6d425ba559
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8870,14 +8870,14 @@ Merge: b4d0ec5 2be010a
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Jan 12 19:18:03 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 5c2cd1ef59457c10890963b9bbf1e14462bb1526
 Merge: 2be010a b4d0ec5
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Jan 12 18:34:36 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit 2be010a5ad9152abf5e9b60100a205158016e164
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8890,7 +8890,7 @@ Merge: c6eab17 c576ae9
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Jan 12 18:11:08 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit c576ae9c5b382b5ac5d70e2a7d570e7553b257c8
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8909,7 +8909,7 @@ Merge: ef4ba50 1d2e2bb
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Tue Jan 12 12:02:29 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 1d2e2bbcde51b20c2d1e1c56945f8b10ddbb2773
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8934,14 +8934,14 @@ Merge: b43a809 6297895
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Jan 12 10:50:43 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit b43a8093d2cd37a0623caecddedc10c687d6aebd
 Merge: 795013c 6049b32
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Jan 12 10:50:33 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 6049b32bfdbd9e87d83aa5a612730dc2d6e715e4
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8972,7 +8972,7 @@ Merge: 8fc5bfc 121d59a
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Jan 7 18:27:14 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 121d59a6f8afbcdac236297aa4f4f0dfffde5273
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -8985,7 +8985,7 @@ Merge: 93e82dc ba51441
 Author: anningluo <anningluo@sohu-inc.com>
 Date:   Thu Jan 7 17:54:11 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 93e82dc247efdc49f822ce7581b1477ce9ca4687
 Author: anningluo <anningluo@sohu-inc.com>
@@ -8999,14 +8999,14 @@ Merge: e19978c b392dd9
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Jan 7 16:29:45 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 487749fd117386ed7bba93033016c76739f47af7
 Merge: b392dd9 e19978c
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Jan 7 16:29:26 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit b392dd9e3d86d518e260f24523cdf6033922c6d1
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -9043,7 +9043,7 @@ Merge: 7845831 6bdfab9
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Thu Jan 7 14:50:01 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 784583134a0fbef33c4cbd30eeaf85acf80646df
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -9086,14 +9086,14 @@ Merge: 405ceb6 15b5c47
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Jan 7 12:30:56 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 15b5c4744cb27da1ffe85693196ae892c5b2972e
 Merge: 4f574d7 0cd0bea
 Author: anningluo <anningluo@sohu-inc.com>
 Date:   Thu Jan 7 11:44:44 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 4f574d7098fd30ad570c597119df8be25f66b0ca
 Author: anningluo <anningluo@sohu-inc.com>
@@ -9106,7 +9106,7 @@ Merge: 61bdbd0 6a4bf98
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Jan 7 11:42:23 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 6a4bf987b4893d8afa00308326392bc28d15663f
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -9119,7 +9119,7 @@ Merge: 61bdbd0 159d763
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Jan 7 11:26:01 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 159d76331ed7d2391e738daa2e52429f6c0686d5
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -9138,7 +9138,7 @@ Merge: 441016a 98a9375
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Thu Jan 7 10:12:27 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 441016aeb26f6125f1eac62894437a5fca05fd3a
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -9151,7 +9151,7 @@ Merge: 343420c a2131f2
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Jan 6 20:35:37 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 343420c206c1bd4492ea9f8bf953a1b99bdf099e
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -9196,7 +9196,7 @@ Merge: a2eb4d3 7266a57
 Author: anningluo <anningluo@sohu-inc.com>
 Date:   Wed Jan 6 16:23:52 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit a2eb4d3ab76175b27f0230417228de700e3c51b5
 Author: anningluo <anningluo@sohu-inc.com>
@@ -9227,21 +9227,21 @@ Merge: a74a7a0 e24ca28
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Wed Jan 6 16:12:04 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit e24ca28da226729c2055e4efd3c38d8fc5b9f3ae
 Merge: a1dabe1 daf5ff6
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Jan 6 16:01:29 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit a1dabe1e201e8164b18dc508cb603a5cfcd782f4
 Merge: 7795e12 0c41d5e
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Jan 6 16:01:00 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 0c41d5e7fa1efb36d167dc07571e35f9d41b386c
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -9280,14 +9280,14 @@ Merge: c495633 7795e12
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Wed Jan 6 11:50:40 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 7795e1239b2a50142e488cb5793cb590452bdc01
 Merge: b9ae815 726960b
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Jan 6 11:50:18 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 726960b401716fe71ab0a7d286d3cb92fe9b6daa
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -9318,14 +9318,14 @@ Merge: 284507d b950b0f
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Wed Jan 6 11:03:40 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit b950b0f9e18284bc8b660fc0249206cd0ddf353f
 Merge: eb2cfa1 a6d3289
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Jan 6 11:00:33 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit a6d32895de6d08b5d98831c8337d2c6d1f1809cb
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -9393,7 +9393,7 @@ Merge: 8adc99d 9082510
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Tue Jan 5 22:15:23 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 8adc99dfb96bad33ea988c7231e506aee533f429
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -9406,7 +9406,7 @@ Merge: 2a6b92b b7851ba
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Jan 5 21:59:12 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit b7851bafe8ffb74ce933957ee88f124418290973
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -9419,7 +9419,7 @@ Merge: 04aa7d6 ee0a265
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Jan 5 21:52:19 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 04aa7d6c03d9c8c05646dd3f3dd94a6eacee2def
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -9466,7 +9466,7 @@ Date:   Tue Jan 5 20:30:57 2016 +0800
     Merge branch 'dev_merge_front' into dev_job_gc
     
     Conflicts:
-    	src/main/java/org/domeos/api/service/deployment/impl/DeploymentStatusManagerImpl.java
+    	src/main/java/org/Lunaros/api/service/deployment/impl/DeploymentStatusManagerImpl.java
 
 commit 98dc2c8601c2c9cfa041b5abc5364bce56350ce8
 Merge: 921e9aa 53cce36
@@ -9492,7 +9492,7 @@ Merge: 53909cf 638ca89
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Jan 5 18:27:41 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit 53909cf1b336cad15c9df5c74cc2dba0a61c8c11
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -9518,7 +9518,7 @@ Merge: 5387d3f 94707d0
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Tue Jan 5 17:38:24 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 5387d3f3159d408bdb6920c6b86a1f5b1f8f2f5f
 Merge: d0ac901 827ff6e
@@ -9538,7 +9538,7 @@ Merge: d0ac901 a0944ad
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Jan 5 17:37:09 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit a0944ad769a4d564d8eaa7f4e63b2cebdac853ee
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -9586,7 +9586,7 @@ Merge: 103de92 c12e9a1
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Tue Jan 5 13:44:20 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 103de92ec84c7e7a4e1a654b46a62cf007980d10
 Merge: 9541c74 3c3ab10
@@ -9600,7 +9600,7 @@ Merge: 5bb6b23 9541c74
 Author: anningluo <anningluo@sohu-inc.com>
 Date:   Tue Jan 5 13:42:49 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 5bb6b2359861f86536e5af89cbec26b039f507ac
 Author: anningluo <anningluo@sohu-inc.com>
@@ -9678,14 +9678,14 @@ Merge: 25d3ba1 8149ca6
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Jan 4 19:33:58 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 25d3ba1421f6151ff0967f4d8589b6b86804307a
 Merge: 2633cfe 6015dec
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Jan 4 19:33:44 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 6015dec20be81c5b931ce03ecabe9d6cff83836a
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -9698,7 +9698,7 @@ Merge: 2e7e2a5 2633cfe
 Author: anningluo <anningluo@sohu-inc.com>
 Date:   Mon Jan 4 16:46:55 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 2e7e2a5acaf5ba2cea76bb1cc03905668ff0b07e
 Merge: ec1f1e7 15c409d
@@ -9708,7 +9708,7 @@ Date:   Mon Jan 4 16:39:37 2016 +0800
     Merge branch 'dev_deployment_uiontest_bugfix' into dev_deployment_anl
     
     Conflicts:
-    	src/main/java/org/domeos/api/service/deployment/impl/DeploymentServiceImpl.java
+    	src/main/java/org/Lunaros/api/service/deployment/impl/DeploymentServiceImpl.java
 
 commit ec1f1e798af5ca002108df524380d97ca8bbb623
 Author: anningluo <anningluo@sohu-inc.com>
@@ -9721,7 +9721,7 @@ Merge: 0db45a1 2161d3b
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Jan 4 13:16:50 2016 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 2161d3bc4946bee3499dd7e2b347e24d8473b5af
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -9760,7 +9760,7 @@ Merge: 2533783 2ee1a9a
 Author: anningluo <anningluo@sohu-inc.com>
 Date:   Mon Jan 4 11:01:00 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 25337833c61f79566ddc0ac625c31479d91b6576
 Merge: aa2cef2 a4babe2
@@ -9811,7 +9811,7 @@ Merge: fc694f8 35fe811
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Sun Jan 3 22:15:37 2016 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit fc694f8308114d81c41e30fd4d7ecd439c8685e9
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -9848,7 +9848,7 @@ Merge: ec3eaca 3588603
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Dec 31 17:15:36 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit ec3eacac0738f6f6d8a96defe2d5dbbedae42526
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -9868,7 +9868,7 @@ Merge: c93788f 2a103ac
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Thu Dec 31 16:33:08 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 91fb3e08b52e75d2c14da9a7c5dac9ebbdfef41c
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -9895,7 +9895,7 @@ Merge: 6011ef8 210bb55
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Thu Dec 31 15:56:42 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 6011ef852196295d546df2ee1af002f37db77c9a
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -9972,7 +9972,7 @@ Merge: 2f810f3 7a4d659
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Dec 30 21:51:47 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 7a4d659720e70ca997328e2c59fe51dd8c482f7b
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -9985,14 +9985,14 @@ Merge: d2bf209 64b280a
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Dec 30 21:49:13 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit d2bf209e1306f32c496a318180531c03de577b91
 Merge: 8385d82 106b223
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Dec 30 21:49:04 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 106b223a3944ecfb1b3c048de0c963a0b442093e
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -10043,7 +10043,7 @@ Merge: c3e54fd e7d3c09
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Dec 30 14:52:31 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit c3e54fd79fb73c3d405bc7fc10109d07353462a7
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -10059,14 +10059,14 @@ Date:   Wed Dec 30 11:10:51 2015 +0800
     Merge branch 'dev_merge_front' into dev_management
     
     Conflicts:
-    	src/main/java/org/domeos/api/mapper/cluster/ClusterLogMapper.java
+    	src/main/java/org/Lunaros/api/mapper/cluster/ClusterLogMapper.java
 
 commit db56fa66179f4b2f0fdda7ad36fd80a6b039a776
 Merge: 1f7e3dc fe59f0f
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Dec 29 21:42:46 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit 1f7e3dc5d3002f84763301e4c0640f20ba1957c4
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -10133,7 +10133,7 @@ Date:   Tue Dec 29 19:12:10 2015 +0800
     Merge branch 'dev_merge_front' into dev_management
     
     Conflicts:
-    	src/main/java/org/domeos/api/service/deployment/impl/DeploymentServiceImpl.java
+    	src/main/java/org/Lunaros/api/service/deployment/impl/DeploymentServiceImpl.java
 
 commit b83bb97006cb8d69fd936452c38d051da247a13f
 Author: zhenfengchen <zhenfengchen@sohu-inc.com>
@@ -10192,7 +10192,7 @@ Merge: 150f9d4 195d7db
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Dec 28 22:52:03 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 195d7dbf06e04bb69020dac7989a827c094e1522
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -10223,7 +10223,7 @@ Merge: 86e00bc 27c3f98
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Dec 28 20:17:52 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 86e00bc38e13f0117e06df257b453f85eae569e3
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -10262,7 +10262,7 @@ Merge: cb03a49 abc058a
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Mon Dec 28 17:48:31 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit cb03a4972f22f1d482764ed03ca721318d2aabe6
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -10287,7 +10287,7 @@ Merge: 5dfbb97 1d3395c
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Sun Dec 27 21:46:48 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit 5dfbb975dc0e1c08fd970064b2ec3a1a993eca1c
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -10325,7 +10325,7 @@ Merge: cda0e69 a4babe2
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Sun Dec 27 20:07:48 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit cda0e69dece9f92539846f6ec3e1c9a7d6a5fbcb
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -10358,7 +10358,7 @@ Merge: 4166f1c 488d2c3
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Sun Dec 27 16:36:25 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 4166f1c6946ad8057bf8b4e0910562839f993230
 Merge: 3484a95 bf97f37
@@ -10385,7 +10385,7 @@ Merge: 3484a95 a6aecd0
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Sun Dec 27 15:51:33 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit a6aecd06f8279d8a10d226e3541d8c644219dd37
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -10437,7 +10437,7 @@ Merge: 680cd5a 7f307fb
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Dec 25 19:22:42 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 7f307fbb03e7617e710fb0e083f719326d5e49f1
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -10450,7 +10450,7 @@ Merge: 622ef70 a02a4ab
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Dec 25 19:09:30 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit a02a4ab3ebed6fcd327d37c43d2d66b159079e4d
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -10463,7 +10463,7 @@ Merge: 495f099 54be913
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Dec 25 18:19:22 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 54be913eb17342a20fce711c897968a43f19238a
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -10496,7 +10496,7 @@ Merge: c88d5b5 67289f7
 Author: zhenfengchen <zhenfengchen@sohu-inc.com>
 Date:   Fri Dec 25 16:50:56 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit c88d5b5dd9aa76040eb65929cab410ba1fbadcc0
 Author: zhenfengchen <zhenfengchen@sohu-inc.com>
@@ -10521,7 +10521,7 @@ Merge: fb9003e 141388e
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Dec 25 15:42:18 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 141388e2539f5ba457a8849ce18e8f90cdffd536
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -10546,7 +10546,7 @@ Merge: 774a22a 4798d6b
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Dec 25 12:28:04 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 4798d6b17b5766814b7c0908b484afb77e7557c8
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -10565,7 +10565,7 @@ Merge: 771bfde f0e32fc
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Fri Dec 25 12:21:43 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_deployment_fixbug
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_deployment_fixbug
 
 commit 771bfde45a50d54d7fdfcd8e26ddc0802f53dfb5
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -10604,7 +10604,7 @@ Merge: f6f326e 8fc3bfa
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Dec 24 22:16:06 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit f6f326ebf5cc26b04475481483d201ecc844cbab
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -10643,7 +10643,7 @@ Merge: a9ba028 d0d8927
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Dec 24 20:06:47 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit a9ba0285d8f40b046e2ee504688b67f6c4926f64
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -10669,7 +10669,7 @@ Merge: 6e333e1 e523330
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Dec 24 17:11:07 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit 6e333e1d6e45afbc0ab5e237a162b65c457b2e21
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -10682,7 +10682,7 @@ Merge: c579b2e 5c76f57
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Dec 24 15:54:29 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 5c76f574889b54a0007fde45781a886ad66a64b7
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -10739,7 +10739,7 @@ Merge: bab1ca8 15b698c
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Dec 24 11:21:36 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit bab1ca8f33bc49ed15812a4312a32321a73f0d0f
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -10752,7 +10752,7 @@ Merge: 89c4226 f124622
 Author: zhenfengchen <zhenfengchen@sohu-inc.com>
 Date:   Thu Dec 24 11:21:11 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 89c4226c3c7b41acbf2fabbb123dd78e76764ea4
 Author: zhenfengchen <zhenfengchen@sohu-inc.com>
@@ -10765,7 +10765,7 @@ Merge: 2d9aac5 2a23a88
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Dec 24 10:45:32 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 2a23a88efbe6641739bde804675051e18640d07f
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -10793,9 +10793,9 @@ Date:   Wed Dec 23 18:34:35 2015 +0800
     Merge remote-tracking branch 'origin/dev_merge_front' into dev_deployment_anl
     
     Conflicts:
-    	src/main/java/org/domeos/api/controller/deployment/DeploymentController.java
-    	src/main/java/org/domeos/api/service/deployment/DeploymentService.java
-    	src/main/java/org/domeos/api/service/deployment/impl/DeploymentServiceImpl.java
+    	src/main/java/org/Lunaros/api/controller/deployment/DeploymentController.java
+    	src/main/java/org/Lunaros/api/service/deployment/DeploymentService.java
+    	src/main/java/org/Lunaros/api/service/deployment/impl/DeploymentServiceImpl.java
 
 commit 54401696699fda0e641a3c37b4d30095c601b743
 Author: anningluo <anningluo@sohu-inc.com>
@@ -10818,7 +10818,7 @@ Date:   Wed Dec 23 17:53:06 2015 +0800
     Merge branch 'dev_deployment_v1' into dev_merge_front
     
     Conflicts:
-    	src/main/java/org/domeos/api/service/deployment/impl/DeploymentServiceImpl.java
+    	src/main/java/org/Lunaros/api/service/deployment/impl/DeploymentServiceImpl.java
 
 commit 8726f851fe6cd37ca387c25b24d4d0519911777b
 Author: xupeng <conanxu@sohu-inc.com>
@@ -10837,7 +10837,7 @@ Merge: b8ad853 91a92ee
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Wed Dec 23 15:56:56 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit b8ad8530dbfb576ebbac94d4066fd1fa335c42f8
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -10850,7 +10850,7 @@ Merge: 547a611 b63e597
 Author: zhenfengchen <zhenfengchen@sohu-inc.com>
 Date:   Wed Dec 23 15:44:17 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 547a611b6106fcc418af7fb8621d782ed072c067
 Author: zhenfengchen <zhenfengchen@sohu-inc.com>
@@ -10863,7 +10863,7 @@ Merge: c0d6ba6 a960d67
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Dec 23 15:12:14 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit c0d6ba65fc14b243e7032c86c7554b258c04828f
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -10896,7 +10896,7 @@ Merge: 33c98a6 0dc6cb7
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Dec 23 13:48:13 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 0dc6cb72fc4bf54ba45bb0368632f1c112ed0224
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -10922,7 +10922,7 @@ Merge: 9fb7e06 3c613a4
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Wed Dec 23 12:30:44 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 3c613a490789f259eb5191adb03d3059adfe5cfb
 Merge: f835844 d4d0a21
@@ -10942,7 +10942,7 @@ Merge: 1b9ea25 f835844
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Wed Dec 23 11:32:46 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_deployment_fixlistslowbug
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_deployment_fixlistslowbug
 
 commit 1b9ea25498e8443c115f5803ad1916bc31bb64b0
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -10955,7 +10955,7 @@ Merge: ed8e9a2 fa99890
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Dec 23 10:51:28 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit fa9989023ed0ed280b7eb32217cca5046a070398
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -10990,7 +10990,7 @@ Date:   Tue Dec 22 17:44:18 2015 +0800
     Merge branch 'dev_deployment_anl' into dev_merge_front
     
     Conflicts:
-    	src/main/java/org/domeos/api/service/deployment/impl/DeploymentServiceImpl.java
+    	src/main/java/org/Lunaros/api/service/deployment/impl/DeploymentServiceImpl.java
 
 commit 4711910bdc4a30e1c4a3b1a9da9622c878939fda
 Merge: a88f7e2 6bdd633
@@ -11019,7 +11019,7 @@ Date:   Tue Dec 22 17:10:21 2015 +0800
     Merge branch 'dev_deployment_anl' into dev_deployment_rollback
     
     Conflicts:
-    	src/main/java/org/domeos/api/controller/deployment/DeploymentController.java
+    	src/main/java/org/Lunaros/api/controller/deployment/DeploymentController.java
 
 commit d4319c7f8921958ac728cbe12c1a69801fa6b938
 Author: anningluo <anningluo@sohu-inc.com>
@@ -11038,7 +11038,7 @@ Merge: 0755f91 6b590db
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Dec 22 16:51:52 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit 0755f9161836c6a1e899f733657e86d2c947e634
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -11071,7 +11071,7 @@ Merge: 12f254a 13ca1c8
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Tue Dec 22 15:44:54 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 12f254a908d8841afe5b34169fa9c2a40120b0f9
 Merge: e8d548f dad5244
@@ -11091,7 +11091,7 @@ Merge: e8d548f 4db633b
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Dec 22 15:09:31 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 4db633b554e92dc59ed67edb28c9719a0fe7bc16
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -11149,7 +11149,7 @@ Merge: 3de25b0 1d931cd
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Tue Dec 22 13:56:52 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 3de25b03b2dda3b64ed7fc9e81d41ec0004eba67
 Merge: 8200794 b8269a0
@@ -11260,7 +11260,7 @@ Merge: 965b2d0 b6bc1f7
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Mon Dec 21 16:50:01 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 965b2d0842db6b3ce8de9f634939321ae8d694ee
 Merge: 7ea1e2c 42cdd69
@@ -11280,14 +11280,14 @@ Merge: 350f714 7ea1e2c
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Dec 21 16:24:02 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 350f7142c85a7384469b111d5a1bfc30c91f80e9
 Merge: 544b576 6ecb92c
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Dec 21 16:23:41 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 16110b60583c09f50690a3f0dd7cd49d88983f55
 Author: anningluo <anningluo@sohu-inc.com>
@@ -11326,7 +11326,7 @@ Merge: a7738cb ad7ccfd
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Mon Dec 21 13:36:44 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit a7738cbf2a3c287982f88d479110f32b99c53746
 Merge: ce83ca2 7d73eab
@@ -11365,7 +11365,7 @@ Merge: 818391a 363a67a
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Dec 21 11:52:33 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit d5a6922953e0d4888efebb9dd0e518cd1b552e92
 Merge: 098a0e2 818391a
@@ -11392,7 +11392,7 @@ Merge: 9a0310f ce83ca2
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Sun Dec 20 22:56:58 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_deployment_fixbug
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_deployment_fixbug
 
 commit ce83ca2a8154e81b9e629c2340cd2a1ac90970c0
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -11411,7 +11411,7 @@ Merge: 686fbe6 5470cba
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Sun Dec 20 22:33:12 2015 +0800
 
-    Merge branch 'dev_deployment_actionwithevent' of code.sohuno.com:feiliu206363/DomeOS into dev_deployment_fixbug
+    Merge branch 'dev_deployment_actionwithevent' of code.sohuno.com:feiliu206363/LunarOS into dev_deployment_fixbug
 
 commit 5470cbae408dcc285d41c35f78157ca1c6f2d6f1
 Merge: afb48cb 9b073c2
@@ -11431,7 +11431,7 @@ Merge: 57e2156 0f93c66
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Sun Dec 20 21:52:13 2015 +0800
 
-    Merge branch 'dev_deployment_actionwithevent' of code.sohuno.com:feiliu206363/DomeOS into dev_deployment_fixbug
+    Merge branch 'dev_deployment_actionwithevent' of code.sohuno.com:feiliu206363/LunarOS into dev_deployment_fixbug
 
 commit 57e2156ef56f6b553c03c5162060e3657b7f6945
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -11450,7 +11450,7 @@ Merge: 4fb6555 069b500
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Sun Dec 20 21:16:43 2015 +0800
 
-    Merge branch 'dev_deployment_startstopwithevent' of code.sohuno.com:feiliu206363/DomeOS into dev_deployment_fixbug
+    Merge branch 'dev_deployment_startstopwithevent' of code.sohuno.com:feiliu206363/LunarOS into dev_deployment_fixbug
 
 commit 069b50069b5726425eb8fcca3a98c5b4ff704999
 Author: anningluo <anningluo@sohu-inc.com>
@@ -11463,7 +11463,7 @@ Merge: 71ec177 9b073c2
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Sun Dec 20 20:41:54 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_deployment_fixbug
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_deployment_fixbug
 
 commit 9b073c23802f5001d0688f6d4319f7ff52468610
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -11476,7 +11476,7 @@ Merge: 9b821b7 cedd28f
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Sun Dec 20 20:37:37 2015 +0800
 
-    Merge branch 'dev_deployment_startstopwithevent' of code.sohuno.com:feiliu206363/DomeOS into dev_deployment_fixbug
+    Merge branch 'dev_deployment_startstopwithevent' of code.sohuno.com:feiliu206363/LunarOS into dev_deployment_fixbug
 
 commit 9b821b7426de84afd7617cb0d74746a84795e06a
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -11520,7 +11520,7 @@ Merge: b707fbb f645334
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Sun Dec 20 18:20:47 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_deployment_versionlist-get-create
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_deployment_versionlist-get-create
 
 commit b707fbb83f56369ce57b920c2f776e63cf451d01
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -11539,7 +11539,7 @@ Merge: 610b052 0e60c92
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Sun Dec 20 17:27:12 2015 +0800
 
-    Merge branch 'dev_deployment_actionwithevent' of code.sohuno.com:feiliu206363/DomeOS into dev_deployment_fixbug
+    Merge branch 'dev_deployment_actionwithevent' of code.sohuno.com:feiliu206363/LunarOS into dev_deployment_fixbug
 
 commit 0e60c9219a95064434b122899d67e3b67b089803
 Author: anningluo <anningluo@sohu-inc.com>
@@ -11596,7 +11596,7 @@ Merge: 30b2567 2145a9d
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Sun Dec 20 16:32:09 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit 30b256768529c8e71f9198a0759773decd73db6e
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -11615,7 +11615,7 @@ Merge: 6207db5 ad267a4
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Sun Dec 20 15:37:05 2015 +0800
 
-    Merge branch 'dev_deployment_actionwithevent' of code.sohuno.com:feiliu206363/DomeOS into dev_deployment_fixbug
+    Merge branch 'dev_deployment_actionwithevent' of code.sohuno.com:feiliu206363/LunarOS into dev_deployment_fixbug
 
 commit 6207db5ba183f5b0b581348ac8e17cda97518811
 Merge: 50b1102 077f777
@@ -11668,7 +11668,7 @@ Date:   Sat Dec 19 21:17:18 2015 +0800
     Merge remote-tracking branch 'origin/dev_deployment' into dev_deployment_actionwithevent
     
     Conflicts:
-    	src/main/java/org/domeos/api/service/deployment/DeploymentService.java
+    	src/main/java/org/Lunaros/api/service/deployment/DeploymentService.java
 
 commit 6f9e1689cbfaf189d82a53f85a267940707a94a8
 Author: anningluo <anningluo@sohu-inc.com>
@@ -11732,7 +11732,7 @@ Merge: 3d1947a 1b5d2fa
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Sat Dec 19 19:25:16 2015 +0800
 
-    Merge branch 'dev_deployment' of code.sohuno.com:feiliu206363/DomeOS into dev_deployment_xxs
+    Merge branch 'dev_deployment' of code.sohuno.com:feiliu206363/LunarOS into dev_deployment_xxs
 
 commit 3d1947a033ff463898a80c10bd947a00f978800b
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -11751,7 +11751,7 @@ Merge: a2584d5 e038b0b
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Sat Dec 19 17:05:51 2015 +0800
 
-    Merge branch 'dev_deployment_actionwithevent' of code.sohuno.com:feiliu206363/DomeOS into dev_deployment
+    Merge branch 'dev_deployment_actionwithevent' of code.sohuno.com:feiliu206363/LunarOS into dev_deployment
 
 commit a2584d52c7b2a07b76931e109e0a385104df038d
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -11815,14 +11815,14 @@ Merge: 5069130 696219a
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Sat Dec 19 15:00:16 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_deployment_xxs
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_deployment_xxs
 
 commit 696219aa9fd0ab817ec24d5cc6f8fab445a68d87
 Merge: 0d2bbd8 d4f27ae
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Sat Dec 19 14:58:36 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit 0d2bbd8cde83ef01f3c298bd83ee3972e7a4d75e
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -11868,10 +11868,10 @@ Merge: 769318b 5003384
 Author: xupeng <conanxu@sohu-inc.com>
 Date:   Sat Dec 19 14:10:50 2015 +0800
 
-    Merge branch 'dev_deployment' of code.sohuno.com:feiliu206363/DomeOS into dev_deployment
+    Merge branch 'dev_deployment' of code.sohuno.com:feiliu206363/LunarOS into dev_deployment
     
     Conflicts:
-    	src/main/java/org/domeos/api/mapper/deployment/LoadBalanceMapper.java
+    	src/main/java/org/Lunaros/api/mapper/deployment/LoadBalanceMapper.java
 
 commit 769318b28f9e2c68c74724610105e1620e3efcf1
 Author: xupeng <conanxu@sohu-inc.com>
@@ -11961,7 +11961,7 @@ Merge: 45d7183 1676a37
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Fri Dec 18 11:24:44 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 1676a370ea7d27b38a3ae2d392a2d52d37dddef7
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -12022,8 +12022,8 @@ Date:   Thu Dec 17 21:21:27 2015 +0800
     Merge remote-tracking branch 'origin/dev_deployment' into dev_deployment_update
     
     Conflicts:
-    	src/main/java/org/domeos/api/service/deployment/impl/DeploymentServiceImpl.java
-    	src/test/java/org/domeos/base/BaseTestCase.java
+    	src/main/java/org/Lunaros/api/service/deployment/impl/DeploymentServiceImpl.java
+    	src/test/java/org/Lunaros/base/BaseTestCase.java
 
 commit 6b02e0c61fde5573be3cc8bc90ef79d331090839
 Author: anningluo <anningluo@sohu-inc.com>
@@ -12055,7 +12055,7 @@ Merge: ce58d2e 8086dd7
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Dec 17 19:59:59 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit ce58d2e451bce813a4f4a385724b91b2274219f6
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -12110,8 +12110,8 @@ Date:   Thu Dec 17 18:12:37 2015 +0800
     Merge remote-tracking branch 'origin/dev_deployment' into dev_deployment_update
     
     Conflicts:
-    	src/main/java/org/domeos/api/service/deployment/VersionService.java
-    	src/main/java/org/domeos/api/service/deployment/impl/VersionServiceImpl.java
+    	src/main/java/org/Lunaros/api/service/deployment/VersionService.java
+    	src/main/java/org/Lunaros/api/service/deployment/impl/VersionServiceImpl.java
 
 commit 49ee189f0d5f6b90ef7b09ba21e4b75537706b10
 Author: anningluo <anningluo@sohu-inc.com>
@@ -12127,7 +12127,7 @@ Date:   Thu Dec 17 17:21:29 2015 +0800
     Merge branch 'dev_merge_front' into dev_deployment
     
     Conflicts:
-    	src/main/java/org/domeos/api/model/deployment/HealthChecker.java
+    	src/main/java/org/Lunaros/api/model/deployment/HealthChecker.java
 
 commit 9541cce83e671b679f53c4830bb4ae21b17912c5
 Author: xupeng <conanxu@sohu-inc.com>
@@ -12187,7 +12187,7 @@ Date:   Thu Dec 17 15:27:13 2015 +0800
     Merge remote-tracking branch 'origin/dev_liu' into dev_deployment_update
     
     Conflicts:
-    	src/main/resources/dome.sql
+    	src/main/resources/Lunar.sql
 
 commit 39f3f2a96396fe31f7e5d349145c3312af812188
 Author: anningluo <anningluo@sohu-inc.com>
@@ -12313,8 +12313,8 @@ Date:   Wed Dec 16 21:54:45 2015 +0800
     Merge remote-tracking branch 'origin/dev_deployment' into dev_deployment_update
     
     Conflicts:
-    	src/main/java/org/domeos/api/service/deployment/DeploymentService.java
-    	src/main/java/org/domeos/api/service/deployment/impl/DeploymentServiceImpl.java
+    	src/main/java/org/Lunaros/api/service/deployment/DeploymentService.java
+    	src/main/java/org/Lunaros/api/service/deployment/impl/DeploymentServiceImpl.java
 
 commit df937aee4c147135ae999a2980e3942f07ccdd8f
 Author: anningluo <anningluo@sohu-inc.com>
@@ -12327,7 +12327,7 @@ Merge: ee4354c 999eea3
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Wed Dec 16 21:47:42 2015 +0800
 
-    Merge branch 'dev_deployment' of code.sohuno.com:feiliu206363/DomeOS into dev_deployment
+    Merge branch 'dev_deployment' of code.sohuno.com:feiliu206363/LunarOS into dev_deployment
 
 commit ee4354cf746e3d02a8e8836293719837e08d5b8f
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -12397,7 +12397,7 @@ Merge: 80a400a 6b62c11
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Dec 16 17:38:58 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 80a400ae1ca9ac18d55574890576ce590af10e02
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -12486,7 +12486,7 @@ Merge: 8ded44a d197f6e
 Author: anningluo <anningluo@sohu-inc.com>
 Date:   Wed Dec 16 14:20:47 2015 +0800
 
-    Merge branch 'dev_deployment' of code.sohuno.com:feiliu206363/DomeOS into dev_deployment
+    Merge branch 'dev_deployment' of code.sohuno.com:feiliu206363/LunarOS into dev_deployment
 
 commit 8ded44a4bf43e337e18db7638654b6caff49c97f
 Author: anningluo <anningluo@sohu-inc.com>
@@ -12556,7 +12556,7 @@ Merge: 3ec2421 d958147
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Tue Dec 15 20:29:05 2015 +0800
 
-    Merge branch 'dev_deployment' of code.sohuno.com:feiliu206363/DomeOS into dev_deployment
+    Merge branch 'dev_deployment' of code.sohuno.com:feiliu206363/LunarOS into dev_deployment
 
 commit 3ec2421477c2f83b8f423cb12ceeeab4a096cc11
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -12591,7 +12591,7 @@ Date:   Tue Dec 15 17:12:13 2015 +0800
     Merge branch 'dev_liu' into dev_merge_front
     
     # Conflicts:
-    #	src/main/resources/dome.sql
+    #	src/main/resources/Lunar.sql
 
 commit 631bf95b83c1aa9cd624d1b51dc668d7690c2bfb
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -12604,7 +12604,7 @@ Merge: ea67866 46a24e3
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Tue Dec 15 16:38:25 2015 +0800
 
-    Merge branch 'dev_deployment' of code.sohuno.com:feiliu206363/DomeOS into dev_deployment
+    Merge branch 'dev_deployment' of code.sohuno.com:feiliu206363/LunarOS into dev_deployment
 
 commit 46a24e314c38bf23c09d88af52089faf5a810532
 Author: xupeng <conanxu@sohu-inc.com>
@@ -12617,7 +12617,7 @@ Merge: fc4a285 6bf8b74
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Tue Dec 15 15:58:02 2015 +0800
 
-    Merge branch 'dev_deployment' of code.sohuno.com:feiliu206363/DomeOS into dev_deployment
+    Merge branch 'dev_deployment' of code.sohuno.com:feiliu206363/LunarOS into dev_deployment
 
 commit 6bf8b74ce7436f74e25e979e72c3898ba6b7c97b
 Author: xupeng <conanxu@sohu-inc.com>
@@ -12639,14 +12639,14 @@ Date:   Tue Dec 15 11:11:22 2015 +0800
     Merge branch 'dev_merge_front' into dev_deployment
     
     Conflicts:
-    	src/main/java/org/domeos/api/model/deployment/HealthChecker.java
+    	src/main/java/org/Lunaros/api/model/deployment/HealthChecker.java
 
 commit fc4a2855f0d365cbf3391e7625cbb349acd53a76
 Merge: f6fb18b f6aafce
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Tue Dec 15 10:42:48 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_deploy_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_deploy_front
 
 commit 6929c258c97d4f10b76e05f61c0f3e43616ae481
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -12666,7 +12666,7 @@ Merge: 6f5f533 3cefd5f
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Dec 14 22:56:15 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 3cefd5f832da394edb7ef27d52780a446d33fe14
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -12709,7 +12709,7 @@ Merge: fbe9437 7d2b377
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Mon Dec 14 22:14:10 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_deploy_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_deploy_front
 
 commit 7d2b377ff70d72bf13bf8cf6d1bef2f350acfa46
 Merge: 3c3553d 13b50e9
@@ -12767,14 +12767,14 @@ Merge: e634986 feb5ca7
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Dec 14 16:27:19 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 2734ae92c6d3dee2c56dc1d55dca9a3434e512df
 Merge: feb5ca7 e634986
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Dec 14 16:26:34 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit feb5ca7bca340b60fa799a82059a2321671dae22
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -12868,7 +12868,7 @@ Merge: 831561d 2bd558b
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Fri Dec 11 20:12:07 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 831561d8d3dd9fd39ab8d266ba2730228d17e184
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -12881,7 +12881,7 @@ Merge: fe74fce 4306e40
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Dec 11 18:22:47 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 4306e40b3db063d32be05a982c74542b906b4522
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -12950,7 +12950,7 @@ Merge: 9a8c086 4ecf3f9
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Fri Dec 11 16:37:27 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit 9a8c08678eb161fd82f3706e21c9e26474f34564
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -12992,7 +12992,7 @@ Merge: 3b0e8fe c6b3a74
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Fri Dec 11 14:05:48 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit c4977ebdf13650a7108e22de8b66ab6c7c6f8a4a
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
@@ -13038,14 +13038,14 @@ Merge: 4d6bd1b 34a9130
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Dec 10 19:55:36 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit a0399fdd776ccf399e413d121f40102e791508ab
 Merge: 34a9130 4d6bd1b
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Dec 10 19:55:04 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit 34a9130d8c0985d5343f0ce8a67a2e872728d615
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -13071,7 +13071,7 @@ Merge: 9fd297e 4d6bd1b
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Thu Dec 10 15:03:52 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
     
     create deployment.html for test
 
@@ -13105,14 +13105,14 @@ Merge: 04af75f b7a8af4
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Dec 9 21:41:44 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 04af75f32ef8c0d3aad6a62cd588b9d44c234929
 Merge: f0d3b9b 7d4be39
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Wed Dec 9 21:41:35 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit b7a8af46da5672eaf0dbb9f584d1bed25fe9a48d
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -13138,7 +13138,7 @@ Merge: e6186d0 69235d0
 Author: 许孝盛(北京研发中心) <xiaoshengxu@sohu-inc.com>
 Date:   Wed Dec 9 14:15:25 2015 +0800
 
-    Merge branches 'dev_merge_front' and 'master' of code.sohuno.com:feiliu206363/DomeOS
+    Merge branches 'dev_merge_front' and 'master' of code.sohuno.com:feiliu206363/LunarOS
 
 commit 69235d0e0965312b9ac5483bd40bdb3dec9c7391
 Merge: e664058 30b75e9
@@ -13210,7 +13210,7 @@ Merge: 2e14fb7 602a15a
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Dec 8 17:50:35 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 602a15a020d7c879d9ef2e867689f4b11dd02925
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -13223,7 +13223,7 @@ Merge: 8f45c78 f5bd991
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Tue Dec 8 17:47:45 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit f5bd9919e08c8fc67fb73d08a0614e16e8e860f1
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -13318,7 +13318,7 @@ Merge: 1c8a4b2 48a532d
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Mon Dec 7 18:35:48 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 1c8a4b2c36427a12ce26b546a63e1bd3194618e0
 Merge: 7c959ba 6813b58
@@ -13344,7 +13344,7 @@ Merge: 95fcccf 0caf7f1
 Author: zhenfengchen <zhenfengchen@sohu-inc.com>
 Date:   Mon Dec 7 17:40:06 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 95fcccff33ea63df653df3eaae3c4902d82c34dc
 Author: zhenfengchen <zhenfengchen@sohu-inc.com>
@@ -13396,7 +13396,7 @@ Merge: c59a67e 47f71df
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Mon Dec 7 13:56:03 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 47f71dfc97ba53bbc61550adb611fdc53b942fe2
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -13521,7 +13521,7 @@ Date:   Mon Dec 7 01:05:33 2015 +0800
     Merge branch 'dev_liu' into dev_merge_front
     
     # Conflicts:
-    #	src/main/java/org/domeos/api/service/user/impl/UserServiceImpl.java
+    #	src/main/java/org/Lunaros/api/service/user/impl/UserServiceImpl.java
 
 commit db2b9aad5c63f8c351c54d76403dbcbe5f36f6f5
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -13544,7 +13544,7 @@ Date:   Mon Dec 7 00:49:48 2015 +0800
     Merge branch 'dev_liu' into develop_user
     
     Conflicts:
-    	src/main/java/org/domeos/api/service/user/impl/UserServiceImpl.java
+    	src/main/java/org/Lunaros/api/service/user/impl/UserServiceImpl.java
     	src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml
 
 commit f550bdc707634cbf8ce8e26c1cba5cdfb8776f4e
@@ -13575,10 +13575,10 @@ Merge: 4548c48 e40b978
 Author: zhenfengchen <zhenfengchen@sohu-inc.com>
 Date:   Mon Dec 7 00:26:43 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
     
     Conflicts:
-    	src/main/java/org/domeos/api/service/user/impl/UserServiceImpl.java
+    	src/main/java/org/Lunaros/api/service/user/impl/UserServiceImpl.java
 
 commit 4548c48b13e84592ec41c5c7abbfb7f126e6eeb2
 Merge: 5e591d2 fc991b7
@@ -13640,7 +13640,7 @@ Merge: 8094763 7b98286
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Sun Dec 6 22:46:25 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 7b982865788fdf0d071a6d632844d1b3c38e29ff
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -13679,7 +13679,7 @@ Merge: 22180b4 5c82d8b
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Sun Dec 6 21:28:49 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 5c82d8b850ce9cff5d8edea6554f14d92266a265
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -13705,7 +13705,7 @@ Merge: 21371b2 c8e03d3
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Sun Dec 6 21:22:56 2015 +0800
 
-    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_20151202_lichunyan' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit b33863e8efcc1d3684d95dcfab01a90235657f82
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -13867,7 +13867,7 @@ Merge: a34f6ca b10e09b
 Author: zhenfengchen <zhenfengchen@sohu-inc.com>
 Date:   Fri Dec 4 23:04:17 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit 1a19e87161136c43d1c0b9b37841f400dcd2975c
 Author: zhenfengchen <zhenfengchen@sohu-inc.com>
@@ -13974,7 +13974,7 @@ Merge: fc320fd 64d2db9
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
 Date:   Fri Dec 4 14:18:15 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_merge_front
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_merge_front
 
 commit fc320fd65603809e145965cc708848ffa40bc459
 Merge: b104e84 c6bd923
@@ -14025,7 +14025,7 @@ Merge: dced035 b104e84
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Dec 3 22:41:05 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit b104e841d7d83f589db76337f40b378da0c84ef6
 Merge: fed3a5e 3701871
@@ -14051,7 +14051,7 @@ Merge: f85a198 fed3a5e
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Dec 3 22:07:58 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit f85a198e784e20ae2ee6ca5a648ddc4b05371a11
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -14109,7 +14109,7 @@ Merge: 94c7fee 49a841e
 Author: ChandraLee <chandrali@sohu-inc.com>
 Date:   Thu Dec 3 14:19:20 2015 +0800
 
-    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/DomeOS into dev_20151202_lichunyan
+    Merge branch 'dev_merge_front' of code.sohuno.com:feiliu206363/LunarOS into dev_20151202_lichunyan
 
 commit 94c7fee534ae8b0e106ed26e1ab19e5febed74e8
 Author: ChandraLee <chandrali@sohu-inc.com>
@@ -14315,7 +14315,7 @@ Date:   Tue Nov 24 21:37:17 2015 +0800
     Merge branch 'dev_liu' into develop_user
     
     Conflicts:
-    	src/main/java/org/domeos/basemodel/ResultStat.java
+    	src/main/java/org/Lunaros/basemodel/ResultStat.java
 
 commit ed8ac69e486f2169ad05bfb641edffb17a2ff283
 Author: feiliu206363 <feiliu206363@sohu-inc.com>
@@ -14443,7 +14443,7 @@ Date:   Wed Nov 18 23:24:54 2015 +0800
     2. structure change
     
     Conflicts:
-    	src/main/java/org/domeos/basemodel/ResultStat.java
+    	src/main/java/org/Lunaros/basemodel/ResultStat.java
     	src/main/webapp/WEB-INF/pages/index.jsp
 
 commit 0d421c6859b50fa9efc012cc40d04482f7686293

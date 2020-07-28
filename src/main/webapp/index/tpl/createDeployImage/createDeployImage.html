@@ -60,7 +60,7 @@
                 <li class="select-item" ng-repeat="accessControl in [true, false]"><a ng-click="deployIns.toggleStorageVolumeReadonly(volume, accessControl)"><span>{{ ({false:'读写', true:'只读'}[accessControl]) }}</span></a></li>
               </ul>
             </div>
-            <input name="validateVolumeId{{$index}}" type="hidden" ng-model="volume.volumePVC.volumeId" required="required"/><span class="dome-right-prompt txt-error" ng-show="needValid.valid&amp;&amp;mirrorsListFrom.validateVolumeId{{$index}}.$invalid">数据卷不能为空</span>
+            <input name="validateVolumeId{{$index}}" type="hidden" ng-model="volume.volumePVC.volumeId" required="required"/><span class="Lunar-right-prompt txt-error" ng-show="needValid.valid&amp;&amp;mirrorsListFrom.validateVolumeId{{$index}}.$invalid">数据卷不能为空</span>
           </div>
         </div>
       </li>
@@ -112,7 +112,7 @@
         </li>
         <li class="has-border"><span class="info-name">自动部署</span>
           <div class="info-content">
-            <dome-toggle ng-class="{'on':image.autoDeploy}" ng-click="image.autoDeploy=!image.autoDeploy" ng-model="image.autoDeploy"></dome-toggle><span class="txt-prompt">开启后，通过项目构建产生该镜像的新版本时，会自动触发该部署升级。该功能只对运行中的部署有效。</span>
+            <Lunar-toggle ng-class="{'on':image.autoDeploy}" ng-click="image.autoDeploy=!image.autoDeploy" ng-model="image.autoDeploy"></Lunar-toggle><span class="txt-prompt">开启后，通过项目构建产生该镜像的新版本时，会自动触发该部署升级。该功能只对运行中的部署有效。</span>
           </div>
         </li>
         <li class="has-border" ng-if="config.volumeDrafts.length &gt; 0"><span class="info-name">存储挂载</span>
@@ -192,16 +192,16 @@
         </li>
         <li class="has-border"><span class="info-name info-name-content-for-label">镜像拉取策略</span>
           <div class="info-content info-name-content-for-label">
-            <dome-radio class="com-check-con" d-id="{{'pullPolicyAlways_'+formName}}" d-value="'Always'" d-name="pullPolicyType{{formName}}" d-label="Always" d-model="image.imagePullPolicy"></dome-radio>
-            <dome-radio class="com-check-con" d-id="{{'pullPolicyNever_'+formName}}" d-value="'Never'" d-name="pullPolicyType{{formName}}" d-label="Never" d-model="image.imagePullPolicy"></dome-radio>
-            <dome-radio class="com-check-con" d-id="{{'pullPolicyIfNotPresent_'+formName}}" d-value="'IfNotPresent'" d-name="pullPolicyType{{formName}}" d-label="If Not Present" d-model="image.imagePullPolicy"></dome-radio>
+            <Lunar-radio class="com-check-con" d-id="{{'pullPolicyAlways_'+formName}}" d-value="'Always'" d-name="pullPolicyType{{formName}}" d-label="Always" d-model="image.imagePullPolicy"></Lunar-radio>
+            <Lunar-radio class="com-check-con" d-id="{{'pullPolicyNever_'+formName}}" d-value="'Never'" d-name="pullPolicyType{{formName}}" d-label="Never" d-model="image.imagePullPolicy"></Lunar-radio>
+            <Lunar-radio class="com-check-con" d-id="{{'pullPolicyIfNotPresent_'+formName}}" d-value="'IfNotPresent'" d-name="pullPolicyType{{formName}}" d-label="If Not Present" d-model="image.imagePullPolicy"></Lunar-radio>
           </div>
         </li>
         <li class="has-border"><span class="info-name tool-align-input">健康检查</span>
           <div class="info-content info-content-lg-height">
-            <dome-radio class="com-check-con" ng-if="config.networkMode!=='HOST'" d-id="{{'checkNONE_'+formName}}" d-value="'NONE'" d-name="healthCheckerType{{formName}}" d-label="None" d-model="image.healthChecker.type"></dome-radio>
-            <dome-radio class="com-check-con" ng-if="config.networkMode!=='HOST'" d-id="{{'checkTCP_'+formName}}" d-value="'TCP'" d-name="healthCheckerType{{formName}}" d-disabled="{{config.networkMode=='HOST'}}" d-label="TCP检查" d-model="image.healthChecker.type"></dome-radio>
-            <dome-radio class="com-check-con" ng-if="config.networkMode!=='HOST'" d-id="{{'checkHTTP_'+formName}}" d-value="'HTTP'" d-name="healthCheckerType{{formName}}" d-disabled="{{config.networkMode=='HOST'}}" d-label="HTTP检查" d-model="image.healthChecker.type"></dome-radio>
+            <Lunar-radio class="com-check-con" ng-if="config.networkMode!=='HOST'" d-id="{{'checkNONE_'+formName}}" d-value="'NONE'" d-name="healthCheckerType{{formName}}" d-label="None" d-model="image.healthChecker.type"></Lunar-radio>
+            <Lunar-radio class="com-check-con" ng-if="config.networkMode!=='HOST'" d-id="{{'checkTCP_'+formName}}" d-value="'TCP'" d-name="healthCheckerType{{formName}}" d-disabled="{{config.networkMode=='HOST'}}" d-label="TCP检查" d-model="image.healthChecker.type"></Lunar-radio>
+            <Lunar-radio class="com-check-con" ng-if="config.networkMode!=='HOST'" d-id="{{'checkHTTP_'+formName}}" d-value="'HTTP'" d-name="healthCheckerType{{formName}}" d-disabled="{{config.networkMode=='HOST'}}" d-label="HTTP检查" d-model="image.healthChecker.type"></Lunar-radio>
             <p class="txt-prompt" ng-if="config.networkMode=='HOST'">Host网络模式下不能使用健康检查</p>
             <div class="line-long" ng-if="image.healthChecker.type=='TCP'||image.healthChecker.type=='HTTP'"><span class="child-name">检查端口</span>
               <input class="ui-input-fill line-element" placeholder="请输入端口号" name="port" ng-model="image.healthChecker.port" required="required"/>

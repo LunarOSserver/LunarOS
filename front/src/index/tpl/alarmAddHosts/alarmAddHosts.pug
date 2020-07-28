@@ -16,14 +16,14 @@
 	ul.list-host
 		li.list-header
 			span.col.col1
-				dome-check(ng-model="vm.nodeListIns.isCheckAll" d-id="allHost" name="allHost" d-change="vm.nodeListIns.checkAllItem(model)" )
+				Lunar-check(ng-model="vm.nodeListIns.isCheckAll" d-id="allHost" name="allHost" d-change="vm.nodeListIns.checkAllItem(model)" )
 				| 主机 
 			span.col.col2 IP
 		li(ng-if="nodeListFilterd.length===0")
 			span.col 无主机信息
 		li(ng-repeat="node in nodeListFilterd = (vm.nodeListIns.nodeList|filter:{keyFilter:true})")
 			span.col.col1
-				dome-check(ng-model="node.isSelected" d-change="vm.nodeListIns.toggleCheck(node,model)" d-id="host{{$index}}" name="host{{$index}}")
+				Lunar-check(ng-model="node.isSelected" d-change="vm.nodeListIns.toggleCheck(node,model)" d-id="host{{$index}}" name="host{{$index}}")
 				| {{node.name}}
 			span.col.col2(ng-bind="node.ip")
 .mod-alarm.alarm-add-host.right-wrap

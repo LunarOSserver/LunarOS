@@ -14,7 +14,7 @@ $lib-icons: sprite-map("/index/images/lib/*.png", $spacing:5px);
 }
 
 
-/* dome system icon */
+/* Lunar system icon */
 
 // document
 .icon-doc {
@@ -264,7 +264,7 @@ table {
 }
 
 .icon-fa-disabled {
-    color: dome-color(dome, disabled);
+    color: Lunar-color(Lunar, disabled);
     font-size: 16px !important;
 }
 
@@ -274,7 +274,7 @@ table {
 }
 
 
-/* dome system icon end*/
+/* Lunar system icon end*/
 
 
 /* common style */
@@ -325,7 +325,7 @@ table {
     margin-right: 8px;
     margin-bottom: 8px;
     padding: 4px;
-    background-color: dome-color(background, light);
+    background-color: Lunar-color(background, light);
     border-radius: $default-radius;
     &:last-child {
         margin-right: 0;
@@ -336,27 +336,27 @@ table {
 /* text style */
 
 .txt-safe {
-    color: dome-color(dome, safe);
+    color: Lunar-color(Lunar, safe);
 }
 
 .txt-warning {
-    color: dome-color(dome, warning);
+    color: Lunar-color(Lunar, warning);
 }
 
 .txt-success {
-    color: dome-color(dome, active);
+    color: Lunar-color(Lunar, active);
 }
 
 .txt-normal {
-    color: dome-color(dome, primary);
+    color: Lunar-color(Lunar, primary);
 }
 
 .txt-embed {
-    color: dome-color(font, embed);
+    color: Lunar-color(font, embed);
 }
 
 .txt-prompt {
-    color: dome-color(font, prompt);
+    color: Lunar-color(font, prompt);
 }
 
 .txt-prompt-limit-width {
@@ -364,19 +364,19 @@ table {
 }
 
 .txt-primary {
-    color: dome-color(dome, primary);
+    color: Lunar-color(Lunar, primary);
 }
 
 .txt-bright {
-    color: dome-color(dome, bright);
+    color: Lunar-color(Lunar, bright);
 }
 
 .txt-blue {
-    color: dome-color(font, light-blue);
+    color: Lunar-color(font, light-blue);
 }
 
 .txt-white {
-    color: dome-color(dome, white) !important;
+    color: Lunar-color(Lunar, white) !important;
 }
 
 .txt-circle {
@@ -385,10 +385,10 @@ table {
     padding: 0 14px 0 14px;
     line-height: 34px;
     font-style: normal;
-    background-color: dome-color(background, light);
+    background-color: Lunar-color(background, light);
     border-radius: 22px;
     &.active {
-        background-color: dome-color(background, primary);
+        background-color: Lunar-color(background, primary);
     }
 }
 
@@ -396,7 +396,7 @@ table {
 /* text style end*/
 
 .require-domain {
-    color: dome-color(dome, error);
+    color: Lunar-color(Lunar, error);
     position: absolute;
     margin-left: 5px;
     margin-top: 3px;
@@ -424,7 +424,7 @@ table {
 }
 
 .tool-inline-error {
-    color: dome-color(dome, error);
+    color: Lunar-color(Lunar, error);
     margin-left: 10px;
 }
 
@@ -516,16 +516,16 @@ ul.com-list-tab {
         }
         &.active {
             a {
-                color: dome-color(dome, primary);
+                color: Lunar-color(Lunar, primary);
             }
         }
         &.txt-error {
-            color: dome-color(dome, error);
+            color: Lunar-color(Lunar, error);
         }
         &.active,
         &:hover {
             cursor: pointer;
-            border-bottom: 2px solid dome-color(dome, primary);
+            border-bottom: 2px solid Lunar-color(Lunar, primary);
         }
         &.nav-option {
             position: absolute;
@@ -601,11 +601,11 @@ ul.com-list-tab {
         vertical-align: middle;
         border-radius: $default-radius;
         border: 2px solid transparent;
-        background-color: dome-color(background, light);
+        background-color: Lunar-color(background, light);
         margin-top: 15px;
         &:hover {
             cursor: pointer;
-            border-color: dome-color(dome, primary);
+            border-color: Lunar-color(Lunar, primary);
         }
         i {
             margin-right: 6px;
@@ -617,7 +617,7 @@ ul.com-list-tab {
             @include get-sprite($lib-icons, github, true);
         }
         &.active {
-            border-color: dome-color(dome, primary);
+            border-color: Lunar-color(Lunar, primary);
             background-color: #fff;
         }
     }
@@ -636,7 +636,7 @@ ul.com-list-tab {
         }
         &.on {
             font-weight: bold;
-            color: dome-color(dome, primary);
+            color: Lunar-color(Lunar, primary);
         }
     }
     .page-info {
@@ -653,7 +653,7 @@ ul.com-list-tab {
         .label-item {
             display: inline-block;
             padding: 4px 8px 4px 8px;
-            background-color: dome-color(background, light);
+            background-color: Lunar-color(background, light);
             border-radius: $default-radius;
             .icon-cancel {
                 margin-right: 4px;
@@ -664,7 +664,7 @@ ul.com-list-tab {
 
 .com-list-table {
     li.head {
-        background-color: dome-color(background, light);
+        background-color: Lunar-color(background, light);
     }
     li {
         padding: 10px 12px 10px 15px;
@@ -673,7 +673,7 @@ ul.com-list-tab {
             border-bottom: none;
         }
         &:hover .ui-table-link {
-            color: dome-color(dome, bright);
+            color: Lunar-color(Lunar, bright);
         }
     }
 }
@@ -696,7 +696,7 @@ ul.com-list-tab {
             &:hover,
             &:focus {
                 background: none;
-                color: dome-color(font, default);
+                color: Lunar-color(font, default);
             }
         }
         &.active>a,
@@ -709,7 +709,7 @@ ul.com-list-tab {
             &.active>a,
             &.active>a:hover,
             &.active>a:focus {
-                //border-bottom: 2px solid dome-color(dome,primary);
+                //border-bottom: 2px solid Lunar-color(Lunar,primary);
                 color: #188ae2;
             }
         }
@@ -738,7 +738,7 @@ ul.com-list-tab {
 }
 
 
-/* dome custom input */
+/* Lunar custom input */
 
 input.ui-radio,
 input.ui-check {
@@ -773,7 +773,7 @@ input.ui-check {
         &:before {
             border: 1px solid #babec8;
             background-color: #fff;
-            @include box-shadow(inset 0 0 0 0px dome-color(dome, active));
+            @include box-shadow(inset 0 0 0 0px Lunar-color(Lunar, active));
             @include transition(all .3s ease-in-out);
         }
         &:after {
@@ -799,11 +799,11 @@ input.ui-check {
         }
     }
     &:checked+label {
-        color: dome-color(dome, active);
+        color: Lunar-color(Lunar, active);
     }
     &:checked+label:before {
         border: none;
-        @include box-shadow(inset 0 0 0 10px dome-color(dome, active));
+        @include box-shadow(inset 0 0 0 10px Lunar-color(Lunar, active));
     }
 }
 
@@ -869,7 +869,7 @@ input.ui-check {
 .ui-table-hover {
     tbody {
         tr:hover {
-            background-color: dome-color(background, table-hover-background);
+            background-color: Lunar-color(background, table-hover-background);
         }
     }
 }
@@ -901,7 +901,7 @@ input.ui-check {
         @include transition(all .2s ease-in-out);
     }
     &.on {
-        @include box-shadow(inset 0 0 0 12px dome-color(dome, active));
+        @include box-shadow(inset 0 0 0 12px Lunar-color(Lunar, active));
         &:after {
             left: 29px;
             background-color: #fff;

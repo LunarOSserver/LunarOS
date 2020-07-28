@@ -1,13 +1,13 @@
-﻿(function (domeApp) {
+﻿(function (LunarApp) {
   'use strict';
 
-  domeApp.controller('publicImageDetailCtr', ['$scope', '$state', 'api', function ($scope, $state, api) {
+  LunarApp.controller('publicImageDetailCtr', ['$scope', '$state', 'api', function ($scope, $state, api) {
     api.image.public.detail({ name: $state.params.name }).then(image => {
       $scope.image = image;
     });
   }]);
 
-  domeApp.controller('publicImageDockerfileCtr', ['$scope', 'api', function ($scope, api) {
+  LunarApp.controller('publicImageDockerfileCtr', ['$scope', 'api', function ($scope, api) {
     $scope.loading = true;
     api.network($scope.value.url)
       .catch(function () { return null; })
@@ -17,7 +17,7 @@
       });
   }]);
 
-  domeApp.controller('publicImageDetailTagsCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
+  LunarApp.controller('publicImageDetailTagsCtr', ['$scope', '$state', 'api', 'dialog', function ($scope, $state, api, dialog) {
     $scope.showDockerfile = function (url) {
         dialog.common({
           title: '查看dockerfile',
@@ -33,4 +33,4 @@
     };
   }]);
 
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

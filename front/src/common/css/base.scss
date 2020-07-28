@@ -1,5 +1,5 @@
 /*
- * @description: dome system common stylesheet
+ * @description: Lunar system common stylesheet
  * @version: 0.1
  */
 
@@ -11,7 +11,7 @@
 body {
     min-width: 1340px;
     font-size: 14px;
-    color: dome-color(font, default);
+    color: Lunar-color(font, default);
     font-family: Helvetica, Arial, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", Simsun, sans-self;
     -webkit-text-size-adjust: 100%;
     background-color: #f0f2f5;
@@ -39,24 +39,24 @@ h6 {
 
 a {
     cursor: pointer;
-    color: dome-color(font, default);
+    color: Lunar-color(font, default);
     text-decoration: none;
     &:hover {
-        color: dome-color(dome, bright);
+        color: Lunar-color(Lunar, bright);
         text-decoration: none;
     }
     &.link,
     &.link:hover {
-        color: dome-color(dome, primary);
+        color: Lunar-color(Lunar, primary);
         text-decoration: underline;
     }
     &.link-safe,
     &.link-safe:hover {
-        color: dome-color(dome, safe);
+        color: Lunar-color(Lunar, safe);
     }
     &.link-primary,
     &.link-primary:hover {
-        color: dome-color(dome, primary);
+        color: Lunar-color(Lunar, primary);
     }
     &:focus {
         outline: none;
@@ -92,7 +92,7 @@ input[type="text"] {
 // error text
 .txt-error {
     display: block;
-    color: dome-color(dome, error);
+    color: Lunar-color(Lunar, error);
 }
 
 
@@ -107,9 +107,9 @@ input:not(.ng-pristine).ng-invalid-pattern,
 textarea:not(.ng-pristine).ng-invalid-pattern,
 .need-valid input.ng-invalid-pattern,
 .need-valid textarea.ng-invalid-pattern {
-    border: 1px solid dome-color(dome, error) !important;
+    border: 1px solid Lunar-color(Lunar, error) !important;
     &:focus {
-        border: 1px solid dome-color(dome, error) !important;
+        border: 1px solid Lunar-color(Lunar, error) !important;
     }
 }
 
@@ -125,7 +125,7 @@ textarea:focus:invalid {
     height: 34px;
     padding-left: 12px;
     padding-right: 20px;
-    border: 1px solid dome-color(border, default);
+    border: 1px solid Lunar-color(border, default);
     border-radius: $default-radius;
 }
 
@@ -137,12 +137,12 @@ textarea.ui-input-white {
 // input with fill background
 .ui-input-fill {
     padding-left: 12px;
-    // background-color: dome-color(background,light) !important;
+    // background-color: Lunar-color(background,light) !important;
     border: none;
     border-radius: $default-radius;
     border: $deep-border;
     &:focus {
-        border: 1px solid dome-color(dome, primary);
+        border: 1px solid Lunar-color(Lunar, primary);
     }
 }
 
@@ -214,7 +214,7 @@ textarea.ui-input-fill {
 }
 
 .ui-btn-lg-disabled {
-    background-color: dome-color(dome, disabled) !important;
+    background-color: Lunar-color(Lunar, disabled) !important;
 }
 
 // the link that has class .ui-btn
@@ -245,33 +245,33 @@ textarea.ui-input-fill {
 }
 
 .ui-btn-safe {
-    background-color: dome-color(dome, safe);
+    background-color: Lunar-color(Lunar, safe);
 }
 
 .ui-btn-primary,
 .ui-btn-primary:hover,
 .ui-btn-primary:focus {
-    background-color: dome-color(dome, primary);
+    background-color: Lunar-color(Lunar, primary);
 }
 
 .ui-btn-bright,
 .ui-btn-bright:hover,
 .ui-btn-bright:focus {
-    background-color: dome-color(dome, bright);
+    background-color: Lunar-color(Lunar, bright);
 }
 
 .ui-btn-active {
-    background-color: dome-color(dome, active);
+    background-color: Lunar-color(Lunar, active);
 }
 
 .ui-btn-white {
     background-color: #fff;
-    color: dome-color(font, default);
+    color: Lunar-color(font, default);
     border: $deep-border;
     &:hover,
     &:focus,
     &:active {
-        color: dome-color(font, default);
+        color: Lunar-color(font, default);
         border: $deep-border;
     }
 }
@@ -286,7 +286,7 @@ textarea.ui-input-fill {
 }
 
 .ui-btn-error {
-    background-color: dome-color(dome, error);
+    background-color: Lunar-color(Lunar, error);
 }
 
 .ui-btn+.ui-btn {
@@ -296,15 +296,15 @@ textarea.ui-input-fill {
 table {
     tr:hover {
         .ui-table-link {
-            color: dome-color(dome, bright);
+            color: Lunar-color(Lunar, bright);
         }
     }
 }
 
-.ui-table-dome {
+.ui-table-Lunar {
     width: 100%;
     &>thead {
-        background-color: dome-color(background, white);
+        background-color: Lunar-color(background, white);
         th {
             font-weight: bold;
         }
@@ -335,7 +335,7 @@ table {
     }
 }
 
-.ui-table-dome,
+.ui-table-Lunar,
 .ui-table-primary {
     &>tbody>tr>td,
     &>thead>tr>th {
@@ -408,10 +408,10 @@ table {
 .d-modal-header {
     line-height: 58px;
     border-radius: $default-radius $default-radius 0 0;
-    color: dome-color(dome, bright);
+    color: Lunar-color(Lunar, bright);
     font-size: font-size(large);
-    // @extend %dome-background;
-    border-top: 5px solid dome-color(dome, bright);
+    // @extend %Lunar-background;
+    border-top: 5px solid Lunar-color(Lunar, bright);
     overflow: hidden;
     .model-prompt {
         float: right;
@@ -429,7 +429,7 @@ table {
     .d-modal-full {
         max-height: 500px;
         overflow-y: auto;
-        &>.ui-table-dome {
+        &>.ui-table-Lunar {
             width: 100%;
             th,
             td {
@@ -557,7 +557,7 @@ ul.modal-info {
                 overflow: hidden;
                 &:hover,
                 &:focus {
-                    background-color: dome-color(background, light);
+                    background-color: Lunar-color(background, light);
                 }
                 .item-right {
                     float: right;
@@ -587,7 +587,7 @@ ul.modal-info {
             padding: 2px 5px 2px 4px;
             width: auto;
             height: 26px;
-            // background-color: dome-color(background,light);
+            // background-color: Lunar-color(background,light);
             background-color: #eee;
             // border-radius: $default-radius;
         }

@@ -1,10 +1,10 @@
 /*
  * @author ChandraLee
  */
- (function (domeApp, undefined) {
+ (function (LunarApp, undefined) {
 	'use strict';
-	if (typeof domeApp === 'undefined') return;
-	domeApp.controller('SelectContainerModalCtr', ['$scope', 'info', '$modalInstance', function ($scope, info, $modalInstance) {
+	if (typeof LunarApp === 'undefined') return;
+	LunarApp.controller('SelectContainerModalCtr', ['$scope', 'info', '$modalInstance', function ($scope, info, $modalInstance) {
 		$scope.containerList = info.containerList || [];
 		$scope.hostIp = info.hostIp;
 		$scope.resourceId = info.resourceId;
@@ -23,4 +23,4 @@
 			$modalInstance.dismiss('');
 		};
 	}]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

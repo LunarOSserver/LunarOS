@@ -29,7 +29,7 @@
           <form-search-box-with-count text-prefix="共" text-suffix="条信息" ng-model="volumeInfo.searchKeyword" total="{{ volumeInfo.volumeList.length }}" match="{{ volumeInfo.filteredVolumeList.length }}" on-change="filterVolumeList()" placeholder="搜索名称"></form-search-box-with-count>
         </form-multiple-inline-item>
       </form-multiple-inline>
-      <dome-prompt content="数据卷是在创建在集群上可以被部署实例挂载的存储服务，创建数据卷会在集群内增加一条关联到该存储集群的记录，数据卷可以在部署模块中挂载。"></dome-prompt>
+      <Lunar-prompt content="数据卷是在创建在集群上可以被部署实例挂载的存储服务，创建数据卷会在集群内增加一条关联到该存储集群的记录，数据卷可以在部署模块中挂载。"></Lunar-prompt>
       <form-table ng-model="volumeInfo.filteredVolumeList" template="storageVolumeTable" columns="[
           { text: '名称', key: 'name'},
           { text: '状态', key: 'status'},
@@ -50,13 +50,13 @@
   </form-container>
 </script>
 <script type="text/ng-template" id="detail.html">
-  <div class="dome-option-container" style="margin-bottom:0;">
+  <div class="Lunar-option-container" style="margin-bottom:0;">
     <button class="ui-btn ui-btn-bright ui-btn-sm" ng-if="!isEditStorage" ng-click="toggleIsEditStorage('edit')" ng-disabled="!mayPost()" ng-class="{'ui-btn-lg-disabled':!mayPost()}">编辑</button>
     <button class="ui-btn ui-btn-bright ui-btn-sm" ng-if="isEditStorage" ng-click="saveEditStorage()" ng-disabled="isRunning">保存</button>
     <button class="ui-btn ui-btn-bright ui-btn-sm" ng-if="isEditStorage" ng-click="toggleIsEditStorage()" ng-disabled="isRunning">取消</button>
   </div>
-  <div class="dome-prompt-container">
-    <dome-prompt content="当该存储集群已存在数据卷时，仅支持修改存储名称和描述信息"></dome-prompt>
+  <div class="Lunar-prompt-container">
+    <Lunar-prompt content="当该存储集群已存在数据卷时，仅支持修改存储名称和描述信息"></Lunar-prompt>
   </div>
   <form-container left-column-width="80px">
     <form-config-group ng-if="!isEditStorage">

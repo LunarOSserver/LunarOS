@@ -1,9 +1,9 @@
 
 <!--Created on 2016/12/22.
 -->
-<div class="dome-mod-content-container">
-  <div class="dome-container-header">
-    <div class="dome-header-detail">
+<div class="Lunar-mod-content-container">
+  <div class="Lunar-container-header">
+    <div class="Lunar-header-detail">
       <div class="detail-item"><em class="item-name">存储名称</em><b class="item-content" ng-bind="storageInstance.name"></b></div><i class="detail-sep"></i>
       <div class="detail-item"><em class="item-name">存储类型</em><b class="item-content" ng-bind="storageInstance.storageType.toLowerCase()"></b></div><i class="detail-sep"></i>
       <div class="detail-item"><em class="item-name">创建时间</em><b class="item-content" ng-bind="(storageInstance.createTime | time)"></b></div>
@@ -11,22 +11,22 @@
           <button class="ui-btn ui-btn-bright ui-btn-sm" ng-if="mayDelete()" style="line-height:34px;" ng-click="deleteStorage(storageInstance.id)">删除</button></span></div>
     </div>
   </div>
-  <div class="dome-container-body" style="min-height: 540px;">
+  <div class="Lunar-container-body" style="min-height: 540px;">
     <tabset class="mod-tab" style="display: table;width: 100%;">
       <div class="tab-border"></div>
       <tab class="first" heading="数据卷" active="tabActive[0].active" ui-sref="storageVolumeDetail.volume">
-        <div class="dome-option-container">
+        <div class="Lunar-option-container">
           <button class="ui-btn ui-btn-lg ui-btn-bright" ng-class="{'ui-btn-lg-disabled':!mayPost()}" ng-disabled="!mayPost()" ui-sref="createStorageVolume({id:storageInstance.id})"><span class="btn-txt">新建数据卷</span><i class="fa fa-plus"></i></button>
           <div class="option-right"><span ng-cloak="ng-cloak">共{{volumeListFilter.length || 0}}个数据卷</span>
             <input class="ui-input-search ui-input-fill" type="text" placeholder="输入名称查询" ng-model="keywords"/>
           </div>
         </div>
-        <div class="dome-prompt-container">
-          <dome-prompt content="数据卷是在创建在集群上可以被部署实例挂载的存储服务，创建数据卷会在集群内增加一条关联到该存储集群的记录，数据卷可以在部署模块中挂载。"></dome-prompt>
+        <div class="Lunar-prompt-container">
+          <Lunar-prompt content="数据卷是在创建在集群上可以被部署实例挂载的存储服务，创建数据卷会在集群内增加一条关联到该存储集群的记录，数据卷可以在部署模块中挂载。"></Lunar-prompt>
         </div>
-        <div class="dome-list-container">
+        <div class="Lunar-list-container">
           <loading ng-if="isVolumeLoading"></loading>
-          <table class="ui-table-dome">
+          <table class="ui-table-Lunar">
             <thead>
               <tr>
                 <th>名称</th>
@@ -50,8 +50,8 @@
                 <td ng-bind="formatAccessMode[volume.storageVolumeDraft.accessMode]"></td>
                 <td ng-bind="(volume.storageVolumeDraft.createTime | time)"></td>
                 <td>
-                  <button class="dome-btn-none fa fa-list-alt icon-edit-color" ng-click="listRelatedDeploy(volume.storageVolumeDraft)" tooltip="部署列表"></button>
-                  <button class="dome-btn-none fa fa-trash-o icon-trash-color" ng-class="{'icon-fa-disabled':!mayDelete()}" ng-disabled="!mayDelete()" ng-click="deleteVolume(volume.storageVolumeDraft)" tooltip="删除"></button>
+                  <button class="Lunar-btn-none fa fa-list-alt icon-edit-color" ng-click="listRelatedDeploy(volume.storageVolumeDraft)" tooltip="部署列表"></button>
+                  <button class="Lunar-btn-none fa fa-trash-o icon-trash-color" ng-class="{'icon-fa-disabled':!mayDelete()}" ng-disabled="!mayDelete()" ng-click="deleteVolume(volume.storageVolumeDraft)" tooltip="删除"></button>
                 </td>
               </tr>
             </tbody>
@@ -59,12 +59,12 @@
         </div>
       </tab>
       <tab class="first" heading="存储详情" active="tabActive[1].active" ui-sref="storageVolumeDetail.storage" ng-show="mayDelete()">
-        <div class="dome-option-container" style="margin-bottom:0;">
+        <div class="Lunar-option-container" style="margin-bottom:0;">
           <button class="ui-btn ui-btn-bright ui-btn-sm" ng-if="!isEditStorage" ng-click="toggleIsEditStorage('edit')" ng-disabled="!mayPost()" ng-class="{'ui-btn-lg-disabled':!mayPost()}">编辑</button>
           <button class="ui-btn ui-btn-bright ui-btn-sm" ng-if="isEditStorage" ng-click="toggleIsEditStorage()" ng-disabled="isRunning">取消</button>
         </div>
-        <div class="dome-prompt-container">
-          <dome-prompt content="当该存储集群已存在数据卷时，仅支持修改存储名称和描述信息"></dome-prompt>
+        <div class="Lunar-prompt-container">
+          <Lunar-prompt content="当该存储集群已存在数据卷时，仅支持修改存储名称和描述信息"></Lunar-prompt>
         </div>
         <form-container left-column-width="80px">
           <form-config-group ng-if="!isEditStorage">
@@ -258,7 +258,7 @@
             <div style="display:inline-block;"><span ng-if="!isEditDesc" ng-bind="volumeInstance.description || '无描述信息'"></span>
               <textarea class="ui-input-fill" ng-if="isEditDesc" ng-model="editDescription.text" style="resize: vertical;"></textarea>
             </div>
-            <div ng-if="isEditAuth" style="margin-left: 10px;display:inline-block;position: absolute;width: 48px;"><i class="fa fa-pencil icon-edit-color dome-enable-click" ng-if="!isEditDesc&amp;&amp;isEditAuth" ng-click="toggleIsEditDesc()" tooltip="修改" style="padding:0 5px !important;"></i><i class="fa fa-floppy-o ui-btn-none icon-success-color dome-enable-click" ng-if="isEditDesc" ng-click="saveDescription()" tooltip="保存" style="padding:0 5px !important;"></i><i class="fa fa-times icon-cancel-color dome-enable-click" ng-if="isEditDesc&amp;&amp;isEditAuth" ng-click="toggleIsEditDesc()" tooltip="取消" style="padding:0 5px !important;"></i></div>
+            <div ng-if="isEditAuth" style="margin-left: 10px;display:inline-block;position: absolute;width: 48px;"><i class="fa fa-pencil icon-edit-color Lunar-enable-click" ng-if="!isEditDesc&amp;&amp;isEditAuth" ng-click="toggleIsEditDesc()" tooltip="修改" style="padding:0 5px !important;"></i><i class="fa fa-floppy-o ui-btn-none icon-success-color Lunar-enable-click" ng-if="isEditDesc" ng-click="saveDescription()" tooltip="保存" style="padding:0 5px !important;"></i><i class="fa fa-times icon-cancel-color Lunar-enable-click" ng-if="isEditDesc&amp;&amp;isEditAuth" ng-click="toggleIsEditDesc()" tooltip="取消" style="padding:0 5px !important;"></i></div>
           </form-input-container>
         </form-config-item>
       </form-config-group>
@@ -272,7 +272,7 @@
   <div class="d-modal-header">已挂载{{volume.name}}数据卷的部署列表</div>
   <div class="modal-body" style="padding:0;">
     <div class="table-container" style="padding:0 20px;">
-      <table class="ui-table-dome">
+      <table class="ui-table-Lunar">
         <thead>
           <tr>
             <th>服务名称</th>

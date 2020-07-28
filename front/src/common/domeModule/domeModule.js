@@ -3,8 +3,8 @@
  * @description  公共模块
  */
 (function (window) {
-    var domeModule = angular.module('domeModule', []);
-    domeModule.config(['$httpProvider', function ($httpProvider) {
+    var LunarModule = angular.module('LunarModule', []);
+    LunarModule.config(['$httpProvider', function ($httpProvider) {
         'use strict';
         $httpProvider.defaults.headers.post['Content-Type'] = 'application/json;charset=UTF-8';
         $httpProvider.interceptors.push(['$rootScope', '$q', function ($rootScope, $q) {
@@ -29,7 +29,7 @@
         }]);
     }]);
     // 公共service
-    domeModule.factory('$domePublic', ['$modal', function ($modal) {
+    LunarModule.factory('$LunarPublic', ['$modal', function ($modal) {
         'use strict';
         var publicService = {};
         var Loadings = function Loadings() {
@@ -60,10 +60,10 @@
         };
         return publicService;
     }])
-    domeModule.factory('$publicApi', ['$http', function ($http) {
+    LunarModule.factory('$publicApi', ['$http', function ($http) {
         'use strict';
         var apiService = {};
-        apiService.getDomeVersion = function () {
+        apiService.getLunarVersion = function () {
             return $http.get('/api/global/version');
         };
         apiService.getDbConfig = function () {
@@ -80,5 +80,5 @@
         };
         return apiService;
     }]);
-    window.domeModule = domeModule;
+    window.LunarModule = LunarModule;
 })(window);

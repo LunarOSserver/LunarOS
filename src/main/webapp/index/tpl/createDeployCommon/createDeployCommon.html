@@ -23,7 +23,7 @@
     </li>
     <li class="has-border"><span class="info-name">部署类型</span>
       <div class="info-content info-name-content-for-label info-content-lg-height">
-        <p class="txt-prompt" ng-if="config.deploymentType === 'REPLICATIONCONTROLLER'">以replicas的形式保证pod的实例个数，部署的升级/回滚/扩容/缩容由DomeOS负责维护处理。</p>
+        <p class="txt-prompt" ng-if="config.deploymentType === 'REPLICATIONCONTROLLER'">以replicas的形式保证pod的实例个数，部署的升级/回滚/扩容/缩容由LunarOS负责维护处理。</p>
         <p class="txt-prompt" ng-if="config.deploymentType === 'DAEMONSET'">DaemonSet保证在所选的每一个节点上都且只有一个pod运行，部署的升级/回滚/扩容/缩容由k8s维护处理，这些操作不能被中断，只能停止当前部署。</p>
         <p class="txt-prompt" ng-if="config.deploymentType === 'DEPLOYMENT'">Deployment是升级版的Replication Controller，它以replica set的形式维护pod的个数，部署的升级/回滚/扩容/缩容由k8s负责维护处理。</p><span class="com-check-con" ng-click="deployIns.changeVisitModeToValid()">
           <input class="ui-radio" id="deploymentTypeDeployment" type="radio" value="DEPLOYMENT" name="deploymentType" ng-model="config.deploymentType"/>

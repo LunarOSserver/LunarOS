@@ -2,10 +2,10 @@
  * @author ChandraLee
  */
 
-(function (domeApp, undefined) {
+(function (LunarApp, undefined) {
 	'use strict';
-	if (typeof domeApp === 'undefined') return;
-	domeApp.controller('InstanceLogModalCtr', ['$scope', 'instanceInfo', '$location', '$modalInstance', function ($scope, instanceInfo, $location, $modalInstance) {
+	if (typeof LunarApp === 'undefined') return;
+	LunarApp.controller('InstanceLogModalCtr', ['$scope', 'instanceInfo', '$location', '$modalInstance', function ($scope, instanceInfo, $location, $modalInstance) {
 		var requestUrl = location.protocol.replace('http', 'ws') + '//' + $location.host();
 		if ($location.port()) {
 			requestUrl += ':' + $location.port();
@@ -23,4 +23,4 @@
 			$modalInstance.dismiss('cancel');
 		};
 	}]);
-})(angular.module('domeApp'));
+})(angular.module('LunarApp'));

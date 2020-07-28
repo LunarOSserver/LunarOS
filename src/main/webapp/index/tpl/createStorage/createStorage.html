@@ -1,5 +1,5 @@
 
-<div class="dome-storage">
+<div class="Lunar-storage">
   <form-container left-column-width="66px">
     <form name="createStorage">
       <form-config-group>
@@ -21,8 +21,8 @@
       <form-config-group>
         <form-config-item config-title="存储成员">
           <form-input-container style="line-height: initial;">
-            <div class="dome-line-long">
-              <div class="com-select-con dome-input-select full" select-con="select-con" label="true">
+            <div class="Lunar-line-long">
+              <div class="com-select-con Lunar-input-select full" select-con="select-con" label="true">
                 <ul class="selected-labels">
                   <li class="select-label" ng-repeat="user in selectedUsers" ng-cloak="ng-cloak"><a class="icon-cancle icon-cancle-former" ng-click="cancelUser($index)"></a>{{user.username}}</li>
                   <li class="select-input" style="line-height: 34px;">
@@ -35,18 +35,18 @@
                 </ul>
               </div>
             </div>
-            <div class="dome-line-long">
-              <div class="dome-inline-wrapper">
+            <div class="Lunar-line-long">
+              <div class="Lunar-inline-wrapper">
                 <div class="com-select-con full" select-con="select-con">
-                  <div class="ui-btn-select ui-btn ui-btn-white dome-select-btn" tabindex="1"><span class="pull-right" style="padding-right: 10px;"><i class="fa fa-angle-down"></i></span>{{currentRole}}</div>
+                  <div class="ui-btn-select ui-btn ui-btn-white Lunar-select-btn" tabindex="1"><span class="pull-right" style="padding-right: 10px;"><i class="fa fa-angle-down"></i></span>{{currentRole}}</div>
                   <ul class="select-list">
                     <li class="select-item" ng-repeat="role in roleList"><a ng-click="toggleRole(role)">{{role}}</a></li>
                   </ul>
                 </div>
-                <button class="dome-tool-align" ng-click="addUser()" type="button">添加</button>
+                <button class="Lunar-tool-align" ng-click="addUser()" type="button">添加</button>
               </div>
             </div>
-            <div class="dome-line-long">
+            <div class="Lunar-line-long">
               <table class="ui-table-primary full">
                 <thead>
                   <tr>
@@ -65,14 +65,14 @@
                     <td ng-bind="user.username"></td>
                     <td>
                       <div class="com-select-con" select-con="select-con">
-                        <div class="ui-btn ui-btn-white ui-btn-select dome-select-btn" ng-cloak="ng-cloak" tabindex="1"><span class="pull-right" style="padding-right: 10px;"><i class="fa fa-angle-down"></i></span>{{user.role}}</div>
+                        <div class="ui-btn ui-btn-white ui-btn-select Lunar-select-btn" ng-cloak="ng-cloak" tabindex="1"><span class="pull-right" style="padding-right: 10px;"><i class="fa fa-angle-down"></i></span>{{user.role}}</div>
                         <ul class="select-list">
                           <li class="select-item" ng-repeat="role in roleList"><a ng-click="user.role=role">{{role}}</a></li>
                         </ul>
                       </div>
                     </td>
                     <td>
-                      <div class="fa fa-trash-o icon-trash-color dome-enable-click" ng-click="deleteUser($index)"></div>
+                      <div class="fa fa-trash-o icon-trash-color Lunar-enable-click" ng-click="deleteUser($index)"></div>
                     </td>
                   </tr>
                 </tbody>

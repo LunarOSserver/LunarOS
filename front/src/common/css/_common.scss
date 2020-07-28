@@ -14,8 +14,8 @@ $table-height:45px;
 //active:#77bf4f,
 //safe:#4ed6b2,
 //bright:#188ae2,
-$dome-colors:(
-    dome:(
+$Lunar-colors:(
+    Lunar:(
         active:#4bd396,
         warning:#f9c851,
         error:#f5707a,
@@ -52,7 +52,7 @@ $font-size:(
     );
 $light-border:1px solid #f0f2f5;
 $deep-border:1px solid #ddd;
-%dome-background{
+%Lunar-background{
     @include background(linear-gradient(left,#5dabf3, #4ed6b2)); 
 }
 %nowrap{
@@ -84,14 +84,14 @@ $deep-border:1px solid #ddd;
     }
     @warn "No color found for $font-size in #{$format} map.";
 }
-@function dome-color($map,$color){
-    @if map-has-key($dome-colors,$map){
-        @if map-has-key(map-get($dome-colors,$map),$color){
-            @return map-get(map-get($dome-colors,$map),$color);
+@function Lunar-color($map,$color){
+    @if map-has-key($Lunar-colors,$map){
+        @if map-has-key(map-get($Lunar-colors,$map),$color){
+            @return map-get(map-get($Lunar-colors,$map),$color);
         }
         @warn "No color found for #{$color} in #{$map} map.";
     }
-    @warn "No color found for #{$map} in $dome-colors map.";
+    @warn "No color found for #{$map} in $Lunar-colors map.";
 }
 @function color($map,$color){
     @if map-has-key($map,$color){
