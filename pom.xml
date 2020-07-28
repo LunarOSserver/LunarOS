@@ -170,6 +170,7 @@
             <artifactId>spring-boot-starter-websocket</artifactId>
             <version>${spring-boot.version}</version>
         </dependency>
+
         <!--
         <dependency>
             <groupId>org.domeos</groupId>
@@ -177,6 +178,12 @@
             <version>2.2.1.1</version>
         </dependency>
         -->
+        <dependency>
+            <groupId>io.fabric8</groupId>
+            <artifactId>kubernetes-client</artifactId>
+            <version>4.10.3</version>
+        </dependency>
+
         <dependency>
             <groupId>io.fabric8</groupId>
             <artifactId>kubernetes-client</artifactId>
