@@ -580,7 +580,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
         }
         logger.debug("read deployment with name=" + name);
         try {
-            return client.extensions().deployments().withName(name).get();
+            return client.apps().deployments().withName(name).get();
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
@@ -623,7 +623,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
         }
         logger.debug("update deployment with name=" + deploymentName + ", Deployment=" + deployment);
         try {
-            return client.apps().deployments().withName(deploymentName).patch(deployment);
+            return client.extensions().deployments().withName(deploymentName).patch(deployment);
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
