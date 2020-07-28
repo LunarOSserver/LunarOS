@@ -1,12 +1,15 @@
 package org.Lunaros.framework.engine.k8s.util;
 
 import io.fabric8.kubernetes.api.model.*;
+import io.fabric8.kubernetes.api.model.batch.Job;
+import io.fabric8.kubernetes.api.model.batch.JobList;
 import io.fabric8.kubernetes.api.model.extensions.*;
 import io.fabric8.kubernetes.api.model.extensions.Deployment;
 import io.fabric8.kubernetes.client.Config;
 import io.fabric8.kubernetes.client.ConfigBuilder;
 import io.fabric8.kubernetes.client.*;
 import okhttp3.TlsVersion;
+import org.Lunaros.framework.engine.k8s.util.KubeUtils;
 import org.apache.log4j.Logger;
 import org.Lunaros.exception.K8sDriverException;
 import org.Lunaros.exception.TimeoutException;
@@ -546,7 +549,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
     public DeploymentList listAllDeployment(Map<String, String> selector) throws K8sDriverException {
         logger.debug("list all deployment with selector=" + selector);
         try {
-            return client.extensions().deployments().inAnyNamespace().withLabels(selector).list();
+            return client.apps().deployments().inAnyNamespace().withLabels(selector).list();
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
@@ -564,7 +567,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
         }
         logger.debug("create deployment with deployment=\n" + deployment);
         try {
-            return client.extensions().deployments().create(deployment);
+            return client.apps().deployments().create(deployment);
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
@@ -590,7 +593,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
         }
         logger.debug("replace deployment with name=" + name + ", deployment=\n" + deployment);
         try {
-            return client.extensions().deployments().withName(name).replace(deployment);
+            return client.apps().deployments().withName(name).replace(deployment);
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
@@ -620,7 +623,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
         }
         logger.debug("update deployment with name=" + deploymentName + ", Deployment=" + deployment);
         try {
-            return client.extensions().deployments().withName(deploymentName).patch(deployment);
+            return client.apps().deployments().withName(deploymentName).patch(deployment);
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
@@ -650,7 +653,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
             if (paused == null || !paused) {
                 DeploymentSpec deploymentSpec = deployment.getSpec();
                 deploymentSpec.setPaused(true);
-                client.extensions().deployments().withName(name).edit().withSpec(deploymentSpec).done();
+                client.apps().deployments().withName(name).edit().withSpec(deploymentSpec).done();
             }
         }
     }
@@ -667,7 +670,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
             if (paused != null && paused) {
                 DeploymentSpec deploymentSpec = deployment.getSpec();
                 deploymentSpec.setPaused(false);
-                client.extensions().deployments().withName(name).edit().withSpec(deploymentSpec).done();
+                client.apps().deployments().withName(name).edit().withSpec(deploymentSpec).done();
             }
         }
     }
@@ -920,7 +923,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
             throws K8sDriverException {
         logger.debug("list job in all namespace with selector=" + selector);
         try {
-            return client.extensions().jobs().inAnyNamespace().withLabels(selector).list();
+            return client.batch().jobs().inAnyNamespace().withLabels(selector).list();
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
@@ -931,7 +934,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
             throws K8sDriverException {
         logger.debug("list job in all namespace.");
         try {
-            return client.extensions().jobs().inAnyNamespace().list();
+            return client.batch().jobs().inAnyNamespace().list();
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
@@ -942,7 +945,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
             throws K8sDriverException {
         logger.debug("list job with selector=" + selector);
         try {
-            return client.extensions().jobs().withLabels(selector).list();
+            return client.batch().jobs().withLabels(selector).list();
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
@@ -953,7 +956,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
             throws K8sDriverException {
         logger.debug("list jobs");
         try {
-            return client.extensions().jobs().list();
+            return client.batch().jobs().list();
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
@@ -968,7 +971,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
         // logger.debug("create job with job=\n" + job);
         try {
             job.setApiVersion(GlobalConstant.K8S_JOB_VERSION);
-            return client.extensions().jobs().create(job);
+            return client.batch().jobs().create(job);
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
@@ -982,7 +985,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
         }
         logger.debug("get job with name=" + jobName);
         try {
-            return client.extensions().jobs().withName(jobName).get();
+            return client.batch().jobs().withName(jobName).get();
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
@@ -1003,7 +1006,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
         logger.debug("replace job with name=" + jobName + ", job=" + job);
         try {
             job.setApiVersion(GlobalConstant.K8S_JOB_VERSION);
-            return client.extensions().jobs().withName(jobName).replace(job);
+            return client.batch().jobs().withName(jobName).replace(job);
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
@@ -1017,7 +1020,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
         }
         logger.debug("delete job with name=" + jobName);
         try {
-            return client.extensions().jobs().withName(jobName).delete();
+            return client.batch().jobs().withName(jobName).delete();
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
@@ -1026,7 +1029,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
     @Override
     public boolean deleteJob(Map<String, String> selector) throws K8sDriverException {
         try {
-            return client.extensions().jobs().withLabels(selector).delete();
+            return client.batch().jobs().withLabels(selector).delete();
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
@@ -1041,7 +1044,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
         logger.debug("update job with name=" + jobName + ", job\n" + job);
         try {
             job.setApiVersion(GlobalConstant.K8S_JOB_VERSION);
-            return client.extensions().jobs().withName(jobName).patch(job);
+            return client.batch().jobs().withName(jobName).patch(job);
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }

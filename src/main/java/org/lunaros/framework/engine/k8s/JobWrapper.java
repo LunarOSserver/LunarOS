@@ -1,14 +1,18 @@
 package org.Lunaros.framework.engine.k8s;
 
 import io.fabric8.kubernetes.api.model.*;
+import io.fabric8.kubernetes.api.model.batch.Job;
+import io.fabric8.kubernetes.api.model.batch.JobBuilder;
 import io.fabric8.kubernetes.client.dsl.LogWatch;
+import org.Lunaros.framework.engine.k8s.util.PodUtils;
 import org.Lunaros.exception.JobLogException;
 import org.Lunaros.exception.JobNotFoundException;
 import org.Lunaros.exception.K8sDriverException;
 import org.Lunaros.framework.api.model.cluster.Cluster;
 import org.Lunaros.framework.api.model.global.CiCluster;
 import org.Lunaros.framework.api.service.project.impl.KubeServiceInfo;
-import org.Lunaros.framework.engine.k8s.util.*;
+import org.Lunaros.framework.engine.k8s.util.KubeUtils;
+import org.Lunaros.framework.engine.k8s.util.Fabric8KubeUtils;
 import org.Lunaros.framework.engine.model.JobType;
 import org.Lunaros.global.GlobalConstant;
 import org.slf4j.Logger;
@@ -150,7 +154,7 @@ public class JobWrapper {
         //volumes[1] = new Volume().putName("v2").putEmptyDir(new EmptyDirVolumeSource());
         volumes.add(new VolumeBuilder()
                 .withName("v1")
-                .withNewHostPath("/var/run/docker.sock")
+                .withNewHostPath("/var/run/docker.sock","")
                 .build());
         volumes.add(new VolumeBuilder()
                 .withName("v2")

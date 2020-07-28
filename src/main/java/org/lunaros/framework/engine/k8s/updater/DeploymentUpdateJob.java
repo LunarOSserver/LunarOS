@@ -2,8 +2,8 @@ package org.Lunaros.framework.engine.k8s.updater;
 
 import io.fabric8.kubernetes.api.model.Container;
 import io.fabric8.kubernetes.api.model.ContainerBuilder;
-import io.fabric8.kubernetes.api.model.Job;
-import io.fabric8.kubernetes.api.model.JobBuilder;
+import io.fabric8.kubernetes.api.model.batch.Job;
+import io.fabric8.kubernetes.api.model.batch.JobBuilder;
 import org.Lunaros.framework.api.biz.global.GlobalBiz;
 import org.Lunaros.framework.engine.k8s.DownwardAPIUtil;
 import org.Lunaros.global.GlobalConstant;

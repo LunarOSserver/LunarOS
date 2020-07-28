@@ -2,7 +2,7 @@ package org.Lunaros.framework.engine.k8s;
 
 import io.fabric8.kubernetes.api.model.Pod;
 import io.fabric8.kubernetes.api.model.PodList;
-import io.fabric8.kubernetes.api.model.Job;
+import io.fabric8.kubernetes.api.model.batch.Job;
 import org.Lunaros.exception.K8sDriverException;
 import org.Lunaros.framework.api.biz.global.GlobalBiz;
 import org.Lunaros.framework.api.biz.image.ImageBiz;
