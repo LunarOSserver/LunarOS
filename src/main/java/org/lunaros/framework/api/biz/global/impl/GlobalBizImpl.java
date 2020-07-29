@@ -5,6 +5,7 @@ import org.Lunaros.framework.api.biz.global.GlobalBiz;
 import org.Lunaros.framework.api.mapper.Lunaros.global.GlobalMapper;
 import org.Lunaros.framework.api.model.cluster.Cluster;
 import org.Lunaros.framework.api.model.global.*;
+import org.Lunaros.framework.api.model.global.CiCluster;
 import org.Lunaros.framework.api.model.image.BuildImage;
 import org.Lunaros.framework.api.model.token.related.RegistryTokenInfo;
 import org.Lunaros.global.GlobalConstant;

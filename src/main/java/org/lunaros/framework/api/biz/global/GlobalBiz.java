@@ -1,6 +1,7 @@
 package org.Lunaros.framework.api.biz.global;
 
 import org.Lunaros.framework.api.model.global.*;
+import org.Lunaros.framework.api.model.global.CiCluster;
 import org.Lunaros.framework.api.model.image.BuildImage;
 
 import java.util.List;

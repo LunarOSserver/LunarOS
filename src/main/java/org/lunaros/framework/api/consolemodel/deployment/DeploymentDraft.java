@@ -3,6 +3,7 @@ package org.Lunaros.framework.api.consolemodel.deployment;
 import org.Lunaros.framework.api.model.deployment.Deployment;
 import org.Lunaros.framework.api.model.deployment.Version;
 import org.Lunaros.framework.api.model.deployment.related.*;
+import org.Lunaros.framework.api.model.deployment.related.VersionType;
 import org.Lunaros.util.StringUtils;
 
 import java.util.List;
