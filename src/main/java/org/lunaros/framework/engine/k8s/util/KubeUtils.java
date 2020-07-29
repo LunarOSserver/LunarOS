@@ -2,8 +2,10 @@ package org.Lunaros.framework.engine.k8s.util;
 
 import io.fabric8.kubernetes.api.model.*;
 import io.fabric8.kubernetes.api.model.batch.JobList;
-import io.fabric8.kubernetes.api.model.extensions.*;
+import io.fabric8.kubernetes.api.model.apps.*;
 import io.fabric8.kubernetes.api.model.batch.Job;
+import io.fabric8.kubernetes.api.model.extensions.Ingress;
+import io.fabric8.kubernetes.api.model.extensions.IngressList;
 import org.Lunaros.exception.K8sDriverException;
 import org.Lunaros.exception.TimeoutException;
 

@@ -1,8 +1,8 @@
 package org.Lunaros.framework.engine.k8s.util;
 
 import io.fabric8.kubernetes.api.model.*;
-import io.fabric8.kubernetes.api.model.extensions.DaemonSet;
-import io.fabric8.kubernetes.api.model.extensions.Deployment;
+import io.fabric8.kubernetes.api.model.apps.DaemonSet;
+import io.fabric8.kubernetes.api.model.apps.Deployment;
 
 import java.util.List;
 import java.util.Map;

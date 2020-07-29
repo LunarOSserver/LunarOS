@@ -3,8 +3,12 @@ package org.Lunaros.framework.engine.k8s.util;
 import io.fabric8.kubernetes.api.model.*;
 import io.fabric8.kubernetes.api.model.batch.Job;
 import io.fabric8.kubernetes.api.model.batch.JobList;
-import io.fabric8.kubernetes.api.model.extensions.*;
-import io.fabric8.kubernetes.api.model.extensions.Deployment;
+//import io.fabric8.kubernetes.api.model.extensions.*;
+//import io.fabric8.kubernetes.api.model.extensions.DeploymentL;
+import io.fabric8.kubernetes.api.model.apps.*;
+import io.fabric8.kubernetes.api.model.apps.DeploymentList;
+import io.fabric8.kubernetes.api.model.extensions.Ingress;
+import io.fabric8.kubernetes.api.model.extensions.IngressList;
 import io.fabric8.kubernetes.client.Config;
 import io.fabric8.kubernetes.client.ConfigBuilder;
 import io.fabric8.kubernetes.client.*;
@@ -534,7 +538,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
     public DeploymentList listDeployment(Map<String, String> selector) throws K8sDriverException {
         logger.debug("list deployment with selector=" + selector);
         try {
-            return client.extensions().deployments().withLabels(selector).list();
+            return client.apps().deployments().withLabels(selector).list();
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
@@ -682,7 +686,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
     public DaemonSetList listDaemonSet(Map<String, String> selector) throws K8sDriverException {
         logger.debug("list DaemonSet with selector=" + selector);
         try {
-            return client.extensions().daemonSets().withLabels(selector).list();
+            return client.apps().daemonSets().withLabels(selector).list();
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
@@ -697,7 +701,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
     public DaemonSetList listAllDaemonSet(Map<String, String> selector) throws K8sDriverException {
         logger.debug("list DaemonSet with selector=" + selector);
         try {
-            return client.extensions().daemonSets().inAnyNamespace().withLabels(selector).list();
+            return client.apps().daemonSets().inAnyNamespace().withLabels(selector).list();
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
@@ -715,7 +719,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
         }
         logger.debug("create DaemonSet with DaemonSet=\n" + daemonSet);
         try {
-            return client.extensions().daemonSets().create(daemonSet);
+            return client.apps().daemonSets().create(daemonSet);
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
@@ -728,7 +732,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
         }
         logger.debug("read DaemonSet with name=" + name);
         try {
-            return client.extensions().daemonSets().withName(name).get();
+            return client.apps().daemonSets().withName(name).get();
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
@@ -741,7 +745,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
         }
         logger.debug("replace DaemonSet with name=" + name + ", DaemonSet=\n" + daemonSet);
         try {
-            return client.extensions().daemonSets().withName(name).replace(daemonSet);
+            return client.apps().daemonSets().withName(name).replace(daemonSet);
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
@@ -752,14 +756,14 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
         if (checkExist) {
             DaemonSet ds = null;
             try {
-                ds = client.extensions().daemonSets().withName(daemonSetName).get();
+                ds = client.apps().daemonSets().withName(daemonSetName).get();
             } catch (Exception ignore) {
             }
             if (ds != null) {
-                return client.extensions().daemonSets().withName(daemonSetName).delete();
+                return client.apps().daemonSets().withName(daemonSetName).delete();
             }
         } else {
-            return client.extensions().daemonSets().withName(daemonSetName).delete();
+            return client.apps().daemonSets().withName(daemonSetName).delete();
         }
         return false;
     }
@@ -771,7 +775,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
         }
         logger.debug("update DaemonSet with name=" + daemonSetName + ", DaemonSet=" + daemonSet);
         try {
-            return client.extensions().daemonSets().withName(daemonSetName).patch(daemonSet);
+            return client.apps().daemonSets().withName(daemonSetName).patch(daemonSet);
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }

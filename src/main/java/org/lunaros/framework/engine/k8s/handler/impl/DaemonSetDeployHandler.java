@@ -7,7 +7,7 @@ import io.fabric8.kubernetes.api.model.NodeList;
 import io.fabric8.kubernetes.api.model.Pod;
 import io.fabric8.kubernetes.api.model.PodList;
 import io.fabric8.kubernetes.api.model.PodSpec;
-import io.fabric8.kubernetes.api.model.extensions.*;
+import io.fabric8.kubernetes.api.model.apps.*;
 
 import org.Lunaros.exception.K8sDriverException;
 import org.Lunaros.framework.api.consolemodel.deployment.DeploymentDraft;

@@ -7,7 +7,7 @@ import io.fabric8.kubernetes.api.model.IntOrString;
 import io.fabric8.kubernetes.api.model.Pod;
 import io.fabric8.kubernetes.api.model.PodList;
 import io.fabric8.kubernetes.api.model.PodSpec;
-import io.fabric8.kubernetes.api.model.extensions.*;
+import io.fabric8.kubernetes.api.model.apps.*;
 
 import org.Lunaros.exception.K8sDriverException;
 import org.Lunaros.framework.api.consolemodel.deployment.DeploymentDraft;
@@ -64,7 +64,7 @@ public class DeploymentDeployHandler implements DeployResourceHandler<Deployment
         String deployName = getDeploymentName();
         Map<String, String> deploymentLabel = buildDeploymentLabel();
 
-        io.fabric8.kubernetes.api.model.extensions.Deployment k8sDeployment =
+        io.fabric8.kubernetes.api.model.apps.Deployment k8sDeployment =
                 new DeploymentBuilder().withNewMetadata().withName(deployName.toLowerCase())
                         .withLabels(deploymentLabel).withNamespace(deployment.getNamespace()).endMetadata()
                         .build();
