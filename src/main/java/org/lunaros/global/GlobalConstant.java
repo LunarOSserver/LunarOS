@@ -109,5 +109,6 @@ public class GlobalConstant {
     public static String LOAD_BALANCER_ID_STR = "loadBalancerId";
     
     public static final String SSO_API="/api/ssologin";
+    public static final String LUNAROS_SERVER_URL="LUNAROS_SERVER_URL";
 
 }

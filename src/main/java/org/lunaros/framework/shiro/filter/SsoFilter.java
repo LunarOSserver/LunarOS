@@ -23,9 +23,9 @@ import java.net.URISyntaxException;
  */
 public class SsoFilter extends CasFilter {
     private static Logger logger = LoggerFactory.getLogger(SsoFilter.class);
-    private static final String FROM_PARAMETER = "from";
-    private static final String TICKET_PARAMETER = "ticket";
-
+        public String getLunarosServerUrl() {
+        return System.getenv(GlobalConstant.LUNAROS_SERVER_URL);
+    }
     @Override
     protected boolean onLoginSuccess(AuthenticationToken token, Subject subject, ServletRequest request,
                                      ServletResponse response) throws Exception {
@@ -33,20 +33,11 @@ public class SsoFilter extends CasFilter {
         return false;
     }
 
-    @Override
-    protected AuthenticationToken createToken(ServletRequest request, ServletResponse response) throws Exception {
-        HttpServletRequest httpRequest = (HttpServletRequest) request;
-        String ticket = httpRequest.getParameter(TICKET_PARAMETER);
-        String from = httpRequest.getParameter(FROM_PARAMETER);
-        return new SsoToken(ticket, from);
-    }
-
 
     @Override
     protected boolean onLoginFailure(AuthenticationToken token, AuthenticationException ae, ServletRequest request,
                                      ServletResponse response) {
-        HttpServletRequest httpRequest = (HttpServletRequest) request;
-        String from = httpRequest.getParameter(FROM_PARAMETER);
+
         String casServerLoginUrl = "";
         SsoInfo ssoInfo = SsoUtil.getSsoInfo();
         if (ssoInfo != null) {
@@ -55,7 +46,7 @@ public class SsoFilter extends CasFilter {
         String failureUrl = null;
         try {
             URIBuilder uriBuilder = new URIBuilder(casServerLoginUrl);
-            uriBuilder.addParameter("service", from + GlobalConstant.SSO_API + "?from=" + from);
+            uriBuilder.addParameter("service", getLunarosServerUrl() + GlobalConstant.SSO_API);
             failureUrl = uriBuilder.toString();
         } catch (URISyntaxException e) {
             logger.error("Cannot build failure url : {}", e);
