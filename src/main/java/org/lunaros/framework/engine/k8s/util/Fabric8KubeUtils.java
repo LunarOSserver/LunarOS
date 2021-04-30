@@ -609,14 +609,14 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
         if (checkExist) {
             Deployment deploy = null;
             try {
-                deploy = client.extensions().deployments().withName(deploymentName).get();
+                deploy = client.apps().deployments().withName(deploymentName).get();
             } catch (Exception ignore) {
             }
             if (deploy != null) {
-                return client.extensions().deployments().withName(deploymentName).delete();
+                return client.apps().deployments().withName(deploymentName).delete();
             }
         } else {
-            return client.extensions().deployments().withName(deploymentName).delete();
+            return client.apps().deployments().withName(deploymentName).delete();
         }
         return false;
     }
@@ -628,7 +628,7 @@ public class Fabric8KubeUtils implements KubeUtils<KubernetesClient> {
         }
         logger.debug("update deployment with name=" + deploymentName + ", Deployment=" + deployment);
         try {
-            return client.extensions().deployments().withName(deploymentName).patch(deployment);
+            return client.apps().deployments().withName(deploymentName).patch(deployment);
         } catch (KubernetesClientException e) {
             throw new K8sDriverException(e.getMessage());
         }
