@@ -1,14 +1,13 @@
 package org.Lunaros;
 
-import org.apache.catalina.connector.Connector;
-import org.apache.coyote.AbstractProtocol;
 import org.Lunaros.global.GlobalConstant;
 import org.Lunaros.util.StringUtils;
+import org.apache.catalina.connector.Connector;
+import org.apache.coyote.AbstractProtocol;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.embedded.EmbeddedServletContainerFactory;
-import org.springframework.boot.context.embedded.tomcat.TomcatConnectorCustomizer;
-import org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory;
+import org.springframework.boot.web.embedded.tomcat.TomcatConnectorCustomizer;
+import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
@@ -38,8 +37,8 @@ public class Application extends WebMvcConfigurerAdapter {
     }
 
     @Bean
-    public EmbeddedServletContainerFactory getEmbeddedServletContainerFactory() {
-        TomcatEmbeddedServletContainerFactory containerFactory = new TomcatEmbeddedServletContainerFactory();
+    public TomcatServletWebServerFactory getEmbeddedServletContainerFactory() {
+        TomcatServletWebServerFactory containerFactory = new TomcatServletWebServerFactory();
         containerFactory
                 .addConnectorCustomizers(new TomcatConnectorCustomizer() {
                     @Override
