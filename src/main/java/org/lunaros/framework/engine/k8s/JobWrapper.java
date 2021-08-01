@@ -1,8 +1,8 @@
 package org.Lunaros.framework.engine.k8s;
 
 import io.fabric8.kubernetes.api.model.*;
-import io.fabric8.kubernetes.api.model.batch.Job;
-import io.fabric8.kubernetes.api.model.batch.JobBuilder;
+import io.fabric8.kubernetes.api.model.batch.v1.Job;
+import io.fabric8.kubernetes.api.model.batch.v1.JobBuilder;
 import io.fabric8.kubernetes.client.dsl.LogWatch;
 import org.Lunaros.framework.engine.k8s.util.PodUtils;
 import org.Lunaros.exception.JobLogException;

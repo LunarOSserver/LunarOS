@@ -1,5 +1,6 @@
 package org.Lunaros.framework.engine.coderepo;
 
+import org.Lunaros.framework.engine.coderepo.GitlabInfo;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import org.apache.http.HttpEntity;
@@ -25,6 +26,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -126,7 +128,8 @@ public class GitlabApiWrapper implements CodeApiInterface {
         }
 
         try {
-            return api.addProjectHook(projectId, hookUrl, pushEvents, false, false, tagPushEvents, false) != null;
+            //return api.addProjectHook(projectId, hookUrl, pushEvents, false, false, tagPushEvents, false) != null;
+            return api.addProjectHook(projectId, hookUrl, pushEvents, false, false, false, tagPushEvents, false, false, false, false, "") !=null;
         } catch (IOException ignored) {
             logger.warn("set webhook for gitlab project " + projectId + "error, " + ignored.getMessage());
         }
@@ -159,8 +162,8 @@ public class GitlabApiWrapper implements CodeApiInterface {
                 }
                 return projectInfos;
             }
-        } catch (IOException ignored) {
-            logger.warn("get code info for gitlab error, " + ignored.getMessage());
+        //} catch (IOException ignored) {
+        //    logger.warn("get code info for gitlab error, " + ignored.getMessage());
         } catch (Error error) {
             logger.error("get code info for gitlab error, " + error.getMessage());
         }
@@ -177,8 +180,8 @@ public class GitlabApiWrapper implements CodeApiInterface {
                 }
                 return ClientConfigure.executeCompletionService(projectInfoTasks);
             }
-        } catch (IOException ignored) {
-            logger.warn("get code info for gitlab error, " + ignored.getMessage());
+        //} catch (IOException ignored) {
+        //    logger.warn("get code info for gitlab error, " + ignored.getMessage());
         } catch (Error error) {
             logger.error("get code info for gitlab error, " + error.getMessage());
         }
@@ -308,8 +311,10 @@ public class GitlabApiWrapper implements CodeApiInterface {
                 }
             }
             return tagList;
-        } catch (IOException ignored) {
-            logger.warn("get project " + projectId + " tag commit info from gitlab error, " + ignored.getMessage());
+        //} catch (IOException ignored) {
+        //    logger.warn("get project " + projectId + " tag commit info from gitlab error, " + ignored.getMessage());
+        } catch (Error error) {
+            logger.error("get code info for gitlab error, " + error.getMessage());
         }
         return null;
     }
@@ -368,8 +373,10 @@ public class GitlabApiWrapper implements CodeApiInterface {
                 branches.add(gitlabBranch.getName());
             }
             return branches;
-        } catch (IOException ignored) {
-            logger.warn("get branch for project " + projectId + " from gitlab error, " + ignored.getMessage());
+       // } catch (IOException ignored) {
+       //     logger.warn("get branch for project " + projectId + " from gitlab error, " + ignored.getMessage());
+        } catch (Error error) {
+            logger.error("get code info for gitlab error, " + error.getMessage());
         }
         return branches;
     }
