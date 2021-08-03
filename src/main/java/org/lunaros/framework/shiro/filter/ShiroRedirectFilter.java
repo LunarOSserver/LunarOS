@@ -31,7 +31,7 @@ public class ShiroRedirectFilter extends FormAuthenticationFilter {
             } else {
 
                 response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-                response.setCharacterEncoding("UTF-8");
+                //response.setCharacterEncoding("UTF-8");
                 response.setContentType("text/html");
 
                 PrintWriter writer = response.getWriter();

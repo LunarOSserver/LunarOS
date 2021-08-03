@@ -226,7 +226,7 @@ public class WebConsoleServiceImpl implements WebConsoleService {
         if (textHearder) {
             response.setHeader("Content-type", "text/html; charset=utf-8");
         }
-        response.setCharacterEncoding("utf-8");
+        //response.setCharacterEncoding("utf-8");
         String line;
         PrintWriter out = response.getWriter();
         while ((line = in.readLine()) != null) {
@@ -239,7 +239,7 @@ public class WebConsoleServiceImpl implements WebConsoleService {
 
     public void setErrorResponse(HttpServletResponse response, String message) {
         response.setStatus(400);
-        response.setCharacterEncoding("utf-8");
+        //response.setCharacterEncoding("utf-8");
         try {
             OutputStream outputStream = response.getOutputStream();
             outputStream.write(message.getBytes());

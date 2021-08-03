@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.StringHttpMessageConverter;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.socket.config.annotation.EnableWebSocket;
 
 import java.util.Arrays;
@@ -20,7 +20,7 @@ import java.util.List;
 
 @SpringBootApplication
 @EnableWebSocket
-public class Application extends WebMvcConfigurerAdapter {
+public class Application implements WebMvcConfigurer {
     public static void main(String[] args) {
 //        if (AuthConfigFactory.getFactory() == null) {
 //            AuthConfigFactory.setFactory(new AuthConfigFactoryImpl());
@@ -61,8 +61,8 @@ public class Application extends WebMvcConfigurerAdapter {
                         if (StringUtils.isBlank(acceptorThreadCount)) {
                             acceptorThreadCount = "1500";
                         }
-                        ((AbstractProtocol) connector.getProtocolHandler())
-                                .setAcceptorThreadCount(Integer.valueOf(acceptorThreadCount));
+                        //((AbstractProtocol) connector.getProtocolHandler())
+                        //        .setAcceptorThreadCount(Integer.valueOf(acceptorThreadCount));
 
                         String maxThreads = System.getenv(GlobalConstant.TOMCAT_MAXTHREADS);
                         if (StringUtils.isBlank(maxThreads)) {

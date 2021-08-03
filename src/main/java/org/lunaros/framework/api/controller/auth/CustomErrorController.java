@@ -1,6 +1,7 @@
 package org.Lunaros.framework.api.controller.auth;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.web.error.ErrorAttributeOptions;
 import org.springframework.boot.web.servlet.error.ErrorAttributes;
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,7 +10,6 @@ import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.ModelAndView;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
@@ -33,12 +33,12 @@ public class CustomErrorController implements ErrorController {
         return new ModelAndView("redirect:/");
     }
 
-    @Override
     public String getErrorPath() {
         return PATH;
     }
 
-    private Map<String, Object> getErrorAttributes(HttpServletRequest request, boolean includeStackTrace) {
+    private Map<String, Object> getErrorAttributes(HttpServletRequest request,
+                                                   ErrorAttributeOptions includeStackTrace) {
         RequestAttributes requestAttributes = new ServletRequestAttributes(request);
         return errorAttributes.getErrorAttributes((WebRequest)request,includeStackTrace);
     }
